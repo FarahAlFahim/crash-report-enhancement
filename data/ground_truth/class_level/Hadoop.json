@@ -1,0 +1,154 @@
+{
+    "HADOOP-6989.json" : [
+        "org.apache.hadoop.io.SetFile"
+    ],
+    "HADOOP-10823.json" : [
+        "org.apache.hadoop.security.ssl.ReloadingX509TrustManager"
+    ],
+    "HADOOP-9125.json" : [
+        "org.apache.hadoop.security.LdapGroupsMapping"
+    ],
+    "HADOOP-10252.json" : [
+        "org.apache.hadoop.http.HttpServer"
+    ],
+    "HADOOP-12239.json" : [
+        "org.apache.hadoop.fs.azure.NativeAzureFileSystem"
+    ],
+    "HADOOP-11878.json" : [
+        "org.apache.hadoop.fs.FileContext"
+    ],
+    "HADOOP-14949.json" : [
+        "org.apache.hadoop.crypto.key.kms.server.KMSConfiguration",
+        "org.apache.hadoop.crypto.key.kms.server.KMSACLs"
+    ],
+    "HADOOP-10540.json" : [
+        "org.apache.hadoop.fs.HardLink"
+    ],
+    "HADOOP-7629.json" : [
+        "org.apache.hadoop.fs.permission.FsPermission"
+    ],
+    "HADOOP-15060.json" : [
+        "org.apache.hadoop.security.ShellBasedUnixGroupsMapping"
+    ],
+    "HADOOP-10937.json" : [
+        "org.apache.hadoop.crypto.key.KeyProviderCryptoExtension",
+        "org.apache.hadoop.crypto.key.kms.KMSClientProvider"
+    ],
+    "HADOOP-9103.json" : [
+        "org.apache.hadoop.io.UTF8"
+    ],
+    "HADOOP-11151.json" : [
+        "org.apache.hadoop.security.authentication.client.AuthenticatedURL",
+        "org.apache.hadoop.crypto.key.kms.KMSClientProvider"
+    ],
+    "HADOOP-8031.json" : [
+        "org.apache.hadoop.conf.Configuration"
+    ],
+    "HADOOP-15411.json" : [
+        "org.apache.hadoop.security.AuthenticationFilterInitializer"
+    ],
+    "HADOOP-15850.json" : [
+        "org.apache.hadoop.tools.mapred.CopyCommitter"
+    ],
+    "HADOOP-11693.json" : [
+        "org.apache.hadoop.fs.azure.StorageInterfaceImpl",
+        "org.apache.hadoop.fs.azure.StorageInterface",
+        "org.apache.hadoop.fs.azure.MockStorageInterface",
+        "org.apache.hadoop.fs.azure.AzureNativeFileSystemStore"
+    ],
+    "HADOOP-12441.json" : [
+        "org.apache.hadoop.util.Shell",
+        "org.apache.hadoop.yarn.server.nodemanager.NodeManager"
+    ],
+    "HADOOP-11685.json" : [
+        "org.apache.hadoop.fs.azure.AzureNativeFileSystemStore",
+        "org.apache.hadoop.fs.azure.NativeAzureFileSystem"
+    ],
+    "HADOOP-8589.json" : [
+        "org.apache.hadoop.fs.viewfs.ViewFileSystem",
+        "org.apache.hadoop.fs.DelegateToFileSystem",
+        "org.apache.hadoop.fs.viewfs.ChRootedFileSystem",
+        "org.apache.hadoop.fs.viewfs.ViewFs"
+    ],
+    "HADOOP-11754.json" : [
+        "org.apache.hadoop.security.AuthenticationFilterInitializer",
+        "org.apache.hadoop.http.HttpServer2",
+        "org.apache.hadoop.security.authentication.server.AuthenticationFilter"
+    ],
+    "HADOOP-8225.json" : [
+        "org.apache.hadoop.security.UserGroupInformation",
+        "org.apache.hadoop.security.Credentials",
+        "org.apache.hadoop.mapreduce.Job",
+        "org.apache.hadoop.mapred.YarnChild",
+        "org.apache.hadoop.tools.DistCp",
+        "org.apache.hadoop.mapreduce.v2.app.MRAppMaster"
+    ],
+    "HADOOP-10866.json" : [
+        "org.apache.hadoop.fs.Stat"
+    ],
+    "HADOOP-12089.json" : [
+        "org.apache.hadoop.fs.azure.NativeAzureFileSystem"
+    ],
+    "HADOOP-11934.json" : [
+        "org.apache.hadoop.security.alias.LocalJavaKeyStoreProvider",
+        "org.apache.hadoop.security.alias.JavaKeyStoreProvider",
+        "org.apache.hadoop.security.alias.AbstractJavaKeyStoreProvider"
+    ],
+    "HADOOP-11722.json" : [
+        "org.apache.hadoop.security.token.delegation.ZKDelegationTokenSecretManager"
+    ],
+    "HADOOP-15331.json" : [
+        "org.apache.hadoop.conf.Configuration"
+    ],
+    "HADOOP-14062.json" : [
+        "org.apache.hadoop.ipc.Client"
+    ],
+    "HADOOP-11149.json" : [
+        "org.apache.hadoop.ha.MiniZKFCCluster"
+    ],
+    "HADOOP-15059.json" : [
+        "org.apache.hadoop.hdfs.tools.DelegationTokenFetcher",
+        "org.apache.hadoop.security.Credentials",
+        "org.apache.hadoop.security.token.DtFileOperations"
+    ],
+    "HADOOP-15307.json" : [
+        "org.apache.hadoop.oncrpc.security.Verifier"
+    ],
+    "HADOOP-11446.json" : [
+        "org.apache.hadoop.fs.s3a.S3AFileSystem",
+        "org.apache.hadoop.fs.s3a.S3AOutputStream",
+        "org.apache.hadoop.fs.s3a.Constants"
+    ],
+    "HADOOP-12689.json" : [
+        "org.apache.hadoop.fs.s3.Jets3tFileSystemStore"
+    ],
+    "HADOOP-13132.json" : [
+        "org.apache.hadoop.crypto.key.kms.LoadBalancingKMSClientProvider"
+    ],
+    "HADOOP-15121.json" : [
+        "org.apache.hadoop.ipc.DecayRpcScheduler"
+    ],
+    "HADOOP-8110.json" : [
+        "org.apache.hadoop.fs.TrashPolicyDefault"
+    ],
+    "HADOOP-11400.json" : [
+        "org.apache.hadoop.metrics2.sink.GraphiteSink"
+    ],
+    "HADOOP-9865.json" : [
+        "org.apache.hadoop.fs.Globber"
+    ],
+    "HADOOP-9977.json" : [
+        "org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory"
+    ],
+    "HADOOP-12611.json" : [
+        "org.apache.hadoop.security.authentication.util.RolloverSignerSecretProvider"
+    ],
+    "HADOOP-10142.json" : [
+        "org.apache.hadoop.util.StringUtils",
+        "org.apache.hadoop.security.Groups",
+        "org.apache.hadoop.fs.CommonConfigurationKeys"
+    ],
+    "HADOOP-14727.json" : [
+        "org.apache.hadoop.conf.Configuration"
+    ]
+}

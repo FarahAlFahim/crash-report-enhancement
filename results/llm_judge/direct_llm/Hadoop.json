@@ -1,0 +1,1054 @@
+[
+    {
+        "filename": "HADOOP-10823.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.ssl.ReloadingX509TrustManager.run": {
+                "code_before_change": "  public void run() {\n    while (running) {\n      try {\n        Thread.sleep(reloadInterval);\n      } catch (InterruptedException e) {\n        //NOP\n      }\n      if (running && needsReload()) {\n        try {\n          trustManagerRef.set(loadTrustManager());\n        } catch (Exception ex) {\n          LOG.warn(\"Could not load truststore (keep using existing one) : \" +\n                   ex.toString(), ex);\n        }\n      }\n    }\n  }",
+                "code_after_change": "  public void run() {\n    while (running) {\n      try {\n        Thread.sleep(reloadInterval);\n      } catch (InterruptedException e) {\n        //NOP\n      }\n      if (running && needsReload()) {\n        try {\n          trustManagerRef.set(loadTrustManager());\n        } catch (Exception ex) {\n          LOG.warn(RELOAD_ERROR_MESSAGE + ex.toString(), ex);\n        }\n      }\n    }\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": ""
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The root cause identification is 'Partial' with 'Buggy Method' as the sub-category because the bug report identifies the EOFException in the 'loadTrustManager' method, which is where the error occurs, but not where the actual fix was made. The fix suggestion is 'Preventive' because the suggestion to verify the integrity and format of the truststore file and add error handling is a preventive measure that could mitigate the issue. The problem location identification is 'Precise' because the 'problem_location' field correctly mentions the 'ReloadingX509TrustManager.run' method, which is in the ground truth list. There is no wrong information in the bug report as all the information is relevant and grounded in the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-9125.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.LdapGroupsMapping.getDirContext": {
+                "code_before_change": "  DirContext getDirContext() throws NamingException {\n    if (ctx == null) {\n      // Set up the initial environment for LDAP connectivity\n      Hashtable<String, String> env = new Hashtable<String, String>();\n      env.put(Context.INITIAL_CONTEXT_FACTORY,\n          com.sun.jndi.ldap.LdapCtxFactory.class.getName());\n      env.put(Context.PROVIDER_URL, ldapUrl);\n      env.put(Context.SECURITY_AUTHENTICATION, \"simple\");\n\n      // Set up SSL security, if necessary\n      if (useSsl) {\n        env.put(Context.SECURITY_PROTOCOL, \"ssl\");\n        System.setProperty(\"javax.net.ssl.keyStore\", keystore);\n        System.setProperty(\"javax.net.ssl.keyStorePassword\", keystorePass);\n      }\n\n      env.put(Context.SECURITY_PRINCIPAL, bindUser);\n      env.put(Context.SECURITY_CREDENTIALS, bindPassword);\n\n      ctx = new InitialDirContext(env);\n    }\n\n    return ctx;\n  }",
+                "code_after_change": "  DirContext getDirContext() throws NamingException {\n    if (ctx == null) {\n      // Set up the initial environment for LDAP connectivity\n      Hashtable<String, String> env = new Hashtable<String, String>();\n      env.put(Context.INITIAL_CONTEXT_FACTORY,\n          com.sun.jndi.ldap.LdapCtxFactory.class.getName());\n      env.put(Context.PROVIDER_URL, ldapUrl);\n      env.put(Context.SECURITY_AUTHENTICATION, \"simple\");\n\n      // Set up SSL security, if necessary\n      if (useSsl) {\n        env.put(Context.SECURITY_PROTOCOL, \"ssl\");\n        System.setProperty(\"javax.net.ssl.keyStore\", keystore);\n        System.setProperty(\"javax.net.ssl.keyStorePassword\", keystorePass);\n      }\n\n      env.put(Context.SECURITY_PRINCIPAL, bindUser);\n      env.put(Context.SECURITY_CREDENTIALS, bindPassword);\n\n      ctx = new InitialDirContext(env);\n    }\n\n    return ctx;\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as the LDAP connection being closed due to inactivity, which aligns with the ground truth methods. The fix suggestion is preventive as it suggests checking the connection status and re-establishing it if closed, which would mitigate the issue. The problem location identification is precise as it mentions 'LdapGroupsMapping.getGroups', which is a ground truth method. There is no wrong information in the bug report as all details are relevant and accurate."
+        }
+    },
+    {
+        "filename": "HADOOP-10252.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.http.HttpServer.HttpServer": {
+                "code_before_change": [],
+                "code_after_change": []
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as the HttpServer's initialization method attempting to set a null hostname, which is related to the ground truth method 'HttpServer.HttpServer'. However, it points to 'HttpServer.initializeWebServer' as the location, which is where the error occurs but not where the fix was made, hence 'Partial' with 'Buggy Method'. The fix suggestion involves modifying the initialization logic to handle null hostnames, which is an alternative approach to resolving the issue. The problem location is identified as 'HttpServer.initializeWebServer', which is the method where the error occurs, but not the exact ground truth method, hence 'Partial' with 'Buggy Method'. There is no wrong information in the bug report as all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-12239.json",
+        "code_diff": {
+            "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.NativeAzureFileSystem.create": {
+                "code_before_change": "  public FSDataOutputStream create(Path f, FsPermission permission,\n      boolean overwrite, int bufferSize, short replication, long blockSize,\n      Progressable progress) throws IOException {\n    return create(f, permission, overwrite, true,\n        bufferSize, replication, blockSize, progress,\n        (SelfRenewingLease) null);\n  }",
+                "code_after_change": "  public FSDataOutputStream create(Path f, FsPermission permission,\n      boolean overwrite, int bufferSize, short replication, long blockSize,\n      Progressable progress) throws IOException {\n    return create(f, permission, overwrite, true,\n        bufferSize, replication, blockSize, progress,\n        (SelfRenewingLease) null);\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": ""
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as the absence of a lease ID when updating the last modified time of a folder in Azure Blob Storage, which is related to the method 'AzureNativeFileSystemStore.updateFolderLastModifiedTime'. However, the actual fix was made in 'NativeAzureFileSystem.create', making it a 'Buggy Method' identification. The fix suggestion is preventive as it suggests checking for active leases before updating, which would mitigate the issue. The problem location is precise as it mentions 'NativeAzureFileSystem.create', which is the ground truth method. There is no wrong information in the bug report as all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-11878.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.FileContext.FileContext": {
+                "code_before_change": [],
+                "code_after_change": []
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.FileContext.fixRelativePart": {
+                "code_before_change": "  Path fixRelativePart(Path p) {\n    if (p.isUriPathAbsolute()) {\n      return p;\n    } else {\n      return new Path(workingDir, p);\n    }\n  }",
+                "code_after_change": "  Path fixRelativePart(Path p) {\n    Preconditions.checkNotNull(p, \"path cannot be null\");\n    if (p.isUriPathAbsolute()) {\n      return p;\n    } else {\n      return new Path(workingDir, p);\n    }\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Correct",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as the lack of a null check in the 'fixRelativePart' method, which matches the ground truth method where the fix was applied. The fix suggestion in the bug report is correct as it aligns with the developer's fix, which involves adding a null check for the input parameter in the 'fixRelativePart' method. The problem location identification is precise because the 'problem_location' field mentions the 'fixRelativePart' method, which is part of the ground truth methods. There is no wrong information in the bug report as all the details are consistent with the context of the bug and the actual fix."
+        }
+    },
+    {
+        "filename": "HADOOP-14949.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-kms.src.main.java.org.apache.hadoop.crypto.key.kms.server.KMSACLs.isACLPresent": {
+                "code_before_change": "  public boolean isACLPresent(String keyName, KeyOpType opType) {\n    return (keyAcls.containsKey(keyName)\n        || defaultKeyAcls.containsKey(opType)\n        || whitelistKeyAcls.containsKey(opType));\n  }",
+                "code_after_change": "  public boolean isACLPresent(String keyName, KeyOpType opType) {\n    return (keyAcls.containsKey(keyName)\n        || defaultKeyAcls.containsKey(opType)\n        || whitelistKeyAcls.containsKey(opType));\n  }"
+            },
+            "hadoop-common-project.hadoop-kms.src.main.java.org.apache.hadoop.crypto.key.kms.server.KMSConfiguration.isACLsFileNewer": {
+                "code_before_change": "  public static boolean isACLsFileNewer(long time) {\n    boolean newer = false;\n    String confDir = System.getProperty(KMS_CONFIG_DIR);\n    if (confDir != null) {\n      Path confPath = new Path(confDir);\n      if (!confPath.isUriPathAbsolute()) {\n        throw new RuntimeException(\"System property '\" + KMS_CONFIG_DIR +\n            \"' must be an absolute path: \" + confDir);\n      }\n      File f = new File(confDir, KMS_ACLS_XML);\n      // at least 100ms newer than time, we do this to ensure the file\n      // has been properly closed/flushed\n      newer = f.lastModified() - time > 100;\n    }\n    return newer;\n  }",
+                "code_after_change": "  public static boolean isACLsFileNewer(long time) {\n    boolean newer = false;\n    String confDir = System.getProperty(KMS_CONFIG_DIR);\n    if (confDir != null) {\n      Path confPath = new Path(confDir);\n      if (!confPath.isUriPathAbsolute()) {\n        throw new RuntimeException(\"System property '\" + KMS_CONFIG_DIR +\n            \"' must be an absolute path: \" + confDir);\n      }\n      File f = new File(confDir, KMS_ACLS_XML);\n      LOG.trace(\"Checking file {}, modification time is {}, last reload time is\"\n          + \" {}\", f.getPath(), f.lastModified(), time);\n      // at least 100ms newer than time, we do this to ensure the file\n      // has been properly closed/flushed\n      newer = f.lastModified() - time > 100;\n    }\n    return newer;\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Shared Stack Trace Context"
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Shared Stack Trace Context"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as an authorization issue related to the 'REENCRYPT_EEK' operation, which is not the exact root cause but is related to the context of the problem. The ground truth methods are related to ACL checks, which are indirectly related to the authorization issue mentioned. The fix suggestion to update ACLs is preventive as it addresses the authorization issue but does not directly match the developer's fix. The problem location mentions methods in the stack trace context but not the ground truth methods, hence it is partial. There is no wrong information in the bug report as it correctly describes the symptoms and context of the issue."
+        }
+    },
+    {
+        "filename": "HADOOP-10540.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.HardLink.createHardLinkMult": {
+                "code_before_change": "  public static void createHardLinkMult(File parentDir, String[] fileBaseNames, \n      File linkDir) throws IOException {\n    //This is the public method all non-test clients are expected to use.\n    //Normal case - allow up to maxAllowedCmdArgLength characters in the cmd\n    createHardLinkMult(parentDir, fileBaseNames, linkDir, \n                       getHardLinkCommand.getMaxAllowedCmdArgLength());\n  }",
+                "code_after_change": "  public static void createHardLinkMult(File parentDir, String[] fileBaseNames, \n      File linkDir) throws IOException {\n    //This is the public method all non-test clients are expected to use.\n    //Normal case - allow up to maxAllowedCmdArgLength characters in the cmd\n    createHardLinkMult(parentDir, fileBaseNames, linkDir, \n                       getHardLinkCommand.getMaxAllowedCmdArgLength());\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.HardLink.getLinkMultArgLength": {
+                "code_before_change": "    abstract int getLinkMultArgLength(\n                     File fileDir, String[] fileBaseNames, File linkDir) \n                     throws IOException;\n    \n    /**\n     * Get the maximum allowed string length of a shell command on this OS,\n     * which is just the documented minimum guaranteed supported command\n     * length - aprx. 32KB for Unix, and 8KB for Windows.\n     */\n    abstract int getMaxAllowedCmdArgLength(); \n  }\n  \n  /**\n   * Implementation of HardLinkCommandGetter class for Unix\n   */\n  static class HardLinkCGUnix extends HardLinkCommandGetter {",
+                "code_after_change": "    abstract int getLinkMultArgLength(\n                     File fileDir, String[] fileBaseNames, File linkDir) \n                     throws IOException;\n    \n    /**\n     * Get the maximum allowed string length of a shell command on this OS,\n     * which is just the documented minimum guaranteed supported command\n     * length - aprx. 32KB for Unix, and 8KB for Windows.\n     */\n    abstract int getMaxAllowedCmdArgLength(); \n  }\n  \n  /**\n   * Implementation of HardLinkCommandGetter class for Unix\n   */\n  static class HardLinkCGUnix extends HardLinkCommandGetter {"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.HardLink.getLinkCount": {
+                "code_before_change": "  public static int getLinkCount(File fileName) throws IOException {\n    if (fileName == null) {\n      throw new IOException(\n          \"invalid argument to getLinkCount: file name is null\");\n    }\n    if (!fileName.exists()) {\n      throw new FileNotFoundException(fileName + \" not found.\");\n    }\n\n    // construct and execute shell command\n    String[] cmd = getHardLinkCommand.linkCount(fileName);\n    String inpMsg = null;\n    String errMsg = null;\n    int exitValue = -1;\n    BufferedReader in = null;\n    BufferedReader err = null;\n\n    Process process = Runtime.getRuntime().exec(cmd);\n    try {\n      exitValue = process.waitFor();\n      in = new BufferedReader(new InputStreamReader(\n                                  process.getInputStream()));\n      inpMsg = in.readLine();\n      err = new BufferedReader(new InputStreamReader(\n                                   process.getErrorStream()));\n      errMsg = err.readLine();\n      if (inpMsg == null || exitValue != 0) {\n        throw createIOException(fileName, inpMsg, errMsg, exitValue, null);\n      }\n      if (Shell.SOLARIS) {\n        String[] result = inpMsg.split(\"\\\\s+\");\n        return Integer.parseInt(result[1]);\n      } else {\n        return Integer.parseInt(inpMsg);\n      }\n    } catch (NumberFormatException e) {\n      throw createIOException(fileName, inpMsg, errMsg, exitValue, e);\n    } catch (InterruptedException e) {\n      throw createIOException(fileName, inpMsg, errMsg, exitValue, e);\n    } finally {\n      process.destroy();\n      if (in != null) in.close();\n      if (err != null) err.close();\n    }\n  }",
+                "code_after_change": "  public static int getLinkCount(File fileName) throws IOException {\n    if (fileName == null) {\n      throw new IOException(\n          \"invalid argument to getLinkCount: file name is null\");\n    }\n    if (!fileName.exists()) {\n      throw new FileNotFoundException(fileName + \" not found.\");\n    }\n\n    // construct and execute shell command\n    String[] cmd = getHardLinkCommand.linkCount(fileName);\n    String inpMsg = null;\n    String errMsg = null;\n    int exitValue = -1;\n    BufferedReader in = null;\n\n    ShellCommandExecutor shexec = new ShellCommandExecutor(cmd);\n    try {\n      shexec.execute();\n      in = new BufferedReader(new StringReader(shexec.getOutput()));\n      inpMsg = in.readLine();\n      exitValue = shexec.getExitCode();\n      if (inpMsg == null || exitValue != 0) {\n        throw createIOException(fileName, inpMsg, errMsg, exitValue, null);\n      }\n      if (Shell.SOLARIS) {\n        String[] result = inpMsg.split(\"\\\\s+\");\n        return Integer.parseInt(result[1]);\n      } else {\n        return Integer.parseInt(inpMsg);\n      }\n    } catch (ExitCodeException e) {\n      inpMsg = shexec.getOutput();\n      errMsg = e.getMessage();\n      exitValue = e.getExitCode();\n      throw createIOException(fileName, inpMsg, errMsg, exitValue, e);\n    } catch (NumberFormatException e) {\n      throw createIOException(fileName, inpMsg, errMsg, exitValue, e);\n    } finally {\n      IOUtils.closeStream(in);\n    }\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.HardLink.createHardLink": {
+                "code_before_change": "  public static void createHardLink(File file, File linkName) \n  throws IOException {\n    if (file == null) {\n      throw new IOException(\n          \"invalid arguments to createHardLink: source file is null\");\n    }\n    if (linkName == null) {\n      throw new IOException(\n          \"invalid arguments to createHardLink: link name is null\");\n    }\n\t  // construct and execute shell command\n    String[] hardLinkCommand = getHardLinkCommand.linkOne(file, linkName);\n    Process process = Runtime.getRuntime().exec(hardLinkCommand);\n    try {\n      if (process.waitFor() != 0) {\n        String errMsg = new BufferedReader(new InputStreamReader(\n            process.getInputStream())).readLine();\n        if (errMsg == null)  errMsg = \"\";\n        String inpMsg = new BufferedReader(new InputStreamReader(\n            process.getErrorStream())).readLine();\n        if (inpMsg == null)  inpMsg = \"\";\n        throw new IOException(errMsg + inpMsg);\n      }\n    } catch (InterruptedException e) {\n      throw new IOException(e);\n    } finally {\n      process.destroy();\n    }\n  }",
+                "code_after_change": "  public static void createHardLink(File file, File linkName) \n  throws IOException {\n    if (file == null) {\n      throw new IOException(\n          \"invalid arguments to createHardLink: source file is null\");\n    }\n    if (linkName == null) {\n      throw new IOException(\n          \"invalid arguments to createHardLink: link name is null\");\n    }\n\t  // construct and execute shell command\n    String[] hardLinkCommand = getHardLinkCommand.linkOne(file, linkName);\n    ShellCommandExecutor shexec = new ShellCommandExecutor(hardLinkCommand);\n    try {\n      shexec.execute();\n    } catch (ExitCodeException e) {\n      throw new IOException(\"Failed to execute command \" +\n          Arrays.toString(hardLinkCommand) +\n          \"; command output: \\\"\" + shexec.getOutput() + \"\\\"\" +\n          \"; WrappedException: \\\"\" + e.getMessage() + \"\\\"\");\n    }\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.HardLink.linkMult": {
+                "code_before_change": "    abstract String[] linkMult(String[] fileBaseNames, File linkDir) \n                          throws IOException;\n    \n    /**\n     * Get the command string needed to hardlink a single file\n     */\n    abstract String[] linkOne(File file, File linkName) throws IOException;\n    \n    /**\n     * Get the command string to query the hardlink count of a file\n     */\n    abstract String[] linkCount(File file) throws IOException;\n    \n    /**\n     * Calculate the total string length of the shell command\n     * resulting from execution of linkMult, plus the length of the\n     * source directory name (which will also be provided to the shell)\n     * \n     * @param fileDir - source directory, parent of fileBaseNames\n     * @param fileBaseNames - array of path-less file names, relative\n     *            to the source directory\n     * @param linkDir - target directory where the hardlinks will be put\n     * @return - total data length (must not exceed maxAllowedCmdArgLength)\n     * @throws IOException\n     */\n    abstract int getLinkMultArgLength(\n                     File fileDir, String[] fileBaseNames, File linkDir) \n                     throws IOException;\n    \n    /**\n     * Get the maximum allowed string length of a shell command on this OS,\n     * which is just the documented minimum guaranteed supported command\n     * length - aprx. 32KB for Unix, and 8KB for Windows.\n     */\n    abstract int getMaxAllowedCmdArgLength(); \n  }\n  \n  /**\n   * Implementation of HardLinkCommandGetter class for Unix\n   */\n  static class HardLinkCGUnix extends HardLinkCommandGetter {",
+                "code_after_change": "    abstract String[] linkMult(String[] fileBaseNames, File linkDir) \n                          throws IOException;\n    \n    /**\n     * Get the command string needed to hardlink a single file\n     */\n    abstract String[] linkOne(File file, File linkName) throws IOException;\n    \n    /**\n     * Get the command string to query the hardlink count of a file\n     */\n    abstract String[] linkCount(File file) throws IOException;\n    \n    /**\n     * Calculate the total string length of the shell command\n     * resulting from execution of linkMult, plus the length of the\n     * source directory name (which will also be provided to the shell)\n     * \n     * @param fileDir - source directory, parent of fileBaseNames\n     * @param fileBaseNames - array of path-less file names, relative\n     *            to the source directory\n     * @param linkDir - target directory where the hardlinks will be put\n     * @return - total data length (must not exceed maxAllowedCmdArgLength)\n     * @throws IOException\n     */\n    abstract int getLinkMultArgLength(\n                     File fileDir, String[] fileBaseNames, File linkDir) \n                     throws IOException;\n    \n    /**\n     * Get the maximum allowed string length of a shell command on this OS,\n     * which is just the documented minimum guaranteed supported command\n     * length - aprx. 32KB for Unix, and 8KB for Windows.\n     */\n    abstract int getMaxAllowedCmdArgLength(); \n  }\n  \n  /**\n   * Implementation of HardLinkCommandGetter class for Unix\n   */\n  static class HardLinkCGUnix extends HardLinkCommandGetter {"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": ""
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": ""
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as the hard link creation method being called with invalid parameters, which aligns with the ground truth method 'HardLink.createHardLinkMult'. The fix suggestion is preventive as it suggests reviewing parameters and adding validation, which would prevent the issue but does not match the exact developer's fix. The problem location identification is precise as it mentions 'DataStorage.linkBlocks', 'DataStorage.linkAllBlocks', and 'HardLink.createHardLinkMult', which are directly related to the ground truth methods. There is no wrong information in the bug report as all details are relevant and accurate."
+        }
+    },
+    {
+        "filename": "HADOOP-7629.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.permission.FsPermission.createImmutable": {
+                "code_before_change": "  public static FsPermission createImmutable(short permission) {\n    return new FsPermission(permission) {\n      public FsPermission applyUMask(FsPermission umask) {\n        throw new UnsupportedOperationException();\n      }\n      public void readFields(DataInput in) throws IOException {\n        throw new UnsupportedOperationException();\n      }\n    };\n  }",
+                "code_after_change": "  public static FsPermission createImmutable(short permission) {\n    return new ImmutableFsPermission(permission);\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.permission.FsPermission.applyUMask": {
+                "code_before_change": "      public FsPermission applyUMask(FsPermission umask) {\n        throw new UnsupportedOperationException();\n      }",
+                "code_after_change": "  public FsPermission applyUMask(FsPermission umask) {\n    return new FsPermission(useraction.and(umask.useraction.not()),\n        groupaction.and(umask.groupaction.not()),\n        otheraction.and(umask.otheraction.not()));\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.permission.FsPermission.readFields": {
+                "code_before_change": "      public void readFields(DataInput in) throws IOException {\n        throw new UnsupportedOperationException();\n      }",
+                "code_after_change": "  public void readFields(DataInput in) throws IOException {\n    fromShort(in.readShort());\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Shared Stack Trace Context"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as the use of an immutable FsPermission object, which is related to the issue but not the exact root cause in the ground truth methods. The report suggests using a mutable FsPermission object, which is an alternative fix to the developer's change of using ImmutableFsPermission. The problem location mentions methods in the stack trace context but not the exact ground truth methods. There is no wrong information in the report as it accurately describes the issue and its context."
+        }
+    },
+    {
+        "filename": "HADOOP-15060.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups": {
+                "code_before_change": "  private List<String> getUnixGroups(String user) throws IOException {\n    ShellCommandExecutor executor = createGroupExecutor(user);\n\n    List<String> groups;\n    try {\n      executor.execute();\n      groups = resolveFullGroupNames(executor.getOutput());\n    } catch (ExitCodeException e) {\n      try {\n        groups = resolvePartialGroupNames(user, e.getMessage(),\n            executor.getOutput());\n      } catch (PartialGroupNameException pge) {\n        LOG.warn(\"unable to return groups for user {}\", user, pge);\n        return EMPTY_GROUPS;\n      }\n    } catch (IOException ioe) {\n      // If its a shell executor timeout, indicate so in the message\n      // but treat the result as empty instead of throwing it up,\n      // similar to how partial resolution failures are handled above\n      if (executor.isTimedOut()) {\n        LOG.warn(\n            \"Unable to return groups for user '{}' as shell group lookup \" +\n            \"command '{}' ran longer than the configured timeout limit of \" +\n            \"{} seconds.\",\n            user,\n            Joiner.on(' ').join(executor.getExecString()),\n            timeout\n        );\n        return EMPTY_GROUPS;\n      } else {\n        // If its not an executor timeout, we should let the caller handle it\n        throw ioe;\n      }\n    }\n\n    // remove duplicated primary group\n    if (!Shell.WINDOWS) {\n      for (int i = 1; i < groups.size(); i++) {\n        if (groups.get(i).equals(groups.get(0))) {\n          groups.remove(i);\n          break;\n        }\n      }\n    }\n\n    return groups;\n  }",
+                "code_after_change": "  private List<String> getUnixGroups(String user) throws IOException {\n    ShellCommandExecutor executor = createGroupExecutor(user);\n\n    List<String> groups;\n    try {\n      executor.execute();\n      groups = resolveFullGroupNames(executor.getOutput());\n    } catch (ExitCodeException e) {\n      if (handleExecutorTimeout(executor, user)) {\n        return EMPTY_GROUPS;\n      } else {\n        try {\n          groups = resolvePartialGroupNames(user, e.getMessage(),\n              executor.getOutput());\n        } catch (PartialGroupNameException pge) {\n          LOG.warn(\"unable to return groups for user {}\", user, pge);\n          return EMPTY_GROUPS;\n        }\n      }\n    } catch (IOException ioe) {\n      if (handleExecutorTimeout(executor, user)) {\n        return EMPTY_GROUPS;\n      } else {\n        // If its not an executor timeout, we should let the caller handle it\n        throw ioe;\n      }\n    }\n\n    // remove duplicated primary group\n    if (!Shell.WINDOWS) {\n      for (int i = 1; i < groups.size(); i++) {\n        if (groups.get(i).equals(groups.get(0))) {\n          groups.remove(i);\n          break;\n        }\n      }\n    }\n\n    return groups;\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroupsIDForUserCommand": {
+                "code_before_change": "  protected String[] getGroupsIDForUserCommand(String userName) {\n    return Shell.getGroupsIDForUserCommand(userName);\n  }",
+                "code_after_change": "  protected String[] getGroupsIDForUserCommand(String userName) {\n    return Shell.getGroupsIDForUserCommand(userName);\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Correct",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as the timeout handling in the 'getUnixGroups' method, which matches the ground truth method. The fix suggestion is correct as it aligns with the developer's fix, which involves ensuring the timeout condition is correctly logged. The problem location identification is precise because the 'problem_location' field mentions 'ShellBasedUnixGroupsMapping.getUnixGroups', which is a ground truth method. There is no wrong information in the bug report as all details are relevant and accurate."
+        }
+    },
+    {
+        "filename": "HADOOP-10937.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.KeyProviderCryptoExtension.decryptEncryptedKey": {
+                "code_before_change": "    public KeyVersion decryptEncryptedKey(\n        EncryptedKeyVersion encryptedKeyVersion) throws IOException,\n        GeneralSecurityException;\n  }\n\n  private static class DefaultCryptoExtension implements CryptoExtension {",
+                "code_after_change": "    public KeyVersion decryptEncryptedKey(\n        EncryptedKeyVersion encryptedKeyVersion) throws IOException,\n        GeneralSecurityException;\n  }\n\n  private static class DefaultCryptoExtension implements CryptoExtension {"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.KeyProviderCryptoExtension.EncryptedKeyVersion": {
+                "code_before_change": [],
+                "code_after_change": []
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.kms.KMSClientProvider.decryptEncryptedKey": {
+                "code_before_change": "  public KeyVersion decryptEncryptedKey(\n      EncryptedKeyVersion encryptedKeyVersion) throws IOException,\n                                                      GeneralSecurityException {\n    checkNotNull(encryptedKeyVersion.getEncryptionKeyVersionName(),\n        \"versionName\");\n    checkNotNull(encryptedKeyVersion.getEncryptedKeyIv(), \"iv\");\n    Preconditions.checkArgument(\n        encryptedKeyVersion.getEncryptedKeyVersion().getVersionName()\n            .equals(KeyProviderCryptoExtension.EEK),\n        \"encryptedKey version name must be '%s', is '%s'\",\n        KeyProviderCryptoExtension.EK,\n        encryptedKeyVersion.getEncryptedKeyVersion().getVersionName()\n    );\n    checkNotNull(encryptedKeyVersion.getEncryptedKeyVersion(), \"encryptedKey\");\n    Map<String, String> params = new HashMap<String, String>();\n    params.put(KMSRESTConstants.EEK_OP, KMSRESTConstants.EEK_DECRYPT);\n    Map<String, Object> jsonPayload = new HashMap<String, Object>();\n    jsonPayload.put(KMSRESTConstants.NAME_FIELD,\n        encryptedKeyVersion.getEncryptionKeyName());\n    jsonPayload.put(KMSRESTConstants.IV_FIELD, Base64.encodeBase64String(\n        encryptedKeyVersion.getEncryptedKeyIv()));\n    jsonPayload.put(KMSRESTConstants.MATERIAL_FIELD, Base64.encodeBase64String(\n            encryptedKeyVersion.getEncryptedKeyVersion().getMaterial()));\n    URL url = createURL(KMSRESTConstants.KEY_VERSION_RESOURCE,\n        encryptedKeyVersion.getEncryptionKeyVersionName(),\n        KMSRESTConstants.EEK_SUB_RESOURCE, params);\n    HttpURLConnection conn = createConnection(url, HTTP_POST);\n    conn.setRequestProperty(CONTENT_TYPE, APPLICATION_JSON_MIME);\n    Map response =\n        call(conn, jsonPayload, HttpURLConnection.HTTP_OK, Map.class);\n    return parseJSONKeyVersion(response);\n  }",
+                "code_after_change": "  public KeyVersion decryptEncryptedKey(\n      EncryptedKeyVersion encryptedKeyVersion) throws IOException,\n                                                      GeneralSecurityException {\n    checkNotNull(encryptedKeyVersion.getEncryptionKeyVersionName(),\n        \"versionName\");\n    checkNotNull(encryptedKeyVersion.getEncryptedKeyIv(), \"iv\");\n    Preconditions.checkArgument(\n        encryptedKeyVersion.getEncryptedKeyVersion().getVersionName()\n            .equals(KeyProviderCryptoExtension.EEK),\n        \"encryptedKey version name must be '%s', is '%s'\",\n        KeyProviderCryptoExtension.EEK,\n        encryptedKeyVersion.getEncryptedKeyVersion().getVersionName()\n    );\n    checkNotNull(encryptedKeyVersion.getEncryptedKeyVersion(), \"encryptedKey\");\n    Map<String, String> params = new HashMap<String, String>();\n    params.put(KMSRESTConstants.EEK_OP, KMSRESTConstants.EEK_DECRYPT);\n    Map<String, Object> jsonPayload = new HashMap<String, Object>();\n    jsonPayload.put(KMSRESTConstants.NAME_FIELD,\n        encryptedKeyVersion.getEncryptionKeyName());\n    jsonPayload.put(KMSRESTConstants.IV_FIELD, Base64.encodeBase64String(\n        encryptedKeyVersion.getEncryptedKeyIv()));\n    jsonPayload.put(KMSRESTConstants.MATERIAL_FIELD, Base64.encodeBase64String(\n            encryptedKeyVersion.getEncryptedKeyVersion().getMaterial()));\n    URL url = createURL(KMSRESTConstants.KEY_VERSION_RESOURCE,\n        encryptedKeyVersion.getEncryptionKeyVersionName(),\n        KMSRESTConstants.EEK_SUB_RESOURCE, params);\n    HttpURLConnection conn = createConnection(url, HTTP_POST);\n    conn.setRequestProperty(CONTENT_TYPE, APPLICATION_JSON_MIME);\n    Map response =\n        call(conn, jsonPayload, HttpURLConnection.HTTP_OK, Map.class);\n    return parseJSONKeyVersion(response);\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Missing",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as the uninitialized version name in the 'decryptEncryptedKey' method of 'KMSClientProvider', which is a ground truth method. The fix suggestion is missing because the report suggests checking initialization logic but does not match the developer's fix or provide an alternative or preventive fix. The problem location is precise as it mentions the 'decryptEncryptedKey' method in 'KMSClientProvider', which is a ground truth method. There is no wrong information in the bug report as all details are relevant and accurate."
+        }
+    },
+    {
+        "filename": "HADOOP-9103.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.io.UTF8.readChars": {
+                "code_before_change": "  private static void readChars(DataInput in, StringBuilder buffer, int nBytes)\n    throws IOException {\n    DataOutputBuffer obuf = OBUF_FACTORY.get();\n    obuf.reset();\n    obuf.write(in, nBytes);\n    byte[] bytes = obuf.getData();\n    int i = 0;\n    while (i < nBytes) {\n      byte b = bytes[i++];\n      if ((b & 0x80) == 0) {\n        buffer.append((char)(b & 0x7F));\n      } else if ((b & 0xE0) != 0xE0) {\n        buffer.append((char)(((b & 0x1F) << 6)\n            | (bytes[i++] & 0x3F)));\n      } else {\n        buffer.append((char)(((b & 0x0F) << 12)\n            | ((bytes[i++] & 0x3F) << 6)\n            |  (bytes[i++] & 0x3F)));\n      }\n    }\n  }",
+                "code_after_change": "  private static void readChars(DataInput in, StringBuilder buffer, int nBytes)\n    throws IOException {\n    DataOutputBuffer obuf = OBUF_FACTORY.get();\n    obuf.reset();\n    obuf.write(in, nBytes);\n    byte[] bytes = obuf.getData();\n    int i = 0;\n    while (i < nBytes) {\n      byte b = bytes[i++];\n      if ((b & 0x80) == 0) {\n        // 0b0xxxxxxx: 1-byte sequence\n        buffer.append((char)(b & 0x7F));\n      } else if ((b & 0xE0) == 0xC0) {\n        // 0b110xxxxx: 2-byte sequence\n        buffer.append((char)(((b & 0x1F) << 6)\n            | (bytes[i++] & 0x3F)));\n      } else if ((b & 0xF0) == 0xE0) {\n        // 0b1110xxxx: 3-byte sequence\n        buffer.append((char)(((b & 0x0F) << 12)\n            | ((bytes[i++] & 0x3F) << 6)\n            |  (bytes[i++] & 0x3F)));\n      } else if ((b & 0xF8) == 0xF0) {\n        // 0b11110xxx: 4-byte sequence\n        int codepoint =\n            ((b & 0x07) << 18)\n          | ((bytes[i++] & 0x3F) <<  12)\n          | ((bytes[i++] & 0x3F) <<  6)\n          | ((bytes[i++] & 0x3F));\n        buffer.append(highSurrogate(codepoint))\n              .append(lowSurrogate(codepoint));\n      } else {\n        // The UTF8 standard describes 5-byte and 6-byte sequences, but\n        // these are no longer allowed as of 2003 (see RFC 3629)\n\n        // Only show the next 6 bytes max in the error code - in case the\n        // buffer is large, this will prevent an exceedingly large message.\n        int endForError = Math.min(i + 5, nBytes);\n        throw new IOException(\"Invalid UTF8 at \" +\n          StringUtils.byteToHexString(bytes, i - 1, endForError));\n      }\n    }\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.io.UTF8.getBytes": {
+                "code_before_change": "  public byte[] getBytes() {\n    return bytes;\n  }",
+                "code_after_change": "  public byte[] getBytes() {\n    return bytes;\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Same Class or Module"
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Same Class or Module"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as inconsistent UTF-8 encoding handling in methods 'string2Bytes' and 'writeString', which are in the same module as the ground truth methods but not the exact root cause. The fix suggestion involves refactoring these methods to ensure consistent encoding, which is an alternative fix to the actual changes made in the ground truth methods. The problem location mentions methods in the same class/module as the ground truth methods, but not the exact methods. There is no wrong information in the bug report as it correctly identifies related issues and provides a plausible fix."
+        }
+    },
+    {
+        "filename": "HADOOP-11151.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.kms.KMSClientProvider.checkNotEmpty": {
+                "code_before_change": "  public static String checkNotEmpty(String s, String name)\n      throws IllegalArgumentException {\n    checkNotNull(s, name);\n    if (s.isEmpty()) {\n      throw new IllegalArgumentException(\"Parameter '\" + name +\n          \"' cannot be empty\");\n    }\n    return s;\n  }",
+                "code_after_change": "  public static String checkNotEmpty(String s, String name)\n      throws IllegalArgumentException {\n    checkNotNull(s, name);\n    if (s.isEmpty()) {\n      throw new IllegalArgumentException(\"Parameter '\" + name +\n          \"' cannot be empty\");\n    }\n    return s;\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.kms.KMSClientProvider.KMSClientProvider": {
+                "code_before_change": [],
+                "code_after_change": []
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.kms.KMSClientProvider.run": {
+                "code_before_change": "        public HttpURLConnection run() throws Exception {\n          DelegationTokenAuthenticatedURL authUrl =\n              new DelegationTokenAuthenticatedURL(configurator);\n          return authUrl.openConnection(url, authToken, doAsUser);\n        }",
+                "code_after_change": "        public HttpURLConnection run() throws Exception {\n          DelegationTokenAuthenticatedURL authUrl =\n              new DelegationTokenAuthenticatedURL(configurator);\n          return authUrl.openConnection(url, authToken, doAsUser);\n        }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.kms.KMSClientProvider.call": {
+                "code_before_change": "  private static <T> T call(HttpURLConnection conn, Map jsonOutput,\n      int expectedResponse, Class<T> klass)\n      throws IOException {\n    T ret = null;\n    try {\n      if (jsonOutput != null) {\n        writeJson(jsonOutput, conn.getOutputStream());\n      }\n    } catch (IOException ex) {\n      conn.getInputStream().close();\n      throw ex;\n    }\n    HttpExceptionUtils.validateResponse(conn, expectedResponse);\n    if (APPLICATION_JSON_MIME.equalsIgnoreCase(conn.getContentType())\n        && klass != null) {\n      ObjectMapper mapper = new ObjectMapper();\n      InputStream is = null;\n      try {\n        is = conn.getInputStream();\n        ret = mapper.readValue(is, klass);\n      } catch (IOException ex) {\n        if (is != null) {\n          is.close();\n        }\n        throw ex;\n      } finally {\n        if (is != null) {\n          is.close();\n        }\n      }\n    }\n    return ret;\n  }",
+                "code_after_change": "  private <T> T call(HttpURLConnection conn, Map jsonOutput,\n      int expectedResponse, Class<T> klass) throws IOException {\n    return call(conn, jsonOutput, expectedResponse, klass, authRetry);\n  }"
+            },
+            "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.client.AuthenticatedURL.injectToken": {
+                "code_before_change": "  public static void injectToken(HttpURLConnection conn, Token token) {\n    String t = token.token;\n    if (t != null) {\n      if (!t.startsWith(\"\\\"\")) {\n        t = \"\\\"\" + t + \"\\\"\";\n      }\n      conn.addRequestProperty(\"Cookie\", AUTH_COOKIE_EQ + t);\n    }\n  }",
+                "code_after_change": "  public static void injectToken(HttpURLConnection conn, Token token) {\n    String t = token.token;\n    if (t != null) {\n      if (!t.startsWith(\"\\\"\")) {\n        t = \"\\\"\" + t + \"\\\"\";\n      }\n      conn.addRequestProperty(\"Cookie\", AUTH_COOKIE_EQ + t);\n    }\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Shared Stack Trace Context"
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Shared Stack Trace Context"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as the authentication token not being refreshed, which is related to the issue but not the exact root cause in the ground truth methods. The methods mentioned in the bug report are part of the stack trace, indicating a shared context with the ground truth methods. The fix suggestion involves modifying the authentication handling logic to refresh the token, which is an alternative approach to the actual fix. The problem location is identified in methods that share the stack trace context with the ground truth methods. There is no wrong information in the bug report as all details are relevant to the authentication issue described."
+        }
+    },
+    {
+        "filename": "HADOOP-8031.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.conf.Configuration.parse": {
+                "code_before_change": [],
+                "code_after_change": "  private Document parse(DocumentBuilder builder, URL url)\n      throws IOException, SAXException {\n    if (!quietmode) {\n      LOG.info(\"parsing URL \" + url);\n    }\n    if (url == null) {\n      return null;\n    }\n    return parse(builder, url.openStream(), url.toString());\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.conf.Configuration.loadResource": {
+                "code_before_change": "  private void loadResource(Properties properties, Object name, boolean quiet) {\n    try {\n      DocumentBuilderFactory docBuilderFactory \n        = DocumentBuilderFactory.newInstance();\n      //ignore all comments inside the xml file\n      docBuilderFactory.setIgnoringComments(true);\n\n      //allow includes in the xml file\n      docBuilderFactory.setNamespaceAware(true);\n      try {\n          docBuilderFactory.setXIncludeAware(true);\n      } catch (UnsupportedOperationException e) {\n        LOG.error(\"Failed to set setXIncludeAware(true) for parser \"\n                + docBuilderFactory\n                + \":\" + e,\n                e);\n      }\n      DocumentBuilder builder = docBuilderFactory.newDocumentBuilder();\n      Document doc = null;\n      Element root = null;\n\n      if (name instanceof URL) {                  // an URL resource\n        URL url = (URL)name;\n        if (url != null) {\n          if (!quiet) {\n            LOG.info(\"parsing \" + url);\n          }\n          doc = builder.parse(url.toString());\n        }\n      } else if (name instanceof String) {        // a CLASSPATH resource\n        URL url = getResource((String)name);\n        if (url != null) {\n          if (!quiet) {\n            LOG.info(\"parsing \" + url);\n          }\n          doc = builder.parse(url.toString());\n        }\n      } else if (name instanceof Path) {          // a file resource\n        // Can't use FileSystem API or we get an infinite loop\n        // since FileSystem uses Configuration API.  Use java.io.File instead.\n        File file = new File(((Path)name).toUri().getPath())\n          .getAbsoluteFile();\n        if (file.exists()) {\n          if (!quiet) {\n            LOG.info(\"parsing \" + file);\n          }\n          InputStream in = new BufferedInputStream(new FileInputStream(file));\n          try {\n            doc = builder.parse(in);\n          } finally {\n            in.close();\n          }\n        }\n      } else if (name instanceof InputStream) {\n        try {\n          doc = builder.parse((InputStream)name);\n        } finally {\n          ((InputStream)name).close();\n        }\n      } else if (name instanceof Element) {\n        root = (Element)name;\n      }\n\n      if (doc == null && root == null) {\n        if (quiet)\n          return;\n        throw new RuntimeException(name + \" not found\");\n      }\n\n      if (root == null) {\n        root = doc.getDocumentElement();\n      }\n      if (!\"configuration\".equals(root.getTagName()))\n        LOG.fatal(\"bad conf file: top-level element not <configuration>\");\n      NodeList props = root.getChildNodes();\n      for (int i = 0; i < props.getLength(); i++) {\n        Node propNode = props.item(i);\n        if (!(propNode instanceof Element))\n          continue;\n        Element prop = (Element)propNode;\n        if (\"configuration\".equals(prop.getTagName())) {\n          loadResource(properties, prop, quiet);\n          continue;\n        }\n        if (!\"property\".equals(prop.getTagName()))\n          LOG.warn(\"bad conf file: element not <property>\");\n        NodeList fields = prop.getChildNodes();\n        String attr = null;\n        String value = null;\n        boolean finalParameter = false;\n        for (int j = 0; j < fields.getLength(); j++) {\n          Node fieldNode = fields.item(j);\n          if (!(fieldNode instanceof Element))\n            continue;\n          Element field = (Element)fieldNode;\n          if (\"name\".equals(field.getTagName()) && field.hasChildNodes())\n            attr = ((Text)field.getFirstChild()).getData().trim();\n          if (\"value\".equals(field.getTagName()) && field.hasChildNodes())\n            value = ((Text)field.getFirstChild()).getData();\n          if (\"final\".equals(field.getTagName()) && field.hasChildNodes())\n            finalParameter = \"true\".equals(((Text)field.getFirstChild()).getData());\n        }\n        \n        // Ignore this parameter if it has already been marked as 'final'\n        if (attr != null) {\n          if (deprecatedKeyMap.containsKey(attr)) {\n            DeprecatedKeyInfo keyInfo = deprecatedKeyMap.get(attr);\n            keyInfo.accessed = false;\n            for (String key:keyInfo.newKeys) {\n              // update new keys with deprecated key's value \n              loadProperty(properties, name, key, value, finalParameter);\n            }\n          }\n          else {\n            loadProperty(properties, name, attr, value, finalParameter);\n          }\n        }\n      }\n        \n    } catch (IOException e) {\n      LOG.fatal(\"error parsing conf file: \" + e);\n      throw new RuntimeException(e);\n    } catch (DOMException e) {\n      LOG.fatal(\"error parsing conf file: \" + e);\n      throw new RuntimeException(e);\n    } catch (SAXException e) {\n      LOG.fatal(\"error parsing conf file: \" + e);\n      throw new RuntimeException(e);\n    } catch (ParserConfigurationException e) {\n      LOG.fatal(\"error parsing conf file: \" + e);\n      throw new RuntimeException(e);\n    }\n  }",
+                "code_after_change": "  private Resource loadResource(Properties properties, Resource wrapper, boolean quiet) {\n    String name = UNKNOWN_RESOURCE;\n    try {\n      Object resource = wrapper.getResource();\n      name = wrapper.getName();\n      \n      DocumentBuilderFactory docBuilderFactory \n        = DocumentBuilderFactory.newInstance();\n      //ignore all comments inside the xml file\n      docBuilderFactory.setIgnoringComments(true);\n\n      //allow includes in the xml file\n      docBuilderFactory.setNamespaceAware(true);\n      try {\n          docBuilderFactory.setXIncludeAware(true);\n      } catch (UnsupportedOperationException e) {\n        LOG.error(\"Failed to set setXIncludeAware(true) for parser \"\n                + docBuilderFactory\n                + \":\" + e,\n                e);\n      }\n      DocumentBuilder builder = docBuilderFactory.newDocumentBuilder();\n      Document doc = null;\n      Element root = null;\n      boolean returnCachedProperties = false;\n      \n      if (resource instanceof URL) {                  // an URL resource\n        doc = parse(builder, (URL)resource);\n      } else if (resource instanceof String) {        // a CLASSPATH resource\n        URL url = getResource((String)resource);\n        doc = parse(builder, url);\n      } else if (resource instanceof Path) {          // a file resource\n        // Can't use FileSystem API or we get an infinite loop\n        // since FileSystem uses Configuration API.  Use java.io.File instead.\n        File file = new File(((Path)resource).toUri().getPath())\n          .getAbsoluteFile();\n        if (file.exists()) {\n          if (!quiet) {\n            LOG.info(\"parsing File \" + file);\n          }\n          doc = parse(builder, new BufferedInputStream(\n              new FileInputStream(file)), ((Path)resource).toString());\n        }\n      } else if (resource instanceof InputStream) {\n        doc = parse(builder, (InputStream) resource, null);\n        returnCachedProperties = true;\n      } else if (resource instanceof Properties) {\n        overlay(properties, (Properties)resource);\n      } else if (resource instanceof Element) {\n        root = (Element)resource;\n      }\n\n      if (doc == null && root == null) {\n        if (quiet)\n          return null;\n        throw new RuntimeException(resource + \" not found\");\n      }\n\n      if (root == null) {\n        root = doc.getDocumentElement();\n      }\n      Properties toAddTo = properties;\n      if(returnCachedProperties) {\n        toAddTo = new Properties();\n      }\n      if (!\"configuration\".equals(root.getTagName()))\n        LOG.fatal(\"bad conf file: top-level element not <configuration>\");\n      NodeList props = root.getChildNodes();\n      for (int i = 0; i < props.getLength(); i++) {\n        Node propNode = props.item(i);\n        if (!(propNode instanceof Element))\n          continue;\n        Element prop = (Element)propNode;\n        if (\"configuration\".equals(prop.getTagName())) {\n          loadResource(toAddTo, new Resource(prop, name), quiet);\n          continue;\n        }\n        if (!\"property\".equals(prop.getTagName()))\n          LOG.warn(\"bad conf file: element not <property>\");\n        NodeList fields = prop.getChildNodes();\n        String attr = null;\n        String value = null;\n        boolean finalParameter = false;\n        LinkedList<String> source = new LinkedList<String>();\n        for (int j = 0; j < fields.getLength(); j++) {\n          Node fieldNode = fields.item(j);\n          if (!(fieldNode instanceof Element))\n            continue;\n          Element field = (Element)fieldNode;\n          if (\"name\".equals(field.getTagName()) && field.hasChildNodes())\n            attr = ((Text)field.getFirstChild()).getData().trim();\n          if (\"value\".equals(field.getTagName()) && field.hasChildNodes())\n            value = ((Text)field.getFirstChild()).getData();\n          if (\"final\".equals(field.getTagName()) && field.hasChildNodes())\n            finalParameter = \"true\".equals(((Text)field.getFirstChild()).getData());\n          if (\"source\".equals(field.getTagName()) && field.hasChildNodes())\n            source.add(((Text)field.getFirstChild()).getData());\n        }\n        source.add(name);\n        \n        // Ignore this parameter if it has already been marked as 'final'\n        if (attr != null) {\n          if (deprecatedKeyMap.containsKey(attr)) {\n            DeprecatedKeyInfo keyInfo = deprecatedKeyMap.get(attr);\n            keyInfo.accessed = false;\n            for (String key:keyInfo.newKeys) {\n              // update new keys with deprecated key's value \n              loadProperty(toAddTo, name, key, value, finalParameter, \n                  source.toArray(new String[source.size()]));\n            }\n          }\n          else {\n            loadProperty(toAddTo, name, attr, value, finalParameter, \n                source.toArray(new String[source.size()]));\n          }\n        }\n      }\n      \n      if (returnCachedProperties) {\n        overlay(properties, toAddTo);\n        return new Resource(toAddTo, name);\n      }\n      return null;\n    } catch (IOException e) {\n      LOG.fatal(\"error parsing conf \" + name, e);\n      throw new RuntimeException(e);\n    } catch (DOMException e) {\n      LOG.fatal(\"error parsing conf \" + name, e);\n      throw new RuntimeException(e);\n    } catch (SAXException e) {\n      LOG.fatal(\"error parsing conf \" + name, e);\n      throw new RuntimeException(e);\n    } catch (ParserConfigurationException e) {\n      LOG.fatal(\"error parsing conf \" + name , e);\n      throw new RuntimeException(e);\n    }\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Correct",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as the method `loadResource` in the Configuration class, which is indeed one of the ground truth methods. The fix suggestion to use `url.openStream()` instead of `url.toString()` matches the developer's fix, as seen in the changes to the `parse` method, which is called by `loadResource`. The problem location is also precise, as it mentions the `loadResource` method, which is part of the ground truth. There is no wrong information in the bug report; all details are consistent with the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-15411.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.AuthenticationFilterInitializer.getFilterConfigMap": {
+                "code_before_change": "  public static Map<String, String> getFilterConfigMap(Configuration conf,\n      String prefix) {\n    Map<String, String> filterConfig = new HashMap<String, String>();\n\n    //setting the cookie path to root '/' so it is used for all resources.\n    filterConfig.put(AuthenticationFilter.COOKIE_PATH, \"/\");\n\n    for (Map.Entry<String, String> entry : conf) {\n      String name = entry.getKey();\n      if (name.startsWith(prefix)) {\n        String value = conf.get(name);\n        name = name.substring(prefix.length());\n        filterConfig.put(name, value);\n      }\n    }\n\n    //Resolve _HOST into bind address\n    String bindAddress = conf.get(HttpServer2.BIND_ADDRESS);\n    String principal = filterConfig.get(KerberosAuthenticationHandler.PRINCIPAL);\n    if (principal != null) {\n      try {\n        principal = SecurityUtil.getServerPrincipal(principal, bindAddress);\n      }\n      catch (IOException ex) {\n        throw new RuntimeException(\"Could not resolve Kerberos principal name: \" + ex.toString(), ex);\n      }\n      filterConfig.put(KerberosAuthenticationHandler.PRINCIPAL, principal);\n    }\n    return filterConfig;\n  }",
+                "code_after_change": "  public static Map<String, String> getFilterConfigMap(Configuration conf,\n      String prefix) {\n    Map<String, String> filterConfig = new HashMap<String, String>();\n\n    //setting the cookie path to root '/' so it is used for all resources.\n    filterConfig.put(AuthenticationFilter.COOKIE_PATH, \"/\");\n    Map<String, String> propsWithPrefix = conf.getPropsWithPrefix(prefix);\n\n    for (Map.Entry<String, String> entry : propsWithPrefix.entrySet()) {\n      filterConfig.put(entry.getKey(), entry.getValue());\n    }\n\n    //Resolve _HOST into bind address\n    String bindAddress = conf.get(HttpServer2.BIND_ADDRESS);\n    String principal = filterConfig.get(KerberosAuthenticationHandler.PRINCIPAL);\n    if (principal != null) {\n      try {\n        principal = SecurityUtil.getServerPrincipal(principal, bindAddress);\n      }\n      catch (IOException ex) {\n        throw new RuntimeException(\"Could not resolve Kerberos principal name: \" + ex.toString(), ex);\n      }\n      filterConfig.put(KerberosAuthenticationHandler.PRINCIPAL, principal);\n    }\n    return filterConfig;\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Correct",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as the use of the iterator method in the Configuration class, which leads to a ConcurrentModificationException. This is directly related to the ground truth method 'AuthenticationFilterInitializer.getFilterConfigMap'. The fix suggestion to use 'Configuration.getPropsWithPrefix' instead of iterating directly matches the developer's fix. The problem location is precisely identified as it mentions the method 'AuthenticationFilterInitializer.getFilterConfigMap', which is in the ground truth list. There is no wrong information in the bug report as all details are consistent with the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-15850.json",
+        "code_diff": {
+            "hadoop-tools.hadoop-distcp.src.main.java.org.apache.hadoop.tools.mapred.CopyCommitter.commitJob": {
+                "code_before_change": "  public void commitJob(JobContext jobContext) throws IOException {\n    Configuration conf = jobContext.getConfiguration();\n    syncFolder = conf.getBoolean(DistCpConstants.CONF_LABEL_SYNC_FOLDERS, false);\n    overwrite = conf.getBoolean(DistCpConstants.CONF_LABEL_OVERWRITE, false);\n    targetPathExists = conf.getBoolean(\n        DistCpConstants.CONF_LABEL_TARGET_PATH_EXISTS, true);\n    ignoreFailures = conf.getBoolean(\n        DistCpOptionSwitch.IGNORE_FAILURES.getConfigLabel(), false);\n\n    concatFileChunks(conf);\n\n    super.commitJob(jobContext);\n\n    cleanupTempFiles(jobContext);\n\n    String attributes = conf.get(DistCpConstants.CONF_LABEL_PRESERVE_STATUS);\n    final boolean preserveRawXattrs =\n        conf.getBoolean(DistCpConstants.CONF_LABEL_PRESERVE_RAWXATTRS, false);\n    if ((attributes != null && !attributes.isEmpty()) || preserveRawXattrs) {\n      preserveFileAttributesForDirectories(conf);\n    }\n\n    try {\n      if (conf.getBoolean(DistCpConstants.CONF_LABEL_DELETE_MISSING, false)) {\n        deleteMissing(conf);\n      } else if (conf.getBoolean(DistCpConstants.CONF_LABEL_ATOMIC_COPY, false)) {\n        commitData(conf);\n      } else if (conf.get(CONF_LABEL_TRACK_MISSING) != null) {\n        // save missing information to a directory\n        trackMissing(conf);\n      }\n      taskAttemptContext.setStatus(\"Commit Successful\");\n    }\n    finally {\n      cleanup(conf);\n    }\n  }",
+                "code_after_change": "  public void commitJob(JobContext jobContext) throws IOException {\n    Configuration conf = jobContext.getConfiguration();\n    syncFolder = conf.getBoolean(DistCpConstants.CONF_LABEL_SYNC_FOLDERS, false);\n    overwrite = conf.getBoolean(DistCpConstants.CONF_LABEL_OVERWRITE, false);\n    targetPathExists = conf.getBoolean(\n        DistCpConstants.CONF_LABEL_TARGET_PATH_EXISTS, true);\n    ignoreFailures = conf.getBoolean(\n        DistCpOptionSwitch.IGNORE_FAILURES.getConfigLabel(), false);\n\n    if (blocksPerChunk > 0) {\n      concatFileChunks(conf);\n    }\n\n    super.commitJob(jobContext);\n\n    cleanupTempFiles(jobContext);\n\n    String attributes = conf.get(DistCpConstants.CONF_LABEL_PRESERVE_STATUS);\n    final boolean preserveRawXattrs =\n        conf.getBoolean(DistCpConstants.CONF_LABEL_PRESERVE_RAWXATTRS, false);\n    if ((attributes != null && !attributes.isEmpty()) || preserveRawXattrs) {\n      preserveFileAttributesForDirectories(conf);\n    }\n\n    try {\n      if (conf.getBoolean(DistCpConstants.CONF_LABEL_DELETE_MISSING, false)) {\n        deleteMissing(conf);\n      } else if (conf.getBoolean(DistCpConstants.CONF_LABEL_ATOMIC_COPY, false)) {\n        commitData(conf);\n      }\n      taskAttemptContext.setStatus(\"Commit Successful\");\n    }\n    finally {\n      cleanup(conf);\n    }\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Direct Caller/Callee"
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as an issue in the 'concatFileChunks' method, which is directly called by the ground truth method 'commitJob'. Therefore, it is classified as 'Partial' with the sub-category 'Direct Caller/Callee'. The fix suggestion in the bug report involves adding a check for zero-sized chunks in 'concatFileChunks', which is an alternative fix to the developer's solution of checking 'blocksPerChunk' in 'commitJob'. The problem location is precise as it mentions 'CopyCommitter.concatFileChunks' and 'CopyCommitter.commitJob', with the latter being the ground truth method. There is no wrong information in the bug report as all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-11693.json",
+        "code_diff": {
+            "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.AzureNativeFileSystemStore.rename": {
+                "code_before_change": "  public void rename(String srcKey, String dstKey) throws IOException {\n    rename(srcKey, dstKey, false, null);\n  }",
+                "code_after_change": "  public void rename(String srcKey, String dstKey) throws IOException {\n    rename(srcKey, dstKey, false, null);\n  }"
+            },
+            "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.StorageInterfaceImpl.getCopyState": {
+                "code_before_change": "    public CopyState getCopyState() {\n      return getBlob().getCopyState();\n    }",
+                "code_after_change": "    public CopyState getCopyState() {\n      return getBlob().getCopyState();\n    }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as aggressive throttling by Azure Storage during the rename operation, which is directly related to the ground truth method 'AzureNativeFileSystemStore.rename'. The fix suggestion is preventive as it suggests implementing a more robust exponential backoff retry policy to handle longer throttling periods, which would mitigate the issue but does not match the developer's fix. The problem location identification is precise because the 'problem_location' field mentions 'AzureNativeFileSystemStore.rename', which is a ground truth method. There is no wrong information in the bug report as all details are relevant and correctly describe the issue."
+        }
+    },
+    {
+        "filename": "HADOOP-12441.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.util.Shell.getReadlinkCommand": {
+                "code_before_change": "  public static String[] getReadlinkCommand(String link) {\n    return WINDOWS ? new String[] { WINUTILS, \"readlink\", link }\n        : new String[] { \"readlink\", link };\n  }",
+                "code_after_change": "  public static String[] getReadlinkCommand(String link) {\n    return WINDOWS ? new String[] { WINUTILS, \"readlink\", link }\n        : new String[] { \"readlink\", link };\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.util.Shell.getWinUtilsPath": {
+                "code_before_change": "  public static final String getWinUtilsPath() {\n    String winUtilsPath = null;\n\n    try {\n      if (WINDOWS) {\n        winUtilsPath = getQualifiedBinPath(\"winutils.exe\");\n      }\n    } catch (IOException ioe) {\n       LOG.error(\"Failed to locate the winutils binary in the hadoop binary path\",\n         ioe);\n    }\n\n    return winUtilsPath;\n  }",
+                "code_after_change": "  public static final String getWinUtilsPath() {\n    String winUtilsPath = null;\n\n    try {\n      if (WINDOWS) {\n        winUtilsPath = getQualifiedBinPath(\"winutils.exe\");\n      }\n    } catch (IOException ioe) {\n       LOG.error(\"Failed to locate the winutils binary in the hadoop binary path\",\n         ioe);\n    }\n\n    return winUtilsPath;\n  }"
+            },
+            "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.getNodeHealthChecker": {
+                "code_before_change": "  public NodeHealthCheckerService getNodeHealthChecker() {\n    return nodeHealthChecker;\n  }",
+                "code_after_change": "  public NodeHealthCheckerService getNodeHealthChecker() {\n    return nodeHealthChecker;\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Shared Stack Trace Context"
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Shared Stack Trace Context"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as an invalid PID being passed to the kill command, which is related to the methods in the stack trace but not the ground truth methods. The fix suggestion is preventive as it suggests ensuring the correct PID is retrieved and error handling is implemented, which would prevent the bug. The problem location identification is partial because it mentions methods in the stack trace context but not the exact ground truth methods. There is no wrong information in the bug report as all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-11685.json",
+        "code_diff": {
+            "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.NativeAzureFileSystem.applyUMask": {
+                "code_before_change": "  private FsPermission applyUMask(final FsPermission permission,\n      final UMaskApplyMode applyMode) {\n    FsPermission newPermission = new FsPermission(permission);\n    // Apply the default umask - this applies for new files or directories.\n    if (applyMode == UMaskApplyMode.NewFile\n        || applyMode == UMaskApplyMode.NewDirectory) {\n      newPermission = newPermission\n          .applyUMask(FsPermission.getUMask(getConf()));\n    }\n    return newPermission;\n  }",
+                "code_after_change": "  private FsPermission applyUMask(final FsPermission permission,\n      final UMaskApplyMode applyMode) {\n    FsPermission newPermission = new FsPermission(permission);\n    // Apply the default umask - this applies for new files or directories.\n    if (applyMode == UMaskApplyMode.NewFile\n        || applyMode == UMaskApplyMode.NewDirectory) {\n      newPermission = newPermission\n          .applyUMask(FsPermission.getUMask(getConf()));\n    }\n    return newPermission;\n  }"
+            },
+            "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.AzureNativeFileSystemStore.storeEmptyFolder": {
+                "code_before_change": "  public void storeEmptyFolder(String key, PermissionStatus permissionStatus)\n      throws AzureException {\n\n    if (null == storageInteractionLayer) {\n      final String errMsg = String.format(\n          \"Storage session expected for URI '%s' but does not exist.\",\n          sessionUri);\n      throw new AssertionError(errMsg);\n    }\n\n    // Check if there is an authenticated account associated with the file\n    // this instance of the WASB file system. If not the file system has not\n    // been authenticated and all access is anonymous.\n    if (!isAuthenticatedAccess()) {\n      // Preemptively raise an exception indicating no uploads are\n      // allowed to anonymous accounts.\n      throw new AzureException(\n          \"Uploads to to public accounts using anonymous access is prohibited.\");\n    }\n\n    try {\n      checkContainer(ContainerAccessType.PureWrite);\n\n      CloudBlobWrapper blob = getBlobReference(key);\n      storePermissionStatus(blob, permissionStatus);\n      storeFolderAttribute(blob);\n      openOutputStream(blob).close();\n    } catch (Exception e) {\n      // Caught exception while attempting upload. Re-throw as an Azure\n      // storage exception.\n      throw new AzureException(e);\n    }\n  }",
+                "code_after_change": "  public void storeEmptyFolder(String key, PermissionStatus permissionStatus)\n      throws AzureException {\n\n    if (null == storageInteractionLayer) {\n      final String errMsg = String.format(\n          \"Storage session expected for URI '%s' but does not exist.\",\n          sessionUri);\n      throw new AssertionError(errMsg);\n    }\n\n    // Check if there is an authenticated account associated with the file\n    // this instance of the WASB file system. If not the file system has not\n    // been authenticated and all access is anonymous.\n    if (!isAuthenticatedAccess()) {\n      // Preemptively raise an exception indicating no uploads are\n      // allowed to anonymous accounts.\n      throw new AzureException(\n          \"Uploads to to public accounts using anonymous access is prohibited.\");\n    }\n\n    try {\n      checkContainer(ContainerAccessType.PureWrite);\n\n      CloudBlobWrapper blob = getBlobReference(key);\n      storePermissionStatus(blob, permissionStatus);\n      storeFolderAttribute(blob);\n      openOutputStream(blob).close();\n    } catch (StorageException e) {\n      // Caught exception while attempting upload. Re-throw as an Azure\n      // storage exception.\n      throw new AzureException(e);\n    } catch (URISyntaxException e) {\n      throw new AzureException(e);\n    } catch (IOException e) {\n      Throwable t = e.getCause();\n      if (t != null && t instanceof StorageException) {\n        StorageException se = (StorageException) t;\n        // If we got this exception, the blob should have already been created\n        if (!se.getErrorCode().equals(\"LeaseIdMissing\")) {\n          throw new AzureException(e);\n        }\n      } else {\n        throw new AzureException(e);\n      }\n    }\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as the lack of lease acquisition in the WASB code, which is directly related to the ground truth method 'AzureNativeFileSystemStore.storeEmptyFolder'. The fix suggestion is an alternative fix because it suggests adding lease acquisition logic, which is a valid approach to resolving the issue, although the actual fix involved handling exceptions related to lease IDs. The problem location identification is partial because it mentions 'AzureNativeFileSystemStore.storeEmptyFolder', which is the buggy method where the error occurs, but not where the actual fix was made. There is no wrong information in the bug report as all details are consistent with the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-8589.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.viewfs.ViewFs.getHomeDirectory": {
+                "code_before_change": "  public Path getHomeDirectory() {\n    if (homeDir == null) {\n      String base = fsState.getHomeDirPrefixValue();\n      if (base == null) {\n        base = \"/user\";\n      }\n      homeDir = \n        this.makeQualified(new Path(base + \"/\" + ugi.getShortUserName()));\n    }\n    return homeDir;\n  }",
+                "code_after_change": "  public Path getHomeDirectory() {\n    if (homeDir == null) {\n      String base = fsState.getHomeDirPrefixValue();\n      if (base == null) {\n        base = \"/user\";\n      }\n      homeDir = (base.equals(\"/\") ? \n        this.makeQualified(new Path(base + ugi.getShortUserName())):\n        this.makeQualified(new Path(base + \"/\" + ugi.getShortUserName())));\n    }\n    return homeDir;\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.viewfs.ChRootedFileSystem.getResolvedQualifiedPath": {
+                "code_before_change": "  public Path getResolvedQualifiedPath(final Path f)\n      throws FileNotFoundException {\n    return makeQualified(\n        new Path(chRootPathPartString + f.toUri().toString()));\n  }",
+                "code_after_change": "  public Path getResolvedQualifiedPath(final Path f)\n      throws FileNotFoundException {\n    return makeQualified(\n        new Path(chRootPathPartString + f.toUri().toString()));\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.DelegateToFileSystem.getFsStatus": {
+                "code_before_change": "  public FsStatus getFsStatus() throws IOException {\n    return fsImpl.getStatus();\n  }",
+                "code_after_change": "  public FsStatus getFsStatus() throws IOException {\n    return fsImpl.getStatus();\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.viewfs.ViewFileSystem.getHomeDirectory": {
+                "code_before_change": "  public Path getHomeDirectory() {\n    if (homeDir == null) {\n      String base = fsState.getHomeDirPrefixValue();\n      if (base == null) {\n        base = \"/user\";\n      }\n      homeDir = \n        this.makeQualified(new Path(base + \"/\" + ugi.getShortUserName()));\n    }\n    return homeDir;\n  }",
+                "code_after_change": "  public Path getHomeDirectory() {\n    if (homeDir == null) {\n      String base = fsState.getHomeDirPrefixValue();\n      if (base == null) {\n        base = \"/user\";\n      }\n      homeDir = (base.equals(\"/\") ? \n          this.makeQualified(new Path(base + ugi.getShortUserName())):\n          this.makeQualified(new Path(base + \"/\" + ugi.getShortUserName())));\n    }\n    return homeDir;\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Shared Stack Trace Context"
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Shared Stack Trace Context"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the issue in the 'ViewFileSystem.initialize' and 'InodeTree.createLink' methods, which are part of the stack trace but not the ground truth methods. Therefore, the root cause identification is 'Partial' with a 'Shared Stack Trace Context' sub-category. The fix suggestion is 'Preventive' as it suggests checking for existing directories before creating links, which would prevent the error but does not match the actual fix. The problem location identification is also 'Partial' with a 'Shared Stack Trace Context' sub-category because it points to methods in the stack trace but not the ground truth methods. There is no wrong information in the bug report as all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-11754.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.isRandomSecret": {
+                "code_before_change": "  protected boolean isRandomSecret() {\n    return randomSecret;\n  }",
+                "code_after_change": "  protected boolean isRandomSecret() {\n    return secretProvider.getClass() == RandomSignerSecretProvider.class;\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.http.HttpServer2.setKeytabConfKey": {
+                "code_before_change": "    public Builder setKeytabConfKey(String keytabConfKey) {\n      this.keytabConfKey = keytabConfKey;\n      return this;\n    }",
+                "code_after_change": "    public Builder setKeytabConfKey(String keytabConfKey) {\n      this.keytabConfKey = keytabConfKey;\n      return this;\n    }"
+            },
+            "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.initializeAuthHandler": {
+                "code_before_change": "  protected void initializeAuthHandler(String authHandlerClassName, FilterConfig filterConfig)\n      throws ServletException {\n    try {\n      Class<?> klass = Thread.currentThread().getContextClassLoader().loadClass(authHandlerClassName);\n      authHandler = (AuthenticationHandler) klass.newInstance();\n      authHandler.init(config);\n    } catch (ClassNotFoundException ex) {\n      throw new ServletException(ex);\n    } catch (InstantiationException ex) {\n      throw new ServletException(ex);\n    } catch (IllegalAccessException ex) {\n      throw new ServletException(ex);\n    }\n  }",
+                "code_after_change": "  protected void initializeAuthHandler(String authHandlerClassName, FilterConfig filterConfig)\n      throws ServletException {\n    try {\n      Class<?> klass = Thread.currentThread().getContextClassLoader().loadClass(authHandlerClassName);\n      authHandler = (AuthenticationHandler) klass.newInstance();\n      authHandler.init(config);\n    } catch (ClassNotFoundException | InstantiationException |\n        IllegalAccessException ex) {\n      throw new ServletException(ex);\n    }\n  }"
+            },
+            "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.destroy": {
+                "code_before_change": "  public void destroy() {\n    if (authHandler != null) {\n      authHandler.destroy();\n      authHandler = null;\n    }\n    if (secretProvider != null) {\n      secretProvider.destroy();\n    }\n  }",
+                "code_after_change": "  public void destroy() {\n    if (authHandler != null) {\n      authHandler.destroy();\n      authHandler = null;\n    }\n  }"
+            },
+            "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.getAuthenticationHandler": {
+                "code_before_change": "  protected AuthenticationHandler getAuthenticationHandler() {\n    return authHandler;\n  }",
+                "code_after_change": "  protected AuthenticationHandler getAuthenticationHandler() {\n    return authHandler;\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.AuthenticationFilterInitializer.getFilterConfigMap": {
+                "code_before_change": [],
+                "code_after_change": "  public static Map<String, String> getFilterConfigMap(Configuration conf,\n      String prefix) {\n    Map<String, String> filterConfig = new HashMap<String, String>();\n\n    //setting the cookie path to root '/' so it is used for all resources.\n    filterConfig.put(AuthenticationFilter.COOKIE_PATH, \"/\");\n\n    for (Map.Entry<String, String> entry : conf) {\n      String name = entry.getKey();\n      if (name.startsWith(prefix)) {\n        String value = conf.get(name);\n        name = name.substring(prefix.length());\n        filterConfig.put(name, value);\n      }\n    }\n\n    //Resolve _HOST into bind address\n    String bindAddress = conf.get(HttpServer2.BIND_ADDRESS);\n    String principal = filterConfig.get(KerberosAuthenticationHandler.PRINCIPAL);\n    if (principal != null) {\n      try {\n        principal = SecurityUtil.getServerPrincipal(principal, bindAddress);\n      }\n      catch (IOException ex) {\n        throw new RuntimeException(\"Could not resolve Kerberos principal name: \" + ex.toString(), ex);\n      }\n      filterConfig.put(KerberosAuthenticationHandler.PRINCIPAL, principal);\n    }\n    return filterConfig;\n  }"
+            },
+            "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.init": {
+                "code_before_change": "  public void init(FilterConfig filterConfig) throws ServletException {\n    String configPrefix = filterConfig.getInitParameter(CONFIG_PREFIX);\n    configPrefix = (configPrefix != null) ? configPrefix + \".\" : \"\";\n    config = getConfiguration(configPrefix, filterConfig);\n    String authHandlerName = config.getProperty(AUTH_TYPE, null);\n    String authHandlerClassName;\n    if (authHandlerName == null) {\n      throw new ServletException(\"Authentication type must be specified: \" +\n          PseudoAuthenticationHandler.TYPE + \"|\" + \n          KerberosAuthenticationHandler.TYPE + \"|<class>\");\n    }\n    if (authHandlerName.toLowerCase(Locale.ENGLISH).equals(\n        PseudoAuthenticationHandler.TYPE)) {\n      authHandlerClassName = PseudoAuthenticationHandler.class.getName();\n    } else if (authHandlerName.toLowerCase(Locale.ENGLISH).equals(\n        KerberosAuthenticationHandler.TYPE)) {\n      authHandlerClassName = KerberosAuthenticationHandler.class.getName();\n    } else {\n      authHandlerClassName = authHandlerName;\n    }\n\n    validity = Long.parseLong(config.getProperty(AUTH_TOKEN_VALIDITY, \"36000\"))\n        * 1000; //10 hours\n    initializeSecretProvider(filterConfig);\n\n    initializeAuthHandler(authHandlerClassName, filterConfig);\n\n\n    cookieDomain = config.getProperty(COOKIE_DOMAIN, null);\n    cookiePath = config.getProperty(COOKIE_PATH, null);\n  }",
+                "code_after_change": "  public void init(FilterConfig filterConfig) throws ServletException {\n    String configPrefix = filterConfig.getInitParameter(CONFIG_PREFIX);\n    configPrefix = (configPrefix != null) ? configPrefix + \".\" : \"\";\n    config = getConfiguration(configPrefix, filterConfig);\n    String authHandlerName = config.getProperty(AUTH_TYPE, null);\n    String authHandlerClassName;\n    if (authHandlerName == null) {\n      throw new ServletException(\"Authentication type must be specified: \" +\n          PseudoAuthenticationHandler.TYPE + \"|\" + \n          KerberosAuthenticationHandler.TYPE + \"|<class>\");\n    }\n    if (authHandlerName.toLowerCase(Locale.ENGLISH).equals(\n        PseudoAuthenticationHandler.TYPE)) {\n      authHandlerClassName = PseudoAuthenticationHandler.class.getName();\n    } else if (authHandlerName.toLowerCase(Locale.ENGLISH).equals(\n        KerberosAuthenticationHandler.TYPE)) {\n      authHandlerClassName = KerberosAuthenticationHandler.class.getName();\n    } else {\n      authHandlerClassName = authHandlerName;\n    }\n\n    validity = Long.parseLong(config.getProperty(AUTH_TOKEN_VALIDITY, \"36000\"))\n        * 1000; //10 hours\n    initializeSecretProvider(filterConfig);\n\n    initializeAuthHandler(authHandlerClassName, filterConfig);\n\n    cookieDomain = config.getProperty(COOKIE_DOMAIN, null);\n    cookiePath = config.getProperty(COOKIE_PATH, null);\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.http.HttpServer2.createWebAppContext": {
+                "code_before_change": "  private static WebAppContext createWebAppContext(String name,\n      Configuration conf, AccessControlList adminsAcl, final String appDir) {\n    WebAppContext ctx = new WebAppContext();\n    ctx.setDefaultsDescriptor(null);\n    ServletHolder holder = new ServletHolder(new DefaultServlet());\n    Map<String, String> params = ImmutableMap. <String, String> builder()\n            .put(\"acceptRanges\", \"true\")\n            .put(\"dirAllowed\", \"false\")\n            .put(\"gzip\", \"true\")\n            .put(\"useFileMappedBuffer\", \"true\")\n            .build();\n    holder.setInitParameters(params);\n    ctx.setWelcomeFiles(new String[] {\"index.html\"});\n    ctx.addServlet(holder, \"/\");\n    ctx.setDisplayName(name);\n    ctx.setContextPath(\"/\");\n    ctx.setWar(appDir + \"/\" + name);\n    ctx.getServletContext().setAttribute(CONF_CONTEXT_ATTRIBUTE, conf);\n    ctx.getServletContext().setAttribute(ADMINS_ACL, adminsAcl);\n    addNoCacheFilter(ctx);\n    return ctx;\n  }",
+                "code_after_change": "  private static WebAppContext createWebAppContext(String name,\n      Configuration conf, AccessControlList adminsAcl, final String appDir) {\n    WebAppContext ctx = new WebAppContext();\n    ctx.setDefaultsDescriptor(null);\n    ServletHolder holder = new ServletHolder(new DefaultServlet());\n    Map<String, String> params = ImmutableMap. <String, String> builder()\n            .put(\"acceptRanges\", \"true\")\n            .put(\"dirAllowed\", \"false\")\n            .put(\"gzip\", \"true\")\n            .put(\"useFileMappedBuffer\", \"true\")\n            .build();\n    holder.setInitParameters(params);\n    ctx.setWelcomeFiles(new String[] {\"index.html\"});\n    ctx.addServlet(holder, \"/\");\n    ctx.setDisplayName(name);\n    ctx.setContextPath(\"/\");\n    ctx.setWar(appDir + \"/\" + name);\n    ctx.getServletContext().setAttribute(CONF_CONTEXT_ATTRIBUTE, conf);\n    ctx.getServletContext().setAttribute(ADMINS_ACL, adminsAcl);\n    addNoCacheFilter(ctx);\n    return ctx;\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.http.HttpServer2.HttpServer2": {
+                "code_before_change": [],
+                "code_after_change": []
+            },
+            "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.initializeSecretProvider": {
+                "code_before_change": "  protected void initializeSecretProvider(FilterConfig filterConfig)\n      throws ServletException {\n    secretProvider = (SignerSecretProvider) filterConfig.getServletContext().\n        getAttribute(SIGNER_SECRET_PROVIDER_ATTRIBUTE);\n    if (secretProvider == null) {\n      Class<? extends SignerSecretProvider> providerClass\n              = getProviderClass(config);\n      try {\n        secretProvider = providerClass.newInstance();\n      } catch (InstantiationException ex) {\n        throw new ServletException(ex);\n      } catch (IllegalAccessException ex) {\n        throw new ServletException(ex);\n      }\n      try {\n        secretProvider.init(config, filterConfig.getServletContext(), validity);\n      } catch (Exception ex) {\n        throw new ServletException(ex);\n      }\n    } else {\n      customSecretProvider = true;\n    }\n    signer = new Signer(secretProvider);\n  }",
+                "code_after_change": "  protected void initializeSecretProvider(FilterConfig filterConfig)\n      throws ServletException {\n    secretProvider = (SignerSecretProvider) filterConfig.getServletContext().\n        getAttribute(SIGNER_SECRET_PROVIDER_ATTRIBUTE);\n    if (secretProvider == null) {\n      // As tomcat cannot specify the provider object in the configuration.\n      // It'll go into this path\n      try {\n        secretProvider = constructSecretProvider(\n            filterConfig.getServletContext(),\n            config, false);\n      } catch (Exception ex) {\n        throw new ServletException(ex);\n      }\n    }\n    signer = new Signer(secretProvider);\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the inability to read the signature secret file as the root cause, which is related to the method 'FileSignerSecretProvider.init' where the error occurs, but not where the actual fix was made. Therefore, it is classified as 'Partial' under 'Buggy Method'. The fix suggestion to ensure the file exists and is accessible is preventive, as it would mitigate the issue by addressing the file access problem. The problem location identification is also 'Partial' under 'Buggy Method' because it points to 'FileSignerSecretProvider.init', which is where the error occurs. There is no wrong information in the bug report as all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-8225.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.UserGroupInformation.toString": {
+                "code_before_change": "    public String toString() {\n      return realUser.toString();\n    }",
+                "code_after_change": "    public String toString() {\n      return realUser.toString();\n    }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.UserGroupInformation.addTokenIdentifier": {
+                "code_before_change": "  public synchronized boolean addTokenIdentifier(TokenIdentifier tokenId) {\n    return subject.getPublicCredentials().add(tokenId);\n  }",
+                "code_after_change": "  public synchronized boolean addTokenIdentifier(TokenIdentifier tokenId) {\n    return subject.getPublicCredentials().add(tokenId);\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.UserGroupInformation.getLoginUser": {
+                "code_before_change": "  static UserGroupInformation getLoginUser() throws IOException {\n    if (loginUser == null) {\n      try {\n        Subject subject = new Subject();\n        LoginContext login;\n        if (isSecurityEnabled()) {\n          login = newLoginContext(HadoopConfiguration.USER_KERBEROS_CONFIG_NAME,\n              subject);\n        } else {\n          login = newLoginContext(HadoopConfiguration.SIMPLE_CONFIG_NAME, \n              subject);\n        }\n        login.login();\n        loginUser = new UserGroupInformation(subject);\n        loginUser.setLogin(login);\n        loginUser.setAuthenticationMethod(isSecurityEnabled() ?\n                                          AuthenticationMethod.KERBEROS :\n                                          AuthenticationMethod.SIMPLE);\n        loginUser = new UserGroupInformation(login.getSubject());\n        String fileLocation = System.getenv(HADOOP_TOKEN_FILE_LOCATION);\n        if (fileLocation != null && isSecurityEnabled()) {\n          // load the token storage file and put all of the tokens into the\n          // user.\n          Credentials cred = Credentials.readTokenStorageFile(\n              new Path(\"file:///\" + fileLocation), conf);\n          for (Token<?> token: cred.getAllTokens()) {\n            loginUser.addToken(token);\n          }\n        }\n        loginUser.spawnAutoRenewalThreadForUserCreds();\n      } catch (LoginException le) {\n        throw new IOException(\"failure to login\", le);\n      }\n      if (LOG.isDebugEnabled()) {\n        LOG.debug(\"UGI loginUser:\"+loginUser);\n      }\n    }\n    return loginUser;\n  }",
+                "code_after_change": "  static UserGroupInformation getLoginUser() throws IOException {\n    if (loginUser == null) {\n      try {\n        Subject subject = new Subject();\n        LoginContext login;\n        if (isSecurityEnabled()) {\n          login = newLoginContext(HadoopConfiguration.USER_KERBEROS_CONFIG_NAME,\n              subject);\n        } else {\n          login = newLoginContext(HadoopConfiguration.SIMPLE_CONFIG_NAME, \n              subject);\n        }\n        login.login();\n        loginUser = new UserGroupInformation(subject);\n        loginUser.setLogin(login);\n        loginUser.setAuthenticationMethod(isSecurityEnabled() ?\n                                          AuthenticationMethod.KERBEROS :\n                                          AuthenticationMethod.SIMPLE);\n        loginUser = new UserGroupInformation(login.getSubject());\n        String fileLocation = System.getenv(HADOOP_TOKEN_FILE_LOCATION);\n        if (fileLocation != null && isSecurityEnabled()) {\n          // load the token storage file and put all of the tokens into the\n          // user.\n          Credentials cred = Credentials.readTokenStorageFile(\n              new Path(\"file:///\" + fileLocation), conf);\n          cred.addTokensToUGI(loginUser);\n        }\n        loginUser.spawnAutoRenewalThreadForUserCreds();\n      } catch (LoginException le) {\n        throw new IOException(\"failure to login\", le);\n      }\n      if (LOG.isDebugEnabled()) {\n        LOG.debug(\"UGI loginUser:\"+loginUser);\n      }\n    }\n    return loginUser;\n  }"
+            },
+            "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.MRAppMaster.downloadTokensAndSetupUGI": {
+                "code_before_change": "  protected void downloadTokensAndSetupUGI(Configuration conf) {\n\n    try {\n      this.currentUser = UserGroupInformation.getCurrentUser();\n\n      if (UserGroupInformation.isSecurityEnabled()) {\n        // Read the file-system tokens from the localized tokens-file.\n        Path jobSubmitDir = \n            FileContext.getLocalFSFileContext().makeQualified(\n                new Path(new File(MRJobConfig.JOB_SUBMIT_DIR)\n                    .getAbsolutePath()));\n        Path jobTokenFile = \n            new Path(jobSubmitDir, MRJobConfig.APPLICATION_TOKENS_FILE);\n        fsTokens.addAll(Credentials.readTokenStorageFile(jobTokenFile, conf));\n        LOG.info(\"jobSubmitDir=\" + jobSubmitDir + \" jobTokenFile=\"\n            + jobTokenFile);\n\n        for (Token<? extends TokenIdentifier> tk : fsTokens.getAllTokens()) {\n          if (LOG.isDebugEnabled()) {\n            LOG.debug(\"Token of kind \" + tk.getKind()\n                + \"in current ugi in the AppMaster for service \"\n                + tk.getService());\n          }\n          currentUser.addToken(tk); // For use by AppMaster itself.\n        }\n      }\n    } catch (IOException e) {\n      throw new YarnException(e);\n    }\n  }",
+                "code_after_change": "  protected void downloadTokensAndSetupUGI(Configuration conf) {\n\n    try {\n      this.currentUser = UserGroupInformation.getCurrentUser();\n\n      if (UserGroupInformation.isSecurityEnabled()) {\n        // Read the file-system tokens from the localized tokens-file.\n        Path jobSubmitDir = \n            FileContext.getLocalFSFileContext().makeQualified(\n                new Path(new File(MRJobConfig.JOB_SUBMIT_DIR)\n                    .getAbsolutePath()));\n        Path jobTokenFile = \n            new Path(jobSubmitDir, MRJobConfig.APPLICATION_TOKENS_FILE);\n        fsTokens.addAll(Credentials.readTokenStorageFile(jobTokenFile, conf));\n        LOG.info(\"jobSubmitDir=\" + jobSubmitDir + \" jobTokenFile=\"\n            + jobTokenFile);\n        fsTokens.addTokensToUGI(currentUser); // For use by AppMaster itself.\n      }\n    } catch (IOException e) {\n      throw new YarnException(e);\n    }\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.UserGroupInformation.addToken": {
+                "code_before_change": "  public synchronized boolean addToken(Token<? extends TokenIdentifier> token) {\n    return subject.getPrivateCredentials().add(token);\n  }",
+                "code_after_change": "  public synchronized boolean addToken(Token<? extends TokenIdentifier> token) {\n    return addToken(token.getService(), token);\n  }"
+            },
+            "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapred.YarnChild.run": {
+                "code_before_change": "      public TaskUmbilicalProtocol run() throws Exception {\n        return (TaskUmbilicalProtocol)RPC.getProxy(TaskUmbilicalProtocol.class,\n            TaskUmbilicalProtocol.versionID, address, defaultConf);\n      }",
+                "code_after_change": "      public TaskUmbilicalProtocol run() throws Exception {\n        return (TaskUmbilicalProtocol)RPC.getProxy(TaskUmbilicalProtocol.class,\n            TaskUmbilicalProtocol.versionID, address, defaultConf);\n      }"
+            },
+            "hadoop-tools.hadoop-distcp.src.main.java.org.apache.hadoop.tools.DistCp.createMetaFolderPath": {
+                "code_before_change": "  private Path createMetaFolderPath() throws Exception {\n    Configuration configuration = getConf();\n    Path stagingDir = JobSubmissionFiles.getStagingDir(\n            new Cluster(configuration), configuration);\n    Path metaFolderPath = new Path(stagingDir, PREFIX + String.valueOf(rand.nextInt()));\n    if (LOG.isDebugEnabled())\n      LOG.debug(\"Meta folder location: \" + metaFolderPath);\n    configuration.set(DistCpConstants.CONF_LABEL_META_FOLDER, metaFolderPath.toString());    \n    return metaFolderPath;\n  }",
+                "code_after_change": "  private Path createMetaFolderPath() throws Exception {\n    Configuration configuration = getConf();\n    Path stagingDir = JobSubmissionFiles.getStagingDir(\n            new Cluster(configuration), configuration);\n    Path metaFolderPath = new Path(stagingDir, PREFIX + String.valueOf(rand.nextInt()));\n    if (LOG.isDebugEnabled())\n      LOG.debug(\"Meta folder location: \" + metaFolderPath);\n    configuration.set(DistCpConstants.CONF_LABEL_META_FOLDER, metaFolderPath.toString());    \n    return metaFolderPath;\n  }"
+            },
+            "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.Job.Job": {
+                "code_before_change": [],
+                "code_after_change": []
+            },
+            "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapred.YarnChild.main": {
+                "code_before_change": "  public static void main(String[] args) throws Throwable {\n    LOG.debug(\"Child starting\");\n\n    final JobConf defaultConf = new JobConf();\n    defaultConf.addResource(MRJobConfig.JOB_CONF_FILE);\n    UserGroupInformation.setConfiguration(defaultConf);\n\n    String host = args[0];\n    int port = Integer.parseInt(args[1]);\n    final InetSocketAddress address = new InetSocketAddress(host, port);\n    final TaskAttemptID firstTaskid = TaskAttemptID.forName(args[2]);\n    int jvmIdInt = Integer.parseInt(args[3]);\n    JVMId jvmId = new JVMId(firstTaskid.getJobID(),\n        firstTaskid.getTaskType() == TaskType.MAP, jvmIdInt);\n\n    // initialize metrics\n    DefaultMetricsSystem.initialize(\n        StringUtils.camelize(firstTaskid.getTaskType().name()) +\"Task\");\n\n    Token<JobTokenIdentifier> jt = loadCredentials(defaultConf, address);\n\n    // Create TaskUmbilicalProtocol as actual task owner.\n    UserGroupInformation taskOwner =\n      UserGroupInformation.createRemoteUser(firstTaskid.getJobID().toString());\n    taskOwner.addToken(jt);\n    final TaskUmbilicalProtocol umbilical =\n      taskOwner.doAs(new PrivilegedExceptionAction<TaskUmbilicalProtocol>() {\n      @Override\n      public TaskUmbilicalProtocol run() throws Exception {\n        return (TaskUmbilicalProtocol)RPC.getProxy(TaskUmbilicalProtocol.class,\n            TaskUmbilicalProtocol.versionID, address, defaultConf);\n      }\n    });\n\n    // report non-pid to application master\n    JvmContext context = new JvmContext(jvmId, \"-1000\");\n    LOG.debug(\"PID: \" + System.getenv().get(\"JVM_PID\"));\n    Task task = null;\n    UserGroupInformation childUGI = null;\n\n    try {\n      int idleLoopCount = 0;\n      JvmTask myTask = null;;\n      // poll for new task\n      for (int idle = 0; null == myTask; ++idle) {\n        long sleepTimeMilliSecs = Math.min(idle * 500, 1500);\n        LOG.info(\"Sleeping for \" + sleepTimeMilliSecs\n            + \"ms before retrying again. Got null now.\");\n        MILLISECONDS.sleep(sleepTimeMilliSecs);\n        myTask = umbilical.getTask(context);\n      }\n      if (myTask.shouldDie()) {\n        return;\n      }\n\n      task = myTask.getTask();\n      YarnChild.taskid = task.getTaskID();\n\n      // Create the job-conf and set credentials\n      final JobConf job =\n        configureTask(task, defaultConf.getCredentials(), jt);\n\n      // Initiate Java VM metrics\n      JvmMetrics.initSingleton(jvmId.toString(), job.getSessionId());\n      childUGI = UserGroupInformation.createRemoteUser(System\n          .getenv(ApplicationConstants.Environment.USER.toString()));\n      // Add tokens to new user so that it may execute its task correctly.\n      for(Token<?> token : UserGroupInformation.getCurrentUser().getTokens()) {\n        childUGI.addToken(token);\n      }\n\n      // Create a final reference to the task for the doAs block\n      final Task taskFinal = task;\n      childUGI.doAs(new PrivilegedExceptionAction<Object>() {\n        @Override\n        public Object run() throws Exception {\n          // use job-specified working directory\n          FileSystem.get(job).setWorkingDirectory(job.getWorkingDirectory());\n          taskFinal.run(job, umbilical); // run the task\n          return null;\n        }\n      });\n    } catch (FSError e) {\n      LOG.fatal(\"FSError from child\", e);\n      umbilical.fsError(taskid, e.getMessage());\n    } catch (Exception exception) {\n      LOG.warn(\"Exception running child : \"\n          + StringUtils.stringifyException(exception));\n      try {\n        if (task != null) {\n          // do cleanup for the task\n          if (childUGI == null) { // no need to job into doAs block\n            task.taskCleanup(umbilical);\n          } else {\n            final Task taskFinal = task;\n            childUGI.doAs(new PrivilegedExceptionAction<Object>() {\n              @Override\n              public Object run() throws Exception {\n                taskFinal.taskCleanup(umbilical);\n                return null;\n              }\n            });\n          }\n        }\n      } catch (Exception e) {\n        LOG.info(\"Exception cleaning up: \" + StringUtils.stringifyException(e));\n      }\n      // Report back any failures, for diagnostic purposes\n      ByteArrayOutputStream baos = new ByteArrayOutputStream();\n      exception.printStackTrace(new PrintStream(baos));\n      if (taskid != null) {\n        umbilical.fatalError(taskid, baos.toString());\n      }\n    } catch (Throwable throwable) {\n      LOG.fatal(\"Error running child : \"\n    \t        + StringUtils.stringifyException(throwable));\n      if (taskid != null) {\n        Throwable tCause = throwable.getCause();\n        String cause = tCause == null\n                                 ? throwable.getMessage()\n                                 : StringUtils.stringifyException(tCause);\n        umbilical.fatalError(taskid, cause);\n      }\n    } finally {\n      RPC.stopProxy(umbilical);\n      DefaultMetricsSystem.shutdown();\n      // Shutting down log4j of the child-vm...\n      // This assumes that on return from Task.run()\n      // there is no more logging done.\n      LogManager.shutdown();\n    }\n  }",
+                "code_after_change": "  public static void main(String[] args) throws Throwable {\n    Thread.setDefaultUncaughtExceptionHandler(new YarnUncaughtExceptionHandler());\n    LOG.debug(\"Child starting\");\n\n    final JobConf defaultConf = new JobConf();\n    defaultConf.addResource(MRJobConfig.JOB_CONF_FILE);\n    UserGroupInformation.setConfiguration(defaultConf);\n\n    String host = args[0];\n    int port = Integer.parseInt(args[1]);\n    final InetSocketAddress address =\n        NetUtils.createSocketAddrForHost(host, port);\n    final TaskAttemptID firstTaskid = TaskAttemptID.forName(args[2]);\n    int jvmIdInt = Integer.parseInt(args[3]);\n    JVMId jvmId = new JVMId(firstTaskid.getJobID(),\n        firstTaskid.getTaskType() == TaskType.MAP, jvmIdInt);\n\n    // initialize metrics\n    DefaultMetricsSystem.initialize(\n        StringUtils.camelize(firstTaskid.getTaskType().name()) +\"Task\");\n\n    // Security framework already loaded the tokens into current ugi\n    Credentials credentials =\n        UserGroupInformation.getCurrentUser().getCredentials();\n    \n    // Create TaskUmbilicalProtocol as actual task owner.\n    UserGroupInformation taskOwner =\n      UserGroupInformation.createRemoteUser(firstTaskid.getJobID().toString());\n    Token<JobTokenIdentifier> jt = TokenCache.getJobToken(credentials);\n    SecurityUtil.setTokenService(jt, address);\n    taskOwner.addToken(jt);\n    final TaskUmbilicalProtocol umbilical =\n      taskOwner.doAs(new PrivilegedExceptionAction<TaskUmbilicalProtocol>() {\n      @Override\n      public TaskUmbilicalProtocol run() throws Exception {\n        return (TaskUmbilicalProtocol)RPC.getProxy(TaskUmbilicalProtocol.class,\n            TaskUmbilicalProtocol.versionID, address, defaultConf);\n      }\n    });\n\n    // report non-pid to application master\n    JvmContext context = new JvmContext(jvmId, \"-1000\");\n    LOG.debug(\"PID: \" + System.getenv().get(\"JVM_PID\"));\n    Task task = null;\n    UserGroupInformation childUGI = null;\n\n    try {\n      int idleLoopCount = 0;\n      JvmTask myTask = null;;\n      // poll for new task\n      for (int idle = 0; null == myTask; ++idle) {\n        long sleepTimeMilliSecs = Math.min(idle * 500, 1500);\n        LOG.info(\"Sleeping for \" + sleepTimeMilliSecs\n            + \"ms before retrying again. Got null now.\");\n        MILLISECONDS.sleep(sleepTimeMilliSecs);\n        myTask = umbilical.getTask(context);\n      }\n      if (myTask.shouldDie()) {\n        return;\n      }\n\n      task = myTask.getTask();\n      YarnChild.taskid = task.getTaskID();\n\n      // Create the job-conf and set credentials\n      final JobConf job = configureTask(task, credentials, jt);\n\n      // Initiate Java VM metrics\n      JvmMetrics.initSingleton(jvmId.toString(), job.getSessionId());\n      childUGI = UserGroupInformation.createRemoteUser(System\n          .getenv(ApplicationConstants.Environment.USER.toString()));\n      // Add tokens to new user so that it may execute its task correctly.\n      job.getCredentials().addTokensToUGI(childUGI);\n\n      // Create a final reference to the task for the doAs block\n      final Task taskFinal = task;\n      childUGI.doAs(new PrivilegedExceptionAction<Object>() {\n        @Override\n        public Object run() throws Exception {\n          // use job-specified working directory\n          FileSystem.get(job).setWorkingDirectory(job.getWorkingDirectory());\n          taskFinal.run(job, umbilical); // run the task\n          return null;\n        }\n      });\n    } catch (FSError e) {\n      LOG.fatal(\"FSError from child\", e);\n      umbilical.fsError(taskid, e.getMessage());\n    } catch (Exception exception) {\n      LOG.warn(\"Exception running child : \"\n          + StringUtils.stringifyException(exception));\n      try {\n        if (task != null) {\n          // do cleanup for the task\n          if (childUGI == null) { // no need to job into doAs block\n            task.taskCleanup(umbilical);\n          } else {\n            final Task taskFinal = task;\n            childUGI.doAs(new PrivilegedExceptionAction<Object>() {\n              @Override\n              public Object run() throws Exception {\n                taskFinal.taskCleanup(umbilical);\n                return null;\n              }\n            });\n          }\n        }\n      } catch (Exception e) {\n        LOG.info(\"Exception cleaning up: \" + StringUtils.stringifyException(e));\n      }\n      // Report back any failures, for diagnostic purposes\n      ByteArrayOutputStream baos = new ByteArrayOutputStream();\n      exception.printStackTrace(new PrintStream(baos));\n      if (taskid != null) {\n        umbilical.fatalError(taskid, baos.toString());\n      }\n    } catch (Throwable throwable) {\n      LOG.fatal(\"Error running child : \"\n    \t        + StringUtils.stringifyException(throwable));\n      if (taskid != null) {\n        Throwable tCause = throwable.getCause();\n        String cause = tCause == null\n                                 ? throwable.getMessage()\n                                 : StringUtils.stringifyException(tCause);\n        umbilical.fatalError(taskid, cause);\n      }\n    } finally {\n      RPC.stopProxy(umbilical);\n      DefaultMetricsSystem.shutdown();\n      // Shutting down log4j of the child-vm...\n      // This assumes that on return from Task.run()\n      // there is no more logging done.\n      LogManager.shutdown();\n    }\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Credentials.addAll": {
+                "code_before_change": "  public void addAll(Credentials other) {\n    addAll(other, true);\n  }",
+                "code_after_change": "  public void addAll(Credentials other) {\n    addAll(other, true);\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as the HADOOP_TOKEN_FILE_LOCATION not being copied to the job configuration, which is related to the issue but not the exact root cause in the ground truth methods. It points to the method where the error occurred (DistCp.main), but not where the actual fix was made, which is why it is categorized as 'Buggy Method'. The fix suggestion involves modifying the DistCp class to ensure the token location is copied, which is an alternative approach to the developer's fix that involves changes in UserGroupInformation and YarnChild.main. The problem location identification is partial because it mentions methods like DistCp.main and YarnChild.main, which are related to the problem but not the exact ground truth methods where the fix was applied. There is no wrong information in the bug report as all the details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-10866.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.Stat.parseExecResult": {
+                "code_before_change": "  protected void parseExecResult(BufferedReader lines) throws IOException {\n    // Reset stat\n    stat = null;\n\n    String line = lines.readLine();\n    if (line == null) {\n      throw new IOException(\"Unable to stat path: \" + original);\n    }\n    if (line.endsWith(\"No such file or directory\") ||\n        line.endsWith(\"Not a directory\")) {\n      throw new FileNotFoundException(\"File \" + original + \" does not exist\");\n    }\n    if (line.endsWith(\"Too many levels of symbolic links\")) {\n      throw new IOException(\"Possible cyclic loop while following symbolic\" +\n          \" link \" + original);\n    }\n    // 6,symbolic link,6,1373584236,1373584236,lrwxrwxrwx,andrew,andrew,`link' -> `target'\n    StringTokenizer tokens = new StringTokenizer(line, \",\");\n    try {\n      long length = Long.parseLong(tokens.nextToken());\n      boolean isDir = tokens.nextToken().equalsIgnoreCase(\"directory\") ? true\n          : false;\n      // Convert from seconds to milliseconds\n      long modTime = Long.parseLong(tokens.nextToken())*1000;\n      long accessTime = Long.parseLong(tokens.nextToken())*1000;\n      String octalPerms = tokens.nextToken();\n      // FreeBSD has extra digits beyond 4, truncate them\n      if (octalPerms.length() > 4) {\n        int len = octalPerms.length();\n        octalPerms = octalPerms.substring(len-4, len);\n      }\n      FsPermission perms = new FsPermission(Short.parseShort(octalPerms, 8));\n      String owner = tokens.nextToken();\n      String group = tokens.nextToken();\n      String symStr = tokens.nextToken();\n      // 'notalink'\n      // 'link' -> `target'\n      // '' -> ''\n      Path symlink = null;\n      StringTokenizer symTokens = new StringTokenizer(symStr, \"`\");\n      symTokens.nextToken();\n      try {\n        String target = symTokens.nextToken();\n        target = target.substring(0, target.length()-1);\n        if (!target.isEmpty()) {\n          symlink = new Path(target);\n        }\n      } catch (NoSuchElementException e) {\n        // null if not a symlink\n      }\n      // Set stat\n      stat = new FileStatus(length, isDir, 1, blockSize, modTime, accessTime,\n          perms, owner, group, symlink, qualified);\n    } catch (NumberFormatException e) {\n      throw new IOException(\"Unexpected stat output: \" + line, e);\n    } catch (NoSuchElementException e) {\n      throw new IOException(\"Unexpected stat output: \" + line, e);\n    }\n  }",
+                "code_after_change": "  protected void parseExecResult(BufferedReader lines) throws IOException {\n    // Reset stat\n    stat = null;\n\n    String line = lines.readLine();\n    if (line == null) {\n      throw new IOException(\"Unable to stat path: \" + original);\n    }\n    if (line.endsWith(\"No such file or directory\") ||\n        line.endsWith(\"Not a directory\")) {\n      throw new FileNotFoundException(\"File \" + original + \" does not exist\");\n    }\n    if (line.endsWith(\"Too many levels of symbolic links\")) {\n      throw new IOException(\"Possible cyclic loop while following symbolic\" +\n          \" link \" + original);\n    }\n    // 6,symbolic link,6,1373584236,1373584236,lrwxrwxrwx,andrew,andrew,`link' -> `target'\n    // OR\n    // 6,symbolic link,6,1373584236,1373584236,lrwxrwxrwx,andrew,andrew,'link' -> 'target'\n    StringTokenizer tokens = new StringTokenizer(line, \",\");\n    try {\n      long length = Long.parseLong(tokens.nextToken());\n      boolean isDir = tokens.nextToken().equalsIgnoreCase(\"directory\") ? true\n          : false;\n      // Convert from seconds to milliseconds\n      long modTime = Long.parseLong(tokens.nextToken())*1000;\n      long accessTime = Long.parseLong(tokens.nextToken())*1000;\n      String octalPerms = tokens.nextToken();\n      // FreeBSD has extra digits beyond 4, truncate them\n      if (octalPerms.length() > 4) {\n        int len = octalPerms.length();\n        octalPerms = octalPerms.substring(len-4, len);\n      }\n      FsPermission perms = new FsPermission(Short.parseShort(octalPerms, 8));\n      String owner = tokens.nextToken();\n      String group = tokens.nextToken();\n      String symStr = tokens.nextToken();\n      // 'notalink'\n      // `link' -> `target' OR 'link' -> 'target'\n      // '' -> ''\n      Path symlink = null;\n      String parts[] = symStr.split(\" -> \");      \n      try {\n        String target = parts[1];\n        target = target.substring(1, target.length()-1);\n        if (!target.isEmpty()) {\n          symlink = new Path(target);\n        }\n      } catch (ArrayIndexOutOfBoundsException e) {\n        // null if not a symlink\n      }\n      // Set stat\n      stat = new FileStatus(length, isDir, 1, blockSize, modTime, accessTime,\n          perms, owner, group, symlink, qualified);\n    } catch (NumberFormatException e) {\n      throw new IOException(\"Unexpected stat output: \" + line, e);\n    } catch (NoSuchElementException e) {\n      throw new IOException(\"Unexpected stat output: \" + line, e);\n    }\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Shared Stack Trace Context"
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Shared Stack Trace Context"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the issue with symbolic link creation and mentions the IOException in 'getSymlink', which is in the stack trace, but not the actual root cause in 'Stat.parseExecResult'. Thus, it is 'Partial' with 'Shared Stack Trace Context'. The fix suggestion to ensure the target directory exists and check for existing files is preventive, as it addresses the symptoms but not the root cause in 'parseExecResult'. The problem location mentions 'FileStatus.getSymlink', which is in the stack trace, but not the ground truth method, so it is 'Partial' with 'Shared Stack Trace Context'. There is no wrong information as all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-12089.json",
+        "code_diff": {
+            "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.NativeAzureFileSystem.delete": {
+                "code_before_change": "  public boolean delete(Path path) throws IOException {\n    return delete(path, true);\n  }",
+                "code_after_change": "  public boolean delete(Path path) throws IOException {\n    return delete(path, true);\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as the absence of a lease ID in the delete operation, which is required when there is an active lease on the blob. This matches the ground truth method 'NativeAzureFileSystem.delete'. The fix suggestion is an alternative fix because it suggests including the lease ID in the delete request or releasing the lease before deletion, which would resolve the issue but is not the exact change made by the developer. The problem location identification is precise as it mentions the 'NativeAzureFileSystem.delete' method, which is in the ground truth list. There is no wrong information in the bug report as all details are relevant and accurate."
+        }
+    },
+    {
+        "filename": "HADOOP-11934.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.alias.JavaKeyStoreProvider.initFileSystem": {
+                "code_before_change": [],
+                "code_after_change": "  protected void initFileSystem(URI uri, Configuration conf)\n      throws IOException {\n    super.initFileSystem(uri, conf);\n    fs = getPath().getFileSystem(conf);\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as the recursive invocation of Path.getFileSystem() within the constructor of JavaKeyStoreProvider, which is triggered by the LdapGroupsMapping class. This points to the method where the error occurred but not where the actual fix was made, which is in the initFileSystem method. Therefore, it is classified as 'Partial' under 'Buggy Method'. The fix suggestion in the report suggests refactoring the JavaKeyStoreProvider to avoid calling getFileSystem() within its constructor, which is an alternative approach to the developer's fix of introducing the initFileSystem method. The problem location identification mentions JavaKeyStoreProvider.<init> and Path.getFileSystem, which are related to the problem but not the exact ground truth method, thus classified as 'Partial' under 'Buggy Method'. There is no wrong information in the bug report as all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-11722.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.token.delegation.ZKDelegationTokenSecretManager.removeStoredToken": {
+                "code_before_change": "  protected void removeStoredToken(TokenIdent ident)\n      throws IOException {\n    String nodeRemovePath =\n        getNodePath(ZK_DTSM_TOKENS_ROOT, DELEGATION_TOKEN_PREFIX\n            + ident.getSequenceNumber());\n    if (LOG.isDebugEnabled()) {\n      LOG.debug(\"Removing ZKDTSMDelegationToken_\"\n          + ident.getSequenceNumber());\n    }\n    try {\n      if (zkClient.checkExists().forPath(nodeRemovePath) != null) {\n        while(zkClient.checkExists().forPath(nodeRemovePath) != null){\n          zkClient.delete().guaranteed().forPath(nodeRemovePath);\n        }\n      } else {\n        LOG.debug(\"Attempted to remove a non-existing znode \" + nodeRemovePath);\n      }\n    } catch (Exception e) {\n      throw new RuntimeException(\n          \"Could not remove Stored Token ZKDTSMDelegationToken_\"\n          + ident.getSequenceNumber(), e);\n    }\n  }",
+                "code_after_change": "  protected void removeStoredToken(TokenIdent ident)\n      throws IOException {\n    String nodeRemovePath =\n        getNodePath(ZK_DTSM_TOKENS_ROOT, DELEGATION_TOKEN_PREFIX\n            + ident.getSequenceNumber());\n    if (LOG.isDebugEnabled()) {\n      LOG.debug(\"Removing ZKDTSMDelegationToken_\"\n          + ident.getSequenceNumber());\n    }\n    try {\n      if (zkClient.checkExists().forPath(nodeRemovePath) != null) {\n        while(zkClient.checkExists().forPath(nodeRemovePath) != null){\n          try {\n            zkClient.delete().guaranteed().forPath(nodeRemovePath);\n          } catch (NoNodeException nne) {\n            // It is possible that the node might be deleted between the\n            // check and the actual delete.. which might lead to an\n            // exception that can bring down the daemon running this\n            // SecretManager\n            LOG.debug(\"Node already deleted by peer \" + nodeRemovePath);\n          }\n        }\n      } else {\n        LOG.debug(\"Attempted to remove a non-existing znode \" + nodeRemovePath);\n      }\n    } catch (Exception e) {\n      throw new RuntimeException(\n          \"Could not remove Stored Token ZKDTSMDelegationToken_\"\n          + ident.getSequenceNumber(), e);\n    }\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.token.delegation.ZKDelegationTokenSecretManager.removeStoredMasterKey": {
+                "code_before_change": "  protected void removeStoredMasterKey(DelegationKey key) {\n    String nodeRemovePath =\n        getNodePath(ZK_DTSM_MASTER_KEY_ROOT,\n            DELEGATION_KEY_PREFIX + key.getKeyId());\n    if (LOG.isDebugEnabled()) {\n      LOG.debug(\"Removing ZKDTSMDelegationKey_\" + key.getKeyId());\n    }\n    try {\n      if (zkClient.checkExists().forPath(nodeRemovePath) != null) {\n        while(zkClient.checkExists().forPath(nodeRemovePath) != null){\n          zkClient.delete().guaranteed().forPath(nodeRemovePath);\n        }\n      } else {\n        LOG.debug(\"Attempted to delete a non-existing znode \" + nodeRemovePath);\n      }\n    } catch (Exception e) {\n      LOG.debug(nodeRemovePath + \" znode could not be removed!!\");\n    }\n  }",
+                "code_after_change": "  protected void removeStoredMasterKey(DelegationKey key) {\n    String nodeRemovePath =\n        getNodePath(ZK_DTSM_MASTER_KEY_ROOT,\n            DELEGATION_KEY_PREFIX + key.getKeyId());\n    if (LOG.isDebugEnabled()) {\n      LOG.debug(\"Removing ZKDTSMDelegationKey_\" + key.getKeyId());\n    }\n    try {\n      if (zkClient.checkExists().forPath(nodeRemovePath) != null) {\n        while(zkClient.checkExists().forPath(nodeRemovePath) != null){\n          try {\n            zkClient.delete().guaranteed().forPath(nodeRemovePath);\n          } catch (NoNodeException nne) {\n            // It is possible that the node might be deleted between the\n            // check and the actual delete.. which might lead to an\n            // exception that can bring down the daemon running this\n            // SecretManager\n            LOG.debug(\"Node already deleted by peer \" + nodeRemovePath);\n          }\n        }\n      } else {\n        LOG.debug(\"Attempted to delete a non-existing znode \" + nodeRemovePath);\n      }\n    } catch (Exception e) {\n      LOG.debug(nodeRemovePath + \" znode could not be removed!!\");\n    }\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as a race condition in the 'removeStoredToken' method of 'ZKDelegationTokenSecretManager', which is part of the ground truth methods. The fix suggestion involves implementing a locking mechanism or using ZooKeeper's atomic operations, which is an alternative to the developer's fix of catching the 'NoNodeException'. The problem location is precisely identified as it mentions the 'removeStoredToken' method, which is in the ground truth list. There is no wrong information in the bug report as all details are relevant and accurate."
+        }
+    },
+    {
+        "filename": "HADOOP-15331.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.conf.Configuration.Configuration": {
+                "code_before_change": [],
+                "code_after_change": []
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Same Class or Module"
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Same Class or Module"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies a race condition in the Configuration class, which is the same class where the ground truth method is located, but it does not precisely identify the constructor method as the root cause. The fix suggestion involves implementing synchronization mechanisms, which is a preventive measure to address the race condition, although it does not match the developer's fix directly. The problem location mentions methods in the Configuration class, which is the same class as the ground truth method, but does not precisely identify the constructor method. There is no wrong information in the bug report as all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-14062.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.ipc.Client.setSaslClient": {
+                "code_before_change": "    void setSaslClient(SaslRpcClient client) throws IOException {\n      setInputStream(client.getInputStream(in));\n      setOutputStream(client.getOutputStream(out));\n    }",
+                "code_after_change": "    void setSaslClient(SaslRpcClient client) throws IOException {\n      // Wrap the input stream in a BufferedInputStream to fill the buffer\n      // before reading its length (HADOOP-14062).\n      setInputStream(new BufferedInputStream(client.getInputStream(in)));\n      setOutputStream(client.getOutputStream(out));\n    }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Shared Stack Trace Context"
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Shared Stack Trace Context"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the issue as an EOFException occurring during resource allocation, which is related to the communication between the Application Master and the Resource Manager. This is partially correct as it shares the stack trace context with the ground truth method 'Client.setSaslClient'. However, it does not precisely identify the root cause in 'Client.setSaslClient'. The fix suggestion is preventive as it suggests checking network stability and RPC settings, which could mitigate the issue but does not match the developer's fix of wrapping the input stream in a BufferedInputStream. The problem location identification is partial because it mentions methods like 'Client.call' and 'NetUtils.wrapException', which are in the same stack trace context as the ground truth method. There is no wrong information in the bug report as all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-15059.json",
+        "code_diff": {
+            "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.tools.DelegationTokenFetcher.saveDelegationToken": {
+                "code_before_change": "  static void saveDelegationToken(Configuration conf, FileSystem fs,\n                                  final String renewer, final Path tokenFile)\n          throws IOException {\n    Token<?> token = fs.getDelegationToken(renewer);\n    if (null != token) {\n      Credentials cred = new Credentials();\n      cred.addToken(token.getService(), token);\n      // dtutil is replacing this tool; preserve legacy functionality\n      cred.writeLegacyTokenStorageFile(tokenFile, conf);\n\n      if (LOG.isDebugEnabled()) {\n        LOG.debug(\"Fetched token \" + fs.getUri() + \" for \" +\n            token.getService() + \" into \" + tokenFile);\n      }\n    } else {\n      System.err.println(\"ERROR: Failed to fetch token from \" + fs.getUri());\n    }\n  }",
+                "code_after_change": "  static void saveDelegationToken(Configuration conf, FileSystem fs,\n                                  final String renewer, final Path tokenFile)\n          throws IOException {\n    Token<?> token = fs.getDelegationToken(renewer);\n    if (null != token) {\n      Credentials cred = new Credentials();\n      cred.addToken(token.getService(), token);\n      // dtutil is replacing this tool; preserve legacy functionality\n      cred.writeTokenStorageFile(tokenFile, conf,\n          Credentials.SerializedFormat.WRITABLE);\n\n      if (LOG.isDebugEnabled()) {\n        LOG.debug(\"Fetched token \" + fs.getUri() + \" for \" +\n            token.getService() + \" into \" + tokenFile);\n      }\n    } else {\n      System.err.println(\"ERROR: Failed to fetch token from \" + fs.getUri());\n    }\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Credentials.writeProto": {
+                "code_before_change": "  public void writeProto(DataOutput out) throws IOException {\n    CredentialsProto.Builder storage = CredentialsProto.newBuilder();\n    for (Map.Entry<Text, Token<? extends TokenIdentifier>> e :\n                                                         tokenMap.entrySet()) {\n      CredentialsKVProto.Builder kv = CredentialsKVProto.newBuilder().\n          setAliasBytes(ByteString.copyFrom(\n              e.getKey().getBytes(), 0, e.getKey().getLength())).\n          setToken(e.getValue().toTokenProto());\n      storage.addTokens(kv.build());\n    }\n\n    for(Map.Entry<Text, byte[]> e : secretKeysMap.entrySet()) {\n      CredentialsKVProto.Builder kv = CredentialsKVProto.newBuilder().\n          setAliasBytes(ByteString.copyFrom(\n              e.getKey().getBytes(), 0, e.getKey().getLength())).\n          setSecret(ByteString.copyFrom(e.getValue()));\n      storage.addSecrets(kv.build());\n    }\n    storage.build().writeDelimitedTo((DataOutputStream)out);\n  }",
+                "code_after_change": "  void writeProto(DataOutput out) throws IOException {\n    CredentialsProto.Builder storage = CredentialsProto.newBuilder();\n    for (Map.Entry<Text, Token<? extends TokenIdentifier>> e :\n                                                         tokenMap.entrySet()) {\n      CredentialsKVProto.Builder kv = CredentialsKVProto.newBuilder().\n          setAliasBytes(ByteString.copyFrom(\n              e.getKey().getBytes(), 0, e.getKey().getLength())).\n          setToken(e.getValue().toTokenProto());\n      storage.addTokens(kv.build());\n    }\n\n    for(Map.Entry<Text, byte[]> e : secretKeysMap.entrySet()) {\n      CredentialsKVProto.Builder kv = CredentialsKVProto.newBuilder().\n          setAliasBytes(ByteString.copyFrom(\n              e.getKey().getBytes(), 0, e.getKey().getLength())).\n          setSecret(ByteString.copyFrom(e.getValue()));\n      storage.addSecrets(kv.build());\n    }\n    storage.build().writeDelimitedTo((DataOutputStream)out);\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Credentials.readTokenStorageStream": {
+                "code_before_change": "  public void readTokenStorageStream(DataInputStream in) throws IOException {\n    byte[] magic = new byte[TOKEN_STORAGE_MAGIC.length];\n    in.readFully(magic);\n    if (!Arrays.equals(magic, TOKEN_STORAGE_MAGIC)) {\n      throw new IOException(\"Bad header found in token storage.\");\n    }\n    byte version = in.readByte();\n    if (version != TOKEN_STORAGE_VERSION &&\n        version != OLD_TOKEN_STORAGE_VERSION) {\n      throw new IOException(\"Unknown version \" + version +\n                            \" in token storage.\");\n    }\n    if (version == OLD_TOKEN_STORAGE_VERSION) {\n      readFields(in);\n    } else if (version == TOKEN_STORAGE_VERSION) {\n      readProto(in);\n    }\n  }",
+                "code_after_change": "  public void readTokenStorageStream(DataInputStream in) throws IOException {\n    byte[] magic = new byte[TOKEN_STORAGE_MAGIC.length];\n    in.readFully(magic);\n    if (!Arrays.equals(magic, TOKEN_STORAGE_MAGIC)) {\n      throw new IOException(\"Bad header found in token storage.\");\n    }\n    SerializedFormat format;\n    try {\n      format = SerializedFormat.valueOf(in.readByte());\n    } catch (IllegalArgumentException e) {\n      throw new IOException(e);\n    }\n    switch (format) {\n    case WRITABLE:\n      readFields(in);\n      break;\n    case PROTOBUF:\n      readProto(in);\n      break;\n    default:\n      throw new IOException(\"Unsupported format \" + format);\n    }\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Credentials.write": {
+                "code_before_change": "  public void write(DataOutput out) throws IOException {\n    // write out tokens first\n    WritableUtils.writeVInt(out, tokenMap.size());\n    for(Map.Entry<Text,\n            Token<? extends TokenIdentifier>> e: tokenMap.entrySet()) {\n      e.getKey().write(out);\n      e.getValue().write(out);\n    }\n\n    // now write out secret keys\n    WritableUtils.writeVInt(out, secretKeysMap.size());\n    for(Map.Entry<Text, byte[]> e : secretKeysMap.entrySet()) {\n      e.getKey().write(out);\n      WritableUtils.writeVInt(out, e.getValue().length);\n      out.write(e.getValue());\n    }\n  }",
+                "code_after_change": "  public void write(DataOutput out) throws IOException {\n    // write out tokens first\n    WritableUtils.writeVInt(out, tokenMap.size());\n    for(Map.Entry<Text,\n            Token<? extends TokenIdentifier>> e: tokenMap.entrySet()) {\n      e.getKey().write(out);\n      e.getValue().write(out);\n    }\n\n    // now write out secret keys\n    WritableUtils.writeVInt(out, secretKeysMap.size());\n    for(Map.Entry<Text, byte[]> e : secretKeysMap.entrySet()) {\n      e.getKey().write(out);\n      WritableUtils.writeVInt(out, e.getValue().length);\n      out.write(e.getValue());\n    }\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.token.DtFileOperations.fileToPath": {
+                "code_before_change": "  private static Path fileToPath(File f) {\n    return new Path(\"file:\" + f.getAbsolutePath());\n  }",
+                "code_after_change": "  private static Path fileToPath(File f) {\n    return new Path(\"file:\" + f.getAbsolutePath());\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as an incompatibility in token storage formats, which is related to the method 'Credentials.readTokenStorageStream' where the error occurs, but not where the actual fix was made. Thus, it is classified as 'Partial' under 'Buggy Method'. The fix suggestion involves modifying the 'Credentials' class to handle the old token format, which is an alternative approach to the developer's fix that also addresses the token format issue. The problem location mentions 'Credentials.readTokenStorageFile', which is a method where the error occurs, but not where the actual fix was made, hence 'Partial' under 'Buggy Method'. There is no wrong information in the bug report as all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-15307.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.oncrpc.security.Verifier.Verifier": {
+                "code_before_change": [],
+                "code_after_change": []
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as the Verifier class not supporting the AUTH_SYS verifier flavor, which is directly related to the ground truth method 'Verifier.readFlavorAndVerifier'. The fix suggestion is an alternative fix because it suggests modifying the Verifier class to handle AUTH_SYS, which aligns with the developer's fix but offers a different approach. The problem location identification is precise as it mentions the method 'Verifier.readFlavorAndVerifier', which is in the ground truth list. There is no wrong information in the bug report as all details are consistent with the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-11446.json",
+        "code_diff": {
+            "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3a.S3AFileSystem.initialize": {
+                "code_before_change": "  public void initialize(URI name, Configuration conf) throws IOException {\n    super.initialize(name, conf);\n\n\n    uri = URI.create(name.getScheme() + \"://\" + name.getAuthority());\n    workingDir = new Path(\"/user\", System.getProperty(\"user.name\")).makeQualified(this.uri,\n        this.getWorkingDirectory());\n\n    // Try to get our credentials or just connect anonymously\n    S3Credentials s3Credentials = new S3Credentials();\n    s3Credentials.initialize(name, conf);\n\n    AWSCredentialsProviderChain credentials = new AWSCredentialsProviderChain(\n        new BasicAWSCredentialsProvider(s3Credentials.getAccessKey(),\n                                        s3Credentials.getSecretAccessKey()),\n        new InstanceProfileCredentialsProvider(),\n        new AnonymousAWSCredentialsProvider()\n    );\n\n    bucket = name.getHost();\n\n    ClientConfiguration awsConf = new ClientConfiguration();\n    awsConf.setMaxConnections(conf.getInt(MAXIMUM_CONNECTIONS, \n      DEFAULT_MAXIMUM_CONNECTIONS));\n    awsConf.setProtocol(conf.getBoolean(SECURE_CONNECTIONS, \n      DEFAULT_SECURE_CONNECTIONS) ?  Protocol.HTTPS : Protocol.HTTP);\n    awsConf.setMaxErrorRetry(conf.getInt(MAX_ERROR_RETRIES, \n      DEFAULT_MAX_ERROR_RETRIES));\n    awsConf.setSocketTimeout(conf.getInt(SOCKET_TIMEOUT, \n      DEFAULT_SOCKET_TIMEOUT));\n\n    s3 = new AmazonS3Client(credentials, awsConf);\n\n    maxKeys = conf.getInt(MAX_PAGING_KEYS, DEFAULT_MAX_PAGING_KEYS);\n    partSize = conf.getLong(MULTIPART_SIZE, DEFAULT_MULTIPART_SIZE);\n    partSizeThreshold = conf.getInt(MIN_MULTIPART_THRESHOLD, \n      DEFAULT_MIN_MULTIPART_THRESHOLD);\n\n    if (partSize < 5 * 1024 * 1024) {\n      LOG.error(MULTIPART_SIZE + \" must be at least 5 MB\");\n      partSize = 5 * 1024 * 1024;\n    }\n\n    if (partSizeThreshold < 5 * 1024 * 1024) {\n      LOG.error(MIN_MULTIPART_THRESHOLD + \" must be at least 5 MB\");\n      partSizeThreshold = 5 * 1024 * 1024;\n    }\n\n    String cannedACLName = conf.get(CANNED_ACL, DEFAULT_CANNED_ACL);\n    if (!cannedACLName.isEmpty()) {\n      cannedACL = CannedAccessControlList.valueOf(cannedACLName);\n    } else {\n      cannedACL = null;\n    }\n\n    if (!s3.doesBucketExist(bucket)) {\n      throw new IOException(\"Bucket \" + bucket + \" does not exist\");\n    }\n\n    boolean purgeExistingMultipart = conf.getBoolean(PURGE_EXISTING_MULTIPART, \n      DEFAULT_PURGE_EXISTING_MULTIPART);\n    long purgeExistingMultipartAge = conf.getLong(PURGE_EXISTING_MULTIPART_AGE, \n      DEFAULT_PURGE_EXISTING_MULTIPART_AGE);\n\n    if (purgeExistingMultipart) {\n      TransferManager transferManager = new TransferManager(s3);\n      Date purgeBefore = new Date(new Date().getTime() - purgeExistingMultipartAge*1000);\n\n      transferManager.abortMultipartUploads(bucket, purgeBefore);\n      transferManager.shutdownNow(false);\n    }\n\n    serverSideEncryptionAlgorithm = conf.get(SERVER_SIDE_ENCRYPTION_ALGORITHM);\n\n    setConf(conf);\n  }",
+                "code_after_change": "  public void initialize(URI name, Configuration conf) throws IOException {\n    super.initialize(name, conf);\n\n    uri = URI.create(name.getScheme() + \"://\" + name.getAuthority());\n    workingDir = new Path(\"/user\", System.getProperty(\"user.name\")).makeQualified(this.uri,\n        this.getWorkingDirectory());\n\n    // Try to get our credentials or just connect anonymously\n    S3Credentials s3Credentials = new S3Credentials();\n    s3Credentials.initialize(name, conf);\n\n    AWSCredentialsProviderChain credentials = new AWSCredentialsProviderChain(\n        new BasicAWSCredentialsProvider(s3Credentials.getAccessKey(),\n                                        s3Credentials.getSecretAccessKey()),\n        new InstanceProfileCredentialsProvider(),\n        new AnonymousAWSCredentialsProvider()\n    );\n\n    bucket = name.getHost();\n\n    ClientConfiguration awsConf = new ClientConfiguration();\n    awsConf.setMaxConnections(conf.getInt(MAXIMUM_CONNECTIONS, \n      DEFAULT_MAXIMUM_CONNECTIONS));\n    awsConf.setProtocol(conf.getBoolean(SECURE_CONNECTIONS, \n      DEFAULT_SECURE_CONNECTIONS) ?  Protocol.HTTPS : Protocol.HTTP);\n    awsConf.setMaxErrorRetry(conf.getInt(MAX_ERROR_RETRIES, \n      DEFAULT_MAX_ERROR_RETRIES));\n    awsConf.setSocketTimeout(conf.getInt(SOCKET_TIMEOUT, \n      DEFAULT_SOCKET_TIMEOUT));\n\n    s3 = new AmazonS3Client(credentials, awsConf);\n\n    maxKeys = conf.getInt(MAX_PAGING_KEYS, DEFAULT_MAX_PAGING_KEYS);\n    partSize = conf.getLong(MULTIPART_SIZE, DEFAULT_MULTIPART_SIZE);\n    partSizeThreshold = conf.getInt(MIN_MULTIPART_THRESHOLD, \n      DEFAULT_MIN_MULTIPART_THRESHOLD);\n\n    if (partSize < 5 * 1024 * 1024) {\n      LOG.error(MULTIPART_SIZE + \" must be at least 5 MB\");\n      partSize = 5 * 1024 * 1024;\n    }\n\n    if (partSizeThreshold < 5 * 1024 * 1024) {\n      LOG.error(MIN_MULTIPART_THRESHOLD + \" must be at least 5 MB\");\n      partSizeThreshold = 5 * 1024 * 1024;\n    }\n\n    int maxThreads = conf.getInt(MAX_THREADS, DEFAULT_MAX_THREADS);\n    int coreThreads = conf.getInt(CORE_THREADS, DEFAULT_CORE_THREADS);\n    if (maxThreads == 0) {\n      maxThreads = Runtime.getRuntime().availableProcessors() * 8;\n    }\n    if (coreThreads == 0) {\n      coreThreads = Runtime.getRuntime().availableProcessors() * 8;\n    }\n    long keepAliveTime = conf.getLong(KEEPALIVE_TIME, DEFAULT_KEEPALIVE_TIME);\n    LinkedBlockingQueue<Runnable> workQueue =\n      new LinkedBlockingQueue<Runnable>(maxThreads *\n        conf.getInt(MAX_TOTAL_TASKS, DEFAULT_MAX_TOTAL_TASKS));\n    ThreadPoolExecutor tpe = new ThreadPoolExecutor(\n        coreThreads,\n        maxThreads,\n        keepAliveTime,\n        TimeUnit.SECONDS,\n        workQueue,\n        newDaemonThreadFactory(\"s3a-transfer-shared-\"));\n    tpe.allowCoreThreadTimeOut(true);\n\n    TransferManagerConfiguration transferConfiguration = new TransferManagerConfiguration();\n    transferConfiguration.setMinimumUploadPartSize(partSize);\n    transferConfiguration.setMultipartUploadThreshold(partSizeThreshold);\n\n    transfers = new TransferManager(s3, tpe);\n    transfers.setConfiguration(transferConfiguration);\n\n    String cannedACLName = conf.get(CANNED_ACL, DEFAULT_CANNED_ACL);\n    if (!cannedACLName.isEmpty()) {\n      cannedACL = CannedAccessControlList.valueOf(cannedACLName);\n    } else {\n      cannedACL = null;\n    }\n\n    if (!s3.doesBucketExist(bucket)) {\n      throw new IOException(\"Bucket \" + bucket + \" does not exist\");\n    }\n\n    boolean purgeExistingMultipart = conf.getBoolean(PURGE_EXISTING_MULTIPART, \n      DEFAULT_PURGE_EXISTING_MULTIPART);\n    long purgeExistingMultipartAge = conf.getLong(PURGE_EXISTING_MULTIPART_AGE, \n      DEFAULT_PURGE_EXISTING_MULTIPART_AGE);\n\n    if (purgeExistingMultipart) {\n      Date purgeBefore = new Date(new Date().getTime() - purgeExistingMultipartAge*1000);\n\n      transfers.abortMultipartUploads(bucket, purgeBefore);\n      transfers.shutdownNow(false);\n    }\n\n    serverSideEncryptionAlgorithm = conf.get(SERVER_SIDE_ENCRYPTION_ALGORITHM);\n\n    setConf(conf);\n  }"
+            },
+            "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3a.S3AOutputStream.close": {
+                "code_before_change": "  public synchronized void close() throws IOException {\n    if (closed) {\n      return;\n    }\n\n    backupStream.close();\n    if (LOG.isDebugEnabled()) {\n      LOG.debug(\"OutputStream for key '\" + key + \"' closed. Now beginning upload\");\n      LOG.debug(\"Minimum upload part size: \" + partSize + \" threshold \" + partSizeThreshold);\n    }\n\n\n    try {\n      TransferManagerConfiguration transferConfiguration = new TransferManagerConfiguration();\n      transferConfiguration.setMinimumUploadPartSize(partSize);\n      transferConfiguration.setMultipartUploadThreshold(partSizeThreshold);\n\n      TransferManager transfers = new TransferManager(client);\n      transfers.setConfiguration(transferConfiguration);\n\n      final ObjectMetadata om = new ObjectMetadata();\n      if (StringUtils.isNotBlank(serverSideEncryptionAlgorithm)) {\n        om.setServerSideEncryption(serverSideEncryptionAlgorithm);\n      }\n      PutObjectRequest putObjectRequest = new PutObjectRequest(bucket, key, backupFile);\n      putObjectRequest.setCannedAcl(cannedACL);\n      putObjectRequest.setMetadata(om);\n\n      Upload upload = transfers.upload(putObjectRequest);\n\n      ProgressableProgressListener listener = \n        new ProgressableProgressListener(upload, progress, statistics);\n      upload.addProgressListener(listener);\n\n      upload.waitForUploadResult();\n\n      long delta = upload.getProgress().getBytesTransferred() - listener.getLastBytesTransferred();\n      if (statistics != null && delta != 0) {\n        if (LOG.isDebugEnabled()) {\n          LOG.debug(\"S3A write delta changed after finished: \" + delta + \" bytes\");\n        }\n        statistics.incrementBytesWritten(delta);\n      }\n\n      // This will delete unnecessary fake parent directories\n      fs.finishedWrite(key);\n    } catch (InterruptedException e) {\n      throw new IOException(e);\n    } finally {\n      if (!backupFile.delete()) {\n        LOG.warn(\"Could not delete temporary s3a file: {}\", backupFile);\n      }\n      super.close();\n      closed = true;\n    }\n    if (LOG.isDebugEnabled()) {\n      LOG.debug(\"OutputStream for key '\" + key + \"' upload complete\");\n    }\n  }",
+                "code_after_change": "  public synchronized void close() throws IOException {\n    if (closed) {\n      return;\n    }\n\n    backupStream.close();\n    if (LOG.isDebugEnabled()) {\n      LOG.debug(\"OutputStream for key '\" + key + \"' closed. Now beginning upload\");\n      LOG.debug(\"Minimum upload part size: \" + partSize + \" threshold \" + partSizeThreshold);\n    }\n\n\n    try {\n      final ObjectMetadata om = new ObjectMetadata();\n      if (StringUtils.isNotBlank(serverSideEncryptionAlgorithm)) {\n        om.setServerSideEncryption(serverSideEncryptionAlgorithm);\n      }\n      PutObjectRequest putObjectRequest = new PutObjectRequest(bucket, key, backupFile);\n      putObjectRequest.setCannedAcl(cannedACL);\n      putObjectRequest.setMetadata(om);\n\n      Upload upload = transfers.upload(putObjectRequest);\n\n      ProgressableProgressListener listener = \n        new ProgressableProgressListener(upload, progress, statistics);\n      upload.addProgressListener(listener);\n\n      upload.waitForUploadResult();\n\n      long delta = upload.getProgress().getBytesTransferred() - listener.getLastBytesTransferred();\n      if (statistics != null && delta != 0) {\n        if (LOG.isDebugEnabled()) {\n          LOG.debug(\"S3A write delta changed after finished: \" + delta + \" bytes\");\n        }\n        statistics.incrementBytesWritten(delta);\n      }\n\n      // This will delete unnecessary fake parent directories\n      fs.finishedWrite(key);\n    } catch (InterruptedException e) {\n      throw new IOException(e);\n    } finally {\n      if (!backupFile.delete()) {\n        LOG.warn(\"Could not delete temporary s3a file: {}\", backupFile);\n      }\n      super.close();\n      closed = true;\n    }\n    if (LOG.isDebugEnabled()) {\n      LOG.debug(\"OutputStream for key '\" + key + \"' upload complete\");\n    }\n  }"
+            },
+            "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3a.S3AFileSystem.create": {
+                "code_before_change": "  public FSDataOutputStream create(Path f, FsPermission permission, boolean overwrite, \n    int bufferSize, short replication, long blockSize, Progressable progress) throws IOException {\n    String key = pathToKey(f);\n\n    if (!overwrite && exists(f)) {\n      throw new FileAlreadyExistsException(f + \" already exists\");\n    }\n\n    // We pass null to FSDataOutputStream so it won't count writes that are being buffered to a file\n    return new FSDataOutputStream(new S3AOutputStream(getConf(), s3, this, \n      bucket, key, progress, cannedACL, statistics, \n      serverSideEncryptionAlgorithm), null);\n  }",
+                "code_after_change": "  public FSDataOutputStream create(Path f, FsPermission permission, boolean overwrite, \n    int bufferSize, short replication, long blockSize, Progressable progress) throws IOException {\n    String key = pathToKey(f);\n\n    if (!overwrite && exists(f)) {\n      throw new FileAlreadyExistsException(f + \" already exists\");\n    }\n\n    // We pass null to FSDataOutputStream so it won't count writes that are being buffered to a file\n    return new FSDataOutputStream(new S3AOutputStream(getConf(), transfers, this,\n      bucket, key, progress, cannedACL, statistics, \n      serverSideEncryptionAlgorithm), null);\n  }"
+            },
+            "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3a.S3AFileSystem.newThread": {
+                "code_before_change": [],
+                "code_after_change": "      public Thread newThread(Runnable r) {\n        final String name = prefix + \"-pool\" + poolNum + \"-t\" + threadNumber.getAndIncrement();\n        return new Thread(group, r, name);\n      }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Correct",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as the creation of multiple TransferManager instances, each with its own thread pool, which is consistent with the ground truth methods. The fix suggestion to use a shared TransferManager instance matches the developer's fix, as seen in the 'after' code of the ground truth methods. The problem location is precisely identified as the S3AOutputStream.close method, which is part of the ground truth list. There is no wrong information in the bug report; all details are relevant and accurate."
+        }
+    },
+    {
+        "filename": "HADOOP-12689.json",
+        "code_diff": {
+            "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3.Jets3tFileSystemStore.get": {
+                "code_before_change": "  private InputStream get(String key, boolean checkMetadata)\n      throws IOException {\n    \n    try {\n      S3Object object = s3Service.getObject(bucket.getName(), key);\n      if (checkMetadata) {\n        checkMetadata(object);\n      }\n      return object.getDataInputStream();\n    } catch (S3ServiceException e) {\n      if (\"NoSuchKey\".equals(e.getS3ErrorCode())) {\n        throw new IOException(key + \" doesn't exist\");\n      }\n      if (e.getCause() instanceof IOException) {\n        throw (IOException) e.getCause();\n      }\n      throw new S3Exception(e);\n    } catch (ServiceException e) {\n      handleServiceException(e);\n      return null;\n    }\n  }",
+                "code_after_change": "  private InputStream get(String key, boolean checkMetadata)\n      throws IOException {\n    \n    try {\n      S3Object object = s3Service.getObject(bucket.getName(), key);\n      if (checkMetadata) {\n        checkMetadata(object);\n      }\n      return object.getDataInputStream();\n    } catch (S3ServiceException e) {\n      if (\"NoSuchKey\".equals(e.getS3ErrorCode())) {\n        return null;\n      }\n      if (e.getCause() instanceof IOException) {\n        throw (IOException) e.getCause();\n      }\n      throw new S3Exception(e);\n    } catch (ServiceException e) {\n      handleServiceException(e);\n      return null;\n    }\n  }"
+            },
+            "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3.Jets3tFileSystemStore.retrieveBlock": {
+                "code_before_change": "  public File retrieveBlock(Block block, long byteRangeStart)\n    throws IOException {\n    File fileBlock = null;\n    InputStream in = null;\n    OutputStream out = null;\n    try {\n      fileBlock = newBackupFile();\n      in = get(blockToKey(block), byteRangeStart);\n      out = new BufferedOutputStream(new FileOutputStream(fileBlock));\n      byte[] buf = new byte[bufferSize];\n      int numRead;\n      while ((numRead = in.read(buf)) >= 0) {\n        out.write(buf, 0, numRead);\n      }\n      return fileBlock;\n    } catch (IOException e) {\n      // close output stream to file then delete file\n      closeQuietly(out);\n      out = null; // to prevent a second close\n      if (fileBlock != null) {\n        boolean b = fileBlock.delete();\n        if (!b) {\n          LOG.warn(\"Ignoring failed delete\");\n        }\n      }\n      throw e;\n    } finally {\n      closeQuietly(out);\n      closeQuietly(in);\n    }\n  }",
+                "code_after_change": "  public File retrieveBlock(Block block, long byteRangeStart)\n    throws IOException {\n    File fileBlock = null;\n    InputStream in = null;\n    OutputStream out = null;\n    try {\n      fileBlock = newBackupFile();\n      String blockId = blockToKey(block);\n      in = get(blockId, byteRangeStart);\n      if (in == null) {\n        throw new IOException(\"Block missing from S3 store: \" + blockId);\n      }\n      out = new BufferedOutputStream(new FileOutputStream(fileBlock));\n      byte[] buf = new byte[bufferSize];\n      int numRead;\n      while ((numRead = in.read(buf)) >= 0) {\n        out.write(buf, 0, numRead);\n      }\n      return fileBlock;\n    } catch (IOException e) {\n      // close output stream to file then delete file\n      closeQuietly(out);\n      out = null; // to prevent a second close\n      if (fileBlock != null) {\n        boolean b = fileBlock.delete();\n        if (!b) {\n          LOG.warn(\"Ignoring failed delete\");\n        }\n      }\n      throw e;\n    } finally {\n      closeQuietly(out);\n      closeQuietly(in);\n    }\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the method S3FileSystem.getFileStatus() as the root cause, which is not the exact ground truth method but is closely related as it is the method where the error manifests (Buggy Method). The fix suggestion to revert the change in S3FileSystem.getFileStatus() to return null instead of throwing an IOException is an alternative fix that would resolve the issue, although the actual fix was made in Jets3tFileSystemStore.get. The problem location identification is partial as it mentions S3FileSystem.getFileStatus, which is the method where the error occurs but not where the fix was applied (Buggy Method). There is no wrong information in the bug report as all statements are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-13132.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.kms.LoadBalancingKMSClientProvider.call": {
+                "code_before_change": "    public T call(KMSClientProvider provider) throws IOException, Exception;\n  }\n\n  @SuppressWarnings(\"serial\")\n  static class WrapperException extends RuntimeException {",
+                "code_after_change": "    public T call(KMSClientProvider provider) throws IOException, Exception;\n  }\n\n  @SuppressWarnings(\"serial\")\n  static class WrapperException extends RuntimeException {"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as an unsafe cast in the 'decryptEncryptedKey' method, which is not the exact ground truth method ('call'), but it is the method where the error occurs, hence classified as 'Buggy Method'. The fix suggestion is preventive as it suggests handling the exception separately to avoid the cast, which would prevent the bug. The problem location is identified as 'decryptEncryptedKey', which is the method where the error occurs, but not where the actual fix was made, thus classified as 'Buggy Method'. There is no wrong information in the bug report as all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-15121.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.ipc.DecayRpcScheduler.DecayRpcScheduler": {
+                "code_before_change": [],
+                "code_after_change": []
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Correct",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Same Class or Module"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as the uninitialized 'delegate' field in the 'DecayRpcScheduler' class, which matches the ground truth method. The fix suggestion is correct as it aligns with the developer's fix, which involves initializing the 'delegate' field. The problem location identification is partial because it mentions methods in the same class as the ground truth method but does not directly mention the ground truth method itself. There is no wrong information in the bug report as all details are relevant and accurate."
+        }
+    },
+    {
+        "filename": "HADOOP-11400.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.metrics2.sink.GraphiteSink.putMetrics": {
+                "code_before_change": "    public void putMetrics(MetricsRecord record) {\n        StringBuilder lines = new StringBuilder();\n        StringBuilder metricsPathPrefix = new StringBuilder();\n\n        // Configure the hierarchical place to display the graph.\n        metricsPathPrefix.append(metricsPrefix).append(\".\")\n                .append(record.context()).append(\".\").append(record.name());\n\n        for (MetricsTag tag : record.tags()) {\n            if (tag.value() != null) {\n                metricsPathPrefix.append(\".\");\n                metricsPathPrefix.append(tag.name());\n                metricsPathPrefix.append(\"=\");\n                metricsPathPrefix.append(tag.value());\n            }\n        }\n\n        // The record timestamp is in milliseconds while Graphite expects an epoc time in seconds.\n        long timestamp = record.timestamp() / 1000L;\n\n        // Collect datapoints.\n        for (AbstractMetric metric : record.metrics()) {\n            lines.append(\n                    metricsPathPrefix.toString() + \".\"\n                            + metric.name().replace(' ', '.')).append(\" \")\n                    .append(metric.value()).append(\" \").append(timestamp)\n                    .append(\"\\n\");\n        }\n\n        try {\n            if(writer != null){\n              writer.write(lines.toString());\n            } else {\n              throw new MetricsException(\"Writer in GraphiteSink is null!\");\n            }\n        } catch (Exception e) {\n            throw new MetricsException(\"Error sending metrics\", e);\n        }\n    }",
+                "code_after_change": "    public void putMetrics(MetricsRecord record) {\n        StringBuilder lines = new StringBuilder();\n        StringBuilder metricsPathPrefix = new StringBuilder();\n\n        // Configure the hierarchical place to display the graph.\n        metricsPathPrefix.append(metricsPrefix).append(\".\")\n                .append(record.context()).append(\".\").append(record.name());\n\n        for (MetricsTag tag : record.tags()) {\n            if (tag.value() != null) {\n                metricsPathPrefix.append(\".\");\n                metricsPathPrefix.append(tag.name());\n                metricsPathPrefix.append(\"=\");\n                metricsPathPrefix.append(tag.value());\n            }\n        }\n\n        // The record timestamp is in milliseconds while Graphite expects an epoc time in seconds.\n        long timestamp = record.timestamp() / 1000L;\n\n        // Collect datapoints.\n        for (AbstractMetric metric : record.metrics()) {\n            lines.append(\n                    metricsPathPrefix.toString() + \".\"\n                            + metric.name().replace(' ', '.')).append(\" \")\n                    .append(metric.value()).append(\" \").append(timestamp)\n                    .append(\"\\n\");\n        }\n\n        try {\n          graphite.write(lines.toString());\n        } catch (Exception e) {\n          LOG.warn(\"Error sending metrics to Graphite\", e);\n          try {\n            graphite.close();\n          } catch (Exception e1) {\n            throw new MetricsException(\"Error closing connection to Graphite\", e1);\n          }\n        }\n    }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Same Class or Module"
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Same Class or Module"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as the lack of reconnection logic in the 'GraphiteSinkFixed' class, which is in the same module as the ground truth method 'GraphiteSink.putMetrics'. The fix suggestion to implement reconnection logic in the 'flush' method is an alternative fix, as the actual fix was made in 'putMetrics' to handle exceptions and close the connection. The problem location is identified as 'GraphiteSinkFixed.flush', which is in the same class as the ground truth method. There is no wrong information in the bug report as it accurately describes the issue and provides a plausible solution."
+        }
+    },
+    {
+        "filename": "HADOOP-9865.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.Globber.getPathComponents": {
+                "code_before_change": "  private static List<String> getPathComponents(String path)\n      throws IOException {\n    ArrayList<String> ret = new ArrayList<String>();\n    for (String component : path.split(Path.SEPARATOR)) {\n      if (!component.isEmpty()) {\n        ret.add(component);\n      }\n    }\n    return ret;\n  }",
+                "code_after_change": "  private static List<String> getPathComponents(String path)\n      throws IOException {\n    ArrayList<String> ret = new ArrayList<String>();\n    for (String component : path.split(Path.SEPARATOR)) {\n      if (!component.isEmpty()) {\n        ret.add(component);\n      }\n    }\n    return ret;\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "fix_suggestion": "Alternative Fix",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Buggy Method"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the root cause as the passing of a relative path to the FileContext.globStatus() method, which is not the exact root cause but points to a related method where the error occurs (FileUtil.createJarWithClassPath). The fix suggestion to convert relative paths to absolute paths is an alternative fix that would likely resolve the issue, although it differs from the developer's fix. The problem location identification is partial, as it points to FileUtil.createJarWithClassPath, which is where the error occurs but not where the actual fix was made. There is no wrong information in the bug report; all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-9977.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory.init": {
+                "code_before_change": "  public void init(SSLFactory.Mode mode)\n    throws IOException, GeneralSecurityException {\n\n    boolean requireClientCert =\n      conf.getBoolean(SSLFactory.SSL_REQUIRE_CLIENT_CERT_KEY, true);\n\n    // certificate store\n    String keystoreType =\n      conf.get(resolvePropertyName(mode, SSL_KEYSTORE_TYPE_TPL_KEY),\n               DEFAULT_KEYSTORE_TYPE);\n    KeyStore keystore = KeyStore.getInstance(keystoreType);\n    String keystorePassword = null;\n    if (requireClientCert || mode == SSLFactory.Mode.SERVER) {\n      String locationProperty =\n        resolvePropertyName(mode, SSL_KEYSTORE_LOCATION_TPL_KEY);\n      String keystoreLocation = conf.get(locationProperty, \"\");\n      if (keystoreLocation.isEmpty()) {\n        throw new GeneralSecurityException(\"The property '\" + locationProperty +\n          \"' has not been set in the ssl configuration file.\");\n      }\n      String passwordProperty =\n        resolvePropertyName(mode, SSL_KEYSTORE_PASSWORD_TPL_KEY);\n      keystorePassword = conf.get(passwordProperty, \"\");\n      if (keystorePassword.isEmpty()) {\n        throw new GeneralSecurityException(\"The property '\" + passwordProperty +\n          \"' has not been set in the ssl configuration file.\");\n      }\n      LOG.debug(mode.toString() + \" KeyStore: \" + keystoreLocation);\n\n      InputStream is = new FileInputStream(keystoreLocation);\n      try {\n        keystore.load(is, keystorePassword.toCharArray());\n      } finally {\n        is.close();\n      }\n      LOG.debug(mode.toString() + \" Loaded KeyStore: \" + keystoreLocation);\n    } else {\n      keystore.load(null, null);\n    }\n    KeyManagerFactory keyMgrFactory = KeyManagerFactory\n        .getInstance(SSLFactory.SSLCERTIFICATE);\n      \n    keyMgrFactory.init(keystore, (keystorePassword != null) ?\n                                 keystorePassword.toCharArray() : null);\n    keyManagers = keyMgrFactory.getKeyManagers();\n\n    //trust store\n    String truststoreType =\n      conf.get(resolvePropertyName(mode, SSL_TRUSTSTORE_TYPE_TPL_KEY),\n               DEFAULT_KEYSTORE_TYPE);\n\n    String locationProperty =\n      resolvePropertyName(mode, SSL_TRUSTSTORE_LOCATION_TPL_KEY);\n    String truststoreLocation = conf.get(locationProperty, \"\");\n    if (truststoreLocation.isEmpty()) {\n      throw new GeneralSecurityException(\"The property '\" + locationProperty +\n        \"' has not been set in the ssl configuration file.\");\n    }\n\n    String passwordProperty = resolvePropertyName(mode,\n                                                  SSL_TRUSTSTORE_PASSWORD_TPL_KEY);\n    String truststorePassword = conf.get(passwordProperty, \"\");\n    if (truststorePassword.isEmpty()) {\n      throw new GeneralSecurityException(\"The property '\" + passwordProperty +\n        \"' has not been set in the ssl configuration file.\");\n    }\n    long truststoreReloadInterval =\n      conf.getLong(\n        resolvePropertyName(mode, SSL_TRUSTSTORE_RELOAD_INTERVAL_TPL_KEY),\n        DEFAULT_SSL_TRUSTSTORE_RELOAD_INTERVAL);\n\n    LOG.debug(mode.toString() + \" TrustStore: \" + truststoreLocation);\n\n    trustManager = new ReloadingX509TrustManager(truststoreType,\n                                                 truststoreLocation,\n                                                 truststorePassword,\n                                                 truststoreReloadInterval);\n    trustManager.init();\n    LOG.debug(mode.toString() + \" Loaded TrustStore: \" + truststoreLocation);\n\n    trustManagers = new TrustManager[]{trustManager};\n  }",
+                "code_after_change": "  public void init(SSLFactory.Mode mode)\n    throws IOException, GeneralSecurityException {\n\n    boolean requireClientCert =\n      conf.getBoolean(SSLFactory.SSL_REQUIRE_CLIENT_CERT_KEY, true);\n\n    // certificate store\n    String keystoreType =\n      conf.get(resolvePropertyName(mode, SSL_KEYSTORE_TYPE_TPL_KEY),\n               DEFAULT_KEYSTORE_TYPE);\n    KeyStore keystore = KeyStore.getInstance(keystoreType);\n    String keystoreKeyPassword = null;\n    if (requireClientCert || mode == SSLFactory.Mode.SERVER) {\n      String locationProperty =\n        resolvePropertyName(mode, SSL_KEYSTORE_LOCATION_TPL_KEY);\n      String keystoreLocation = conf.get(locationProperty, \"\");\n      if (keystoreLocation.isEmpty()) {\n        throw new GeneralSecurityException(\"The property '\" + locationProperty +\n          \"' has not been set in the ssl configuration file.\");\n      }\n      String passwordProperty =\n        resolvePropertyName(mode, SSL_KEYSTORE_PASSWORD_TPL_KEY);\n      String keystorePassword = conf.get(passwordProperty, \"\");\n      if (keystorePassword.isEmpty()) {\n        throw new GeneralSecurityException(\"The property '\" + passwordProperty +\n          \"' has not been set in the ssl configuration file.\");\n      }\n      String keyPasswordProperty =\n        resolvePropertyName(mode, SSL_KEYSTORE_KEYPASSWORD_TPL_KEY);\n      // Key password defaults to the same value as store password for\n      // compatibility with legacy configurations that did not use a separate\n      // configuration property for key password.\n      keystoreKeyPassword = conf.get(keyPasswordProperty, keystorePassword);\n      LOG.debug(mode.toString() + \" KeyStore: \" + keystoreLocation);\n\n      InputStream is = new FileInputStream(keystoreLocation);\n      try {\n        keystore.load(is, keystorePassword.toCharArray());\n      } finally {\n        is.close();\n      }\n      LOG.debug(mode.toString() + \" Loaded KeyStore: \" + keystoreLocation);\n    } else {\n      keystore.load(null, null);\n    }\n    KeyManagerFactory keyMgrFactory = KeyManagerFactory\n        .getInstance(SSLFactory.SSLCERTIFICATE);\n      \n    keyMgrFactory.init(keystore, (keystoreKeyPassword != null) ?\n                                 keystoreKeyPassword.toCharArray() : null);\n    keyManagers = keyMgrFactory.getKeyManagers();\n\n    //trust store\n    String truststoreType =\n      conf.get(resolvePropertyName(mode, SSL_TRUSTSTORE_TYPE_TPL_KEY),\n               DEFAULT_KEYSTORE_TYPE);\n\n    String locationProperty =\n      resolvePropertyName(mode, SSL_TRUSTSTORE_LOCATION_TPL_KEY);\n    String truststoreLocation = conf.get(locationProperty, \"\");\n    if (truststoreLocation.isEmpty()) {\n      throw new GeneralSecurityException(\"The property '\" + locationProperty +\n        \"' has not been set in the ssl configuration file.\");\n    }\n\n    String passwordProperty = resolvePropertyName(mode,\n                                                  SSL_TRUSTSTORE_PASSWORD_TPL_KEY);\n    String truststorePassword = conf.get(passwordProperty, \"\");\n    if (truststorePassword.isEmpty()) {\n      throw new GeneralSecurityException(\"The property '\" + passwordProperty +\n        \"' has not been set in the ssl configuration file.\");\n    }\n    long truststoreReloadInterval =\n      conf.getLong(\n        resolvePropertyName(mode, SSL_TRUSTSTORE_RELOAD_INTERVAL_TPL_KEY),\n        DEFAULT_SSL_TRUSTSTORE_RELOAD_INTERVAL);\n\n    LOG.debug(mode.toString() + \" TrustStore: \" + truststoreLocation);\n\n    trustManager = new ReloadingX509TrustManager(truststoreType,\n                                                 truststoreLocation,\n                                                 truststorePassword,\n                                                 truststoreReloadInterval);\n    trustManager.init();\n    LOG.debug(mode.toString() + \" Loaded TrustStore: \" + truststoreLocation);\n\n    trustManagers = new TrustManager[]{trustManager};\n  }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Correct",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as a mismatch between the keypass and keystorepass, which is directly related to the ground truth method 'FileBasedKeyStoresFactory.init'. The fix suggestion in the report matches the developer's fix, which involves ensuring the keypass and keystorepass are the same. The problem location is also precise, as it mentions 'FileBasedKeyStoresFactory.init', which is the ground truth method. There is no wrong information in the bug report; all details are relevant and accurate."
+        }
+    },
+    {
+        "filename": "HADOOP-10142.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.util.StringUtils.getStrings": {
+                "code_before_change": "  public static String[] getStrings(String str){\n    Collection<String> values = getStringCollection(str);\n    if(values.size() == 0) {\n      return null;\n    }\n    return values.toArray(new String[values.size()]);\n  }",
+                "code_after_change": "  public static String[] getStrings(String str){\n    Collection<String> values = getStringCollection(str);\n    if(values.size() == 0) {\n      return null;\n    }\n    return values.toArray(new String[values.size()]);\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Groups.parseStaticMapping": {
+                "code_before_change": [],
+                "code_after_change": "  private void parseStaticMapping(Configuration conf) {\n    String staticMapping = conf.get(\n        CommonConfigurationKeys.HADOOP_USER_GROUP_STATIC_OVERRIDES,\n        CommonConfigurationKeys.HADOOP_USER_GROUP_STATIC_OVERRIDES_DEFAULT);\n    Collection<String> mappings = StringUtils.getStringCollection(\n        staticMapping, \";\");\n    for (String users : mappings) {\n      Collection<String> userToGroups = StringUtils.getStringCollection(users,\n          \"=\");\n      if (userToGroups.size() < 1 || userToGroups.size() > 2) {\n        throw new HadoopIllegalArgumentException(\"Configuration \"\n            + CommonConfigurationKeys.HADOOP_USER_GROUP_STATIC_OVERRIDES\n            + \" is invalid\");\n      }\n      String[] userToGroupsArray = userToGroups.toArray(new String[userToGroups\n          .size()]);\n      String user = userToGroupsArray[0];\n      List<String> groups = Collections.emptyList();\n      if (userToGroupsArray.length == 2) {\n        groups = (List<String>) StringUtils\n            .getStringCollection(userToGroupsArray[1]);\n      }\n      staticUserToGroupsMap.put(user, groups);\n    }\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Groups.Groups": {
+                "code_before_change": [],
+                "code_after_change": []
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Partial",
+                "sub_category": "Same Class or Module"
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Partial",
+                "sub_category": "Same Class or Module"
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report identifies the issue in the ShellBasedUnixGroupsMapping class, which is in the same module as the ground truth methods, but not the exact root cause. The fix suggestion is preventive as it suggests checking if the user exists before fetching group information, which would mitigate the issue. The problem location is partially identified as it mentions methods in the same class or module as the ground truth methods. There is no wrong information in the bug report as all details are relevant to the context of the bug."
+        }
+    },
+    {
+        "filename": "HADOOP-14727.json",
+        "code_diff": {
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.conf.Configuration.parse": {
+                "code_before_change": "  private XMLStreamReader parse(URL url)\n      throws IOException, XMLStreamException {\n    if (!quietmode) {\n      if (LOG.isDebugEnabled()) {\n        LOG.debug(\"parsing URL \" + url);\n      }\n    }\n    if (url == null) {\n      return null;\n    }\n\n    URLConnection connection = url.openConnection();\n    if (connection instanceof JarURLConnection) {\n      // Disable caching for JarURLConnection to avoid sharing JarFile\n      // with other users.\n      connection.setUseCaches(false);\n    }\n    return parse(connection.getInputStream(), url.toString());\n  }",
+                "code_after_change": "  private XMLStreamReader parse(URL url)\n      throws IOException, XMLStreamException {\n    if (!quietmode) {\n      if (LOG.isDebugEnabled()) {\n        LOG.debug(\"parsing URL \" + url);\n      }\n    }\n    if (url == null) {\n      return null;\n    }\n\n    URLConnection connection = url.openConnection();\n    if (connection instanceof JarURLConnection) {\n      // Disable caching for JarURLConnection to avoid sharing JarFile\n      // with other users.\n      connection.setUseCaches(false);\n    }\n    return parse(connection.getInputStream(), url.toString());\n  }"
+            },
+            "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.conf.Configuration.toString": {
+                "code_before_change": "    public String toString() {\n      return name;\n    }",
+                "code_after_change": "    public String toString() {\n      return name;\n    }"
+            }
+        },
+        "llm_judgement": {
+            "root_cause_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "fix_suggestion": "Preventive",
+            "problem_location_identification": {
+                "level": "Precise",
+                "sub_category": null
+            },
+            "wrong_information": "No",
+            "explanation_of_judgement": "The bug report precisely identifies the root cause as the improper closure of InputStreams in the Configuration class, which is directly related to the ground truth method 'Configuration.parse'. The fix suggestion is preventive as it suggests ensuring InputStreams are closed, which aligns with the issue but does not match the exact developer's fix. The problem location identification is precise as it mentions 'Configuration.parse', which is a ground truth method. There is no wrong information in the bug report as all details are relevant and correctly identify the issue."
+        }
+    }
+]

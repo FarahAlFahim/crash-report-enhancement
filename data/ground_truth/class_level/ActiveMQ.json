@@ -1,0 +1,180 @@
+{
+    "AMQ-6548.json" : [
+        "org.apache.activemq.ActiveMQSession"
+    ],
+    "AMQ-3434.json" : [
+        "org.apache.activemq.store.kahadb.plist.PList",
+        "org.apache.kahadb.util.LinkedNode",
+        "org.apache.kahadb.util.SequenceSet",
+        "org.apache.activemq.broker.region.cursors.FilePendingMessageCursor",
+        "org.apache.kahadb.index.ListIndex",
+        "org.apache.kahadb.index.ListNode",
+        "org.apache.kahadb.page.PageFile",
+        "org.apache.activemq.store.kahadb.plist.PListStore",
+        "org.apache.kahadb.page.Transaction"
+    ],
+    "AMQ-3443.json" : [
+        "org.apache.kahadb.page.PageFile",
+        "org.apache.kahadb.page.Transaction"
+    ],
+    "AMQ-4369.json" : [
+        "org.apache.activemq.broker.BrokerService"
+    ],
+    "AMQ-5016.json" : [
+        "org.apache.activemq.util.BitArrayBin"
+    ],
+    "AMQ-4407.json" : [
+        "org.apache.activemq.store.kahadb.MultiKahaDBPersistenceAdapter"
+    ],
+    "AMQ-4221.json" : [
+        "org.apache.activemq.store.kahadb.disk.index.ListNode"
+    ],
+    "AMQ-3622.json" : [
+        "org.apache.activemq.broker.region.policy.LastImageSubscriptionRecoveryPolicy"
+    ],
+    "AMQ-6016.json" : [
+        "org.apache.activemq.broker.region.group.CachedMessageGroupMap",
+        "org.apache.activemq.broker.region.Queue",
+        "org.apache.activemq.command.ConsumerInfo"
+    ],
+    "AMQ-3490.json" : [
+        "org.apache.activemq.store.kahadb.plist.PListStore"
+    ],
+    "AMQ-6831.json" : [
+        "org.apache.activemq.util.ByteSequence",
+        "org.apache.activemq.store.kahadb.disk.journal.Journal"
+    ],
+    "AMQ-5525.json" : [
+        "org.apache.activemq.karaf.commands.ActiveMQCommand"
+    ],
+    "AMQ-4118.json" : [
+        "org.apache.kahadb.page.Transaction"
+    ],
+    "AMQ-4092.json" : [
+        "org.apache.activemq.command.Message",
+        "org.apache.activemq.broker.region.QueueSubscription",
+        "org.apache.activemq.broker.region.Queue",
+        "org.apache.activemq.filter.PropertyExpression",
+        "org.apache.activemq.openwire.v10.MessageMarshaller"
+    ],
+    "AMQ-3887.json" : [
+        "org.apache.activemq.network.DemandForwardingBridgeSupport"
+    ],
+    "AMQ-6451.json" : [
+        "org.apache.activemq.store.kahadb.disk.journal.Journal"
+    ],
+    "AMQ-3393.json" : [
+        "org.apache.activemq.broker.jmx.ConnectorView",
+        "org.apache.activemq.broker.Connector",
+        "org.apache.activemq.broker.jmx.ConnectorViewMBean",
+        "org.apache.activemq.broker.TransportConnection",
+        "org.apache.activemq.broker.TransportConnector",
+        "org.apache.activemq.broker.jmx.ManagedTransportConnection"
+    ],
+    "AMQ-5815.json" : [
+        "org.apache.activemq.store.kahadb.disk.page.PageFile"
+    ],
+    "AMQ-5141.json" : [
+        "org.apache.activemq.broker.region.RegionBroker"
+    ],
+    "AMQ-5854.json" : [
+        "org.apache.activemq.TransactionContext",
+        "org.apache.activemq.ActiveMQMessageConsumer"
+    ],
+    "AMQ-3056.json" : [
+        "org.apache.activemq.broker.region.TopicSubscription"
+    ],
+    "AMQ-3325.json" : [
+        "org.apache.activemq.store.kahadb.plist.PList",
+        "org.apache.activemq.store.kahadb.plist.PListStore"
+    ],
+    "AMQ-2963.json" : [
+        "org.apache.activemq.ActiveMQSession"
+    ],
+    "AMQ-3903.json" : [
+        "org.apache.activemq.broker.EmptyBroker",
+        "org.apache.activemq.broker.Broker",
+        "org.apache.activemq.broker.MutableBrokerFilter",
+        "org.apache.activemq.broker.region.BaseDestination",
+        "org.apache.activemq.advisory.AdvisoryBroker",
+        "org.apache.activemq.broker.util.LoggingBrokerPlugin",
+        "org.apache.activemq.broker.region.policy.PolicyEntry",
+        "org.apache.activemq.broker.ErrorBroker",
+        "org.apache.activemq.broker.BrokerFilter"
+    ],
+    "AMQ-2693.json" : [
+        "org.apache.activemq.ActiveMQMessageConsumer",
+        "org.apache.activemq.ActiveMQSession"
+    ],
+    "AMQ-4643.json" : [
+        "org.apache.activemq.store.jdbc.JDBCPersistenceAdapter",
+        "org.apache.activemq.store.jdbc.JDBCIOExceptionHandler",
+        "org.apache.activemq.broker.LockableServiceSupport",
+        "org.apache.activemq.store.jdbc.LeaseDatabaseLocker",
+        "org.apache.activemq.store.jdbc.TransactionContext",
+        "org.apache.activemq.broker.SuppressReplyException",
+        "org.apache.activemq.store.jdbc.DefaultDatabaseLocker",
+        "org.apache.activemq.broker.TransportConnection",
+        "org.apache.activemq.ActiveMQMessageConsumer",
+        "org.apache.activemq.util.DefaultIOExceptionHandler",
+        "org.apache.activemq.transaction.XATransaction",
+        "org.apache.activemq.transaction.LocalTransaction"
+    ],
+    "AMQ-2902.json" : [
+        "org.apache.activemq.transport.vm.VMTransport",
+        "org.apache.activemq.broker.TransportConnection"
+    ],
+    "AMQ-5665.json" : [
+        "org.apache.activemq.store.memory.MemoryTransactionStore"
+    ],
+    "AMQ-3725.json" : [
+        "org.apache.activemq.util.RecoverableRandomAccessFile",
+        "org.apache.activemq.store.kahadb.disk.journal.DataFileAppender",
+        "org.apache.activemq.store.kahadb.disk.journal.DataFileAccessor",
+        "org.apache.activemq.store.kahadb.disk.journal.CallerBufferingDataFileAppender",
+        "org.apache.activemq.store.kahadb.disk.journal.DataFile",
+        "org.apache.activemq.store.kahadb.disk.page.PageFile"
+    ],
+    "AMQ-3085.json" : [
+        "org.apache.activemq.transport.failover.FailoverTransport"
+    ],
+    "AMQ-3504.json" : [
+        "org.apache.activemq.transport.ws.WSTransportServer"
+    ],
+    "AMQ-6707.json" : [
+        "org.apache.activemq.store.jdbc.JDBCTopicMessageStore",
+        "org.apache.activemq.broker.TransactionBroker",
+        "org.apache.activemq.store.jdbc.JDBCPersistenceAdapter",
+        "org.apache.activemq.store.memory.MemoryTransactionStore",
+        "org.apache.activemq.broker.region.PrefetchSubscription",
+        "org.apache.activemq.store.ProxyTopicMessageStore",
+        "org.apache.activemq.broker.region.cursors.AbstractStoreCursor",
+        "org.apache.activemq.broker.region.Queue",
+        "org.apache.activemq.store.jdbc.TransactionContext",
+        "org.apache.activemq.broker.region.Destination",
+        "org.apache.activemq.broker.region.Topic",
+        "org.apache.activemq.store.jdbc.JdbcMemoryTransactionStore",
+        "org.apache.activemq.store.kahadb.KahaDBStore",
+        "org.apache.activemq.store.kahadb.MessageDatabase",
+        "org.apache.activemq.util.DefaultIOExceptionHandler",
+        "org.apache.activemq.transaction.XATransaction",
+        "org.apache.activemq.broker.region.DestinationFilter"
+    ],
+    "AMQ-5384.json" : [
+        "org.apache.activemq.store.jdbc.JDBCMessageStore",
+        "org.apache.activemq.store.jdbc.JDBCPersistenceAdapter"
+    ],
+    "AMQ-5783.json" : [
+        "org.apache.activemq.broker.jmx.ManagedRegionBroker",
+        "org.apache.activemq.store.kahadb.MessageDatabase"
+    ],
+    "AMQ-2965.json" : [
+        "org.apache.activemq.transport.tcp.TcpTransport",
+        "org.apache.activemq.broker.region.RegionBroker",
+        "org.apache.activemq.util.IdGenerator",
+        "org.apache.activemq.transport.tcp.TcpTransportServer",
+        "org.apache.activemq.transport.udp.UdpTransport",
+        "org.apache.activemq.broker.BrokerService",
+        "org.apache.activemq.util.InetAddressUtil"
+    ]
+}

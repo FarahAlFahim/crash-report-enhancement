@@ -1,0 +1,523 @@
+{
+    "YARN-5918.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.NodeQueueLoadMonitor",
+        "org.apache.hadoop.yarn.server.resourcemanager.OpportunisticContainerAllocatorAMService"
+    ],
+    "YARN-8629.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.CGroupsHandlerImpl"
+    ],
+    "YARN-4431.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl"
+    ],
+    "YARN-2273.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler"
+    ],
+    "YARN-2834.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl",
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl"
+    ],
+    "YARN-370.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils"
+    ],
+    "YARN-3675.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler"
+    ],
+    "YARN-4763.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.webapp.RMAppsBlock"
+    ],
+    "YARN-8202.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.rm.ContainerRequestCreator",
+        "org.apache.hadoop.yarn.server.utils.BuilderUtils",
+        "org.apache.hadoop.yarn.util.UnitsConversionUtil",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils"
+    ],
+    "YARN-7118.json" : [
+        "org.apache.hadoop.yarn.server.webapp.WebServices"
+    ],
+    "YARN-4743.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.policies.FairSharePolicy"
+    ],
+    "YARN-2414.json" : [
+        "org.apache.hadoop.yarn.server.security.ApplicationACLsManager",
+        "org.apache.hadoop.yarn.server.resourcemanager.webapp.AppBlock",
+        "org.apache.hadoop.yarn.server.resourcemanager.security.QueueACLsManager"
+    ],
+    "YARN-3878.json" : [
+        "org.apache.hadoop.yarn.event.DrainDispatcher",
+        "org.apache.hadoop.yarn.event.AsyncDispatcher"
+    ],
+    "YARN-6683.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService",
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl"
+    ],
+    "YARN-2910.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSAppAttempt",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSLeafQueue"
+    ],
+    "YARN-192.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.AppSchedulable"
+    ],
+    "YARN-4581.json" : [
+        "org.apache.hadoop.yarn.server.applicationhistoryservice.FileSystemApplicationHistoryStore"
+    ],
+    "YARN-7786.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncher"
+    ],
+    "YARN-8035.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainerMetrics"
+    ],
+    "YARN-4152.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.LogAggregationService"
+    ],
+    "YARN-3697.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler"
+    ],
+    "YARN-2340.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler"
+    ],
+    "YARN-8022.json" : [
+        "org.apache.hadoop.yarn.server.webapp.AppBlock"
+    ],
+    "YARN-3793.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.AppLogAggregatorImpl"
+    ],
+    "YARN-6102.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.AdminService",
+        "org.apache.hadoop.yarn.server.resourcemanager.RMActiveServiceContext",
+        "org.apache.hadoop.yarn.server.resourcemanager.RMServiceContext",
+        "org.apache.hadoop.yarn.server.resourcemanager.MockRM",
+        "org.apache.hadoop.yarn.server.resourcemanager.CuratorBasedElectorService",
+        "org.apache.hadoop.yarn.server.resourcemanager.metrics.TimelineServiceV2Publisher",
+        "org.apache.hadoop.yarn.server.resourcemanager.timelineservice.RMTimelineCollectorManager",
+        "org.apache.hadoop.yarn.server.resourcemanager.ResourceManager",
+        "org.apache.hadoop.yarn.server.resourcemanager.ActiveStandbyElectorBasedElectorService",
+        "org.apache.hadoop.yarn.server.resourcemanager.RMContextImpl"
+    ],
+    "YARN-8409.json" : [
+        "org.apache.hadoop.ha.ActiveStandbyElector",
+        "org.apache.hadoop.ha.ZKFailoverController"
+    ],
+    "YARN-8223.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices"
+    ],
+    "YARN-8331.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher"
+    ],
+    "YARN-2931.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService"
+    ],
+    "YARN-6837.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl",
+        "org.apache.hadoop.yarn.api.records.impl.pb.ContainerLaunchContextPBImpl"
+    ],
+    "YARN-4762.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DelegatingLinuxContainerRuntime",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.ResourceHandlerModule"
+    ],
+    "YARN-2823.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl"
+    ],
+    "YARN-5098.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer"
+    ],
+    "YARN-3971.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.nodelabels.RMNodeLabelsManager",
+        "org.apache.hadoop.yarn.nodelabels.CommonNodeLabelsManager"
+    ],
+    "YARN-6948.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl"
+    ],
+    "YARN-1409.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler"
+    ],
+    "YARN-5545.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue"
+    ],
+    "YARN-301.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.AppSchedulable"
+    ],
+    "YARN-7942.json" : [
+        "org.apache.hadoop.registry.client.impl.zk.RegistrySecurity"
+    ],
+    "YARN-7692.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.RMAppManager"
+    ],
+    "YARN-3917.json" : [
+        "org.apache.hadoop.yarn.util.ResourceCalculatorPlugin"
+    ],
+    "YARN-3537.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.NodeManager"
+    ],
+    "YARN-7962.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer"
+    ],
+    "YARN-8357.json" : [
+        "org.apache.hadoop.yarn.service.client.ServiceClient"
+    ],
+    "YARN-6534.json" : [
+        "org.apache.hadoop.yarn.client.api.impl.TimelineConnector"
+    ],
+    "YARN-4227.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler"
+    ],
+    "YARN-2649.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.MockRM"
+    ],
+    "YARN-4288.json" : [
+        "org.apache.hadoop.io.retry.UnreliableInterface",
+        "org.apache.hadoop.io.retry.UnreliableImplementation",
+        "org.apache.hadoop.yarn.client.RMProxy",
+        "org.apache.hadoop.io.retry.RetryPolicies"
+    ],
+    "YARN-1032.json" : [
+        "org.apache.hadoop.yarn.util.RackResolver"
+    ],
+    "YARN-5837.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.MockNM",
+        "org.apache.hadoop.yarn.server.resourcemanager.NodesListManager"
+    ],
+    "YARN-6827.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.ResourceManager"
+    ],
+    "YARN-3832.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService"
+    ],
+    "YARN-2409.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.ResourceManager"
+    ],
+    "YARN-8116.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl"
+    ],
+    "YARN-8403.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService"
+    ],
+    "YARN-1458.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.policies.ComputeFairShares"
+    ],
+    "YARN-8209.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.docker.DockerClient",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.docker.DockerRmCommand",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.privileged.PrivilegedOperation",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.docker.DockerCommand",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.docker.DockerCommandExecutor",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.docker.DockerInspectCommand"
+    ],
+    "YARN-3804.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.AdminService"
+    ],
+    "YARN-1839.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler",
+        "org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl",
+        "org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM"
+    ],
+    "YARN-6714.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler"
+    ],
+    "YARN-3351.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.webapp.NavBlock",
+        "org.apache.hadoop.yarn.webapp.util.WebAppUtils"
+    ],
+    "YARN-2813.json" : [
+        "org.apache.hadoop.yarn.server.timeline.MemoryTimelineStore"
+    ],
+    "YARN-1550.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.webapp.FairSchedulerAppsBlock"
+    ],
+    "YARN-5006.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl",
+        "org.apache.hadoop.yarn.server.resourcemanager.recovery.StoreLimitException",
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEvent",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration"
+    ],
+    "YARN-5728.json" : [
+        "org.apache.hadoop.yarn.server.MiniYARNCluster"
+    ],
+    "YARN-2805.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.ResourceManager"
+    ],
+    "YARN-4744.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.privileged.PrivilegedOperationExecutor",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.CGroupsHandlerImpl",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DefaultLinuxContainerRuntime",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.privileged.PrivilegedOperation",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.TrafficController"
+    ],
+    "YARN-1752.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.RMAuditLogger",
+        "org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService",
+        "org.apache.hadoop.yarn.exceptions.InvalidApplicationMasterRequestException",
+        "org.apache.hadoop.yarn.server.resourcemanager.MockRM",
+        "org.apache.hadoop.yarn.server.resourcemanager.MockAM"
+    ],
+    "YARN-6629.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.common.fica.FiCaSchedulerApp"
+    ],
+    "YARN-3493.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl",
+        "org.apache.hadoop.yarn.server.resourcemanager.RMServerUtils",
+        "org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService",
+        "org.apache.hadoop.yarn.server.resourcemanager.RMAppManager",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils"
+    ],
+    "YARN-7645.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.MockRM"
+    ],
+    "YARN-6054.json" : [
+        "org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore"
+    ],
+    "YARN-196.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration"
+    ],
+    "YARN-8508.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor"
+    ],
+    "YARN-2308.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler",
+        "org.apache.hadoop.yarn.server.resourcemanager.MockRM"
+    ],
+    "YARN-933.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl"
+    ],
+    "YARN-1374.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.ResourceManager"
+    ],
+    "YARN-174.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.NodeManager"
+    ],
+    "YARN-6448.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerNode",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler"
+    ],
+    "YARN-4530.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService"
+    ],
+    "YARN-7737.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch"
+    ],
+    "YARN-5136.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler"
+    ],
+    "YARN-8211.json" : [
+        "org.apache.hadoop.registry.server.dns.RegistryDNS"
+    ],
+    "YARN-2124.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy",
+        "org.apache.hadoop.yarn.server.resourcemanager.MockRM",
+        "org.apache.hadoop.yarn.server.resourcemanager.ResourceManager",
+        "org.apache.hadoop.yarn.server.resourcemanager.monitor.SchedulingMonitor"
+    ],
+    "YARN-7849.json" : [
+        "org.apache.hadoop.yarn.server.MiniYARNCluster"
+    ],
+    "YARN-8591.json" : [
+        "org.apache.hadoop.yarn.server.timelineservice.reader.TimelineReaderWebServices"
+    ],
+    "YARN-6649.json" : [
+        "org.apache.hadoop.yarn.server.timeline.RollingLevelDBTimelineStore"
+    ],
+    "YARN-3742.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.AdminService",
+        "org.apache.hadoop.yarn.server.resourcemanager.RMCriticalThreadUncaughtExceptionHandler",
+        "org.apache.hadoop.yarn.server.resourcemanager.ResourceManager",
+        "org.apache.hadoop.yarn.server.resourcemanager.ActiveStandbyElectorBasedElectorService",
+        "org.apache.hadoop.yarn.server.resourcemanager.RMFatalEvent",
+        "org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType"
+    ],
+    "YARN-4984.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.LogAggregationService"
+    ],
+    "YARN-4584.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl"
+    ],
+    "YARN-2846.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.ContainerExecutor",
+        "org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.RecoveredContainerLaunch"
+    ],
+    "YARN-7890.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerRelaunch"
+    ],
+    "YARN-139.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.MRAppMaster",
+        "org.apache.hadoop.yarn.event.AsyncDispatcher"
+    ],
+    "YARN-42.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler"
+    ],
+    "YARN-7453.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ZKConfigurationStore",
+        "org.apache.hadoop.yarn.server.resourcemanager.ResourceManager"
+    ],
+    "YARN-3369.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo"
+    ],
+    "YARN-945.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl",
+        "org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncher",
+        "org.apache.hadoop.yarn.server.resourcemanager.MockRMWithCustomAMLauncher",
+        "org.apache.hadoop.yarn.client.api.impl.YarnClientImpl",
+        "org.apache.hadoop.yarn.client.RMProxy",
+        "org.apache.hadoop.yarn.server.api.ServerRMProxy",
+        "org.apache.hadoop.yarn.client.api.YarnClient",
+        "org.apache.hadoop.yarn.applications.unmanagedamlauncher.UnmanagedAMLauncher",
+        "org.apache.hadoop.yarn.client.ClientRMProxy"
+    ],
+    "YARN-6072.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.AdminService",
+        "org.apache.hadoop.yarn.server.resourcemanager.ResourceManager"
+    ],
+    "YARN-7663.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl"
+    ],
+    "YARN-5873.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.RMContainerImpl"
+    ],
+    "YARN-3227.json" : [
+        "org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl"
+    ],
+    "YARN-4235.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.QueuePlacementRule"
+    ],
+    "YARN-4833.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.RMAppManager"
+    ],
+    "YARN-1689.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl",
+        "org.apache.hadoop.yarn.server.resourcemanager.MockNM",
+        "org.apache.hadoop.yarn.applications.distributedshell.Client",
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl",
+        "org.apache.hadoop.yarn.server.resourcemanager.Application",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerAppReport",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerAppUtils",
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSParentQueue",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler",
+        "org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue",
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppFailedAttemptEvent",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler",
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType",
+        "org.apache.hadoop.yarn.api.records.ApplicationSubmissionContext",
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.event.RMAppAttemptRejectedEvent",
+        "org.apache.hadoop.yarn.server.resourcemanager.MockRM",
+        "org.apache.hadoop.yarn.api.records.ContainerId",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.YarnScheduler",
+        "org.apache.hadoop.yarn.api.records.impl.pb.ApplicationSubmissionContextPBImpl",
+        "org.apache.hadoop.yarn.api.protocolrecords.RegisterApplicationMasterResponse",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.QueueMetrics",
+        "org.apache.hadoop.yarn.applications.distributedshell.ApplicationMaster",
+        "org.apache.hadoop.yarn.api.protocolrecords.impl.pb.RegisterApplicationMasterResponsePBImpl",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.common.fica.FiCaSchedulerApp",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerApplication",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.ActiveUsersManager",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSSchedulerApp",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CSQueue",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler",
+        "org.apache.hadoop.yarn.applications.distributedshell.ContainerLaunchFailAppMaster",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.AppAttemptAddedSchedulerEvent",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.common.fica.FiCaSchedulerNode",
+        "org.apache.hadoop.yarn.sls.scheduler.ResourceSchedulerWrapper",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.AppAttemptRemovedSchedulerEvent"
+    ],
+    "YARN-5594.json" : [
+        "org.apache.hadoop.yarn.security.client.YARNDelegationTokenIdentifier",
+        "org.apache.hadoop.yarn.server.resourcemanager.recovery.records.RMDelegationTokenIdentifierData"
+    ],
+    "YARN-7511.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceSet"
+    ],
+    "YARN-3790.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler"
+    ],
+    "YARN-6068.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.AppLogAggregatorImpl"
+    ],
+    "YARN-903.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl",
+        "org.apache.hadoop.yarn.server.nodemanager.NodeManager",
+        "org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdater"
+    ],
+    "YARN-8236.json" : [
+        "org.apache.hadoop.yarn.service.utils.ServiceApiUtil",
+        "org.apache.hadoop.yarn.service.client.ServiceClient",
+        "org.apache.hadoop.yarn.service.exceptions.RestApiErrorMessages"
+    ],
+    "YARN-2857.json" : [
+        "org.apache.hadoop.yarn.ContainerLogAppender"
+    ],
+    "YARN-2416.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl"
+    ],
+    "YARN-345.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationEventType",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.LogAggregationService"
+    ],
+    "YARN-3894.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue"
+    ],
+    "YARN-1903.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl"
+    ],
+    "YARN-4347.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl",
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl"
+    ],
+    "YARN-1692.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.common.fica.FiCaSchedulerApp",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerApplicationAttempt",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.AppSchedulable"
+    ],
+    "YARN-7697.json" : [
+        "org.apache.hadoop.yarn.logaggregation.filecontroller.ifile.IndexedFileAggregatedLogsBlock",
+        "org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileController",
+        "org.apache.hadoop.yarn.logaggregation.filecontroller.ifile.LogAggregationIndexedFileController",
+        "org.apache.hadoop.yarn.logaggregation.filecontroller.tfile.LogAggregationTFileController"
+    ],
+    "YARN-7382.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSAppAttempt"
+    ],
+    "YARN-1094.json" : [
+        "org.apache.hadoop.yarn.api.protocolrecords.GetDelegationTokenRequest",
+        "org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl",
+        "org.apache.hadoop.yarn.server.resourcemanager.ResourceManager",
+        "org.apache.hadoop.yarn.server.resourcemanager.RMContextImpl"
+    ],
+    "YARN-7269.json" : [
+        "org.apache.hadoop.yarn.server.webproxy.amfilter.AmFilterInitializer",
+        "org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter"
+    ],
+    "YARN-7249.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler"
+    ],
+    "YARN-4598.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl"
+    ],
+    "YARN-1149.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.CMgrCompletedAppsEvent",
+        "org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl",
+        "org.apache.hadoop.yarn.server.nodemanager.NodeManager",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl",
+        "org.apache.hadoop.yarn.server.nodemanager.CMgrCompletedContainersEvent"
+    ],
+    "YARN-7818.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime",
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DefaultLinuxContainerRuntime"
+    ]
+}

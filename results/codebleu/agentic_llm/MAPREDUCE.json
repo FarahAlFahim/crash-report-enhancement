@@ -1,0 +1,347 @@
+[
+    {
+        "filename": "MAPREDUCE-3241.json",
+        "creation_time": "2011-10-21T16:25:33.000+0000",
+        "commit": "5b201c3fcb8d93f56196e062fbfeb44f91be7818",
+        "candidate_key": "JobBuilder.process",
+        "ground_truth_method": "hadoop-mapreduce-project.src.tools.org.apache.hadoop.tools.rumen.JobBuilder.process",
+        "file_path": "hadoop-mapreduce-project/src/tools/org/apache/hadoop/tools/rumen/JobBuilder.java",
+        "codebleu": {
+            "bleu": 0.009881577421888159,
+            "ngram": 0.22815533980582525,
+            "syntax": 0.0,
+            "dataflow": 0.36363636363636365,
+            "codebleu": 0.2005577602880257
+        }
+    },
+    {
+        "filename": "MAPREDUCE-4048.json",
+        "creation_time": "2012-03-21T10:01:09.000+0000",
+        "commit": "13acee63d32d5fc21fe262fb523794119aacd7da",
+        "candidate_key": "AppController.attempts",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.webapp.AppController.attempts",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/webapp/AppController.java",
+        "codebleu": {
+            "bleu": 0.6546948734361606,
+            "ngram": 0.7075471698113207,
+            "syntax": 0.0,
+            "dataflow": 0.9512195121951219,
+            "codebleu": 0.771153851814201
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3790.json",
+        "creation_time": "2012-02-02T18:04:23.000+0000",
+        "commit": "61b6c7fc03df0aa476163b38dbe2a50ebb5079d6",
+        "candidate_key": "PipeMapRed.mapRedFinished",
+        "ground_truth_method": "hadoop-tools.hadoop-streaming.src.main.java.org.apache.hadoop.streaming.PipeMapRed.mapRedFinished",
+        "file_path": "hadoop-tools/hadoop-streaming/src/main/java/org/apache/hadoop/streaming/PipeMapRed.java",
+        "codebleu": {
+            "bleu": 0.030738528354710835,
+            "ngram": 0.07198443579766536,
+            "syntax": 0.0,
+            "dataflow": 0.14285714285714285,
+            "codebleu": 0.08186003566983968
+        }
+    },
+    {
+        "filename": "MAPREDUCE-6357.json",
+        "creation_time": "2015-05-05T18:11:38.000+0000",
+        "commit": "29819e72403af30871c05d7304defd5bab2cf758",
+        "candidate_key": "org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.write",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.write",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/lib/output/MultipleOutputs.java",
+        "codebleu": {
+            "bleu": 0.011206993009735034,
+            "ngram": 0.02284263959390863,
+            "syntax": 0.0,
+            "dataflow": 0.12280701754385964,
+            "codebleu": 0.05228555004916777
+        }
+    },
+    {
+        "filename": "MAPREDUCE-4825.json",
+        "creation_time": "2012-11-27T19:01:45.000+0000",
+        "commit": "3e0d0cf08f939779a4f1884fb5d83a2a37b6a063",
+        "candidate_key": "JobImpl.finished",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.finished",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/JobImpl.java",
+        "codebleu": {
+            "bleu": 0.6895426721851423,
+            "ngram": 0.692,
+            "syntax": 0.0,
+            "dataflow": 0.8048780487804879,
+            "codebleu": 0.7288069069885433
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3226.json",
+        "creation_time": "2011-10-20T06:38:04.000+0000",
+        "commit": "02d5fa3e6265025912223e07d1bb5aac9eac0dc9",
+        "candidate_key": "EventFetcher.run",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.task.reduce.EventFetcher.run",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/task/reduce/EventFetcher.java",
+        "codebleu": {
+            "bleu": 0.8640063052076324,
+            "ngram": 0.9457013574660633,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.936569220891232
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3226.json",
+        "creation_time": "2011-10-20T06:38:04.000+0000",
+        "commit": "02d5fa3e6265025912223e07d1bb5aac9eac0dc9",
+        "candidate_key": "Shuffle.run",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.task.reduce.EventFetcher.run",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/task/reduce/EventFetcher.java",
+        "codebleu": {
+            "bleu": 0.029061281973445808,
+            "ngram": 0.08795180722891566,
+            "syntax": 0.0,
+            "dataflow": 0.25263157894736843,
+            "codebleu": 0.12321488938324329
+        }
+    },
+    {
+        "filename": "MAPREDUCE-4062.json",
+        "creation_time": "2012-03-23T21:42:23.000+0000",
+        "commit": "2b5c36b6952e16232f352b47c62d9e28ee2b30c9",
+        "candidate_key": "AMLauncher.launch",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl.launch",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/launcher/ContainerLauncherImpl.java",
+        "codebleu": {
+            "bleu": 0.012662787150300357,
+            "ngram": 0.12156862745098039,
+            "syntax": 0.0,
+            "dataflow": 0.2916666666666667,
+            "codebleu": 0.1419660270893158
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3744.json",
+        "creation_time": "2012-01-27T20:31:19.000+0000",
+        "commit": "6ba0375b21c4ce07d2b6b592c4963f705c35222b",
+        "candidate_key": "LogDumper.dumpAllContainersLogs",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.LogDumper.dumpAllContainersLogs",
+        "file_path": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/LogDumper.java",
+        "codebleu": {
+            "bleu": 0.6429652175398244,
+            "ngram": 0.7252964426877471,
+            "syntax": 0.0,
+            "dataflow": 0.7945205479452054,
+            "codebleu": 0.7209274027242589
+        }
+    },
+    {
+        "filename": "MAPREDUCE-4467.json",
+        "creation_time": "2012-07-20T18:20:20.000+0000",
+        "commit": "cdef12644b949c711678f31d6cf3149d3b42b61b",
+        "candidate_key": "IndexCache.getIndexInformation",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.IndexCache.getIndexInformation",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapred/IndexCache.java",
+        "codebleu": {
+            "bleu": 0.7923123573599141,
+            "ngram": 0.7931726907630522,
+            "syntax": 0.0,
+            "dataflow": 0.7761194029850746,
+            "codebleu": 0.7872014837026802
+        }
+    },
+    {
+        "filename": "MAPREDUCE-4467.json",
+        "creation_time": "2012-07-20T18:20:20.000+0000",
+        "commit": "cdef12644b949c711678f31d6cf3149d3b42b61b",
+        "candidate_key": "IndexCache.readIndexFileToCache",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.IndexCache.readIndexFileToCache",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapred/IndexCache.java",
+        "codebleu": {
+            "bleu": 0.8186653398932521,
+            "ngram": 0.8192982456140351,
+            "syntax": 0.0,
+            "dataflow": 0.7916666666666666,
+            "codebleu": 0.8098767507246512
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3463.json",
+        "creation_time": "2011-11-23T13:45:46.000+0000",
+        "commit": "08da8ea5db5359fc04010be486b842a5d2e6b9c2",
+        "candidate_key": "RecoveryService.sendAssignedEvent",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.recover.RecoveryService.sendAssignedEvent",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/recover/RecoveryService.java",
+        "codebleu": {
+            "bleu": 0.6314371045939695,
+            "ngram": 0.6324324324324324,
+            "syntax": 0.0,
+            "dataflow": 0.75,
+            "codebleu": 0.6712898456754672
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3649.json",
+        "creation_time": "2012-01-09T23:53:06.000+0000",
+        "commit": "21fa0778c58b5317f2be3c851353c3bcbfbb0fdf",
+        "candidate_key": "JobEndNotifier.notifyURLOnce",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.JobEndNotifier.notifyURLOnce",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/JobEndNotifier.java",
+        "codebleu": {
+            "bleu": 0.5206938878655252,
+            "ngram": 0.5240641711229946,
+            "syntax": 0.0,
+            "dataflow": 0.5384615384615384,
+            "codebleu": 0.5277398658166861
+        }
+    },
+    {
+        "filename": "MAPREDUCE-4102.json",
+        "creation_time": "2012-04-03T19:51:52.000+0000",
+        "commit": "7e3d0168453b1c9193f593ff1560f199848b559e",
+        "candidate_key": "org.apache.hadoop.mapreduce.v2.app.webapp.CountersBlock.getCounters",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.webapp.CountersBlock.getCounters",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/webapp/CountersBlock.java",
+        "codebleu": {
+            "bleu": 0.693227852111407,
+            "ngram": 0.6942028985507246,
+            "syntax": 0.0,
+            "dataflow": 0.7761194029850746,
+            "codebleu": 0.7211833845490687
+        }
+    },
+    {
+        "filename": "MAPREDUCE-6492.json",
+        "creation_time": "2015-09-28T10:16:44.000+0000",
+        "commit": "3c4c52a095acdc3d24670d434a86525bdcbd7256",
+        "candidate_key": "sendJHStartEventForAssignedFailTask",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.sendJHStartEventForAssignedFailTask",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+        "codebleu": {
+            "bleu": 0.38675989548411804,
+            "ngram": 0.3932038834951456,
+            "syntax": 0.0,
+            "dataflow": 0.5227272727272727,
+            "codebleu": 0.4342303505688454
+        }
+    },
+    {
+        "filename": "MAPREDUCE-5744.json",
+        "creation_time": "2014-02-06T19:05:01.000+0000",
+        "commit": "0b97facb3f071b2f2e17bc4a20cff5592b6a656b",
+        "candidate_key": "preemptReduce",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.preemptReduce",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/rm/RMContainerAllocator.java",
+        "codebleu": {
+            "bleu": 0.7198569008200575,
+            "ngram": 0.7214765100671141,
+            "syntax": 0.0,
+            "dataflow": 0.8518518518518519,
+            "codebleu": 0.7643950875796744
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3583.json",
+        "creation_time": "2011-12-20T15:07:55.000+0000",
+        "commit": "1838fd250e8765f2793b0f46160ec7a34bcb6395",
+        "candidate_key": "constructProcessInfo",
+        "ground_truth_method": "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.constructProcessInfo",
+        "file_path": "src/core/org/apache/hadoop/util/ProcfsBasedProcessTree.java",
+        "codebleu": {
+            "bleu": 0.7125502225955348,
+            "ngram": 0.7133995037220844,
+            "syntax": 0.0,
+            "dataflow": 0.8089887640449438,
+            "codebleu": 0.744979496787521
+        }
+    },
+    {
+        "filename": "MAPREDUCE-6410.json",
+        "creation_time": "2015-06-04T06:34:33.000+0000",
+        "commit": "8c9e2cf10aa9066f9b8e031123c89f9a890d1041",
+        "candidate_key": "AggregatedLogDeletionService.run",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.server.HSAdminServer.run",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/src/main/java/org/apache/hadoop/mapreduce/v2/hs/server/HSAdminServer.java",
+        "codebleu": {
+            "bleu": 0.006026375998515526,
+            "ngram": 0.013422818791946308,
+            "syntax": 0.0,
+            "dataflow": 0.08333333333333333,
+            "codebleu": 0.03426084270793172
+        }
+    },
+    {
+        "filename": "MAPREDUCE-6693.json",
+        "creation_time": "2016-05-10T11:30:38.000+0000",
+        "commit": "19db965c2776e86095ecd31d7e582aca07d1e789",
+        "candidate_key": "trimURLEncodedString",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-common.src.main.java.org.apache.hadoop.mapreduce.v2.jobhistory.FileNameIndexUtils.trimURLEncodedString",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/jobhistory/FileNameIndexUtils.java",
+        "codebleu": {
+            "bleu": 0.9251684208703289,
+            "ngram": 0.9252747252747253,
+            "syntax": 0.0,
+            "dataflow": 0.9384615384615385,
+            "codebleu": 0.9296348948688642
+        }
+    },
+    {
+        "filename": "MAPREDUCE-5912.json",
+        "creation_time": "2014-06-04T15:37:03.000+0000",
+        "commit": "180ac8dc1d430d4db23092efbf3abc93b1678e09",
+        "candidate_key": "Task.calculateOutputSize",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.Task.calculateOutputSize",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapred/Task.java",
+        "codebleu": {
+            "bleu": 0.05332636215788019,
+            "ngram": 0.07894736842105263,
+            "syntax": 0.0,
+            "dataflow": 0.2692307692307692,
+            "codebleu": 0.13383483326990067
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3062.json",
+        "creation_time": "2011-09-21T17:31:02.000+0000",
+        "commit": "32f28e6994dc62b3165e501fd7b528b1fa9036d5",
+        "candidate_key": "AdminService.init",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.init",
+        "file_path": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/AdminService.java",
+        "codebleu": {
+            "bleu": 0.3405204944353418,
+            "ngram": 0.3434343434343434,
+            "syntax": 0.0,
+            "dataflow": 0.5,
+            "codebleu": 0.3946516126232284
+        }
+    },
+    {
+        "filename": "MAPREDUCE-5724.json",
+        "creation_time": "2014-01-15T00:58:12.000+0000",
+        "commit": "0c84c76954435817e7c35fb49f3d31cfa3d381db",
+        "candidate_key": "HistoryFileManager.serviceInit",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.HistoryFileManager.serviceInit",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/src/main/java/org/apache/hadoop/mapreduce/v2/hs/HistoryFileManager.java",
+        "codebleu": {
+            "bleu": 0.339274835510038,
+            "ngram": 0.3414239482200647,
+            "syntax": 0.0,
+            "dataflow": 0.5542168674698795,
+            "codebleu": 0.4116385503999941
+        }
+    },
+    {
+        "filename": "MAPREDUCE-5837.json",
+        "creation_time": "2014-04-15T20:24:58.000+0000",
+        "commit": "1566fff15f57edc68ebc79a3e4a1d27dfedead8d",
+        "candidate_key": "JobImpl.isChainJob",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.isChainJob",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/JobImpl.java",
+        "codebleu": {
+            "bleu": 0.6483618155097147,
+            "ngram": 0.6490566037735849,
+            "syntax": 0.0,
+            "dataflow": 0.7222222222222222,
+            "codebleu": 0.6732135471685072
+        }
+    }
+]

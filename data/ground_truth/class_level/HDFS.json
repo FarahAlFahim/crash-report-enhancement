@@ -1,0 +1,340 @@
+{
+    "HDFS-4558.json" : [
+        "org.apache.hadoop.hdfs.server.balancer.Balancer"
+    ],
+    "HDFS-13039.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.erasurecode.StripedBlockReader"
+    ],
+    "HDFS-13023.json" : [
+        "org.apache.hadoop.hdfs.qjournal.protocolPB.InterQJournalProtocolPB",
+        "org.apache.hadoop.fs.CommonConfigurationKeys",
+        "org.apache.hadoop.hdfs.qjournal.protocol.InterQJournalProtocol",
+        "org.apache.hadoop.hdfs.qjournal.protocolPB.InterQJournalProtocolServerSideTranslatorPB",
+        "org.apache.hadoop.hdfs.qjournal.server.JournalNodeRpcServer",
+        "org.apache.hadoop.hdfs.protocolPB.ClientDatanodeProtocolTranslatorPB",
+        "org.apache.hadoop.hdfs.HDFSPolicyProvider",
+        "org.apache.hadoop.hdfs.qjournal.server.JournalNodeSyncer",
+        "org.apache.hadoop.hdfs.qjournal.protocolPB.InterQJournalProtocolTranslatorPB"
+    ],
+    "HDFS-3157.json" : [
+        "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager"
+    ],
+    "HDFS-4850.json" : [
+        "org.apache.hadoop.hdfs.tools.offlineImageViewer.ImageVisitor",
+        "org.apache.hadoop.hdfs.tools.offlineImageViewer.TextWriterImageVisitor",
+        "org.apache.hadoop.hdfs.tools.offlineImageViewer.XmlImageVisitor",
+        "org.apache.hadoop.hdfs.tools.offlineImageViewer.ImageLoaderCurrent",
+        "org.apache.hadoop.hdfs.server.namenode.INodesInPath"
+    ],
+    "HDFS-3415.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.NNStorage"
+    ],
+    "HDFS-2245.json" : [
+        "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager"
+    ],
+    "HDFS-10320.json" : [
+        "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault",
+        "org.apache.hadoop.hdfs.server.blockmanagement.AvailableSpaceBlockPlacementPolicy",
+        "org.apache.hadoop.net.NetworkTopology",
+        "org.apache.hadoop.hdfs.server.namenode.web.resources.NamenodeWebHdfsMethods"
+    ],
+    "HDFS-4201.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.BPOfferService"
+    ],
+    "HDFS-6904.json" : [
+        "org.apache.hadoop.hdfs.web.resources.TokenKindParam",
+        "org.apache.hadoop.hdfs.web.resources.TokenServiceParam"
+    ],
+    "HDFS-13721.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.DataNode"
+    ],
+    "HDFS-7180.json" : [
+        "org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3",
+        "org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtxCache",
+        "org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx",
+        "org.apache.hadoop.hdfs.nfs.nfs3.DFSClientCache",
+        "org.apache.hadoop.hdfs.nfs.nfs3.WriteCtx"
+    ],
+    "HDFS-6102.json" : [
+        "org.apache.hadoop.hdfs.DFSConfigKeys",
+        "org.apache.hadoop.hdfs.server.namenode.FSDirectory"
+    ],
+    "HDFS-6250.json" : [
+        "org.apache.hadoop.hdfs.server.balancer.NameNodeConnector"
+    ],
+    "HDFS-11377.json" : [
+        "org.apache.hadoop.hdfs.server.balancer.Dispatcher"
+    ],
+    "HDFS-6753.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.DirectoryScanner",
+        "org.apache.hadoop.hdfs.server.datanode.DataNode"
+    ],
+    "HDFS-3443.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.NameNode",
+        "org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer"
+    ],
+    "HDFS-11479.json" : [
+        "org.apache.hadoop.oncrpc.SimpleUdpServer"
+    ],
+    "HDFS-8055.json" : [
+        "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager"
+    ],
+    "HDFS-6533.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.BPServiceActor"
+    ],
+    "HDFS-10609.json" : [
+        "org.apache.hadoop.hdfs.security.token.block.BlockPoolTokenSecretManager",
+        "org.apache.hadoop.hdfs.DFSClient",
+        "org.apache.hadoop.hdfs.server.datanode.DataNode",
+        "org.apache.hadoop.hdfs.security.token.block.BlockTokenSecretManager",
+        "org.apache.hadoop.hdfs.DFSOutputStream"
+    ],
+    "HDFS-2310.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.NameNode",
+        "org.apache.hadoop.hdfs.server.namenode.BackupNode"
+    ],
+    "HDFS-3385.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.FSNamesystem"
+    ],
+    "HDFS-4006.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode"
+    ],
+    "HDFS-6715.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.web.resources.NamenodeWebHdfsMethods"
+    ],
+    "HDFS-2392.json" : [
+        "org.apache.hadoop.hdfs.HftpFileSystem"
+    ],
+    "HDFS-11472.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl"
+    ],
+    "HDFS-10760.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.DataXceiver"
+    ],
+    "HDFS-13635.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.ReplicaNotFoundException"
+    ],
+    "HDFS-11608.json" : [
+        "org.apache.hadoop.hdfs.protocol.datatransfer.PacketReceiver",
+        "org.apache.hadoop.hdfs.DFSOutputStream"
+    ],
+    "HDFS-12638.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.INode"
+    ],
+    "HDFS-12383.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.ReencryptionUpdater"
+    ],
+    "HDFS-5322.json" : [
+        "org.apache.hadoop.security.token.SecretManager",
+        "org.apache.hadoop.hdfs.security.token.delegation.DelegationTokenSecretManager",
+        "org.apache.hadoop.hdfs.server.namenode.FSNamesystem",
+        "org.apache.hadoop.security.SaslRpcServer",
+        "org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager",
+        "org.apache.hadoop.ipc.Server"
+    ],
+    "HDFS-11741.json" : [
+        "org.apache.hadoop.hdfs.security.token.block.BlockTokenSecretManager",
+        "org.apache.hadoop.hdfs.server.balancer.KeyManager"
+    ],
+    "HDFS-3936.json" : [
+        "org.apache.hadoop.hdfs.server.blockmanagement.BlocksMap"
+    ],
+    "HDFS-6348.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode"
+    ],
+    "HDFS-7884.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.BlockSender"
+    ],
+    "HDFS-7996.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.BlockReceiver"
+    ],
+    "HDFS-4302.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.FSEditLogLoader"
+    ],
+    "HDFS-11849.json" : [
+        "org.apache.hadoop.hdfs.qjournal.server.JournalNode"
+    ],
+    "HDFS-4841.json" : [
+        "org.apache.hadoop.fs.FileSystem"
+    ],
+    "HDFS-3384.json" : [
+        "org.apache.hadoop.hdfs.DataStreamer"
+    ],
+    "HDFS-5657.json" : [
+        "org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx"
+    ],
+    "HDFS-11827.json" : [
+        "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault"
+    ],
+    "HDFS-6804.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.DataNodeFaultInjector",
+        "org.apache.hadoop.hdfs.server.datanode.BlockSender"
+    ],
+    "HDFS-5843.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.DataXceiver"
+    ],
+    "HDFS-8070.json" : [
+        "org.apache.hadoop.hdfs.protocol.datatransfer.Receiver",
+        "org.apache.hadoop.hdfs.BlockReaderFactory"
+    ],
+    "HDFS-1085.json" : [
+        "org.apache.hadoop.hdfs.DFSClient",
+        "org.apache.hadoop.hdfs.HftpFileSystem",
+        "org.apache.hadoop.hdfs.server.namenode.StreamFile"
+    ],
+    "HDFS-12339.json" : [
+        "org.apache.hadoop.hdfs.nfs.nfs3.PrivilegedNfsGatewayStarter",
+        "org.apache.hadoop.hdfs.nfs.nfs3.Nfs3",
+        "org.apache.hadoop.nfs.nfs3.Nfs3Base",
+        "org.apache.hadoop.mount.MountdBase"
+    ],
+    "HDFS-6520.json" : [
+        "org.apache.hadoop.hdfs.BlockReaderFactory",
+        "org.apache.hadoop.hdfs.server.namenode.NamenodeFsck"
+    ],
+    "HDFS-10715.json" : [
+        "org.apache.hadoop.hdfs.server.blockmanagement.AvailableSpaceBlockPlacementPolicy"
+    ],
+    "HDFS-3332.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.BPServiceActor"
+    ],
+    "HDFS-6130.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.FSImageFormat"
+    ],
+    "HDFS-2827.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.FSNamesystem"
+    ],
+    "HDFS-11056.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl",
+        "org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetUtil"
+    ],
+    "HDFS-6825.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.FSNamesystem",
+        "org.apache.hadoop.hdfs.server.namenode.INodeDirectory",
+        "org.apache.hadoop.hdfs.server.blockmanagement.BlockInfoUnderConstruction"
+    ],
+    "HDFS-5710.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.FSDirectory"
+    ],
+    "HDFS-3555.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.BlockSender"
+    ],
+    "HDFS-10962.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.ha.RequestHedgingProxyProvider"
+    ],
+    "HDFS-12363.json" : [
+        "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager"
+    ],
+    "HDFS-7916.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.ErrorReportAction",
+        "org.apache.hadoop.hdfs.server.datanode.ReportBadBlockAction"
+    ],
+    "HDFS-9549.json" : [
+        "org.apache.hadoop.hdfs.server.blockmanagement.CacheReplicationMonitor",
+        "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager"
+    ],
+    "HDFS-11164.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.DataXceiver",
+        "org.apache.hadoop.hdfs.protocol.datatransfer.DataTransferProtoUtil",
+        "org.apache.hadoop.hdfs.protocol.datatransfer.BlockPinningException",
+        "org.apache.hadoop.hdfs.server.balancer.Dispatcher",
+        "org.apache.hadoop.hdfs.server.mover.Mover"
+    ],
+    "HDFS-5291.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.FSNamesystem",
+        "org.apache.hadoop.hdfs.server.namenode.SafeModeException",
+        "org.apache.hadoop.ipc.RetriableException",
+        "org.apache.hadoop.io.retry.RetryPolicies"
+    ],
+    "HDFS-12836.json" : [
+        "org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager"
+    ],
+    "HDFS-8113.json" : [
+        "org.apache.hadoop.hdfs.server.blockmanagement.BlockInfoContiguous"
+    ],
+    "HDFS-10512.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl",
+        "org.apache.hadoop.hdfs.server.datanode.DataNode",
+        "org.apache.hadoop.hdfs.server.datanode.VolumeScanner"
+    ],
+    "HDFS-10729.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp"
+    ],
+    "HDFS-13040.json" : [
+        "org.apache.hadoop.hdfs.qjournal.MiniQJMHACluster",
+        "org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer"
+    ],
+    "HDFS-3374.json" : [
+        "org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager"
+    ],
+    "HDFS-2359.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.DataBlockScanner"
+    ],
+    "HDFS-10986.json" : [
+        "org.apache.hadoop.hdfs.tools.DFSAdmin"
+    ],
+    "HDFS-6455.json" : [
+        "org.apache.hadoop.hdfs.nfs.mount.RpcProgramMountd",
+        "org.apache.hadoop.nfs.NfsExports",
+        "org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3"
+    ],
+    "HDFS-2882.json" : [
+        "org.apache.hadoop.hdfs.MiniDFSNNTopology",
+        "org.apache.hadoop.hdfs.server.datanode.BlockPoolManager",
+        "org.apache.hadoop.hdfs.server.datanode.DataNode",
+        "org.apache.hadoop.hdfs.server.datanode.DataStorage",
+        "org.apache.hadoop.hdfs.server.datanode.BPServiceActor",
+        "org.apache.hadoop.hdfs.MiniDFSCluster",
+        "org.apache.hadoop.hdfs.server.datanode.BPOfferService"
+    ],
+    "HDFS-5185.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl",
+        "org.apache.hadoop.hdfs.server.datanode.DataNode",
+        "org.apache.hadoop.hdfs.server.datanode.BlockReceiver"
+    ],
+    "HDFS-13164.json" : [
+        "org.apache.hadoop.hdfs.client.impl.LeaseRenewer",
+        "org.apache.hadoop.hdfs.DFSOutputStream"
+    ],
+    "HDFS-11508.json" : [
+        "org.apache.hadoop.portmap.Portmap",
+        "org.apache.hadoop.oncrpc.SimpleTcpServer"
+    ],
+    "HDFS-2991.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.FSNamesystem",
+        "org.apache.hadoop.hdfs.server.namenode.FSEditLogLoader",
+        "org.apache.hadoop.hdfs.server.namenode.FSDirectory",
+        "org.apache.hadoop.hdfs.protocol.LayoutVersion"
+    ],
+    "HDFS-4404.json" : [
+        "org.apache.hadoop.ipc.Client",
+        "org.apache.hadoop.net.ConnectTimeoutException",
+        "org.apache.hadoop.net.NetUtils",
+        "org.apache.hadoop.io.retry.RetryPolicies"
+    ],
+    "HDFS-8276.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.FSNamesystem"
+    ],
+    "HDFS-12369.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.FSNamesystem",
+        "org.apache.hadoop.hdfs.server.namenode.LeaseManager"
+    ],
+    "HDFS-6462.json" : [
+        "org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3"
+    ],
+    "HDFS-5425.json" : [
+        "org.apache.hadoop.hdfs.server.namenode.FSNamesystem",
+        "org.apache.hadoop.hdfs.server.namenode.FSEditLogLoader",
+        "org.apache.hadoop.hdfs.server.namenode.snapshot.INodeDirectoryWithSnapshot",
+        "org.apache.hadoop.hdfs.server.namenode.FSImageFormat"
+    ],
+    "HDFS-13145.json" : [
+        "org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager"
+    ],
+    "HDFS-8807.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.StorageLocation"
+    ],
+    "HDFS-3436.json" : [
+        "org.apache.hadoop.hdfs.server.datanode.DataNode"
+    ]
+}

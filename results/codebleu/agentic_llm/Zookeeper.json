@@ -1,0 +1,17 @@
+[
+    {
+        "filename": "ZOOKEEPER-1864.json",
+        "creation_time": "2014-01-20T06:09:53.000+0000",
+        "commit": "0252993977bb42940aae2088f29a5e4898bcf3da",
+        "candidate_key": "QuorumPeerConfig.parseProperties",
+        "ground_truth_method": "src.java.main.org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties",
+        "file_path": "src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
+        "codebleu": {
+            "bleu": 0.001747797730301403,
+            "ngram": 0.2830188679245283,
+            "syntax": 0.0,
+            "dataflow": 0.5625,
+            "codebleu": 0.28242222188494326
+        }
+    }
+]

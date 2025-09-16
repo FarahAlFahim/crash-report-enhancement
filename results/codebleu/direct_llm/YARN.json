@@ -1,0 +1,632 @@
+[
+    {
+        "filename": "YARN-5918.json",
+        "creation_time": "2016-11-20T14:19:00.000+0000",
+        "commit": "005850b28feb2f7bb8c2844d11e3f9d21b45d754",
+        "candidate_key": "convertToRemoteNode",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.OpportunisticContainerAllocatorAMService.convertToRemoteNode",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/OpportunisticContainerAllocatorAMService.java",
+        "codebleu": {
+            "bleu": 0.12632368169934813,
+            "ngram": 0.15942028985507245,
+            "syntax": 0.0,
+            "dataflow": 0.5185185185185185,
+            "codebleu": 0.2680874966909797
+        }
+    },
+    {
+        "filename": "YARN-4431.json",
+        "creation_time": "2015-12-07T18:31:36.000+0000",
+        "commit": "15c3e7ffe3d1c57ad36afd993f09fc47889c93bd",
+        "candidate_key": "NodeStatusUpdaterImpl.serviceStop",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStop",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/NodeStatusUpdaterImpl.java",
+        "codebleu": {
+            "bleu": 0.3294738602847357,
+            "ngram": 0.3344370860927152,
+            "syntax": 0.0,
+            "dataflow": 0.4375,
+            "codebleu": 0.3671369821258169
+        }
+    },
+    {
+        "filename": "YARN-4763.json",
+        "creation_time": "2016-03-04T10:03:56.000+0000",
+        "commit": "1415e6190a1811b8318f2bf254fea34e8c9cd154",
+        "candidate_key": "RMAppsBlock.renderData",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.webapp.RMAppsBlock.renderData",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/webapp/RMAppsBlock.java",
+        "codebleu": {
+            "bleu": 0.9159632639606766,
+            "ngram": 0.9160530191458026,
+            "syntax": 0.0,
+            "dataflow": 0.9560439560439561,
+            "codebleu": 0.9293534130501451
+        }
+    },
+    {
+        "filename": "YARN-8202.json",
+        "creation_time": "2018-04-24T15:52:00.000+0000",
+        "commit": "0506c762b2f96ccb2c12cce8fd4659536236354e",
+        "candidate_key": "SchedulerUtils.validateResourceRequest",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.validateResourceRequest",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/SchedulerUtils.java",
+        "codebleu": {
+            "bleu": 0.4619799657033476,
+            "ngram": 0.462111801242236,
+            "syntax": 0.0,
+            "dataflow": 0.5294117647058824,
+            "codebleu": 0.4845011772171553
+        }
+    },
+    {
+        "filename": "YARN-2414.json",
+        "creation_time": "2014-08-12T23:48:48.000+0000",
+        "commit": "242fd0e39ad1c5d51719cd0f6c197166066e3288",
+        "candidate_key": "AppBlock.render",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.webapp.AppBlock.render",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/webapp/AppBlock.java",
+        "codebleu": {
+            "bleu": 0.0003018308617346246,
+            "ngram": 0.16990291262135923,
+            "syntax": 0.0,
+            "dataflow": 0.475,
+            "codebleu": 0.21506824782769796
+        }
+    },
+    {
+        "filename": "YARN-4152.json",
+        "creation_time": "2015-09-12T15:02:22.000+0000",
+        "commit": "8ed0d4b744e5321c9f0f7f19a6c9737bb2da2ef6",
+        "candidate_key": "LogAggregationService.stopContainer",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.LogAggregationService.stopContainer",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/logaggregation/LogAggregationService.java",
+        "codebleu": {
+            "bleu": 0.6952531288545998,
+            "ngram": 0.7225433526011561,
+            "syntax": 0.0,
+            "dataflow": 0.8771929824561403,
+            "codebleu": 0.764996487970632
+        }
+    },
+    {
+        "filename": "YARN-3697.json",
+        "creation_time": "2015-05-21T18:05:38.000+0000",
+        "commit": "1f9f219062634ddb8c2f129030e485ee86db7662",
+        "candidate_key": "FairScheduler.continuousSchedulingAttempt",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.continuousSchedulingAttempt",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/fair/FairScheduler.java",
+        "codebleu": {
+            "bleu": 0.77520700592215,
+            "ngram": 0.9473684210526315,
+            "syntax": 0.0,
+            "dataflow": 0.95,
+            "codebleu": 0.8908584756582605
+        }
+    },
+    {
+        "filename": "YARN-8022.json",
+        "creation_time": "2018-03-10T19:29:27.000+0000",
+        "commit": "117984a2cb990025c2e0002abf10ecd9d5153c02",
+        "candidate_key": "AppBlock.render",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-common.src.main.java.org.apache.hadoop.yarn.server.webapp.AppBlock.render",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/src/main/java/org/apache/hadoop/yarn/server/webapp/AppBlock.java",
+        "codebleu": {
+            "bleu": 0.5288696040668748,
+            "ngram": 0.5289975144987572,
+            "syntax": 0.0,
+            "dataflow": 0.6352459016393442,
+            "codebleu": 0.5643710067349921
+        }
+    },
+    {
+        "filename": "YARN-6102.json",
+        "creation_time": "2017-01-17T09:36:29.000+0000",
+        "commit": "e3153284288d6cfa7a28511dfefe1c8a7d6b4eda",
+        "candidate_key": "ResourceManager.reinitialize",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.reinitialize",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/ResourceManager.java",
+        "codebleu": {
+            "bleu": 0.011947755208844299,
+            "ngram": 0.0410958904109589,
+            "syntax": 0.0,
+            "dataflow": 0.10714285714285714,
+            "codebleu": 0.05339550092088678
+        }
+    },
+    {
+        "filename": "YARN-8223.json",
+        "creation_time": "2018-04-27T11:49:02.000+0000",
+        "commit": "8cdb032aff4237d8d3970057d82290e4e32c4040",
+        "candidate_key": "AuxServices.serviceInit",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices.serviceInit",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/AuxServices.java",
+        "codebleu": {
+            "bleu": 0.8889724849275775,
+            "ngram": 0.9740655987795576,
+            "syntax": 0.0,
+            "dataflow": 0.9959839357429718,
+            "codebleu": 0.9530073398167023
+        }
+    },
+    {
+        "filename": "YARN-8331.json",
+        "creation_time": "2018-05-21T05:19:35.000+0000",
+        "commit": "2024260af69231831dbb16b3221ec5915a436eb7",
+        "candidate_key": "ContainerImpl.handle",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher.handle",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/launcher/ContainersLauncher.java",
+        "codebleu": {
+            "bleu": 0.015485098156262585,
+            "ngram": 0.15051903114186851,
+            "syntax": 0.0,
+            "dataflow": 0.39344262295081966,
+            "codebleu": 0.18648225074965025
+        }
+    },
+    {
+        "filename": "YARN-6948.json",
+        "creation_time": "2017-08-04T08:23:46.000+0000",
+        "commit": "3701c399b3fa4fbd2d9d71be141997beb0f0b1ba",
+        "candidate_key": "RMAppAttemptImpl.handle",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.handle",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/attempt/RMAppAttemptImpl.java",
+        "codebleu": {
+            "bleu": 0.6766230423811738,
+            "ngram": 0.6773700305810397,
+            "syntax": 0.0,
+            "dataflow": 0.7901234567901234,
+            "codebleu": 0.7147055099174455
+        }
+    },
+    {
+        "filename": "YARN-1409.json",
+        "creation_time": "2013-11-13T11:25:56.000+0000",
+        "commit": "785c12056ce2c6161b66699d995bd25198b9194f",
+        "candidate_key": "NonAggregatingLogHandler.handle",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler.handle",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/loghandler/NonAggregatingLogHandler.java",
+        "codebleu": {
+            "bleu": 0.7054688076667637,
+            "ngram": 0.7743589743589744,
+            "syntax": 0.0,
+            "dataflow": 0.8,
+            "codebleu": 0.7599425940085793
+        }
+    },
+    {
+        "filename": "YARN-301.json",
+        "creation_time": "2013-01-01T05:40:18.000+0000",
+        "commit": "8cd026d36533f7fca645648a44e047fc658caa9d",
+        "candidate_key": "AppSchedulable.assignContainer",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.AppSchedulable.assignContainer",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/fair/AppSchedulable.java",
+        "codebleu": {
+            "bleu": 0.0594306739354152,
+            "ngram": 0.11779448621553884,
+            "syntax": 0.0,
+            "dataflow": 0.3157894736842105,
+            "codebleu": 0.16433821127838819
+        }
+    },
+    {
+        "filename": "YARN-3917.json",
+        "creation_time": "2015-07-11T00:41:28.000+0000",
+        "commit": "896b8c6551b1dd57c09caa2df0e46f9f9000179e",
+        "candidate_key": "ResourceCalculatorPlugin.getResourceCalculatorPlugin",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.util.ResourceCalculatorPlugin.getResourceCalculatorPlugin",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/util/ResourceCalculatorPlugin.java",
+        "codebleu": {
+            "bleu": 0.4514940729533686,
+            "ngram": 0.45528455284552843,
+            "syntax": 0.0,
+            "dataflow": 0.5714285714285714,
+            "codebleu": 0.49273573240915614
+        }
+    },
+    {
+        "filename": "YARN-3537.json",
+        "creation_time": "2015-04-23T11:34:23.000+0000",
+        "commit": "5e093f0d400f82f67d9b2d24253c79e4a5abacf9",
+        "candidate_key": "NodeManager.stopRecoveryStore",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.stopRecoveryStore",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/NodeManager.java",
+        "codebleu": {
+            "bleu": 0.8335970297491607,
+            "ngram": 0.8344827586206897,
+            "syntax": 0.0,
+            "dataflow": 0.925,
+            "codebleu": 0.8643599294566168
+        }
+    },
+    {
+        "filename": "YARN-7962.json",
+        "creation_time": "2018-02-22T22:32:20.000+0000",
+        "commit": "1cee85d8c42e97c8df6fbc66cd0eb3022ed854bb",
+        "candidate_key": "DelegationTokenRenewer.serviceStop",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.serviceStop",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/security/DelegationTokenRenewer.java",
+        "codebleu": {
+            "bleu": 0.08819393885309544,
+            "ngram": 0.5697674418604651,
+            "syntax": 0.0,
+            "dataflow": 0.9333333333333333,
+            "codebleu": 0.5304315713489647
+        }
+    },
+    {
+        "filename": "YARN-6534.json",
+        "creation_time": "2017-04-26T21:43:52.000+0000",
+        "commit": "5a8d326a6060a2c720c0a33a8b201605215a9c00",
+        "candidate_key": "TimelineClientImpl.serviceInit",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.client.api.impl.TimelineConnector.serviceInit",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/client/api/impl/TimelineConnector.java",
+        "codebleu": {
+            "bleu": 0.09798115744747246,
+            "ngram": 0.13855421686746988,
+            "syntax": 0.0,
+            "dataflow": 0.29577464788732394,
+            "codebleu": 0.17743667406742208
+        }
+    },
+    {
+        "filename": "YARN-1032.json",
+        "creation_time": "2013-08-05T21:10:46.000+0000",
+        "commit": "3fa40ca8070f2565d66845c53dd8542c6146db8e",
+        "candidate_key": "RackResolver.coreResolve",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.util.RackResolver.coreResolve",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/util/RackResolver.java",
+        "codebleu": {
+            "bleu": 0.4947277300996485,
+            "ngram": 0.6216216216216216,
+            "syntax": 0.0,
+            "dataflow": 0.7058823529411765,
+            "codebleu": 0.6074105682208155
+        }
+    },
+    {
+        "filename": "YARN-8209.json",
+        "creation_time": "2018-04-26T00:22:23.000+0000",
+        "commit": "61fac20c9ea063ed093c4477c1f12ab725314374",
+        "candidate_key": "DockerClient.writeCommandToTempFile",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.docker.DockerClient.writeCommandToTempFile",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/linux/runtime/docker/DockerClient.java",
+        "codebleu": {
+            "bleu": 0.549939694495146,
+            "ngram": 0.5523690773067331,
+            "syntax": 0.0,
+            "dataflow": 0.7341772151898734,
+            "codebleu": 0.6121619956639175
+        }
+    },
+    {
+        "filename": "YARN-3804.json",
+        "creation_time": "2015-06-15T08:54:42.000+0000",
+        "commit": "16d2412a25e009b1026aa83bb218419b7ad2a9f0",
+        "candidate_key": "AdminService.refreshAdminAcls",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.refreshAdminAcls",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/AdminService.java",
+        "codebleu": {
+            "bleu": 0.03328106970323373,
+            "ngram": 0.042483660130718956,
+            "syntax": 0.0,
+            "dataflow": 0.10526315789473684,
+            "codebleu": 0.0603426292428965
+        }
+    },
+    {
+        "filename": "YARN-2813.json",
+        "creation_time": "2014-11-05T22:29:46.000+0000",
+        "commit": "888fc4af4e25f6005ae30070a79690a3ab50dbcc",
+        "candidate_key": "MemoryTimelineStore.getDomains",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.timeline.MemoryTimelineStore.getDomains",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/timeline/MemoryTimelineStore.java",
+        "codebleu": {
+            "bleu": 0.8361055286002926,
+            "ngram": 0.838150289017341,
+            "syntax": 0.0,
+            "dataflow": 0.8913043478260869,
+            "codebleu": 0.8551867218145734
+        }
+    },
+    {
+        "filename": "YARN-2805.json",
+        "creation_time": "2014-11-04T20:37:09.000+0000",
+        "commit": "3bc31e35a66491694ce414fef8948ae71e7e134f",
+        "candidate_key": "ResourceManager.serviceInit",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceInit",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/ResourceManager.java",
+        "codebleu": {
+            "bleu": 0.030474335053662628,
+            "ngram": 0.1951219512195122,
+            "syntax": 0.0,
+            "dataflow": 0.5116279069767442,
+            "codebleu": 0.245741397749973
+        }
+    },
+    {
+        "filename": "YARN-4744.json",
+        "creation_time": "2016-02-29T10:08:57.000+0000",
+        "commit": "059caf99891943d9587cac19b48e82efbed06b2d",
+        "candidate_key": "DefaultLinuxContainerRuntime.signalContainer",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DefaultLinuxContainerRuntime.signalContainer",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/linux/runtime/DefaultLinuxContainerRuntime.java",
+        "codebleu": {
+            "bleu": 0.3612729947645391,
+            "ngram": 0.36721991701244816,
+            "syntax": 0.0,
+            "dataflow": 0.5454545454545454,
+            "codebleu": 0.4246491524105109
+        }
+    },
+    {
+        "filename": "YARN-3493.json",
+        "creation_time": "2015-04-15T22:03:19.000+0000",
+        "commit": "61f2ddb125f6af1775ce5d219f22eb079071869c",
+        "candidate_key": "RMAppManager.validateAndCreateResourceRequest",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMAppManager.validateAndCreateResourceRequest",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/RMAppManager.java",
+        "codebleu": {
+            "bleu": 0.6884221790997793,
+            "ngram": 0.6907692307692308,
+            "syntax": 0.0,
+            "dataflow": 0.8350515463917526,
+            "codebleu": 0.7380809854202542
+        }
+    },
+    {
+        "filename": "YARN-6054.json",
+        "creation_time": "2017-01-04T20:58:59.000+0000",
+        "commit": "49d459a3ed82169c02fca98dd7b54e3f09768881",
+        "candidate_key": "LeveldbTimelineStore.serviceInit",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.serviceInit",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/timeline/LeveldbTimelineStore.java",
+        "codebleu": {
+            "bleu": 0.7488307254009575,
+            "ngram": 0.7962529274004684,
+            "syntax": 0.0,
+            "dataflow": 0.8440366972477065,
+            "codebleu": 0.7963734500163773
+        }
+    },
+    {
+        "filename": "YARN-196.json",
+        "creation_time": "2012-01-16T09:52:45.000+0000",
+        "commit": "2ba66a54f5004f93b53d40b6a1cc5029abf5e609",
+        "candidate_key": "NodeStatusUpdaterImpl.start",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.start",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/NodeStatusUpdaterImpl.java",
+        "codebleu": {
+            "bleu": 0.03889533970131973,
+            "ngram": 0.09090909090909091,
+            "syntax": 0.0,
+            "dataflow": 0.275,
+            "codebleu": 0.13493481020347023
+        }
+    },
+    {
+        "filename": "YARN-7737.json",
+        "creation_time": "2018-01-11T19:35:01.000+0000",
+        "commit": "046108c61f33bdd77d37d8b47593dcd290d15457",
+        "candidate_key": "ContainerLaunch.call",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.call",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/launcher/ContainerLaunch.java",
+        "codebleu": {
+            "bleu": 0.8938709110525088,
+            "ngram": 0.8938938938938938,
+            "syntax": 0.0,
+            "dataflow": 0.9156626506024096,
+            "codebleu": 0.9011424851829373
+        }
+    },
+    {
+        "filename": "YARN-6649.json",
+        "creation_time": "2017-05-25T20:36:08.000+0000",
+        "commit": "177c0c1523ad8b1004070f16807ee225fa577523",
+        "candidate_key": "RollingLevelDBTimelineStore.getEntity",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.timeline.RollingLevelDBTimelineStore.getEntity",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/timeline/RollingLevelDBTimelineStore.java",
+        "codebleu": {
+            "bleu": 0.026807812238359794,
+            "ngram": 0.04597701149425287,
+            "syntax": 0.0,
+            "dataflow": 0.16806722689075632,
+            "codebleu": 0.08028401687445633
+        }
+    },
+    {
+        "filename": "YARN-4584.json",
+        "creation_time": "2016-01-12T09:08:31.000+0000",
+        "commit": "844a8e377178da60293905f6501c111e0b9ef23e",
+        "candidate_key": "RMAppAttemptImpl.recover",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.recover",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+        "codebleu": {
+            "bleu": 0.12305483085579268,
+            "ngram": 0.1791907514450867,
+            "syntax": 0.0,
+            "dataflow": 0.4375,
+            "codebleu": 0.24658186076695976
+        }
+    },
+    {
+        "filename": "YARN-2846.json",
+        "creation_time": "2014-11-11T15:30:08.000+0000",
+        "commit": "33ea5ae92b9dd3abace104903d9a94d17dd75af5",
+        "candidate_key": "reacquireContainer",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.ContainerExecutor.reacquireContainer",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/ContainerExecutor.java",
+        "codebleu": {
+            "bleu": 0.6253543567459969,
+            "ngram": 0.6257796257796258,
+            "syntax": 0.0,
+            "dataflow": 0.9024390243902439,
+            "codebleu": 0.7178576689719555
+        }
+    },
+    {
+        "filename": "YARN-3369.json",
+        "creation_time": "2015-03-18T23:29:06.000+0000",
+        "commit": "005d865494d59fa9b15e7c76a51022d852e70f8c",
+        "candidate_key": "checkForDeactivation",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo.checkForDeactivation",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/AppSchedulingInfo.java",
+        "codebleu": {
+            "bleu": 0.8397518368112219,
+            "ngram": 0.8827160493827161,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.9074892953979792
+        }
+    },
+    {
+        "filename": "YARN-7663.json",
+        "creation_time": "2017-12-15T01:52:46.000+0000",
+        "commit": "49f0c7b356a33402090a52b1d3b8e5c2ee433896",
+        "candidate_key": "RMAppImpl.handle",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.handle",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+        "codebleu": {
+            "bleu": 0.3848083252293158,
+            "ngram": 0.38705234159779617,
+            "syntax": 0.0,
+            "dataflow": 0.5529411764705883,
+            "codebleu": 0.4416006144325667
+        }
+    },
+    {
+        "filename": "YARN-1689.json",
+        "creation_time": "2014-02-05T19:16:00.000+0000",
+        "commit": "c520584f025d96a95360d172ec0f2af8a0e91aa7",
+        "candidate_key": "RMAppImpl.handle",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.handle",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+        "codebleu": {
+            "bleu": 0.8120309357232562,
+            "ngram": 0.8122270742358079,
+            "syntax": 0.0,
+            "dataflow": 0.8461538461538461,
+            "codebleu": 0.8234706187043034
+        }
+    },
+    {
+        "filename": "YARN-7511.json",
+        "creation_time": "2017-11-16T11:41:43.000+0000",
+        "commit": "0a3a8784283329d3a374c601fa302f8409f902f1",
+        "candidate_key": "ResourceSet.resourceLocalizationFailed",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceSet.resourceLocalizationFailed",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/localizer/ResourceSet.java",
+        "codebleu": {
+            "bleu": 0.17697236399966515,
+            "ngram": 0.5,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.5589907879998883
+        }
+    },
+    {
+        "filename": "YARN-8236.json",
+        "creation_time": "2018-04-29T16:28:11.000+0000",
+        "commit": "0a30a548f1960ce267526ce7cb6c4057e7ceb12d",
+        "candidate_key": "addKeytabResourceIfSecure",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-applications.hadoop-yarn-services.hadoop-yarn-services-core.src.main.java.org.apache.hadoop.yarn.service.client.ServiceClient.addKeytabResourceIfSecure",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/java/org/apache/hadoop/yarn/service/client/ServiceClient.java",
+        "codebleu": {
+            "bleu": 0.8135263817587897,
+            "ngram": 0.8360128617363344,
+            "syntax": 0.0,
+            "dataflow": 0.926829268292683,
+            "codebleu": 0.8587895039292689
+        }
+    },
+    {
+        "filename": "YARN-1692.json",
+        "creation_time": "2014-02-07T02:01:17.000+0000",
+        "commit": "bc939f7ae607d32d52c4e9ceacdfb25c1850e04c",
+        "candidate_key": "AppSchedulable.updateDemand",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.AppSchedulable.updateDemand",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/fair/AppSchedulable.java",
+        "codebleu": {
+            "bleu": 0.8926519158069852,
+            "ngram": 0.8939393939393939,
+            "syntax": 0.0,
+            "dataflow": 0.9428571428571428,
+            "codebleu": 0.9098161508678406
+        }
+    },
+    {
+        "filename": "YARN-7697.json",
+        "creation_time": "2018-01-03T19:28:50.000+0000",
+        "commit": "3b20413acf84e38aa2cf747d066bfec6f9f864ad",
+        "candidate_key": "LogAggregationIndexedFileController.loadIndexedLogsMeta",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.filecontroller.ifile.LogAggregationIndexedFileController.loadIndexedLogsMeta",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/ifile/LogAggregationIndexedFileController.java",
+        "codebleu": {
+            "bleu": 0.015007431520519636,
+            "ngram": 0.12133891213389121,
+            "syntax": 0.0,
+            "dataflow": 0.38028169014084506,
+            "codebleu": 0.17220934459841863
+        }
+    },
+    {
+        "filename": "YARN-7269.json",
+        "creation_time": "2017-09-28T23:56:42.000+0000",
+        "commit": "175ff0585dbcde00df5ab4d819c1f9d647fdf2d6",
+        "candidate_key": "findRedirectUrl",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-web-proxy.src.main.java.org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter.findRedirectUrl",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-web-proxy/src/main/java/org/apache/hadoop/yarn/server/webproxy/amfilter/AmIpFilter.java",
+        "codebleu": {
+            "bleu": 0.40798556292486543,
+            "ngram": 0.41304347826086957,
+            "syntax": 0.0,
+            "dataflow": 0.5161290322580645,
+            "codebleu": 0.4457193578145998
+        }
+    },
+    {
+        "filename": "YARN-7249.json",
+        "creation_time": "2017-09-25T16:49:46.000+0000",
+        "commit": "76e053a91061fca5c602b77bcac2445fa6f9c2cd",
+        "candidate_key": "CapacityScheduler.completedContainerInternal",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.completedContainerInternal",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/CapacityScheduler.java",
+        "codebleu": {
+            "bleu": 0.6516713827138322,
+            "ngram": 0.8271889400921659,
+            "syntax": 0.0,
+            "dataflow": 0.8888888888888888,
+            "codebleu": 0.789249737231629
+        }
+    },
+    {
+        "filename": "YARN-1149.json",
+        "creation_time": "2013-09-04T21:46:58.000+0000",
+        "commit": "3d567534d8d2d4f5ac4c98c36fc5c7205091ea9b",
+        "candidate_key": "ApplicationImpl.handle",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.handle",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/ContainerManagerImpl.java",
+        "codebleu": {
+            "bleu": 0.015737621740083987,
+            "ngram": 0.05421686746987952,
+            "syntax": 0.0,
+            "dataflow": 0.16129032258064516,
+            "codebleu": 0.07708160393020289
+        }
+    },
+    {
+        "filename": "YARN-7818.json",
+        "creation_time": "2018-01-25T18:42:55.000+0000",
+        "commit": "04c3f11de41f361be839f4ca926135610594c9ff",
+        "candidate_key": "DefaultLinuxContainerRuntime.launchContainer",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DefaultLinuxContainerRuntime.launchContainer",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/linux/runtime/DefaultLinuxContainerRuntime.java",
+        "codebleu": {
+            "bleu": 0.5260664298080612,
+            "ngram": 0.5287009063444109,
+            "syntax": 0.0,
+            "dataflow": 0.717948717948718,
+            "codebleu": 0.5909053513670632
+        }
+    }
+]

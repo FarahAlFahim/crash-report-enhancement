@@ -1,0 +1,2552 @@
+[
+    {
+        "filename": "ZOOKEEPER-1864.json",
+        "creation_time": "2014-01-20T06:09:53.000+0000",
+        "commit": "0252993977bb42940aae2088f29a5e4898bcf3da",
+        "candidate_key": "QuorumPeerConfig.parseProperties",
+        "ground_truth_method": "src.java.main.org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties",
+        "file_path": "src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
+        "codebleu": {
+            "bleu": 0.001747797730301403,
+            "ngram": 0.2830188679245283,
+            "syntax": 0.0,
+            "dataflow": 0.5625,
+            "codebleu": 0.28242222188494326
+        }
+    },
+    {
+        "filename": "AMQ-3434.json",
+        "creation_time": "2011-08-03T09:15:05.000+0000",
+        "commit": "bf59b7d70f7552053cfecb66db64658a314ae32c",
+        "candidate_key": "org.apache.kahadb.index.ListIndex.load",
+        "ground_truth_method": "kahadb.src.main.java.org.apache.kahadb.index.ListIndex.load",
+        "file_path": "kahadb/src/main/java/org/apache/kahadb/index/ListIndex.java",
+        "codebleu": {
+            "bleu": 0.6791236592894251,
+            "ngram": 0.6823529411764706,
+            "syntax": 0.0,
+            "dataflow": 0.859375,
+            "codebleu": 0.7402838668219651
+        }
+    },
+    {
+        "filename": "AMQ-5016.json",
+        "creation_time": "2014-02-03T16:40:26.000+0000",
+        "commit": "58ae402b1d61e74511cfd29e1aea7e9597b3a76b",
+        "candidate_key": "BitArrayBin.getOffset",
+        "ground_truth_method": "activemq-client.src.main.java.org.apache.activemq.util.BitArrayBin.getOffset",
+        "file_path": "activemq-client/src/main/java/org/apache/activemq/util/BitArrayBin.java",
+        "codebleu": {
+            "bleu": 0.7937559205024689,
+            "ngram": 0.803921568627451,
+            "syntax": 0.0,
+            "dataflow": 0.9166666666666666,
+            "codebleu": 0.8381147185988622
+        }
+    },
+    {
+        "filename": "AMQ-5016.json",
+        "creation_time": "2014-02-03T16:40:26.000+0000",
+        "commit": "58ae402b1d61e74511cfd29e1aea7e9597b3a76b",
+        "candidate_key": "BitArrayBin.getBin",
+        "ground_truth_method": "activemq-client.src.main.java.org.apache.activemq.util.BitArrayBin.getBin",
+        "file_path": "activemq-client/src/main/java/org/apache/activemq/util/BitArrayBin.java",
+        "codebleu": {
+            "bleu": 0.7260001819903146,
+            "ngram": 0.7402597402597403,
+            "syntax": 0.0,
+            "dataflow": 0.9166666666666666,
+            "codebleu": 0.7943088629722405
+        }
+    },
+    {
+        "filename": "AMQ-5016.json",
+        "creation_time": "2014-02-03T16:40:26.000+0000",
+        "commit": "58ae402b1d61e74511cfd29e1aea7e9597b3a76b",
+        "candidate_key": "BitArrayBin.getBitArray",
+        "ground_truth_method": "activemq-client.src.main.java.org.apache.activemq.util.BitArrayBin.getBitArray",
+        "file_path": "activemq-client/src/main/java/org/apache/activemq/util/BitArrayBin.java",
+        "codebleu": {
+            "bleu": 0.9625248317849852,
+            "ngram": 0.9629629629629629,
+            "syntax": 0.0,
+            "dataflow": 0.9565217391304348,
+            "codebleu": 0.9606698446261276
+        }
+    },
+    {
+        "filename": "AMQ-3622.json",
+        "creation_time": "2011-12-06T15:16:49.000+0000",
+        "commit": "760c62934d2ff5fe92e399cf7f980d8de4e191d4",
+        "candidate_key": "LastImageSubscriptionRecoveryPolicy.browse",
+        "ground_truth_method": "activemq-core.src.main.java.org.apache.activemq.broker.region.policy.LastImageSubscriptionRecoveryPolicy.browse",
+        "file_path": "activemq-core/src/main/java/org/apache/activemq/broker/region/policy/LastImageSubscriptionRecoveryPolicy.java",
+        "codebleu": {
+            "bleu": 0.6569837555712137,
+            "ngram": 0.7272727272727273,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.7947521609479803
+        }
+    },
+    {
+        "filename": "AMQ-5525.json",
+        "creation_time": "2015-01-19T13:47:50.000+0000",
+        "commit": "548aa1e41557f00f894fe160219bd155464f6c06",
+        "candidate_key": "ActiveMQCommand.prepare",
+        "ground_truth_method": "activemq-karaf.src.main.java.org.apache.activemq.karaf.commands.ActiveMQCommand.prepare",
+        "file_path": "activemq-karaf/src/main/java/org/apache/activemq/karaf/commands/ActiveMQCommand.java",
+        "codebleu": {
+            "bleu": 0.7159265693390171,
+            "ngram": 0.7853211009174312,
+            "syntax": 0.0,
+            "dataflow": 0.9213483146067416,
+            "codebleu": 0.8075319949543965
+        }
+    },
+    {
+        "filename": "AMQ-5141.json",
+        "creation_time": "2014-04-11T11:31:51.000+0000",
+        "commit": "7646526c0a6bf406e66751a7f1be8af353462c13",
+        "candidate_key": "sendToDeadLetterQueue",
+        "ground_truth_method": "activemq-broker.src.main.java.org.apache.activemq.broker.region.RegionBroker.sendToDeadLetterQueue",
+        "file_path": "activemq-broker/src/main/java/org/apache/activemq/broker/region/RegionBroker.java",
+        "codebleu": {
+            "bleu": 0.013060506264884588,
+            "ngram": 0.24193548387096775,
+            "syntax": 0.0,
+            "dataflow": 0.46875,
+            "codebleu": 0.24124866337861745
+        }
+    },
+    {
+        "filename": "AMQ-2902.json",
+        "creation_time": "2010-09-07T11:34:15.000+0000",
+        "commit": "c4911bda043fa76d4051a58f600be9652130fedf",
+        "candidate_key": "VMTransport.stop",
+        "ground_truth_method": "activemq-core.src.main.java.org.apache.activemq.transport.vm.VMTransport.stop",
+        "file_path": "activemq-core/src/main/java/org/apache/activemq/transport/vm/VMTransport.java",
+        "codebleu": {
+            "bleu": 0.6968982442881815,
+            "ngram": 0.6975308641975309,
+            "syntax": 0.0,
+            "dataflow": 0.7384615384615385,
+            "codebleu": 0.7109635489824169
+        }
+    },
+    {
+        "filename": "AMQ-3725.json",
+        "creation_time": "2012-02-17T18:57:21.000+0000",
+        "commit": "582af3e74adca7efbf7d88d092764325341b719d",
+        "candidate_key": "DataFileAppender.processQueue",
+        "ground_truth_method": "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.journal.DataFileAppender.processQueue",
+        "file_path": "activemq-kahadb-store/src/main/java/org/apache/activemq/store/kahadb/disk/journal/DataFileAppender.java",
+        "codebleu": {
+            "bleu": 0.4064984695047314,
+            "ngram": 0.4214992927864215,
+            "syntax": 0.0,
+            "dataflow": 0.5912408759124088,
+            "codebleu": 0.47307954606785385
+        }
+    },
+    {
+        "filename": "AMQ-5384.json",
+        "creation_time": "2014-10-06T09:26:58.000+0000",
+        "commit": "ad770ea79d9eaf9e40216ed2e116b2544fcd8e3e",
+        "candidate_key": "JDBCMessageStore.removeMessage",
+        "ground_truth_method": "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCMessageStore.removeMessage",
+        "file_path": "activemq-jdbc-store/src/main/java/org/apache/activemq/store/jdbc/JDBCMessageStore.java",
+        "codebleu": {
+            "bleu": 0.17718773459917933,
+            "ngram": 0.19900497512437812,
+            "syntax": 0.0,
+            "dataflow": 0.46153846153846156,
+            "codebleu": 0.2792437237540063
+        }
+    },
+    {
+        "filename": "HADOOP-9125.json",
+        "creation_time": "2012-12-10T02:07:52.000+0000",
+        "commit": "c427540ced4b9ac751f9ba89cba64b3e243fe4f2",
+        "candidate_key": "LdapGroupsMapping.getDirContext",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.LdapGroupsMapping.getDirContext",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java",
+        "codebleu": {
+            "bleu": 0.6609697901830125,
+            "ngram": 0.661849710982659,
+            "syntax": 0.0,
+            "dataflow": 0.7681159420289855,
+            "codebleu": 0.6969784810648856
+        }
+    },
+    {
+        "filename": "HADOOP-11878.json",
+        "creation_time": "2015-04-27T08:06:22.000+0000",
+        "commit": "2e3d83f97b85c015f16f1c162b8ef0e7fee1ddf2",
+        "candidate_key": "fixRelativePart",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.FileContext.fixRelativePart",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileContext.java",
+        "codebleu": {
+            "bleu": 0.36828504465726397,
+            "ngram": 0.38028169014084506,
+            "syntax": 0.0,
+            "dataflow": 0.45454545454545453,
+            "codebleu": 0.4010373964478545
+        }
+    },
+    {
+        "filename": "HADOOP-10540.json",
+        "creation_time": "2014-04-11T05:14:07.000+0000",
+        "commit": "774b78259654843d8fbba8a593603198dffba482",
+        "candidate_key": "createHardLink",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.HardLink.createHardLink",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/HardLink.java",
+        "codebleu": {
+            "bleu": 0.4378385971257701,
+            "ngram": 0.44095940959409596,
+            "syntax": 0.0,
+            "dataflow": 0.5423728813559322,
+            "codebleu": 0.4737236293585994
+        }
+    },
+    {
+        "filename": "HADOOP-15060.json",
+        "creation_time": "2017-11-22T00:18:55.000+0000",
+        "commit": "12d0645990a878f78216235c800ae4e157796160",
+        "candidate_key": "getUnixGroups",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedUnixGroupsMapping.java",
+        "codebleu": {
+            "bleu": 0.5663397242193632,
+            "ngram": 0.5668523676880223,
+            "syntax": 0.0,
+            "dataflow": 0.6063829787234043,
+            "codebleu": 0.5798583568769299
+        }
+    },
+    {
+        "filename": "HADOOP-10937.json",
+        "creation_time": "2014-08-04T21:22:55.000+0000",
+        "commit": "331421c2a4e2cf48cbfd8195a66f35ec51b1f740",
+        "candidate_key": "decryptEncryptedKey",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.KeyProviderCryptoExtension.decryptEncryptedKey",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/KeyProviderCryptoExtension.java",
+        "codebleu": {
+            "bleu": 0.07397746343820068,
+            "ngram": 0.07741935483870968,
+            "syntax": 0.0,
+            "dataflow": 0.140625,
+            "codebleu": 0.09734060609230345
+        }
+    },
+    {
+        "filename": "HADOOP-8031.json",
+        "creation_time": "2012-02-07T20:22:24.000+0000",
+        "commit": "11312adedb09886e94241aabd973064764b6d857",
+        "candidate_key": "loadResource",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.conf.Configuration.loadResource",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java",
+        "codebleu": {
+            "bleu": 0.682105596550735,
+            "ngram": 0.7293625914315569,
+            "syntax": 0.0,
+            "dataflow": 0.9745222929936306,
+            "codebleu": 0.7953301603253075
+        }
+    },
+    {
+        "filename": "HADOOP-15411.json",
+        "creation_time": "2018-04-24T23:18:39.000+0000",
+        "commit": "13d389bf5125c9f3bbc6863d93a6371fc2930417",
+        "candidate_key": "org.apache.hadoop.security.AuthenticationFilterInitializer.getFilterConfigMap",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.AuthenticationFilterInitializer.getFilterConfigMap",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/AuthenticationFilterInitializer.java",
+        "codebleu": {
+            "bleu": 0.7415434096678796,
+            "ngram": 0.7439613526570048,
+            "syntax": 0.0,
+            "dataflow": 0.9206349206349206,
+            "codebleu": 0.8020465609866017
+        }
+    },
+    {
+        "filename": "HADOOP-11693.json",
+        "creation_time": "2015-03-05T23:19:13.000+0000",
+        "commit": "7a346bcb4fa5b56191ed00a39e72e51c9bdf1b56",
+        "candidate_key": "rename",
+        "ground_truth_method": "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.AzureNativeFileSystemStore.rename",
+        "file_path": "hadoop-tools/hadoop-azure/src/main/java/org/apache/hadoop/fs/azure/AzureNativeFileSystemStore.java",
+        "codebleu": {
+            "bleu": 0.016928509599147976,
+            "ngram": 0.019891500904159132,
+            "syntax": 0.0,
+            "dataflow": 0.06818181818181818,
+            "codebleu": 0.035000609561708425
+        }
+    },
+    {
+        "filename": "HADOOP-11754.json",
+        "creation_time": "2015-03-26T05:22:54.000+0000",
+        "commit": "24d879026d3316fe4015aab627bc13ca7dc08fa5",
+        "candidate_key": "FileSignerSecretProvider.init",
+        "ground_truth_method": "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.init",
+        "file_path": "hadoop-common-project/hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/AuthenticationFilter.java",
+        "codebleu": {
+            "bleu": 0.05064697922729643,
+            "ngram": 0.09362549800796813,
+            "syntax": 0.0,
+            "dataflow": 0.1746031746031746,
+            "codebleu": 0.10629188394614639
+        }
+    },
+    {
+        "filename": "HADOOP-8225.json",
+        "creation_time": "2012-03-13T20:33:53.000+0000",
+        "commit": "6ec54ecabacca70c67a11a02302ab0e47923f946",
+        "candidate_key": "DistCp.main",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapred.YarnChild.main",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapred/YarnChild.java",
+        "codebleu": {
+            "bleu": 0.000663276501957775,
+            "ngram": 0.17832167832167833,
+            "syntax": 0.0,
+            "dataflow": 0.38636363636363635,
+            "codebleu": 0.1884495303957575
+        }
+    },
+    {
+        "filename": "HADOOP-11722.json",
+        "creation_time": "2015-03-16T21:39:07.000+0000",
+        "commit": "85473cd61a37a9b7614805bd83507cabe85eaeb0",
+        "candidate_key": "removeStoredToken",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.token.delegation.ZKDelegationTokenSecretManager.removeStoredToken",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java",
+        "codebleu": {
+            "bleu": 0.5216606327386268,
+            "ngram": 0.7883435582822086,
+            "syntax": 0.0,
+            "dataflow": 0.8245614035087719,
+            "codebleu": 0.7115218648432025
+        }
+    },
+    {
+        "filename": "HADOOP-15059.json",
+        "creation_time": "2017-11-21T20:54:52.000+0000",
+        "commit": "b1712f9c1f8026d979df1c66e14bed87410e1546",
+        "candidate_key": "Credentials.readTokenStorageStream",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Credentials.readTokenStorageStream",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/Credentials.java",
+        "codebleu": {
+            "bleu": 0.3120205887719997,
+            "ngram": 0.3192090395480226,
+            "syntax": 0.0,
+            "dataflow": 0.5,
+            "codebleu": 0.37707654277334074
+        }
+    },
+    {
+        "filename": "HADOOP-15307.json",
+        "creation_time": "2018-03-12T14:56:59.000+0000",
+        "commit": "a16623df2148e59e1b7dcf98939b03cb7440d143",
+        "candidate_key": "Verifier.readFlavorAndVerifier",
+        "ground_truth_method": "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.oncrpc.security.Verifier.readFlavorAndVerifier",
+        "file_path": "hadoop-common-project/hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/security/Verifier.java",
+        "codebleu": {
+            "bleu": 0.48656408501652954,
+            "ngram": 0.5652173913043478,
+            "syntax": 0.0,
+            "dataflow": 0.6744186046511628,
+            "codebleu": 0.5754000269906799
+        }
+    },
+    {
+        "filename": "HADOOP-11446.json",
+        "creation_time": "2014-12-23T22:15:23.000+0000",
+        "commit": "27d8395867f665fea1360087325cda5ed70efd0c",
+        "candidate_key": "S3AOutputStream.close",
+        "ground_truth_method": "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3a.S3AOutputStream.close",
+        "file_path": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AOutputStream.java",
+        "codebleu": {
+            "bleu": 0.8524779187381638,
+            "ngram": 0.8525469168900804,
+            "syntax": 0.0,
+            "dataflow": 0.8415841584158416,
+            "codebleu": 0.8488696646813618
+        }
+    },
+    {
+        "filename": "HADOOP-9977.json",
+        "creation_time": "2013-09-17T22:11:54.000+0000",
+        "commit": "0bdeb7d143e1567cbf2a409d4cab00ab9d71a4c8",
+        "candidate_key": "FileBasedKeyStoresFactory.init",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory.init",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/ssl/FileBasedKeyStoresFactory.java",
+        "codebleu": {
+            "bleu": 0.8258899488303587,
+            "ngram": 0.9610136452241715,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.9289678646848434
+        }
+    },
+    {
+        "filename": "HDFS-13023.json",
+        "creation_time": "2018-01-16T20:27:39.000+0000",
+        "commit": "2f6e958a510a823f9e2108ea026d08b2345ccae1",
+        "candidate_key": "syncWithJournalAtIndex",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.qjournal.server.JournalNodeSyncer.syncWithJournalAtIndex",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/qjournal/server/JournalNodeSyncer.java",
+        "codebleu": {
+            "bleu": 0.5542925315051983,
+            "ngram": 0.5555555555555556,
+            "syntax": 0.0,
+            "dataflow": 0.5416666666666666,
+            "codebleu": 0.5505049179091401
+        }
+    },
+    {
+        "filename": "HDFS-2245.json",
+        "creation_time": "2011-08-10T22:55:33.000+0000",
+        "commit": "6a7c0306bd9a600a943abb61606aaaf4f9beafee",
+        "candidate_key": "BlockManager.chooseTarget",
+        "ground_truth_method": "hdfs.src.java.org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.chooseTarget",
+        "file_path": "hdfs/src/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockManager.java",
+        "codebleu": {
+            "bleu": 0.6978483140018265,
+            "ngram": 0.70042194092827,
+            "syntax": 0.0,
+            "dataflow": 0.828125,
+            "codebleu": 0.7421317516433654
+        }
+    },
+    {
+        "filename": "HDFS-10320.json",
+        "creation_time": "2016-04-20T23:02:09.000+0000",
+        "commit": "1268cf5fbe4458fa75ad0662512d352f9e8d3470",
+        "candidate_key": "NetworkTopology.chooseRandom",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.net.NetworkTopology.chooseRandom",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java",
+        "codebleu": {
+            "bleu": 0.007946016171317502,
+            "ngram": 0.013824884792626729,
+            "syntax": 0.0,
+            "dataflow": 0.15384615384615385,
+            "codebleu": 0.05853901827003269
+        }
+    },
+    {
+        "filename": "HDFS-11479.json",
+        "creation_time": "2017-03-01T11:08:07.000+0000",
+        "commit": "899d5c4d49f00d90ddc3632efb2df92841867192",
+        "candidate_key": "SimpleUdpServer.run",
+        "ground_truth_method": "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.oncrpc.SimpleUdpServer.run",
+        "file_path": "hadoop-common-project/hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/SimpleUdpServer.java",
+        "codebleu": {
+            "bleu": 0.748244564086645,
+            "ngram": 0.7486033519553073,
+            "syntax": 0.0,
+            "dataflow": 0.765625,
+            "codebleu": 0.7541576386806508
+        }
+    },
+    {
+        "filename": "HDFS-8055.json",
+        "creation_time": "2015-04-02T23:21:55.000+0000",
+        "commit": "c7ebecfff5b609a66914b40f95294ad87a2afcc7",
+        "candidate_key": "DatanodeManager.sortLocatedBlocks",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.sortLocatedBlocks",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DatanodeManager.java",
+        "codebleu": {
+            "bleu": 0.7002566028400257,
+            "ngram": 0.7028169014084507,
+            "syntax": 0.0,
+            "dataflow": 0.9294117647058824,
+            "codebleu": 0.7774950896514529
+        }
+    },
+    {
+        "filename": "HDFS-3385.json",
+        "creation_time": "2012-05-08T12:45:31.000+0000",
+        "commit": "ba6360e493829312210666af93467d3d35d9d59d",
+        "candidate_key": "recoverLeaseInternal",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.recoverLeaseInternal",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
+        "codebleu": {
+            "bleu": 0.688078945995266,
+            "ngram": 0.9120443740095087,
+            "syntax": 0.0,
+            "dataflow": 0.978021978021978,
+            "codebleu": 0.8593817660089175
+        }
+    },
+    {
+        "filename": "HDFS-11472.json",
+        "creation_time": "2017-02-28T18:39:13.000+0000",
+        "commit": "1edefb52e6a07a120bc97c72d5d3c89a0dc0e827",
+        "candidate_key": "initReplicaRecovery",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.initReplicaRecovery",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/FsDatasetImpl.java",
+        "codebleu": {
+            "bleu": 0.024284224794545974,
+            "ngram": 0.036585365853658534,
+            "syntax": 0.0,
+            "dataflow": 0.11904761904761904,
+            "codebleu": 0.05997240323194118
+        }
+    },
+    {
+        "filename": "HDFS-10760.json",
+        "creation_time": "2016-08-12T08:29:24.000+0000",
+        "commit": "80bb9ffb67ef6e150e8dc4dd6afd2fcd0f823da5",
+        "candidate_key": "DataXceiver.run",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataXceiver.run",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataXceiver.java",
+        "codebleu": {
+            "bleu": 0.00010892775947295526,
+            "ngram": 0.176,
+            "syntax": 0.0,
+            "dataflow": 0.4772727272727273,
+            "codebleu": 0.2177938850107334
+        }
+    },
+    {
+        "filename": "HDFS-12383.json",
+        "creation_time": "2017-08-31T20:43:50.000+0000",
+        "commit": "633c1ea4554cae6cd684f60848497817d4ed3d82",
+        "candidate_key": "takeAndProcessTasks",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.ReencryptionUpdater.takeAndProcessTasks",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ReencryptionUpdater.java",
+        "codebleu": {
+            "bleu": 0.7825185788754682,
+            "ngram": 0.7837837837837838,
+            "syntax": 0.0,
+            "dataflow": 0.872093023255814,
+            "codebleu": 0.8127984619716886
+        }
+    },
+    {
+        "filename": "HDFS-5657.json",
+        "creation_time": "2013-12-11T21:59:46.000+0000",
+        "commit": "14bda8311fada9a474755362500a6b4957bf995d",
+        "candidate_key": "OpenFileCtx.checkAndStartWrite",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.checkAndStartWrite",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs-nfs/src/main/java/org/apache/hadoop/hdfs/nfs/nfs3/OpenFileCtx.java",
+        "codebleu": {
+            "bleu": 0.9250663093535785,
+            "ngram": 0.9739130434782609,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.9663264509439464
+        }
+    },
+    {
+        "filename": "HDFS-5657.json",
+        "creation_time": "2013-12-11T21:59:46.000+0000",
+        "commit": "14bda8311fada9a474755362500a6b4957bf995d",
+        "candidate_key": "OpenFileCtx.executeWriteBack",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.executeWriteBack",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs-nfs/src/main/java/org/apache/hadoop/hdfs/nfs/nfs3/OpenFileCtx.java",
+        "codebleu": {
+            "bleu": 0.2726787117335272,
+            "ngram": 0.7819548872180451,
+            "syntax": 0.0,
+            "dataflow": 0.9047619047619048,
+            "codebleu": 0.653131834571159
+        }
+    },
+    {
+        "filename": "HDFS-11827.json",
+        "creation_time": "2017-05-16T06:28:49.000+0000",
+        "commit": "0e95ff78c31f80da6748be347358619e1338ae1c",
+        "candidate_key": "chooseRandom",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseRandom",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockPlacementPolicyDefault.java",
+        "codebleu": {
+            "bleu": 0.05713860636269023,
+            "ngram": 0.05867768595041322,
+            "syntax": 0.0,
+            "dataflow": 0.20175438596491227,
+            "codebleu": 0.10585689275933857
+        }
+    },
+    {
+        "filename": "HDFS-5843.json",
+        "creation_time": "2014-01-28T06:05:16.000+0000",
+        "commit": "3d9ad8e3b60dd21db45466f4736abe6b1812b522",
+        "candidate_key": "DataXceiver.blockChecksum",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataXceiver.blockChecksum",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataXceiver.java",
+        "codebleu": {
+            "bleu": 0.8218113186473966,
+            "ngram": 0.8220064724919094,
+            "syntax": 0.0,
+            "dataflow": 0.9574468085106383,
+            "codebleu": 0.8670881998833148
+        }
+    },
+    {
+        "filename": "HDFS-8070.json",
+        "creation_time": "2015-04-06T19:57:58.000+0000",
+        "commit": "176d22b440f74fd2a96fa1e4f5d7925ffbc35f85",
+        "candidate_key": "opRequestShortCircuitFds",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.protocol.datatransfer.Receiver.opRequestShortCircuitFds",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/protocol/datatransfer/Receiver.java",
+        "codebleu": {
+            "bleu": 0.3690099850158372,
+            "ngram": 0.37055837563451777,
+            "syntax": 0.0,
+            "dataflow": 0.532258064516129,
+            "codebleu": 0.42394214172216127
+        }
+    },
+    {
+        "filename": "HDFS-6520.json",
+        "creation_time": "2014-06-12T02:32:29.000+0000",
+        "commit": "188f65287d5b2f26a8862c88198f83ac59035016",
+        "candidate_key": "NamenodeFsck.copyBlock",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NamenodeFsck.copyBlock",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NamenodeFsck.java",
+        "codebleu": {
+            "bleu": 0.8909067029064152,
+            "ngram": 0.9040139616055847,
+            "syntax": 0.0,
+            "dataflow": 0.9647887323943662,
+            "codebleu": 0.919903132302122
+        }
+    },
+    {
+        "filename": "HDFS-10715.json",
+        "creation_time": "2016-08-02T08:10:23.000+0000",
+        "commit": "57580268330222699c7c67766e27679b3b31968c",
+        "candidate_key": "AvailableSpaceBlockPlacementPolicy.chooseDataNode",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.AvailableSpaceBlockPlacementPolicy.chooseDataNode",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/AvailableSpaceBlockPlacementPolicy.java",
+        "codebleu": {
+            "bleu": 0.6806796579650755,
+            "ngram": 0.6830601092896175,
+            "syntax": 0.0,
+            "dataflow": 0.6216216216216216,
+            "codebleu": 0.6617871296254382
+        }
+    },
+    {
+        "filename": "HDFS-3332.json",
+        "creation_time": "2012-04-27T04:42:38.000+0000",
+        "commit": "75fab460417569c669dbdb8bd332a73110bacf9d",
+        "candidate_key": "org.apache.hadoop.hdfs.server.datanode.BPServiceActor.reportBadBlocks",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BPServiceActor.reportBadBlocks",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/BPServiceActor.java",
+        "codebleu": {
+            "bleu": 0.8940646077987519,
+            "ngram": 0.8944099378881988,
+            "syntax": 0.0,
+            "dataflow": 0.9555555555555556,
+            "codebleu": 0.9146767004141687
+        }
+    },
+    {
+        "filename": "HDFS-6825.json",
+        "creation_time": "2014-08-06T01:31:34.000+0000",
+        "commit": "9b38a6ab2330117ab36862be6c2c26a716120893",
+        "candidate_key": "commitBlockSynchronization",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.commitBlockSynchronization",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
+        "codebleu": {
+            "bleu": 0.4702441999995275,
+            "ngram": 0.8510506798516687,
+            "syntax": 0.0,
+            "dataflow": 0.8823529411764706,
+            "codebleu": 0.7345492736758888
+        }
+    },
+    {
+        "filename": "HDFS-5710.json",
+        "creation_time": "2014-01-01T04:06:03.000+0000",
+        "commit": "716074bc80047c2ec3a4e74748194a3770a898f6",
+        "candidate_key": "FSDirectory.getFullPathName",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSDirectory.getFullPathName",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSDirectory.java",
+        "codebleu": {
+            "bleu": 0.029533740063358366,
+            "ngram": 0.11403508771929824,
+            "syntax": 0.0,
+            "dataflow": 0.3684210526315789,
+            "codebleu": 0.17066329347141185
+        }
+    },
+    {
+        "filename": "HDFS-7916.json",
+        "creation_time": "2015-03-11T10:40:00.000+0000",
+        "commit": "1e4a686ea9572159c512ae41d661b7a9fc1b0f27",
+        "candidate_key": "ReportBadBlockAction.reportTo",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.ReportBadBlockAction.reportTo",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/ReportBadBlockAction.java",
+        "codebleu": {
+            "bleu": 0.5637504633726437,
+            "ngram": 0.5672645739910314,
+            "syntax": 0.0,
+            "dataflow": 0.6862745098039216,
+            "codebleu": 0.6057631823891988
+        }
+    },
+    {
+        "filename": "HDFS-11164.json",
+        "creation_time": "2016-11-22T05:58:03.000+0000",
+        "commit": "e24a923db50879f7dbe5d2afac0e6757089fb07d",
+        "candidate_key": "Dispatcher$PendingMove.receiveResponse",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.balancer.Dispatcher.receiveResponse",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/balancer/Dispatcher.java",
+        "codebleu": {
+            "bleu": 0.47847070889517423,
+            "ngram": 0.47876447876447875,
+            "syntax": 0.0,
+            "dataflow": 0.6666666666666666,
+            "codebleu": 0.5413006181087732
+        }
+    },
+    {
+        "filename": "HDFS-13164.json",
+        "creation_time": "2018-02-17T00:40:21.000+0000",
+        "commit": "106f4b692e3a0fed24c0325f06d9d88ec2650a18",
+        "candidate_key": "DFSOutputStream.closeImpl",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs-client.src.main.java.org.apache.hadoop.hdfs.DFSOutputStream.closeImpl",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/DFSOutputStream.java",
+        "codebleu": {
+            "bleu": 0.045795544769655784,
+            "ngram": 0.22592592592592592,
+            "syntax": 0.0,
+            "dataflow": 0.4444444444444444,
+            "codebleu": 0.23872197171334203
+        }
+    },
+    {
+        "filename": "HDFS-6462.json",
+        "creation_time": "2014-05-29T00:19:03.000+0000",
+        "commit": "c55947343e0a629f71d69b49ba87997573fe48a2",
+        "candidate_key": "org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.fsstat",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.fsstat",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs-nfs/src/main/java/org/apache/hadoop/hdfs/nfs/nfs3/RpcProgramNfs3.java",
+        "codebleu": {
+            "bleu": 0.7736870006480111,
+            "ngram": 0.8132678132678133,
+            "syntax": 0.0,
+            "dataflow": 0.8446601941747572,
+            "codebleu": 0.8105383360301938
+        }
+    },
+    {
+        "filename": "HDFS-8807.json",
+        "creation_time": "2015-07-22T20:45:55.000+0000",
+        "commit": "78ec38b2ede8bdf3874b2ae051af9580007a9ba1",
+        "candidate_key": "StorageLocation.parse",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.StorageLocation.parse",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/StorageLocation.java",
+        "codebleu": {
+            "bleu": 0.6128289193788998,
+            "ngram": 0.6145038167938931,
+            "syntax": 0.0,
+            "dataflow": 0.6829268292682927,
+            "codebleu": 0.6367531884803619
+        }
+    },
+    {
+        "filename": "HIVE-10992.json",
+        "creation_time": "2015-06-12T19:52:35.000+0000",
+        "commit": "051bf0b1785262e29a269b76c8aa798e8e85117c",
+        "candidate_key": "TempletonControllerJob.run",
+        "ground_truth_method": "hcatalog.webhcat.svr.src.main.java.org.apache.hive.hcatalog.templeton.tool.TempletonControllerJob.run",
+        "file_path": "hcatalog/webhcat/svr/src/main/java/org/apache/hive/hcatalog/templeton/tool/TempletonControllerJob.java",
+        "codebleu": {
+            "bleu": 0.004449549453208926,
+            "ngram": 0.44339622641509435,
+            "syntax": 0.0,
+            "dataflow": 0.72,
+            "codebleu": 0.3892819252894344
+        }
+    },
+    {
+        "filename": "HIVE-16450.json",
+        "creation_time": "2017-04-14T13:59:12.000+0000",
+        "commit": "301e7c5eaba790687818a57d92b046f746bb3d76",
+        "candidate_key": "getMTableColumnStatistics",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.ObjectStore.getMTableColumnStatistics",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/ObjectStore.java",
+        "codebleu": {
+            "bleu": 0.9251134189989788,
+            "ngram": 0.9251968503937008,
+            "syntax": 0.0,
+            "dataflow": 0.9078947368421053,
+            "codebleu": 0.9194016687449282
+        }
+    },
+    {
+        "filename": "HIVE-13691.json",
+        "creation_time": "2016-05-04T23:40:03.000+0000",
+        "commit": "4959ff5bb7dc590e21f680b9d9be0f2270414309",
+        "candidate_key": "CompactionTxnHandler.markFailed",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.txn.CompactionTxnHandler.markFailed",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/txn/CompactionTxnHandler.java",
+        "codebleu": {
+            "bleu": 0.6625694937961912,
+            "ngram": 0.893223819301848,
+            "syntax": 0.0,
+            "dataflow": 0.946969696969697,
+            "codebleu": 0.8342543366892453
+        }
+    },
+    {
+        "filename": "HIVE-14898.json",
+        "creation_time": "2016-10-06T00:02:36.000+0000",
+        "commit": "489b37a545b383e883aa37f80ed10cfd8d213dee",
+        "candidate_key": "doKerberosAuth",
+        "ground_truth_method": "service.src.java.org.apache.hive.service.cli.thrift.ThriftHttpServlet.doKerberosAuth",
+        "file_path": "service/src/java/org/apache/hive/service/cli/thrift/ThriftHttpServlet.java",
+        "codebleu": {
+            "bleu": 0.6447547403884885,
+            "ngram": 0.6457399103139013,
+            "syntax": 0.0,
+            "dataflow": 0.6491228070175439,
+            "codebleu": 0.6465391525733112
+        }
+    },
+    {
+        "filename": "HIVE-12608.json",
+        "creation_time": "2015-12-07T21:26:01.000+0000",
+        "commit": "c3f4ab44d07b7de4ae67cc92afa4dedf9de17133",
+        "candidate_key": "HiveStructConverter.getStructFieldTypeInfo",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.io.parquet.convert.HiveStructConverter.getStructFieldTypeInfo",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/io/parquet/convert/HiveStructConverter.java",
+        "codebleu": {
+            "bleu": 0.4349843179688598,
+            "ngram": 0.43714285714285717,
+            "syntax": 0.0,
+            "dataflow": 0.49056603773584906,
+            "codebleu": 0.4542310709491886
+        }
+    },
+    {
+        "filename": "HIVE-5199.json",
+        "creation_time": "2013-09-03T20:40:29.000+0000",
+        "commit": "e2747654fdd3bc2e713d8cf20d2278340beeb0c1",
+        "candidate_key": "ObjectInspectorConverters.getConverter",
+        "ground_truth_method": "serde.src.java.org.apache.hadoop.hive.serde2.objectinspector.ObjectInspectorConverters.getConverter",
+        "file_path": "serde/src/java/org/apache/hadoop/hive/serde2/objectinspector/ObjectInspectorConverters.java",
+        "codebleu": {
+            "bleu": 0.22120438463032532,
+            "ngram": 0.32,
+            "syntax": 0.0,
+            "dataflow": 0.423728813559322,
+            "codebleu": 0.3216443993965491
+        }
+    },
+    {
+        "filename": "HIVE-14303.json",
+        "creation_time": "2016-07-21T03:16:20.000+0000",
+        "commit": "529814e3d0bfaefdf3f1625d014d9e05149f5ccf",
+        "candidate_key": "CommonJoinOperator.checkAndGenObject",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.CommonJoinOperator.checkAndGenObject",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/CommonJoinOperator.java",
+        "codebleu": {
+            "bleu": 0.6765286044686039,
+            "ngram": 0.8515151515151516,
+            "syntax": 0.0,
+            "dataflow": 0.9365079365079365,
+            "codebleu": 0.8215172308305638
+        }
+    },
+    {
+        "filename": "HIVE-6205.json",
+        "creation_time": "2014-01-15T07:34:15.000+0000",
+        "commit": "4d62b4621871c79de3210157dc33021d746b5b2b",
+        "candidate_key": "doAuthorization",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.Driver.doAuthorization",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/Driver.java",
+        "codebleu": {
+            "bleu": 0.9138785834167272,
+            "ngram": 0.9477095937770095,
+            "syntax": 0.0,
+            "dataflow": 0.9528795811518325,
+            "codebleu": 0.938155919448523
+        }
+    },
+    {
+        "filename": "HIVE-15309.json",
+        "creation_time": "2016-11-29T21:56:28.000+0000",
+        "commit": "54b3abf5246765e9b173033bc9b16aec9965b00d",
+        "candidate_key": "getLastFlushLength",
+        "ground_truth_method": "orc.src.java.org.apache.orc.impl.OrcAcidUtils.getLastFlushLength",
+        "file_path": "orc/src/java/org/apache/orc/impl/OrcAcidUtils.java",
+        "codebleu": {
+            "bleu": 0.02350863420717048,
+            "ngram": 0.049019607843137254,
+            "syntax": 0.0,
+            "dataflow": 0.22448979591836735,
+            "codebleu": 0.09900601265622502
+        }
+    },
+    {
+        "filename": "HIVE-8295.json",
+        "creation_time": "2014-09-29T21:16:32.000+0000",
+        "commit": "db69d9bfdfd1d6a11363abf7a66b97619af0dba7",
+        "candidate_key": "getPartitionsViaSqlFilterInternal",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.MetaStoreDirectSql.getPartitionsViaSqlFilterInternal",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/MetaStoreDirectSql.java",
+        "codebleu": {
+            "bleu": 0.4577663733377693,
+            "ngram": 0.5103448275862069,
+            "syntax": 0.0,
+            "dataflow": 0.6319444444444444,
+            "codebleu": 0.5333518817894736
+        }
+    },
+    {
+        "filename": "HIVE-8915.json",
+        "creation_time": "2014-11-19T19:40:17.000+0000",
+        "commit": "c40c6deb65f30897b9967439edef47a5e740c26e",
+        "candidate_key": "Cleaner.run",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.txn.compactor.Cleaner.run",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/txn/compactor/Cleaner.java",
+        "codebleu": {
+            "bleu": 0.001060888387586439,
+            "ngram": 0.14146341463414633,
+            "syntax": 0.0,
+            "dataflow": 0.296875,
+            "codebleu": 0.1464664343405776
+        }
+    },
+    {
+        "filename": "HIVE-11540.json",
+        "creation_time": "2015-08-12T23:12:18.000+0000",
+        "commit": "26910c8aaaf8fa4e183e05d76d45bde0a353f04f",
+        "candidate_key": "CompactorMR.run",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.txn.compactor.CompactorMR.run",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/txn/compactor/CompactorMR.java",
+        "codebleu": {
+            "bleu": 0.15645875417131966,
+            "ngram": 0.4014732965009208,
+            "syntax": 0.0,
+            "dataflow": 0.46710526315789475,
+            "codebleu": 0.341679104610045
+        }
+    },
+    {
+        "filename": "HIVE-7623.json",
+        "creation_time": "2014-08-05T23:58:27.000+0000",
+        "commit": "977938d3b47a47f80e1bd59c768a99926a0b8246",
+        "candidate_key": "alterPartition",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.HiveAlterHandler.alterPartition",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/HiveAlterHandler.java",
+        "codebleu": {
+            "bleu": 0.9889376433652369,
+            "ngram": 0.988950276243094,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.9926293065361103
+        }
+    },
+    {
+        "filename": "HIVE-15997.json",
+        "creation_time": "2017-02-21T16:49:46.000+0000",
+        "commit": "35d707950ddd210c37533be3da51cea730bac881",
+        "candidate_key": "ZooKeeperHiveLockManager.unlockPrimitive",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.lockmgr.zookeeper.ZooKeeperHiveLockManager.unlockPrimitive",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/lockmgr/zookeeper/ZooKeeperHiveLockManager.java",
+        "codebleu": {
+            "bleu": 0.433427110320853,
+            "ngram": 0.8466076696165191,
+            "syntax": 0.0,
+            "dataflow": 0.91,
+            "codebleu": 0.7300115933124574
+        }
+    },
+    {
+        "filename": "HIVE-7009.json",
+        "creation_time": "2014-05-02T20:50:24.000+0000",
+        "commit": "6ded60a474d2fbd3287a79de8a84c8becc2a1c81",
+        "candidate_key": "getDefaultDestDir",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.tez.DagUtils.getDefaultDestDir",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/tez/DagUtils.java",
+        "codebleu": {
+            "bleu": 0.6312523643836649,
+            "ngram": 0.631578947368421,
+            "syntax": 0.0,
+            "dataflow": 0.6417910447761194,
+            "codebleu": 0.6348741188427351
+        }
+    },
+    {
+        "filename": "HIVE-9755.json",
+        "creation_time": "2015-02-23T20:50:43.000+0000",
+        "commit": "b6fc6df73f61a2a336471015a73c9eb888fbfac5",
+        "candidate_key": "GenericUDAFnGrams.merge",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.udf.generic.GenericUDAFnGrams.merge",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/udf/generic/GenericUDAFnGrams.java",
+        "codebleu": {
+            "bleu": 0.7082821824046683,
+            "ngram": 0.7461538461538462,
+            "syntax": 0.0,
+            "dataflow": 0.9056603773584906,
+            "codebleu": 0.786698801972335
+        }
+    },
+    {
+        "filename": "HIVE-13090.json",
+        "creation_time": "2016-02-18T21:58:48.000+0000",
+        "commit": "0596951d2295cf42c63e88a0f805a3db0188b01b",
+        "candidate_key": "ZooKeeperTokenStore.getToken",
+        "ground_truth_method": "shims.common.src.main.java.org.apache.hadoop.hive.thrift.ZooKeeperTokenStore.getToken",
+        "file_path": "shims/common/src/main/java/org/apache/hadoop/hive/thrift/ZooKeeperTokenStore.java",
+        "codebleu": {
+            "bleu": 0.6657291762257344,
+            "ngram": 0.6708860759493671,
+            "syntax": 0.0,
+            "dataflow": 0.8064516129032258,
+            "codebleu": 0.7143556216927758
+        }
+    },
+    {
+        "filename": "HIVE-5664.json",
+        "creation_time": "2013-10-28T03:50:29.000+0000",
+        "commit": "9d79058f488b48b6644a93fe59a2c890bfd1dcbe",
+        "candidate_key": "DDLTask.dropDatabase",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.HiveMetaStoreClient.dropDatabase",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/HiveMetaStoreClient.java",
+        "codebleu": {
+            "bleu": 0.020528915837478207,
+            "ngram": 0.030612244897959183,
+            "syntax": 0.0,
+            "dataflow": 0.15789473684210525,
+            "codebleu": 0.06967863252584755
+        }
+    },
+    {
+        "filename": "HIVE-14714.json",
+        "creation_time": "2016-09-07T15:46:07.000+0000",
+        "commit": "96508d341fbae4d9ff4268bdcff4849893d9c277",
+        "candidate_key": "SparkClientImpl$Redirector.run",
+        "ground_truth_method": "spark-client.src.main.java.org.apache.hive.spark.client.SparkClientImpl.run",
+        "file_path": "spark-client/src/main/java/org/apache/hive/spark/client/SparkClientImpl.java",
+        "codebleu": {
+            "bleu": 0.005100255642426312,
+            "ngram": 0.008982035928143712,
+            "syntax": 0.0,
+            "dataflow": 0.05405405405405406,
+            "codebleu": 0.022712115208208025
+        }
+    },
+    {
+        "filename": "HIVE-6984.json",
+        "creation_time": "2014-04-28T23:08:43.000+0000",
+        "commit": "b1f556296405814e6b492660c8f03bcb9d892d4c",
+        "candidate_key": "gatherStats",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.TableScanOperator.gatherStats",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/TableScanOperator.java",
+        "codebleu": {
+            "bleu": 0.8933713360270656,
+            "ngram": 0.9210526315789473,
+            "syntax": 0.0,
+            "dataflow": 0.967479674796748,
+            "codebleu": 0.9273012141342536
+        }
+    },
+    {
+        "filename": "HIVE-10736.json",
+        "creation_time": "2015-05-18T03:25:45.000+0000",
+        "commit": "52635cbe1363e6f975b616b946871430e6fca781",
+        "candidate_key": "ql.src.java.org.apache.hadoop.hive.ql.exec.tez.TezSessionPoolManager.stop",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.tez.TezSessionPoolManager.stop",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/tez/TezSessionPoolManager.java",
+        "codebleu": {
+            "bleu": 0.4896806195916987,
+            "ngram": 0.5379746835443038,
+            "syntax": 0.0,
+            "dataflow": 0.6296296296296297,
+            "codebleu": 0.5524283109218773
+        }
+    },
+    {
+        "filename": "HIVE-7710.json",
+        "creation_time": "2014-08-13T10:46:32.000+0000",
+        "commit": "add4b616b6ba409e0bd4fbe25994a13a31d350e1",
+        "candidate_key": "alterTable",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.HiveAlterHandler.alterTable",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/HiveAlterHandler.java",
+        "codebleu": {
+            "bleu": 0.00529408575650868,
+            "ngram": 0.35942028985507246,
+            "syntax": 0.0,
+            "dataflow": 0.5757575757575758,
+            "codebleu": 0.31349065045638563
+        }
+    },
+    {
+        "filename": "HIVE-8735.json",
+        "creation_time": "2014-11-04T22:20:02.000+0000",
+        "commit": "24e6b64c546f95fdb93734a639e521f91f0433f1",
+        "candidate_key": "JDBCStatsPublisher.publishStat",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.stats.jdbc.JDBCStatsPublisher.publishStat",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/stats/jdbc/JDBCStatsPublisher.java",
+        "codebleu": {
+            "bleu": 0.8802487192362227,
+            "ngram": 0.9122383252818036,
+            "syntax": 0.0,
+            "dataflow": 0.952,
+            "codebleu": 0.9148290148393421
+        }
+    },
+    {
+        "filename": "HIVE-13209.json",
+        "creation_time": "2016-03-04T21:39:50.000+0000",
+        "commit": "109a3a3c1760c9bbb0085804a1e0ebaea9f1b567",
+        "candidate_key": "get_delegation_token",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.HiveMetaStore.get_delegation_token",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/HiveMetaStore.java",
+        "codebleu": {
+            "bleu": 0.7752400093485807,
+            "ngram": 0.7757847533632287,
+            "syntax": 0.0,
+            "dataflow": 0.7692307692307693,
+            "codebleu": 0.7734185106475262
+        }
+    },
+    {
+        "filename": "HIVE-11470.json",
+        "creation_time": "2015-08-05T18:45:26.000+0000",
+        "commit": "0b96c9b7662d4326b02af5b2d84321978e65ea46",
+        "candidate_key": "DynamicPartitionFileRecordWriterContainer.getLocalFileWriter",
+        "ground_truth_method": "hcatalog.core.src.main.java.org.apache.hive.hcatalog.mapreduce.DynamicPartitionFileRecordWriterContainer.getLocalFileWriter",
+        "file_path": "hcatalog/core/src/main/java/org/apache/hive/hcatalog/mapreduce/DynamicPartitionFileRecordWriterContainer.java",
+        "codebleu": {
+            "bleu": 0.9538138953356406,
+            "ngram": 0.9538950715421304,
+            "syntax": 0.0,
+            "dataflow": 0.9902912621359223,
+            "codebleu": 0.9660000763378978
+        }
+    },
+    {
+        "filename": "HIVE-10559.json",
+        "creation_time": "2015-04-30T21:12:40.000+0000",
+        "commit": "6a2993912730702edb68dd37acee7ec0af4e6d19",
+        "candidate_key": "RemoveDynamicPruningBySize.process",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.optimizer.RemoveDynamicPruningBySize.process",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/optimizer/RemoveDynamicPruningBySize.java",
+        "codebleu": {
+            "bleu": 0.5526221329204327,
+            "ngram": 0.5548523206751055,
+            "syntax": 0.0,
+            "dataflow": 0.7721518987341772,
+            "codebleu": 0.6265421174432384
+        }
+    },
+    {
+        "filename": "HIVE-4975.json",
+        "creation_time": "2013-08-01T16:21:38.000+0000",
+        "commit": "797c923a584d8f7abf20ae3ab199a78b4132edaf",
+        "candidate_key": "org.apache.hadoop.hive.ql.io.orc.OrcStruct.getStructFieldData",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.io.orc.OrcStruct.getStructFieldData",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/io/orc/OrcStruct.java",
+        "codebleu": {
+            "bleu": 0.2966218714191134,
+            "ngram": 0.32608695652173914,
+            "syntax": 0.0,
+            "dataflow": 0.6666666666666666,
+            "codebleu": 0.4297918315358397
+        }
+    },
+    {
+        "filename": "HIVE-4975.json",
+        "creation_time": "2013-08-01T16:21:38.000+0000",
+        "commit": "797c923a584d8f7abf20ae3ab199a78b4132edaf",
+        "candidate_key": "org.apache.hadoop.hive.serde2.objectinspector.UnionStructObjectInspector.getStructFieldData",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.io.orc.OrcStruct.getStructFieldData",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/io/orc/OrcStruct.java",
+        "codebleu": {
+            "bleu": 0.06583388154246511,
+            "ngram": 0.08447488584474885,
+            "syntax": 0.0,
+            "dataflow": 0.20512820512820512,
+            "codebleu": 0.11847899083847302
+        }
+    },
+    {
+        "filename": "HIVE-11902.json",
+        "creation_time": "2015-09-21T16:12:37.000+0000",
+        "commit": "5a5539c36ef2e473edb143dc4320f33e7f380891",
+        "candidate_key": "performTimeOuts",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.txn.TxnHandler.performTimeOuts",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/txn/TxnHandler.java",
+        "codebleu": {
+            "bleu": 0.9020144315656801,
+            "ngram": 0.9113924050632911,
+            "syntax": 0.0,
+            "dataflow": 0.9318181818181818,
+            "codebleu": 0.9150750061490509
+        }
+    },
+    {
+        "filename": "HIVE-18918.json",
+        "creation_time": "2018-03-09T00:47:55.000+0000",
+        "commit": "34eb9ed104af2b712301a6d6fa8a14fe3f9afd34",
+        "candidate_key": "launchCompactionJob",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.txn.compactor.CompactorMR.launchCompactionJob",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/txn/compactor/CompactorMR.java",
+        "codebleu": {
+            "bleu": 0.8171022046963129,
+            "ngram": 0.8176352705410822,
+            "syntax": 0.0,
+            "dataflow": 0.9423076923076923,
+            "codebleu": 0.8590150558483625
+        }
+    },
+    {
+        "filename": "HIVE-1326.json",
+        "creation_time": "2010-04-25T20:50:54.000+0000",
+        "commit": "71be0ef3430c80594cd6bda9959f8575ebe0c868",
+        "candidate_key": "RowContainer.spillBlock",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.persistence.RowContainer.spillBlock",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/persistence/RowContainer.java",
+        "codebleu": {
+            "bleu": 0.7844779645057847,
+            "ngram": 0.8853904282115869,
+            "syntax": 0.0,
+            "dataflow": 0.9042553191489362,
+            "codebleu": 0.8580412372887691
+        }
+    },
+    {
+        "filename": "HIVE-9055.json",
+        "creation_time": "2014-12-09T19:51:18.000+0000",
+        "commit": "4fea407ed131fbe05eed42099aaeb1c6696424e9",
+        "candidate_key": "GenTezWork.process",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.parse.GenTezWork.process",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/parse/GenTezWork.java",
+        "codebleu": {
+            "bleu": 0.9391239130596385,
+            "ngram": 0.9392773502843761,
+            "syntax": 0.0,
+            "dataflow": 0.9720930232558139,
+            "codebleu": 0.9501647621999427
+        }
+    },
+    {
+        "filename": "HIVE-13856.json",
+        "creation_time": "2016-05-25T21:50:49.000+0000",
+        "commit": "383650820d98ebb2806d966fabb97cbc36b1da27",
+        "candidate_key": "openTxns",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.txn.TxnHandler.openTxns",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/txn/TxnHandler.java",
+        "codebleu": {
+            "bleu": 0.4908562635297429,
+            "ngram": 0.7751004016064257,
+            "syntax": 0.0,
+            "dataflow": 0.9172413793103448,
+            "codebleu": 0.7277326814821711
+        }
+    },
+    {
+        "filename": "HIVE-6990.json",
+        "creation_time": "2014-04-30T04:24:25.000+0000",
+        "commit": "453f44cdbdc88d94b1eb98610048c0857f9d0cd3",
+        "candidate_key": "getPartitionsViaSqlFilterInternal",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.MetaStoreDirectSql.getPartitionsViaSqlFilterInternal",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/MetaStoreDirectSql.java",
+        "codebleu": {
+            "bleu": 0.1207740802153795,
+            "ngram": 0.12427904421862125,
+            "syntax": 0.0,
+            "dataflow": 0.3489583333333333,
+            "codebleu": 0.19800381925577804
+        }
+    },
+    {
+        "filename": "HIVE-10816.json",
+        "creation_time": "2015-05-25T08:08:37.000+0000",
+        "commit": "0e47786f54b2b61ce5c8dec4f962e8cd4ca5ba4d",
+        "candidate_key": "ExecDriver.handleSampling",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.mr.ExecDriver.handleSampling",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/mr/ExecDriver.java",
+        "codebleu": {
+            "bleu": 0.8230904880425599,
+            "ngram": 0.8239277652370203,
+            "syntax": 0.0,
+            "dataflow": 0.9035087719298246,
+            "codebleu": 0.8501756750698016
+        }
+    },
+    {
+        "filename": "HIVE-11102.json",
+        "creation_time": "2015-06-24T22:54:55.000+0000",
+        "commit": "023c06c17d7e03ba0458ed2bac6b475102150d77",
+        "candidate_key": "getColumnIndicesFromNames",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.io.orc.ReaderImpl.getColumnIndicesFromNames",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/io/orc/ReaderImpl.java",
+        "codebleu": {
+            "bleu": 0.8229677004410817,
+            "ngram": 0.9107648725212465,
+            "syntax": 0.0,
+            "dataflow": 0.881578947368421,
+            "codebleu": 0.8717705067769164
+        }
+    },
+    {
+        "filename": "HIVE-8771.json",
+        "creation_time": "2014-11-07T00:30:25.000+0000",
+        "commit": "5156b110447c9166e3408dfde21df2a7b7d8fdd7",
+        "candidate_key": "AbstractFileMergeOperator.closeOp",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.AbstractFileMergeOperator.closeOp",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/AbstractFileMergeOperator.java",
+        "codebleu": {
+            "bleu": 0.709917995231075,
+            "ngram": 0.7107438016528925,
+            "syntax": 0.0,
+            "dataflow": 0.7432432432432432,
+            "codebleu": 0.7213016800424035
+        }
+    },
+    {
+        "filename": "HIVE-8766.json",
+        "creation_time": "2014-11-06T22:08:43.000+0000",
+        "commit": "aed61b869f9129b6096a768636757b9f19e672e7",
+        "candidate_key": "RetryingHMSHandler.invoke",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.RetryingHMSHandler.invoke",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/RetryingHMSHandler.java",
+        "codebleu": {
+            "bleu": 0.6116848767102653,
+            "ngram": 0.8985801217038539,
+            "syntax": 0.0,
+            "dataflow": 0.9882352941176471,
+            "codebleu": 0.832833430843922
+        }
+    },
+    {
+        "filename": "HIVE-1547.json",
+        "creation_time": "2010-08-17T02:09:54.000+0000",
+        "commit": "4725e62a911b5af88e13b33a17117383f3744dd2",
+        "candidate_key": "unarchive",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.DDLTask.unarchive",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/DDLTask.java",
+        "codebleu": {
+            "bleu": 0.9599237754891395,
+            "ngram": 0.9599348534201955,
+            "syntax": 0.0,
+            "dataflow": 0.9873949579831933,
+            "codebleu": 0.9690845289641761
+        }
+    },
+    {
+        "filename": "HIVE-17274.json",
+        "creation_time": "2017-08-08T22:20:33.000+0000",
+        "commit": "0f7951b12c0bfe16f6a11f317005d99887e3ef94",
+        "candidate_key": "RowContainer.setupWriter",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.persistence.RowContainer.setupWriter",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/persistence/RowContainer.java",
+        "codebleu": {
+            "bleu": 0.7926846956027597,
+            "ngram": 0.8351648351648352,
+            "syntax": 0.0,
+            "dataflow": 0.9090909090909091,
+            "codebleu": 0.8456468132861679
+        }
+    },
+    {
+        "filename": "HIVE-9141.json",
+        "creation_time": "2014-12-17T07:23:05.000+0000",
+        "commit": "19bc7f113a98a592a6721fd54fbcfb73ad5979a3",
+        "candidate_key": "GenTezWork.process",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.parse.GenTezWork.process",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/parse/GenTezWork.java",
+        "codebleu": {
+            "bleu": 0.9243303897999876,
+            "ngram": 0.9245061935051891,
+            "syntax": 0.0,
+            "dataflow": 0.9810874704491725,
+            "codebleu": 0.9433080179181164
+        }
+    },
+    {
+        "filename": "HIVE-14784.json",
+        "creation_time": "2016-09-17T02:00:28.000+0000",
+        "commit": "0562efce642e70f1ac69eae6cca8c0a63230bafd",
+        "candidate_key": "Operation.createOperationLog",
+        "ground_truth_method": "service.src.java.org.apache.hive.service.cli.operation.Operation.createOperationLog",
+        "file_path": "service/src/java/org/apache/hive/service/cli/operation/Operation.java",
+        "codebleu": {
+            "bleu": 0.7304137851179041,
+            "ngram": 0.9086161879895561,
+            "syntax": 0.0,
+            "dataflow": 0.9615384615384616,
+            "codebleu": 0.8668561448819738
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3241.json",
+        "creation_time": "2011-10-21T16:25:33.000+0000",
+        "commit": "5b201c3fcb8d93f56196e062fbfeb44f91be7818",
+        "candidate_key": "JobBuilder.process",
+        "ground_truth_method": "hadoop-mapreduce-project.src.tools.org.apache.hadoop.tools.rumen.JobBuilder.process",
+        "file_path": "hadoop-mapreduce-project/src/tools/org/apache/hadoop/tools/rumen/JobBuilder.java",
+        "codebleu": {
+            "bleu": 0.009881577421888159,
+            "ngram": 0.22815533980582525,
+            "syntax": 0.0,
+            "dataflow": 0.36363636363636365,
+            "codebleu": 0.2005577602880257
+        }
+    },
+    {
+        "filename": "MAPREDUCE-4048.json",
+        "creation_time": "2012-03-21T10:01:09.000+0000",
+        "commit": "13acee63d32d5fc21fe262fb523794119aacd7da",
+        "candidate_key": "AppController.attempts",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.webapp.AppController.attempts",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/webapp/AppController.java",
+        "codebleu": {
+            "bleu": 0.6546948734361606,
+            "ngram": 0.7075471698113207,
+            "syntax": 0.0,
+            "dataflow": 0.9512195121951219,
+            "codebleu": 0.771153851814201
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3790.json",
+        "creation_time": "2012-02-02T18:04:23.000+0000",
+        "commit": "61b6c7fc03df0aa476163b38dbe2a50ebb5079d6",
+        "candidate_key": "PipeMapRed.mapRedFinished",
+        "ground_truth_method": "hadoop-tools.hadoop-streaming.src.main.java.org.apache.hadoop.streaming.PipeMapRed.mapRedFinished",
+        "file_path": "hadoop-tools/hadoop-streaming/src/main/java/org/apache/hadoop/streaming/PipeMapRed.java",
+        "codebleu": {
+            "bleu": 0.030738528354710835,
+            "ngram": 0.07198443579766536,
+            "syntax": 0.0,
+            "dataflow": 0.14285714285714285,
+            "codebleu": 0.08186003566983968
+        }
+    },
+    {
+        "filename": "MAPREDUCE-6357.json",
+        "creation_time": "2015-05-05T18:11:38.000+0000",
+        "commit": "29819e72403af30871c05d7304defd5bab2cf758",
+        "candidate_key": "org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.write",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.write",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/lib/output/MultipleOutputs.java",
+        "codebleu": {
+            "bleu": 0.011206993009735034,
+            "ngram": 0.02284263959390863,
+            "syntax": 0.0,
+            "dataflow": 0.12280701754385964,
+            "codebleu": 0.05228555004916777
+        }
+    },
+    {
+        "filename": "MAPREDUCE-4825.json",
+        "creation_time": "2012-11-27T19:01:45.000+0000",
+        "commit": "3e0d0cf08f939779a4f1884fb5d83a2a37b6a063",
+        "candidate_key": "JobImpl.finished",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.finished",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/JobImpl.java",
+        "codebleu": {
+            "bleu": 0.6895426721851423,
+            "ngram": 0.692,
+            "syntax": 0.0,
+            "dataflow": 0.8048780487804879,
+            "codebleu": 0.7288069069885433
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3226.json",
+        "creation_time": "2011-10-20T06:38:04.000+0000",
+        "commit": "02d5fa3e6265025912223e07d1bb5aac9eac0dc9",
+        "candidate_key": "EventFetcher.run",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.task.reduce.EventFetcher.run",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/task/reduce/EventFetcher.java",
+        "codebleu": {
+            "bleu": 0.8640063052076324,
+            "ngram": 0.9457013574660633,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.936569220891232
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3226.json",
+        "creation_time": "2011-10-20T06:38:04.000+0000",
+        "commit": "02d5fa3e6265025912223e07d1bb5aac9eac0dc9",
+        "candidate_key": "Shuffle.run",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.task.reduce.EventFetcher.run",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/task/reduce/EventFetcher.java",
+        "codebleu": {
+            "bleu": 0.029061281973445808,
+            "ngram": 0.08795180722891566,
+            "syntax": 0.0,
+            "dataflow": 0.25263157894736843,
+            "codebleu": 0.12321488938324329
+        }
+    },
+    {
+        "filename": "MAPREDUCE-4062.json",
+        "creation_time": "2012-03-23T21:42:23.000+0000",
+        "commit": "2b5c36b6952e16232f352b47c62d9e28ee2b30c9",
+        "candidate_key": "AMLauncher.launch",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl.launch",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/launcher/ContainerLauncherImpl.java",
+        "codebleu": {
+            "bleu": 0.012662787150300357,
+            "ngram": 0.12156862745098039,
+            "syntax": 0.0,
+            "dataflow": 0.2916666666666667,
+            "codebleu": 0.1419660270893158
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3744.json",
+        "creation_time": "2012-01-27T20:31:19.000+0000",
+        "commit": "6ba0375b21c4ce07d2b6b592c4963f705c35222b",
+        "candidate_key": "LogDumper.dumpAllContainersLogs",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.LogDumper.dumpAllContainersLogs",
+        "file_path": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/LogDumper.java",
+        "codebleu": {
+            "bleu": 0.6429652175398244,
+            "ngram": 0.7252964426877471,
+            "syntax": 0.0,
+            "dataflow": 0.7945205479452054,
+            "codebleu": 0.7209274027242589
+        }
+    },
+    {
+        "filename": "MAPREDUCE-4467.json",
+        "creation_time": "2012-07-20T18:20:20.000+0000",
+        "commit": "cdef12644b949c711678f31d6cf3149d3b42b61b",
+        "candidate_key": "IndexCache.getIndexInformation",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.IndexCache.getIndexInformation",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapred/IndexCache.java",
+        "codebleu": {
+            "bleu": 0.7923123573599141,
+            "ngram": 0.7931726907630522,
+            "syntax": 0.0,
+            "dataflow": 0.7761194029850746,
+            "codebleu": 0.7872014837026802
+        }
+    },
+    {
+        "filename": "MAPREDUCE-4467.json",
+        "creation_time": "2012-07-20T18:20:20.000+0000",
+        "commit": "cdef12644b949c711678f31d6cf3149d3b42b61b",
+        "candidate_key": "IndexCache.readIndexFileToCache",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.IndexCache.readIndexFileToCache",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapred/IndexCache.java",
+        "codebleu": {
+            "bleu": 0.8186653398932521,
+            "ngram": 0.8192982456140351,
+            "syntax": 0.0,
+            "dataflow": 0.7916666666666666,
+            "codebleu": 0.8098767507246512
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3463.json",
+        "creation_time": "2011-11-23T13:45:46.000+0000",
+        "commit": "08da8ea5db5359fc04010be486b842a5d2e6b9c2",
+        "candidate_key": "RecoveryService.sendAssignedEvent",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.recover.RecoveryService.sendAssignedEvent",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/recover/RecoveryService.java",
+        "codebleu": {
+            "bleu": 0.6314371045939695,
+            "ngram": 0.6324324324324324,
+            "syntax": 0.0,
+            "dataflow": 0.75,
+            "codebleu": 0.6712898456754672
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3649.json",
+        "creation_time": "2012-01-09T23:53:06.000+0000",
+        "commit": "21fa0778c58b5317f2be3c851353c3bcbfbb0fdf",
+        "candidate_key": "JobEndNotifier.notifyURLOnce",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.JobEndNotifier.notifyURLOnce",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/JobEndNotifier.java",
+        "codebleu": {
+            "bleu": 0.5206938878655252,
+            "ngram": 0.5240641711229946,
+            "syntax": 0.0,
+            "dataflow": 0.5384615384615384,
+            "codebleu": 0.5277398658166861
+        }
+    },
+    {
+        "filename": "MAPREDUCE-4102.json",
+        "creation_time": "2012-04-03T19:51:52.000+0000",
+        "commit": "7e3d0168453b1c9193f593ff1560f199848b559e",
+        "candidate_key": "org.apache.hadoop.mapreduce.v2.app.webapp.CountersBlock.getCounters",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.webapp.CountersBlock.getCounters",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/webapp/CountersBlock.java",
+        "codebleu": {
+            "bleu": 0.693227852111407,
+            "ngram": 0.6942028985507246,
+            "syntax": 0.0,
+            "dataflow": 0.7761194029850746,
+            "codebleu": 0.7211833845490687
+        }
+    },
+    {
+        "filename": "MAPREDUCE-6492.json",
+        "creation_time": "2015-09-28T10:16:44.000+0000",
+        "commit": "3c4c52a095acdc3d24670d434a86525bdcbd7256",
+        "candidate_key": "sendJHStartEventForAssignedFailTask",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.sendJHStartEventForAssignedFailTask",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+        "codebleu": {
+            "bleu": 0.38675989548411804,
+            "ngram": 0.3932038834951456,
+            "syntax": 0.0,
+            "dataflow": 0.5227272727272727,
+            "codebleu": 0.4342303505688454
+        }
+    },
+    {
+        "filename": "MAPREDUCE-5744.json",
+        "creation_time": "2014-02-06T19:05:01.000+0000",
+        "commit": "0b97facb3f071b2f2e17bc4a20cff5592b6a656b",
+        "candidate_key": "preemptReduce",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.preemptReduce",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/rm/RMContainerAllocator.java",
+        "codebleu": {
+            "bleu": 0.7198569008200575,
+            "ngram": 0.7214765100671141,
+            "syntax": 0.0,
+            "dataflow": 0.8518518518518519,
+            "codebleu": 0.7643950875796744
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3583.json",
+        "creation_time": "2011-12-20T15:07:55.000+0000",
+        "commit": "1838fd250e8765f2793b0f46160ec7a34bcb6395",
+        "candidate_key": "constructProcessInfo",
+        "ground_truth_method": "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.constructProcessInfo",
+        "file_path": "src/core/org/apache/hadoop/util/ProcfsBasedProcessTree.java",
+        "codebleu": {
+            "bleu": 0.7125502225955348,
+            "ngram": 0.7133995037220844,
+            "syntax": 0.0,
+            "dataflow": 0.8089887640449438,
+            "codebleu": 0.744979496787521
+        }
+    },
+    {
+        "filename": "MAPREDUCE-6410.json",
+        "creation_time": "2015-06-04T06:34:33.000+0000",
+        "commit": "8c9e2cf10aa9066f9b8e031123c89f9a890d1041",
+        "candidate_key": "AggregatedLogDeletionService.run",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.server.HSAdminServer.run",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/src/main/java/org/apache/hadoop/mapreduce/v2/hs/server/HSAdminServer.java",
+        "codebleu": {
+            "bleu": 0.006026375998515526,
+            "ngram": 0.013422818791946308,
+            "syntax": 0.0,
+            "dataflow": 0.08333333333333333,
+            "codebleu": 0.03426084270793172
+        }
+    },
+    {
+        "filename": "MAPREDUCE-6693.json",
+        "creation_time": "2016-05-10T11:30:38.000+0000",
+        "commit": "19db965c2776e86095ecd31d7e582aca07d1e789",
+        "candidate_key": "trimURLEncodedString",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-common.src.main.java.org.apache.hadoop.mapreduce.v2.jobhistory.FileNameIndexUtils.trimURLEncodedString",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/jobhistory/FileNameIndexUtils.java",
+        "codebleu": {
+            "bleu": 0.9251684208703289,
+            "ngram": 0.9252747252747253,
+            "syntax": 0.0,
+            "dataflow": 0.9384615384615385,
+            "codebleu": 0.9296348948688642
+        }
+    },
+    {
+        "filename": "MAPREDUCE-5912.json",
+        "creation_time": "2014-06-04T15:37:03.000+0000",
+        "commit": "180ac8dc1d430d4db23092efbf3abc93b1678e09",
+        "candidate_key": "Task.calculateOutputSize",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.Task.calculateOutputSize",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapred/Task.java",
+        "codebleu": {
+            "bleu": 0.05332636215788019,
+            "ngram": 0.07894736842105263,
+            "syntax": 0.0,
+            "dataflow": 0.2692307692307692,
+            "codebleu": 0.13383483326990067
+        }
+    },
+    {
+        "filename": "MAPREDUCE-3062.json",
+        "creation_time": "2011-09-21T17:31:02.000+0000",
+        "commit": "32f28e6994dc62b3165e501fd7b528b1fa9036d5",
+        "candidate_key": "AdminService.init",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.init",
+        "file_path": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/AdminService.java",
+        "codebleu": {
+            "bleu": 0.3405204944353418,
+            "ngram": 0.3434343434343434,
+            "syntax": 0.0,
+            "dataflow": 0.5,
+            "codebleu": 0.3946516126232284
+        }
+    },
+    {
+        "filename": "MAPREDUCE-5724.json",
+        "creation_time": "2014-01-15T00:58:12.000+0000",
+        "commit": "0c84c76954435817e7c35fb49f3d31cfa3d381db",
+        "candidate_key": "HistoryFileManager.serviceInit",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.HistoryFileManager.serviceInit",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/src/main/java/org/apache/hadoop/mapreduce/v2/hs/HistoryFileManager.java",
+        "codebleu": {
+            "bleu": 0.339274835510038,
+            "ngram": 0.3414239482200647,
+            "syntax": 0.0,
+            "dataflow": 0.5542168674698795,
+            "codebleu": 0.4116385503999941
+        }
+    },
+    {
+        "filename": "MAPREDUCE-5837.json",
+        "creation_time": "2014-04-15T20:24:58.000+0000",
+        "commit": "1566fff15f57edc68ebc79a3e4a1d27dfedead8d",
+        "candidate_key": "JobImpl.isChainJob",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.isChainJob",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/JobImpl.java",
+        "codebleu": {
+            "bleu": 0.6483618155097147,
+            "ngram": 0.6490566037735849,
+            "syntax": 0.0,
+            "dataflow": 0.7222222222222222,
+            "codebleu": 0.6732135471685072
+        }
+    },
+    {
+        "filename": "STORM-2443.json",
+        "creation_time": "2017-03-31T08:09:04.000+0000",
+        "commit": "9d62c13aad92daffa6af483306af35fc5609d89d",
+        "candidate_key": "setLogConfig",
+        "ground_truth_method": "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.setLogConfig",
+        "file_path": "storm-server/src/main/java/org/apache/storm/daemon/nimbus/Nimbus.java",
+        "codebleu": {
+            "bleu": 0.0031370453273234134,
+            "ngram": 0.18,
+            "syntax": 0.0,
+            "dataflow": 0.41935483870967744,
+            "codebleu": 0.2008306280123336
+        }
+    },
+    {
+        "filename": "STORM-1672.json",
+        "creation_time": "2016-03-31T19:24:18.000+0000",
+        "commit": "6763f71b3e4f1d8e5b8f1f05b61f622db0969642",
+        "candidate_key": "aggPreMergeCompPageBolt",
+        "ground_truth_method": "storm-core.src.jvm.org.apache.storm.stats.StatsUtil.aggPreMergeCompPageBolt",
+        "file_path": "storm-core/src/jvm/org/apache/storm/stats/StatsUtil.java",
+        "codebleu": {
+            "bleu": 0.8281331852677153,
+            "ngram": 0.8283752860411899,
+            "syntax": 0.0,
+            "dataflow": 0.84,
+            "codebleu": 0.8321694904363017
+        }
+    },
+    {
+        "filename": "STORM-2321.json",
+        "creation_time": "2017-01-24T04:18:07.000+0000",
+        "commit": "5b31d5f8a61851fab26a28e249089ada6ff26231",
+        "candidate_key": "Nimbus.createStateInZookeeper",
+        "ground_truth_method": "storm-core.src.jvm.org.apache.storm.daemon.nimbus.Nimbus.createStateInZookeeper",
+        "file_path": "storm-core/src/jvm/org/apache/storm/daemon/nimbus/Nimbus.java",
+        "codebleu": {
+            "bleu": 0.09797623055105834,
+            "ngram": 0.3219178082191781,
+            "syntax": 0.0,
+            "dataflow": 0.5833333333333334,
+            "codebleu": 0.3344091240345233
+        }
+    },
+    {
+        "filename": "STORM-3013.json",
+        "creation_time": "2018-03-28T04:47:28.000+0000",
+        "commit": "3b5f9e7c75b378881060f454d39e6bf653e0bcb3",
+        "candidate_key": "KafkaSpout.close",
+        "ground_truth_method": "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.close",
+        "file_path": "external/storm-kafka-client/src/main/java/org/apache/storm/kafka/spout/KafkaSpout.java",
+        "codebleu": {
+            "bleu": 0.13515757490489508,
+            "ngram": 0.19672131147540983,
+            "syntax": 0.0,
+            "dataflow": 0.3,
+            "codebleu": 0.21062629546010161
+        }
+    },
+    {
+        "filename": "STORM-3013.json",
+        "creation_time": "2018-03-28T04:47:28.000+0000",
+        "commit": "3b5f9e7c75b378881060f454d39e6bf653e0bcb3",
+        "candidate_key": "KafkaSpout.nextTuple",
+        "ground_truth_method": "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.nextTuple",
+        "file_path": "external/storm-kafka-client/src/main/java/org/apache/storm/kafka/spout/KafkaSpout.java",
+        "codebleu": {
+            "bleu": 0.016136039161447253,
+            "ngram": 0.1702127659574468,
+            "syntax": 0.0,
+            "dataflow": 0.38095238095238093,
+            "codebleu": 0.18910039535709167
+        }
+    },
+    {
+        "filename": "STORM-2275.json",
+        "creation_time": "2017-01-04T23:21:06.000+0000",
+        "commit": "2b82fc8b5328fd4fbd680998c6051d9496c102d7",
+        "candidate_key": "Nimbus.transition",
+        "ground_truth_method": "storm-core.src.jvm.org.apache.storm.daemon.nimbus.Nimbus.transition",
+        "file_path": "storm-core/src/jvm/org/apache/storm/daemon/nimbus/Nimbus.java",
+        "codebleu": {
+            "bleu": 0.006753332889744029,
+            "ngram": 0.012605042016806723,
+            "syntax": 0.0,
+            "dataflow": 0.06666666666666667,
+            "codebleu": 0.028675013857739136
+        }
+    },
+    {
+        "filename": "STORM-2279.json",
+        "creation_time": "2017-01-05T20:59:11.000+0000",
+        "commit": "bf5373d879616e44dbde38d2720e80e52c76318a",
+        "candidate_key": "getComponentPageInfo",
+        "ground_truth_method": "storm-core.src.jvm.org.apache.storm.daemon.nimbus.Nimbus.getComponentPageInfo",
+        "file_path": "storm-core/src/jvm/org/apache/storm/daemon/nimbus/Nimbus.java",
+        "codebleu": {
+            "bleu": 0.010037213623266808,
+            "ngram": 0.15088757396449703,
+            "syntax": 0.0,
+            "dataflow": 0.38596491228070173,
+            "codebleu": 0.18229656662282184
+        }
+    },
+    {
+        "filename": "STORM-2700.json",
+        "creation_time": "2017-08-21T14:09:50.000+0000",
+        "commit": "2be883c1eb899568fb7e285da4b46dcbf1a1581b",
+        "candidate_key": "Localizer.downloadBlob",
+        "ground_truth_method": "storm-server.src.main.java.org.apache.storm.localizer.Localizer.downloadBlob",
+        "file_path": "storm-server/src/main/java/org/apache/storm/localizer/Localizer.java",
+        "codebleu": {
+            "bleu": 0.9707224575125619,
+            "ngram": 0.970729751403368,
+            "syntax": 0.0,
+            "dataflow": 0.9511111111111111,
+            "codebleu": 0.964187773342347
+        }
+    },
+    {
+        "filename": "STORM-2518.json",
+        "creation_time": "2017-05-17T06:26:37.000+0000",
+        "commit": "18170db7ee6ff08c74ab91e72e3eb5812ae78595",
+        "candidate_key": "fixACLsForUser",
+        "ground_truth_method": "storm-client.src.jvm.org.apache.storm.blobstore.BlobStoreAclHandler.fixACLsForUser",
+        "file_path": "storm-client/src/jvm/org/apache/storm/blobstore/BlobStoreAclHandler.java",
+        "codebleu": {
+            "bleu": 0.42448872023259643,
+            "ngram": 0.5701754385964912,
+            "syntax": 0.0,
+            "dataflow": 0.7692307692307693,
+            "codebleu": 0.5879649760199522
+        }
+    },
+    {
+        "filename": "STORM-2518.json",
+        "creation_time": "2017-05-17T06:26:37.000+0000",
+        "commit": "18170db7ee6ff08c74ab91e72e3eb5812ae78595",
+        "candidate_key": "normalizeSettableACLs",
+        "ground_truth_method": "storm-client.src.jvm.org.apache.storm.blobstore.BlobStoreAclHandler.normalizeSettableACLs",
+        "file_path": "storm-client/src/jvm/org/apache/storm/blobstore/BlobStoreAclHandler.java",
+        "codebleu": {
+            "bleu": 0.6954957337797352,
+            "ngram": 0.6963350785340314,
+            "syntax": 0.0,
+            "dataflow": 0.8723404255319149,
+            "codebleu": 0.7547237459485605
+        }
+    },
+    {
+        "filename": "STORM-2847.json",
+        "creation_time": "2017-12-07T16:51:01.000+0000",
+        "commit": "45ec11bbb5f4b1e38db9beb03219e7a67c700bd8",
+        "candidate_key": "KafkaSpout.commitOffsetsForAckedTuples",
+        "ground_truth_method": "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.commitOffsetsForAckedTuples",
+        "file_path": "external/storm-kafka-client/src/main/java/org/apache/storm/kafka/spout/KafkaSpout.java",
+        "codebleu": {
+            "bleu": 0.35933035807576513,
+            "ngram": 0.7699115044247787,
+            "syntax": 0.0,
+            "dataflow": 0.9012345679012346,
+            "codebleu": 0.6768254768005928
+        }
+    },
+    {
+        "filename": "STORM-2197.json",
+        "creation_time": "2016-11-10T03:57:30.000+0000",
+        "commit": "07ba34f0c53ea6ff0389cc1b57b933943ddae9d1",
+        "candidate_key": "connect",
+        "ground_truth_method": "storm-core.src.jvm.org.apache.storm.security.auth.ThriftClient.reconnect",
+        "file_path": "storm-core/src/jvm/org/apache/storm/security/auth/ThriftClient.java",
+        "codebleu": {
+            "bleu": 0.06454161897427227,
+            "ngram": 0.09488272921108742,
+            "syntax": 0.0,
+            "dataflow": 0.23423423423423423,
+            "codebleu": 0.13121952747319796
+        }
+    },
+    {
+        "filename": "YARN-5918.json",
+        "creation_time": "2016-11-20T14:19:00.000+0000",
+        "commit": "005850b28feb2f7bb8c2844d11e3f9d21b45d754",
+        "candidate_key": "convertToRemoteNode",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.OpportunisticContainerAllocatorAMService.convertToRemoteNode",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/OpportunisticContainerAllocatorAMService.java",
+        "codebleu": {
+            "bleu": 0.10540405058616682,
+            "ngram": 0.12658227848101267,
+            "syntax": 0.0,
+            "dataflow": 0.5384615384615384,
+            "codebleu": 0.25681595584290595
+        }
+    },
+    {
+        "filename": "YARN-5918.json",
+        "creation_time": "2016-11-20T14:19:00.000+0000",
+        "commit": "005850b28feb2f7bb8c2844d11e3f9d21b45d754",
+        "candidate_key": "convertToRemoteNodes",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.OpportunisticContainerAllocatorAMService.convertToRemoteNodes",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/OpportunisticContainerAllocatorAMService.java",
+        "codebleu": {
+            "bleu": 0.5376651461882683,
+            "ngram": 0.8717948717948718,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.8031533393277133
+        }
+    },
+    {
+        "filename": "YARN-5918.json",
+        "creation_time": "2016-11-20T14:19:00.000+0000",
+        "commit": "005850b28feb2f7bb8c2844d11e3f9d21b45d754",
+        "candidate_key": "getLeastLoadedNodes",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.OpportunisticContainerAllocatorAMService.getLeastLoadedNodes",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/OpportunisticContainerAllocatorAMService.java",
+        "codebleu": {
+            "bleu": 0.5400691861899661,
+            "ngram": 0.5439560439560439,
+            "syntax": 0.0,
+            "dataflow": 0.6666666666666666,
+            "codebleu": 0.5835639656042255
+        }
+    },
+    {
+        "filename": "YARN-4431.json",
+        "creation_time": "2015-12-07T18:31:36.000+0000",
+        "commit": "15c3e7ffe3d1c57ad36afd993f09fc47889c93bd",
+        "candidate_key": "serviceStop",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStop",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/NodeStatusUpdaterImpl.java",
+        "codebleu": {
+            "bleu": 0.29664879669342953,
+            "ngram": 0.30177514792899407,
+            "syntax": 0.0,
+            "dataflow": 0.43137254901960786,
+            "codebleu": 0.3432654978806771
+        }
+    },
+    {
+        "filename": "YARN-4763.json",
+        "creation_time": "2016-03-04T10:03:56.000+0000",
+        "commit": "1415e6190a1811b8318f2bf254fea34e8c9cd154",
+        "candidate_key": "renderData",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.webapp.RMAppsBlock.renderData",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/webapp/RMAppsBlock.java",
+        "codebleu": {
+            "bleu": 0.9149038475999763,
+            "ngram": 0.9150664697193501,
+            "syntax": 0.0,
+            "dataflow": 0.9560439560439561,
+            "codebleu": 0.9286714244544274
+        }
+    },
+    {
+        "filename": "YARN-8202.json",
+        "creation_time": "2018-04-24T15:52:00.000+0000",
+        "commit": "0506c762b2f96ccb2c12cce8fd4659536236354e",
+        "candidate_key": "validateResourceRequest",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.validateResourceRequest",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/SchedulerUtils.java",
+        "codebleu": {
+            "bleu": 0.49058895877684666,
+            "ngram": 0.49105914718019256,
+            "syntax": 0.0,
+            "dataflow": 0.5106382978723404,
+            "codebleu": 0.49742880127645983
+        }
+    },
+    {
+        "filename": "YARN-2414.json",
+        "creation_time": "2014-08-12T23:48:48.000+0000",
+        "commit": "242fd0e39ad1c5d51719cd0f6c197166066e3288",
+        "candidate_key": "render",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.webapp.AppBlock.render",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/webapp/AppBlock.java",
+        "codebleu": {
+            "bleu": 0.1664584840675026,
+            "ngram": 0.1914648212226067,
+            "syntax": 0.0,
+            "dataflow": 0.49122807017543857,
+            "codebleu": 0.28305045848851595
+        }
+    },
+    {
+        "filename": "YARN-4152.json",
+        "creation_time": "2015-09-12T15:02:22.000+0000",
+        "commit": "8ed0d4b744e5321c9f0f7f19a6c9737bb2da2ef6",
+        "candidate_key": "stopContainer",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.LogAggregationService.stopContainer",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/logaggregation/LogAggregationService.java",
+        "codebleu": {
+            "bleu": 0.6681423817665995,
+            "ngram": 0.7707006369426752,
+            "syntax": 0.0,
+            "dataflow": 0.9607843137254902,
+            "codebleu": 0.7998757774782549
+        }
+    },
+    {
+        "filename": "YARN-3697.json",
+        "creation_time": "2015-05-21T18:05:38.000+0000",
+        "commit": "1f9f219062634ddb8c2f129030e485ee86db7662",
+        "candidate_key": "FairScheduler.continuousSchedulingAttempt",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.continuousSchedulingAttempt",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/fair/FairScheduler.java",
+        "codebleu": {
+            "bleu": 0.00024407456782713833,
+            "ngram": 0.19767441860465115,
+            "syntax": 0.0,
+            "dataflow": 0.4117647058823529,
+            "codebleu": 0.20322773301827707
+        }
+    },
+    {
+        "filename": "YARN-8223.json",
+        "creation_time": "2018-04-27T11:49:02.000+0000",
+        "commit": "8cdb032aff4237d8d3970057d82290e4e32c4040",
+        "candidate_key": "AuxiliaryServiceWithCustomClassLoader.serviceInit",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices.serviceInit",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/AuxServices.java",
+        "codebleu": {
+            "bleu": 0.000364026616484315,
+            "ngram": 0.18544600938967137,
+            "syntax": 0.0,
+            "dataflow": 0.5,
+            "codebleu": 0.22860334533538523
+        }
+    },
+    {
+        "filename": "YARN-8331.json",
+        "creation_time": "2018-05-21T05:19:35.000+0000",
+        "commit": "2024260af69231831dbb16b3221ec5915a436eb7",
+        "candidate_key": "ContainerImpl.handle",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher.handle",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/launcher/ContainersLauncher.java",
+        "codebleu": {
+            "bleu": 0.010482304844398774,
+            "ngram": 0.14768683274021352,
+            "syntax": 0.0,
+            "dataflow": 0.3709677419354839,
+            "codebleu": 0.17637895984003205
+        }
+    },
+    {
+        "filename": "YARN-5098.json",
+        "creation_time": "2016-05-17T00:43:08.000+0000",
+        "commit": "029888871fb13da75872ab345eb03d8f4e502ad4",
+        "candidate_key": "Client.run",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.run",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/security/DelegationTokenRenewer.java",
+        "codebleu": {
+            "bleu": 0.08777577860103765,
+            "ngram": 0.1417910447761194,
+            "syntax": 0.0,
+            "dataflow": 0.2054794520547945,
+            "codebleu": 0.14501542514398386
+        }
+    },
+    {
+        "filename": "YARN-3971.json",
+        "creation_time": "2015-07-24T10:17:05.000+0000",
+        "commit": "155f25061eadab13caa44c37fe3e1d5f8afcaef7",
+        "candidate_key": "RMNodeLabelsManager.removeFromClusterNodeLabels",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.nodelabels.RMNodeLabelsManager.removeFromClusterNodeLabels",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/nodelabels/RMNodeLabelsManager.java",
+        "codebleu": {
+            "bleu": 0.2839117656046144,
+            "ngram": 0.3520710059171598,
+            "syntax": 0.0,
+            "dataflow": 0.5862068965517241,
+            "codebleu": 0.4073965560244994
+        }
+    },
+    {
+        "filename": "YARN-6948.json",
+        "creation_time": "2017-08-04T08:23:46.000+0000",
+        "commit": "3701c399b3fa4fbd2d9d71be141997beb0f0b1ba",
+        "candidate_key": "RMAppAttemptImpl.handle",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.handle",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/attempt/RMAppAttemptImpl.java",
+        "codebleu": {
+            "bleu": 0.6805674238727049,
+            "ngram": 0.6811145510835913,
+            "syntax": 0.0,
+            "dataflow": 0.7619047619047619,
+            "codebleu": 0.7078622456203527
+        }
+    },
+    {
+        "filename": "YARN-1409.json",
+        "creation_time": "2013-11-13T11:25:56.000+0000",
+        "commit": "785c12056ce2c6161b66699d995bd25198b9194f",
+        "candidate_key": "NonAggregatingLogHandler.handle",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler.handle",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/loghandler/NonAggregatingLogHandler.java",
+        "codebleu": {
+            "bleu": 0.6964198237420626,
+            "ngram": 0.7339901477832512,
+            "syntax": 0.0,
+            "dataflow": 0.8450704225352113,
+            "codebleu": 0.7584934646868416
+        }
+    },
+    {
+        "filename": "YARN-3917.json",
+        "creation_time": "2015-07-11T00:41:28.000+0000",
+        "commit": "896b8c6551b1dd57c09caa2df0e46f9f9000179e",
+        "candidate_key": "ResourceCalculatorPlugin.getResourceCalculatorPlugin",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.util.ResourceCalculatorPlugin.getResourceCalculatorPlugin",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/util/ResourceCalculatorPlugin.java",
+        "codebleu": {
+            "bleu": 0.3883313460918502,
+            "ngram": 0.3916083916083916,
+            "syntax": 0.0,
+            "dataflow": 0.5,
+            "codebleu": 0.42664657923341387
+        }
+    },
+    {
+        "filename": "YARN-3537.json",
+        "creation_time": "2015-04-23T11:34:23.000+0000",
+        "commit": "5e093f0d400f82f67d9b2d24253c79e4a5abacf9",
+        "candidate_key": "NodeManager.stopRecoveryStore",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.stopRecoveryStore",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/NodeManager.java",
+        "codebleu": {
+            "bleu": 0.7861535898400814,
+            "ngram": 0.7875816993464052,
+            "syntax": 0.0,
+            "dataflow": 0.9024390243902439,
+            "codebleu": 0.8253914378589101
+        }
+    },
+    {
+        "filename": "YARN-7962.json",
+        "creation_time": "2018-02-22T22:32:20.000+0000",
+        "commit": "1cee85d8c42e97c8df6fbc66cd0eb3022ed854bb",
+        "candidate_key": "serviceStop",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.serviceStop",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/security/DelegationTokenRenewer.java",
+        "codebleu": {
+            "bleu": 0.08819393885309544,
+            "ngram": 0.5697674418604651,
+            "syntax": 0.0,
+            "dataflow": 0.9333333333333333,
+            "codebleu": 0.5304315713489647
+        }
+    },
+    {
+        "filename": "YARN-1032.json",
+        "creation_time": "2013-08-05T21:10:46.000+0000",
+        "commit": "3fa40ca8070f2565d66845c53dd8542c6146db8e",
+        "candidate_key": "RackResolver.coreResolve",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.util.RackResolver.coreResolve",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/util/RackResolver.java",
+        "codebleu": {
+            "bleu": 0.541433845471291,
+            "ngram": 0.6157024793388429,
+            "syntax": 0.0,
+            "dataflow": 0.6486486486486487,
+            "codebleu": 0.6019283244862609
+        }
+    },
+    {
+        "filename": "YARN-8209.json",
+        "creation_time": "2018-04-26T00:22:23.000+0000",
+        "commit": "61fac20c9ea063ed093c4477c1f12ab725314374",
+        "candidate_key": "DockerClient.writeCommandToTempFile",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.docker.DockerClient.writeCommandToTempFile",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/linux/runtime/docker/DockerClient.java",
+        "codebleu": {
+            "bleu": 0.5698348063398574,
+            "ngram": 0.5723514211886305,
+            "syntax": 0.0,
+            "dataflow": 0.7341772151898734,
+            "codebleu": 0.6254544809061204
+        }
+    },
+    {
+        "filename": "YARN-2813.json",
+        "creation_time": "2014-11-05T22:29:46.000+0000",
+        "commit": "888fc4af4e25f6005ae30070a79690a3ab50dbcc",
+        "candidate_key": "MemoryTimelineStore.getDomains",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.timeline.MemoryTimelineStore.getDomains",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/timeline/MemoryTimelineStore.java",
+        "codebleu": {
+            "bleu": 0.7209168592750833,
+            "ngram": 0.7219512195121951,
+            "syntax": 0.0,
+            "dataflow": 0.7454545454545455,
+            "codebleu": 0.7294408747472746
+        }
+    },
+    {
+        "filename": "YARN-4744.json",
+        "creation_time": "2016-02-29T10:08:57.000+0000",
+        "commit": "059caf99891943d9587cac19b48e82efbed06b2d",
+        "candidate_key": "DefaultLinuxContainerRuntime.signalContainer",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DefaultLinuxContainerRuntime.signalContainer",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/linux/runtime/DefaultLinuxContainerRuntime.java",
+        "codebleu": {
+            "bleu": 0.539936342326106,
+            "ngram": 0.6137931034482759,
+            "syntax": 0.0,
+            "dataflow": 0.7894736842105263,
+            "codebleu": 0.647734376661636
+        }
+    },
+    {
+        "filename": "YARN-3493.json",
+        "creation_time": "2015-04-15T22:03:19.000+0000",
+        "commit": "61f2ddb125f6af1775ce5d219f22eb079071869c",
+        "candidate_key": "SchedulerUtils.validateResourceRequest",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.validateResourceRequest",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/SchedulerUtils.java",
+        "codebleu": {
+            "bleu": 0.3980243822194588,
+            "ngram": 0.39849108367626884,
+            "syntax": 0.0,
+            "dataflow": 0.49137931034482757,
+            "codebleu": 0.42929825874685174
+        }
+    },
+    {
+        "filename": "YARN-6054.json",
+        "creation_time": "2017-01-04T20:58:59.000+0000",
+        "commit": "49d459a3ed82169c02fca98dd7b54e3f09768881",
+        "candidate_key": "org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.serviceInit",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.serviceInit",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/timeline/LeveldbTimelineStore.java",
+        "codebleu": {
+            "bleu": 0.7613637273171538,
+            "ngram": 0.7870159453302962,
+            "syntax": 0.0,
+            "dataflow": 0.788135593220339,
+            "codebleu": 0.7788384219559296
+        }
+    },
+    {
+        "filename": "YARN-196.json",
+        "creation_time": "2012-01-16T09:52:45.000+0000",
+        "commit": "2ba66a54f5004f93b53d40b6a1cc5029abf5e609",
+        "candidate_key": "NodeManager.start",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.start",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/NodeStatusUpdaterImpl.java",
+        "codebleu": {
+            "bleu": 0.026928568154428345,
+            "ngram": 0.07939914163090128,
+            "syntax": 0.0,
+            "dataflow": 0.208955223880597,
+            "codebleu": 0.10509431122197553
+        }
+    },
+    {
+        "filename": "YARN-174.json",
+        "creation_time": "2012-10-19T17:25:40.000+0000",
+        "commit": "4da8e2613ec192bb0f29340cac0378bbadf15dde",
+        "candidate_key": "NodeManager.initAndStartNodeManager",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.initAndStartNodeManager",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/NodeManager.java",
+        "codebleu": {
+            "bleu": 0.5872681829195862,
+            "ngram": 0.5888888888888889,
+            "syntax": 0.0,
+            "dataflow": 0.6607142857142857,
+            "codebleu": 0.612290452507587
+        }
+    },
+    {
+        "filename": "YARN-8211.json",
+        "creation_time": "2018-04-26T02:13:22.000+0000",
+        "commit": "90a31dc61c747645d6a969ec6c807d6b83d3cac4",
+        "candidate_key": "nioTCPClient",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-registry.src.main.java.org.apache.hadoop.registry.server.dns.RegistryDNS.nioTCPClient",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java",
+        "codebleu": {
+            "bleu": 0.7687137102003044,
+            "ngram": 0.8326693227091634,
+            "syntax": 0.0,
+            "dataflow": 0.9180327868852459,
+            "codebleu": 0.8398052732649045
+        }
+    },
+    {
+        "filename": "YARN-6649.json",
+        "creation_time": "2017-05-25T20:36:08.000+0000",
+        "commit": "177c0c1523ad8b1004070f16807ee225fa577523",
+        "candidate_key": "RollingLevelDBTimelineStore.getEntity",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.timeline.RollingLevelDBTimelineStore.getEntity",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/timeline/RollingLevelDBTimelineStore.java",
+        "codebleu": {
+            "bleu": 0.02532709613382213,
+            "ngram": 0.04228855721393035,
+            "syntax": 0.0,
+            "dataflow": 0.17094017094017094,
+            "codebleu": 0.07951860809597447
+        }
+    },
+    {
+        "filename": "YARN-4584.json",
+        "creation_time": "2016-01-12T09:08:31.000+0000",
+        "commit": "844a8e377178da60293905f6501c111e0b9ef23e",
+        "candidate_key": "RMAppAttemptImpl.recover",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.recover",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+        "codebleu": {
+            "bleu": 0.10845964571450305,
+            "ngram": 0.15198237885462554,
+            "syntax": 0.0,
+            "dataflow": 0.4375,
+            "codebleu": 0.23264734152304284
+        }
+    },
+    {
+        "filename": "YARN-2846.json",
+        "creation_time": "2014-11-11T15:30:08.000+0000",
+        "commit": "33ea5ae92b9dd3abace104903d9a94d17dd75af5",
+        "candidate_key": "reacquireContainer",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.ContainerExecutor.reacquireContainer",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/ContainerExecutor.java",
+        "codebleu": {
+            "bleu": 0.7178913572866895,
+            "ngram": 0.7183770883054893,
+            "syntax": 0.0,
+            "dataflow": 0.9487179487179487,
+            "codebleu": 0.7949954647700425
+        }
+    },
+    {
+        "filename": "YARN-3369.json",
+        "creation_time": "2015-03-18T23:29:06.000+0000",
+        "commit": "005d865494d59fa9b15e7c76a51022d852e70f8c",
+        "candidate_key": "checkForDeactivation",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo.checkForDeactivation",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/AppSchedulingInfo.java",
+        "codebleu": {
+            "bleu": 0.6742272297376135,
+            "ngram": 0.6831683168316832,
+            "syntax": 0.0,
+            "dataflow": 0.9230769230769231,
+            "codebleu": 0.7601574898820733
+        }
+    },
+    {
+        "filename": "YARN-7663.json",
+        "creation_time": "2017-12-15T01:52:46.000+0000",
+        "commit": "49f0c7b356a33402090a52b1d3b8e5c2ee433896",
+        "candidate_key": "RMAppImpl.handle",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.handle",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+        "codebleu": {
+            "bleu": 0.38407371488880854,
+            "ngram": 0.38746438746438744,
+            "syntax": 0.0,
+            "dataflow": 0.575,
+            "codebleu": 0.44884603411773194
+        }
+    },
+    {
+        "filename": "YARN-1689.json",
+        "creation_time": "2014-02-05T19:16:00.000+0000",
+        "commit": "c520584f025d96a95360d172ec0f2af8a0e91aa7",
+        "candidate_key": "RMAppImpl.handle",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.handle",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+        "codebleu": {
+            "bleu": 0.8191860846011666,
+            "ngram": 0.8193832599118943,
+            "syntax": 0.0,
+            "dataflow": 0.8870967741935484,
+            "codebleu": 0.8418887062355364
+        }
+    },
+    {
+        "filename": "YARN-7511.json",
+        "creation_time": "2017-11-16T11:41:43.000+0000",
+        "commit": "0a3a8784283329d3a374c601fa302f8409f902f1",
+        "candidate_key": "ResourceSet.resourceLocalizationFailed",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceSet.resourceLocalizationFailed",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/localizer/ResourceSet.java",
+        "codebleu": {
+            "bleu": 0.23359433863044576,
+            "ngram": 0.32558139534883723,
+            "syntax": 0.0,
+            "dataflow": 0.6470588235294118,
+            "codebleu": 0.40207818583623156
+        }
+    },
+    {
+        "filename": "YARN-903.json",
+        "creation_time": "2013-07-07T08:35:30.000+0000",
+        "commit": "000b9a8ebb7012e7398b5ee0060c8549cb25e19c",
+        "candidate_key": "ContainerManagerImpl.authorizeGetAndStopContainerRequest",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.authorizeGetAndStopContainerRequest",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/ContainerManagerImpl.java",
+        "codebleu": {
+            "bleu": 0.6403784754153367,
+            "ngram": 0.6411411411411412,
+            "syntax": 0.0,
+            "dataflow": 0.8170731707317073,
+            "codebleu": 0.6995309290960616
+        }
+    },
+    {
+        "filename": "YARN-8236.json",
+        "creation_time": "2018-04-29T16:28:11.000+0000",
+        "commit": "0a30a548f1960ce267526ce7cb6c4057e7ceb12d",
+        "candidate_key": "ServiceApiUtil.validateAndResolveService",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-applications.hadoop-yarn-services.hadoop-yarn-services-core.src.main.java.org.apache.hadoop.yarn.service.utils.ServiceApiUtil.validateAndResolveService",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/java/org/apache/hadoop/yarn/service/utils/ServiceApiUtil.java",
+        "codebleu": {
+            "bleu": 0.9161781581253302,
+            "ngram": 0.916243654822335,
+            "syntax": 0.0,
+            "dataflow": 0.978021978021978,
+            "codebleu": 0.936814596989881
+        }
+    },
+    {
+        "filename": "YARN-3894.json",
+        "creation_time": "2015-07-08T07:00:51.000+0000",
+        "commit": "5ed1fead6b5ec24bb0ce1a3db033c2ee1ede4bb4",
+        "candidate_key": "ParentQueue.setChildQueues",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue.setChildQueues",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/ParentQueue.java",
+        "codebleu": {
+            "bleu": 0.9325366986939545,
+            "ngram": 0.9552238805970149,
+            "syntax": 0.0,
+            "dataflow": 0.9649122807017544,
+            "codebleu": 0.950890953330908
+        }
+    },
+    {
+        "filename": "YARN-1692.json",
+        "creation_time": "2014-02-07T02:01:17.000+0000",
+        "commit": "bc939f7ae607d32d52c4e9ceacdfb25c1850e04c",
+        "candidate_key": "AppSchedulable.updateDemand",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.AppSchedulable.updateDemand",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/fair/AppSchedulable.java",
+        "codebleu": {
+            "bleu": 0.9464594399631753,
+            "ngram": 0.9473684210526315,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.9646092870052689
+        }
+    },
+    {
+        "filename": "YARN-7697.json",
+        "creation_time": "2018-01-03T19:28:50.000+0000",
+        "commit": "3b20413acf84e38aa2cf747d066bfec6f9f864ad",
+        "candidate_key": "initializeWriterInRolling",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.filecontroller.ifile.LogAggregationIndexedFileController.initializeWriterInRolling",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/ifile/LogAggregationIndexedFileController.java",
+        "codebleu": {
+            "bleu": 0.8491585461061189,
+            "ngram": 0.9098360655737705,
+            "syntax": 0.0,
+            "dataflow": 0.9724770642201835,
+            "codebleu": 0.9104905586333576
+        }
+    },
+    {
+        "filename": "YARN-7269.json",
+        "creation_time": "2017-09-28T23:56:42.000+0000",
+        "commit": "175ff0585dbcde00df5ab4d819c1f9d647fdf2d6",
+        "candidate_key": "findRedirectUrl",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-web-proxy.src.main.java.org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter.findRedirectUrl",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-web-proxy/src/main/java/org/apache/hadoop/yarn/server/webproxy/amfilter/AmIpFilter.java",
+        "codebleu": {
+            "bleu": 0.5821524088663627,
+            "ngram": 0.5920245398773006,
+            "syntax": 0.0,
+            "dataflow": 0.7619047619047619,
+            "codebleu": 0.6453605702161417
+        }
+    },
+    {
+        "filename": "YARN-7249.json",
+        "creation_time": "2017-09-25T16:49:46.000+0000",
+        "commit": "76e053a91061fca5c602b77bcac2445fa6f9c2cd",
+        "candidate_key": "CapacityScheduler.completedContainerInternal",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.completedContainerInternal",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/CapacityScheduler.java",
+        "codebleu": {
+            "bleu": 0.6831382430967777,
+            "ngram": 0.6864406779661016,
+            "syntax": 0.0,
+            "dataflow": 0.875,
+            "codebleu": 0.7481929736876264
+        }
+    },
+    {
+        "filename": "YARN-1149.json",
+        "creation_time": "2013-09-04T21:46:58.000+0000",
+        "commit": "3d567534d8d2d4f5ac4c98c36fc5c7205091ea9b",
+        "candidate_key": "ApplicationImpl.handle",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.handle",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/ContainerManagerImpl.java",
+        "codebleu": {
+            "bleu": 0.017099182604511504,
+            "ngram": 0.05947136563876652,
+            "syntax": 0.0,
+            "dataflow": 0.17857142857142858,
+            "codebleu": 0.08504732560490219
+        }
+    },
+    {
+        "filename": "YARN-7818.json",
+        "creation_time": "2018-01-25T18:42:55.000+0000",
+        "commit": "04c3f11de41f361be839f4ca926135610594c9ff",
+        "candidate_key": "DefaultLinuxContainerRuntime.launchContainer",
+        "ground_truth_method": "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DefaultLinuxContainerRuntime.launchContainer",
+        "file_path": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/linux/runtime/DefaultLinuxContainerRuntime.java",
+        "codebleu": {
+            "bleu": 0.5947658957969439,
+            "ngram": 0.5967213114754099,
+            "syntax": 0.0,
+            "dataflow": 0.7706422018348624,
+            "codebleu": 0.6540431363690721
+        }
+    }
+]

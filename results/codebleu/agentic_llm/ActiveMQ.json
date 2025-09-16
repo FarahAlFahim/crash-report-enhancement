@@ -1,0 +1,152 @@
+[
+    {
+        "filename": "AMQ-3434.json",
+        "creation_time": "2011-08-03T09:15:05.000+0000",
+        "commit": "bf59b7d70f7552053cfecb66db64658a314ae32c",
+        "candidate_key": "org.apache.kahadb.index.ListIndex.load",
+        "ground_truth_method": "kahadb.src.main.java.org.apache.kahadb.index.ListIndex.load",
+        "file_path": "kahadb/src/main/java/org/apache/kahadb/index/ListIndex.java",
+        "codebleu": {
+            "bleu": 0.6791236592894251,
+            "ngram": 0.6823529411764706,
+            "syntax": 0.0,
+            "dataflow": 0.859375,
+            "codebleu": 0.7402838668219651
+        }
+    },
+    {
+        "filename": "AMQ-5016.json",
+        "creation_time": "2014-02-03T16:40:26.000+0000",
+        "commit": "58ae402b1d61e74511cfd29e1aea7e9597b3a76b",
+        "candidate_key": "BitArrayBin.getOffset",
+        "ground_truth_method": "activemq-client.src.main.java.org.apache.activemq.util.BitArrayBin.getOffset",
+        "file_path": "activemq-client/src/main/java/org/apache/activemq/util/BitArrayBin.java",
+        "codebleu": {
+            "bleu": 0.7937559205024689,
+            "ngram": 0.803921568627451,
+            "syntax": 0.0,
+            "dataflow": 0.9166666666666666,
+            "codebleu": 0.8381147185988622
+        }
+    },
+    {
+        "filename": "AMQ-5016.json",
+        "creation_time": "2014-02-03T16:40:26.000+0000",
+        "commit": "58ae402b1d61e74511cfd29e1aea7e9597b3a76b",
+        "candidate_key": "BitArrayBin.getBin",
+        "ground_truth_method": "activemq-client.src.main.java.org.apache.activemq.util.BitArrayBin.getBin",
+        "file_path": "activemq-client/src/main/java/org/apache/activemq/util/BitArrayBin.java",
+        "codebleu": {
+            "bleu": 0.7260001819903146,
+            "ngram": 0.7402597402597403,
+            "syntax": 0.0,
+            "dataflow": 0.9166666666666666,
+            "codebleu": 0.7943088629722405
+        }
+    },
+    {
+        "filename": "AMQ-5016.json",
+        "creation_time": "2014-02-03T16:40:26.000+0000",
+        "commit": "58ae402b1d61e74511cfd29e1aea7e9597b3a76b",
+        "candidate_key": "BitArrayBin.getBitArray",
+        "ground_truth_method": "activemq-client.src.main.java.org.apache.activemq.util.BitArrayBin.getBitArray",
+        "file_path": "activemq-client/src/main/java/org/apache/activemq/util/BitArrayBin.java",
+        "codebleu": {
+            "bleu": 0.9625248317849852,
+            "ngram": 0.9629629629629629,
+            "syntax": 0.0,
+            "dataflow": 0.9565217391304348,
+            "codebleu": 0.9606698446261276
+        }
+    },
+    {
+        "filename": "AMQ-3622.json",
+        "creation_time": "2011-12-06T15:16:49.000+0000",
+        "commit": "760c62934d2ff5fe92e399cf7f980d8de4e191d4",
+        "candidate_key": "LastImageSubscriptionRecoveryPolicy.browse",
+        "ground_truth_method": "activemq-core.src.main.java.org.apache.activemq.broker.region.policy.LastImageSubscriptionRecoveryPolicy.browse",
+        "file_path": "activemq-core/src/main/java/org/apache/activemq/broker/region/policy/LastImageSubscriptionRecoveryPolicy.java",
+        "codebleu": {
+            "bleu": 0.6569837555712137,
+            "ngram": 0.7272727272727273,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.7947521609479803
+        }
+    },
+    {
+        "filename": "AMQ-5525.json",
+        "creation_time": "2015-01-19T13:47:50.000+0000",
+        "commit": "548aa1e41557f00f894fe160219bd155464f6c06",
+        "candidate_key": "ActiveMQCommand.prepare",
+        "ground_truth_method": "activemq-karaf.src.main.java.org.apache.activemq.karaf.commands.ActiveMQCommand.prepare",
+        "file_path": "activemq-karaf/src/main/java/org/apache/activemq/karaf/commands/ActiveMQCommand.java",
+        "codebleu": {
+            "bleu": 0.7159265693390171,
+            "ngram": 0.7853211009174312,
+            "syntax": 0.0,
+            "dataflow": 0.9213483146067416,
+            "codebleu": 0.8075319949543965
+        }
+    },
+    {
+        "filename": "AMQ-5141.json",
+        "creation_time": "2014-04-11T11:31:51.000+0000",
+        "commit": "7646526c0a6bf406e66751a7f1be8af353462c13",
+        "candidate_key": "sendToDeadLetterQueue",
+        "ground_truth_method": "activemq-broker.src.main.java.org.apache.activemq.broker.region.RegionBroker.sendToDeadLetterQueue",
+        "file_path": "activemq-broker/src/main/java/org/apache/activemq/broker/region/RegionBroker.java",
+        "codebleu": {
+            "bleu": 0.013060506264884588,
+            "ngram": 0.24193548387096775,
+            "syntax": 0.0,
+            "dataflow": 0.46875,
+            "codebleu": 0.24124866337861745
+        }
+    },
+    {
+        "filename": "AMQ-2902.json",
+        "creation_time": "2010-09-07T11:34:15.000+0000",
+        "commit": "c4911bda043fa76d4051a58f600be9652130fedf",
+        "candidate_key": "VMTransport.stop",
+        "ground_truth_method": "activemq-core.src.main.java.org.apache.activemq.transport.vm.VMTransport.stop",
+        "file_path": "activemq-core/src/main/java/org/apache/activemq/transport/vm/VMTransport.java",
+        "codebleu": {
+            "bleu": 0.6968982442881815,
+            "ngram": 0.6975308641975309,
+            "syntax": 0.0,
+            "dataflow": 0.7384615384615385,
+            "codebleu": 0.7109635489824169
+        }
+    },
+    {
+        "filename": "AMQ-3725.json",
+        "creation_time": "2012-02-17T18:57:21.000+0000",
+        "commit": "582af3e74adca7efbf7d88d092764325341b719d",
+        "candidate_key": "DataFileAppender.processQueue",
+        "ground_truth_method": "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.journal.DataFileAppender.processQueue",
+        "file_path": "activemq-kahadb-store/src/main/java/org/apache/activemq/store/kahadb/disk/journal/DataFileAppender.java",
+        "codebleu": {
+            "bleu": 0.4064984695047314,
+            "ngram": 0.4214992927864215,
+            "syntax": 0.0,
+            "dataflow": 0.5912408759124088,
+            "codebleu": 0.47307954606785385
+        }
+    },
+    {
+        "filename": "AMQ-5384.json",
+        "creation_time": "2014-10-06T09:26:58.000+0000",
+        "commit": "ad770ea79d9eaf9e40216ed2e116b2544fcd8e3e",
+        "candidate_key": "JDBCMessageStore.removeMessage",
+        "ground_truth_method": "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCMessageStore.removeMessage",
+        "file_path": "activemq-jdbc-store/src/main/java/org/apache/activemq/store/jdbc/JDBCMessageStore.java",
+        "codebleu": {
+            "bleu": 0.17718773459917933,
+            "ngram": 0.19900497512437812,
+            "syntax": 0.0,
+            "dataflow": 0.46153846153846156,
+            "codebleu": 0.2792437237540063
+        }
+    }
+]

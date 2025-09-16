@@ -1,0 +1,362 @@
+[
+    {
+        "filename": "HDFS-13023.json",
+        "creation_time": "2018-01-16T20:27:39.000+0000",
+        "commit": "2f6e958a510a823f9e2108ea026d08b2345ccae1",
+        "candidate_key": "syncWithJournalAtIndex",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.qjournal.server.JournalNodeSyncer.syncWithJournalAtIndex",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/qjournal/server/JournalNodeSyncer.java",
+        "codebleu": {
+            "bleu": 0.5542925315051983,
+            "ngram": 0.5555555555555556,
+            "syntax": 0.0,
+            "dataflow": 0.5416666666666666,
+            "codebleu": 0.5505049179091401
+        }
+    },
+    {
+        "filename": "HDFS-2245.json",
+        "creation_time": "2011-08-10T22:55:33.000+0000",
+        "commit": "6a7c0306bd9a600a943abb61606aaaf4f9beafee",
+        "candidate_key": "BlockManager.chooseTarget",
+        "ground_truth_method": "hdfs.src.java.org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.chooseTarget",
+        "file_path": "hdfs/src/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockManager.java",
+        "codebleu": {
+            "bleu": 0.6978483140018265,
+            "ngram": 0.70042194092827,
+            "syntax": 0.0,
+            "dataflow": 0.828125,
+            "codebleu": 0.7421317516433654
+        }
+    },
+    {
+        "filename": "HDFS-10320.json",
+        "creation_time": "2016-04-20T23:02:09.000+0000",
+        "commit": "1268cf5fbe4458fa75ad0662512d352f9e8d3470",
+        "candidate_key": "NetworkTopology.chooseRandom",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.net.NetworkTopology.chooseRandom",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java",
+        "codebleu": {
+            "bleu": 0.007946016171317502,
+            "ngram": 0.013824884792626729,
+            "syntax": 0.0,
+            "dataflow": 0.15384615384615385,
+            "codebleu": 0.05853901827003269
+        }
+    },
+    {
+        "filename": "HDFS-11479.json",
+        "creation_time": "2017-03-01T11:08:07.000+0000",
+        "commit": "899d5c4d49f00d90ddc3632efb2df92841867192",
+        "candidate_key": "SimpleUdpServer.run",
+        "ground_truth_method": "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.oncrpc.SimpleUdpServer.run",
+        "file_path": "hadoop-common-project/hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/SimpleUdpServer.java",
+        "codebleu": {
+            "bleu": 0.748244564086645,
+            "ngram": 0.7486033519553073,
+            "syntax": 0.0,
+            "dataflow": 0.765625,
+            "codebleu": 0.7541576386806508
+        }
+    },
+    {
+        "filename": "HDFS-8055.json",
+        "creation_time": "2015-04-02T23:21:55.000+0000",
+        "commit": "c7ebecfff5b609a66914b40f95294ad87a2afcc7",
+        "candidate_key": "DatanodeManager.sortLocatedBlocks",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.sortLocatedBlocks",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DatanodeManager.java",
+        "codebleu": {
+            "bleu": 0.7002566028400257,
+            "ngram": 0.7028169014084507,
+            "syntax": 0.0,
+            "dataflow": 0.9294117647058824,
+            "codebleu": 0.7774950896514529
+        }
+    },
+    {
+        "filename": "HDFS-3385.json",
+        "creation_time": "2012-05-08T12:45:31.000+0000",
+        "commit": "ba6360e493829312210666af93467d3d35d9d59d",
+        "candidate_key": "recoverLeaseInternal",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.recoverLeaseInternal",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
+        "codebleu": {
+            "bleu": 0.688078945995266,
+            "ngram": 0.9120443740095087,
+            "syntax": 0.0,
+            "dataflow": 0.978021978021978,
+            "codebleu": 0.8593817660089175
+        }
+    },
+    {
+        "filename": "HDFS-11472.json",
+        "creation_time": "2017-02-28T18:39:13.000+0000",
+        "commit": "1edefb52e6a07a120bc97c72d5d3c89a0dc0e827",
+        "candidate_key": "initReplicaRecovery",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.initReplicaRecovery",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/FsDatasetImpl.java",
+        "codebleu": {
+            "bleu": 0.024284224794545974,
+            "ngram": 0.036585365853658534,
+            "syntax": 0.0,
+            "dataflow": 0.11904761904761904,
+            "codebleu": 0.05997240323194118
+        }
+    },
+    {
+        "filename": "HDFS-10760.json",
+        "creation_time": "2016-08-12T08:29:24.000+0000",
+        "commit": "80bb9ffb67ef6e150e8dc4dd6afd2fcd0f823da5",
+        "candidate_key": "DataXceiver.run",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataXceiver.run",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataXceiver.java",
+        "codebleu": {
+            "bleu": 0.00010892775947295526,
+            "ngram": 0.176,
+            "syntax": 0.0,
+            "dataflow": 0.4772727272727273,
+            "codebleu": 0.2177938850107334
+        }
+    },
+    {
+        "filename": "HDFS-12383.json",
+        "creation_time": "2017-08-31T20:43:50.000+0000",
+        "commit": "633c1ea4554cae6cd684f60848497817d4ed3d82",
+        "candidate_key": "takeAndProcessTasks",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.ReencryptionUpdater.takeAndProcessTasks",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ReencryptionUpdater.java",
+        "codebleu": {
+            "bleu": 0.7825185788754682,
+            "ngram": 0.7837837837837838,
+            "syntax": 0.0,
+            "dataflow": 0.872093023255814,
+            "codebleu": 0.8127984619716886
+        }
+    },
+    {
+        "filename": "HDFS-5657.json",
+        "creation_time": "2013-12-11T21:59:46.000+0000",
+        "commit": "14bda8311fada9a474755362500a6b4957bf995d",
+        "candidate_key": "OpenFileCtx.checkAndStartWrite",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.checkAndStartWrite",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs-nfs/src/main/java/org/apache/hadoop/hdfs/nfs/nfs3/OpenFileCtx.java",
+        "codebleu": {
+            "bleu": 0.9250663093535785,
+            "ngram": 0.9739130434782609,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.9663264509439464
+        }
+    },
+    {
+        "filename": "HDFS-5657.json",
+        "creation_time": "2013-12-11T21:59:46.000+0000",
+        "commit": "14bda8311fada9a474755362500a6b4957bf995d",
+        "candidate_key": "OpenFileCtx.executeWriteBack",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.executeWriteBack",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs-nfs/src/main/java/org/apache/hadoop/hdfs/nfs/nfs3/OpenFileCtx.java",
+        "codebleu": {
+            "bleu": 0.2726787117335272,
+            "ngram": 0.7819548872180451,
+            "syntax": 0.0,
+            "dataflow": 0.9047619047619048,
+            "codebleu": 0.653131834571159
+        }
+    },
+    {
+        "filename": "HDFS-11827.json",
+        "creation_time": "2017-05-16T06:28:49.000+0000",
+        "commit": "0e95ff78c31f80da6748be347358619e1338ae1c",
+        "candidate_key": "chooseRandom",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseRandom",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockPlacementPolicyDefault.java",
+        "codebleu": {
+            "bleu": 0.05713860636269023,
+            "ngram": 0.05867768595041322,
+            "syntax": 0.0,
+            "dataflow": 0.20175438596491227,
+            "codebleu": 0.10585689275933857
+        }
+    },
+    {
+        "filename": "HDFS-5843.json",
+        "creation_time": "2014-01-28T06:05:16.000+0000",
+        "commit": "3d9ad8e3b60dd21db45466f4736abe6b1812b522",
+        "candidate_key": "DataXceiver.blockChecksum",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataXceiver.blockChecksum",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataXceiver.java",
+        "codebleu": {
+            "bleu": 0.8218113186473966,
+            "ngram": 0.8220064724919094,
+            "syntax": 0.0,
+            "dataflow": 0.9574468085106383,
+            "codebleu": 0.8670881998833148
+        }
+    },
+    {
+        "filename": "HDFS-8070.json",
+        "creation_time": "2015-04-06T19:57:58.000+0000",
+        "commit": "176d22b440f74fd2a96fa1e4f5d7925ffbc35f85",
+        "candidate_key": "opRequestShortCircuitFds",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.protocol.datatransfer.Receiver.opRequestShortCircuitFds",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/protocol/datatransfer/Receiver.java",
+        "codebleu": {
+            "bleu": 0.3690099850158372,
+            "ngram": 0.37055837563451777,
+            "syntax": 0.0,
+            "dataflow": 0.532258064516129,
+            "codebleu": 0.42394214172216127
+        }
+    },
+    {
+        "filename": "HDFS-6520.json",
+        "creation_time": "2014-06-12T02:32:29.000+0000",
+        "commit": "188f65287d5b2f26a8862c88198f83ac59035016",
+        "candidate_key": "NamenodeFsck.copyBlock",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NamenodeFsck.copyBlock",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NamenodeFsck.java",
+        "codebleu": {
+            "bleu": 0.8909067029064152,
+            "ngram": 0.9040139616055847,
+            "syntax": 0.0,
+            "dataflow": 0.9647887323943662,
+            "codebleu": 0.919903132302122
+        }
+    },
+    {
+        "filename": "HDFS-10715.json",
+        "creation_time": "2016-08-02T08:10:23.000+0000",
+        "commit": "57580268330222699c7c67766e27679b3b31968c",
+        "candidate_key": "AvailableSpaceBlockPlacementPolicy.chooseDataNode",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.AvailableSpaceBlockPlacementPolicy.chooseDataNode",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/AvailableSpaceBlockPlacementPolicy.java",
+        "codebleu": {
+            "bleu": 0.6806796579650755,
+            "ngram": 0.6830601092896175,
+            "syntax": 0.0,
+            "dataflow": 0.6216216216216216,
+            "codebleu": 0.6617871296254382
+        }
+    },
+    {
+        "filename": "HDFS-3332.json",
+        "creation_time": "2012-04-27T04:42:38.000+0000",
+        "commit": "75fab460417569c669dbdb8bd332a73110bacf9d",
+        "candidate_key": "org.apache.hadoop.hdfs.server.datanode.BPServiceActor.reportBadBlocks",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BPServiceActor.reportBadBlocks",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/BPServiceActor.java",
+        "codebleu": {
+            "bleu": 0.8940646077987519,
+            "ngram": 0.8944099378881988,
+            "syntax": 0.0,
+            "dataflow": 0.9555555555555556,
+            "codebleu": 0.9146767004141687
+        }
+    },
+    {
+        "filename": "HDFS-6825.json",
+        "creation_time": "2014-08-06T01:31:34.000+0000",
+        "commit": "9b38a6ab2330117ab36862be6c2c26a716120893",
+        "candidate_key": "commitBlockSynchronization",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.commitBlockSynchronization",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
+        "codebleu": {
+            "bleu": 0.4702441999995275,
+            "ngram": 0.8510506798516687,
+            "syntax": 0.0,
+            "dataflow": 0.8823529411764706,
+            "codebleu": 0.7345492736758888
+        }
+    },
+    {
+        "filename": "HDFS-5710.json",
+        "creation_time": "2014-01-01T04:06:03.000+0000",
+        "commit": "716074bc80047c2ec3a4e74748194a3770a898f6",
+        "candidate_key": "FSDirectory.getFullPathName",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSDirectory.getFullPathName",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSDirectory.java",
+        "codebleu": {
+            "bleu": 0.029533740063358366,
+            "ngram": 0.11403508771929824,
+            "syntax": 0.0,
+            "dataflow": 0.3684210526315789,
+            "codebleu": 0.17066329347141185
+        }
+    },
+    {
+        "filename": "HDFS-7916.json",
+        "creation_time": "2015-03-11T10:40:00.000+0000",
+        "commit": "1e4a686ea9572159c512ae41d661b7a9fc1b0f27",
+        "candidate_key": "ReportBadBlockAction.reportTo",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.ReportBadBlockAction.reportTo",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/ReportBadBlockAction.java",
+        "codebleu": {
+            "bleu": 0.5637504633726437,
+            "ngram": 0.5672645739910314,
+            "syntax": 0.0,
+            "dataflow": 0.6862745098039216,
+            "codebleu": 0.6057631823891988
+        }
+    },
+    {
+        "filename": "HDFS-11164.json",
+        "creation_time": "2016-11-22T05:58:03.000+0000",
+        "commit": "e24a923db50879f7dbe5d2afac0e6757089fb07d",
+        "candidate_key": "Dispatcher$PendingMove.receiveResponse",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.balancer.Dispatcher.receiveResponse",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/balancer/Dispatcher.java",
+        "codebleu": {
+            "bleu": 0.47847070889517423,
+            "ngram": 0.47876447876447875,
+            "syntax": 0.0,
+            "dataflow": 0.6666666666666666,
+            "codebleu": 0.5413006181087732
+        }
+    },
+    {
+        "filename": "HDFS-13164.json",
+        "creation_time": "2018-02-17T00:40:21.000+0000",
+        "commit": "106f4b692e3a0fed24c0325f06d9d88ec2650a18",
+        "candidate_key": "DFSOutputStream.closeImpl",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs-client.src.main.java.org.apache.hadoop.hdfs.DFSOutputStream.closeImpl",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/DFSOutputStream.java",
+        "codebleu": {
+            "bleu": 0.045795544769655784,
+            "ngram": 0.22592592592592592,
+            "syntax": 0.0,
+            "dataflow": 0.4444444444444444,
+            "codebleu": 0.23872197171334203
+        }
+    },
+    {
+        "filename": "HDFS-6462.json",
+        "creation_time": "2014-05-29T00:19:03.000+0000",
+        "commit": "c55947343e0a629f71d69b49ba87997573fe48a2",
+        "candidate_key": "org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.fsstat",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.fsstat",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs-nfs/src/main/java/org/apache/hadoop/hdfs/nfs/nfs3/RpcProgramNfs3.java",
+        "codebleu": {
+            "bleu": 0.7736870006480111,
+            "ngram": 0.8132678132678133,
+            "syntax": 0.0,
+            "dataflow": 0.8446601941747572,
+            "codebleu": 0.8105383360301938
+        }
+    },
+    {
+        "filename": "HDFS-8807.json",
+        "creation_time": "2015-07-22T20:45:55.000+0000",
+        "commit": "78ec38b2ede8bdf3874b2ae051af9580007a9ba1",
+        "candidate_key": "StorageLocation.parse",
+        "ground_truth_method": "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.StorageLocation.parse",
+        "file_path": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/StorageLocation.java",
+        "codebleu": {
+            "bleu": 0.6128289193788998,
+            "ngram": 0.6145038167938931,
+            "syntax": 0.0,
+            "dataflow": 0.6829268292682927,
+            "codebleu": 0.6367531884803619
+        }
+    }
+]

@@ -1,0 +1,49 @@
+{
+    "ZOOKEEPER-1864.json" : [
+        "org.apache.zookeeper.server.quorum.QuorumPeerConfig"
+    ],
+    "ZOOKEEPER-2213.json" : [
+        "org.apache.zookeeper.server.PrepRequestProcessor"
+    ],
+    "ZOOKEEPER-2297.json" : [
+        "org.apache.zookeeper.server.auth.ProviderRegistry",
+        "org.apache.zookeeper.server.quorum.QuorumPeerConfig"
+    ],
+    "ZOOKEEPER-1264.json" : [
+        "org.apache.zookeeper.server.quorum.Leader",
+        "org.apache.zookeeper.server.quorum.Learner"
+    ],
+    "ZOOKEEPER-2808.json" : [
+        "org.apache.zookeeper.server.DataTree",
+        "org.apache.zookeeper.server.ZKDatabase"
+    ],
+    "ZOOKEEPER-2982.json" : [
+        "org.apache.zookeeper.server.quorum.Learner"
+    ],
+    "ZOOKEEPER-1179.json" : [
+        "org.apache.zookeeper.server.NettyServerCnxn"
+    ],
+    "ZOOKEEPER-2581.json" : [
+        "org.apache.zookeeper.server.auth.X509AuthenticationProvider"
+    ],
+    "ZOOKEEPER-1870.json" : [
+        "org.apache.zookeeper.server.quorum.QuorumCnxManager",
+        "org.apache.zookeeper.server.quorum.QuorumPeer",
+        "org.apache.zookeeper.server.quorum.FastLeaderElection"
+    ],
+    "ZOOKEEPER-2247.json" : [
+        "org.apache.zookeeper.server.quorum.ObserverZooKeeperServer",
+        "org.apache.zookeeper.server.ZooKeeperServerListenerImpl",
+        "org.apache.zookeeper.server.quorum.Leader",
+        "org.apache.zookeeper.server.ZooKeeperServerShutdownHandler",
+        "org.apache.zookeeper.server.ServerCnxnFactory",
+        "org.apache.zookeeper.server.quorum.QuorumZooKeeperServer",
+        "org.apache.zookeeper.server.ZooKeeperServerMain",
+        "org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer",
+        "org.apache.zookeeper.server.quorum.Follower",
+        "org.apache.zookeeper.server.ZooKeeperServer",
+        "org.apache.zookeeper.server.SyncRequestProcessor",
+        "org.apache.zookeeper.server.quorum.Learner",
+        "org.apache.zookeeper.server.quorum.Observer"
+    ]
+}

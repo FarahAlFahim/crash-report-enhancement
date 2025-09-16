@@ -1,0 +1,525 @@
+{
+    "HIVE-10992.json" : [
+        "org.apache.hive.hcatalog.templeton.tool.TempletonControllerJob"
+    ],
+    "HIVE-16450.json" : [
+        "org.apache.hadoop.hive.metastore.RetryingHMSHandler",
+        "org.apache.hadoop.hive.metastore.ObjectStore",
+        "org.apache.hadoop.hive.metastore.MetaStoreUtils",
+        "org.apache.hadoop.hive.metastore.Deadline"
+    ],
+    "HIVE-6389.json" : [
+        "org.apache.hadoop.hive.serde2.lazybinary.objectinspector.LazyBinaryMapObjectInspector"
+    ],
+    "HIVE-2372.json" : [
+        "org.apache.hadoop.hive.ql.exec.ScriptOperator",
+        "org.apache.hadoop.hive.conf.HiveConf"
+    ],
+    "HIVE-2958.json" : [
+        "org.apache.hadoop.hive.serde2.lazydio.LazyDioShort",
+        "org.apache.hadoop.hive.serde2.lazydio.LazyDioFloat",
+        "org.apache.hadoop.hive.serde2.lazydio.LazyDioDouble",
+        "org.apache.hadoop.hive.serde2.lazydio.LazyDioInteger",
+        "org.apache.hadoop.hive.serde2.lazydio.LazyDioLong",
+        "org.apache.hadoop.hive.serde2.lazydio.LazyDioBoolean",
+        "org.apache.hadoop.hive.serde2.lazydio.LazyDioByte"
+    ],
+    "HIVE-13392.json" : [
+        "org.apache.hadoop.hive.metastore.txn.CompactionInfo",
+        "org.apache.hadoop.hive.ql.txn.compactor.CompactorMR",
+        "org.apache.hadoop.hive.metastore.txn.TxnUtils",
+        "org.apache.hadoop.hive.common.ValidCompactorTxnList"
+    ],
+    "HIVE-11301.json" : [
+        "org.apache.hadoop.hive.ql.stats.StatsUtils"
+    ],
+    "HIVE-11028.json" : [
+        "org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcCtx",
+        "org.apache.hadoop.hive.ql.parse.TezCompiler",
+        "org.apache.hadoop.hive.ql.optimizer.ConstantPropagate",
+        "org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcFactory"
+    ],
+    "HIVE-14380.json" : [
+        "org.apache.hadoop.hive.shims.HadoopShims",
+        "org.apache.hadoop.hive.ql.session.SessionState",
+        "org.apache.hadoop.hive.ql.metadata.Hive",
+        "org.apache.hadoop.hive.shims.Hadoop23Shims",
+        "org.apache.hadoop.hive.ql.parse.SemanticAnalyzer"
+    ],
+    "HIVE-7799.json" : [
+        "org.apache.hadoop.hive.ql.exec.spark.HiveBaseFunctionResultList"
+    ],
+    "HIVE-6537.json" : [
+        "org.apache.hadoop.hive.ql.optimizer.physical.LocalMapJoinProcFactory",
+        "org.apache.hadoop.hive.ql.exec.HashTableSinkOperator",
+        "org.apache.hadoop.hive.ql.exec.mr.MapredLocalTask",
+        "org.apache.hadoop.hive.ql.exec.mr.HashTableLoader"
+    ],
+    "HIVE-13691.json" : [
+        "org.apache.hadoop.hive.metastore.txn.CompactionTxnHandler",
+        "org.apache.hadoop.hive.metastore.txn.TxnHandler",
+        "org.apache.hadoop.hive.ql.txn.compactor.Initiator"
+    ],
+    "HIVE-17758.json" : [
+        "org.apache.hadoop.hive.metastore.ObjectStore",
+        "org.apache.hadoop.hive.conf.HiveConf"
+    ],
+    "HIVE-14898.json" : [
+        "org.apache.hive.service.cli.thrift.ThriftHttpServlet",
+        "org.apache.hive.service.auth.ldap.HttpEmptyAuthenticationException"
+    ],
+    "HIVE-5546.json" : [
+        "org.apache.hadoop.hive.ql.io.orc.OrcInputFormat"
+    ],
+    "HIVE-7557.json" : [
+        "org.apache.hadoop.hive.ql.optimizer.physical.Vectorizer"
+    ],
+    "HIVE-1712.json" : [
+        "org.apache.hadoop.hive.metastore.MetaStoreUtils"
+    ],
+    "HIVE-12608.json" : [
+        "org.apache.hadoop.hive.ql.io.parquet.convert.HiveStructConverter"
+    ],
+    "HIVE-17774.json" : [
+        "org.apache.hadoop.hive.ql.txn.compactor.CompactorMR"
+    ],
+    "HIVE-14564.json" : [
+        "org.apache.hadoop.hive.ql.optimizer.ColumnPrunerProcFactory"
+    ],
+    "HIVE-3651.json" : [
+        "org.apache.hadoop.hive.ql.plan.BucketMapJoinContext"
+    ],
+    "HIVE-5199.json" : [
+        "org.apache.hadoop.hive.serde2.CustomNonSettableStructObjectInspector1",
+        "org.apache.hadoop.hive.ql.exec.MapOperator",
+        "org.apache.hadoop.hive.serde2.CustomSerDe1",
+        "org.apache.hadoop.hive.serde2.CustomSerDe2",
+        "org.apache.hadoop.hive.ql.exec.FetchOperator",
+        "org.apache.hadoop.hive.serde2.CustomNonSettableListObjectInspector1",
+        "org.apache.hadoop.hive.serde2.objectinspector.ObjectInspectorConverters"
+    ],
+    "HIVE-17368.json" : [
+        "org.apache.hadoop.hive.metastore.security.DelegationTokenSecretManager",
+        "org.apache.hadoop.hive.ql.session.SessionState",
+        "org.apache.hive.jdbc.miniHS2.MiniHS2",
+        "org.apache.hive.service.cli.session.HiveSessionImplwithUGI",
+        "org.apache.hadoop.hive.metastore.security.MetastoreDelegationTokenManager",
+        "org.apache.hadoop.hive.metastore.security.DBTokenStore",
+        "org.apache.hive.minikdc.MiniHiveKdc"
+    ],
+    "HIVE-4233.json" : [
+        "org.apache.hadoop.hive.shims.Hadoop20Shims",
+        "org.apache.hadoop.hive.shims.HadoopShims",
+        "org.apache.hadoop.hive.metastore.RetryingMetaStoreClient",
+        "org.apache.hadoop.hive.shims.HadoopShimsSecure"
+    ],
+    "HIVE-14303.json" : [
+        "org.apache.hadoop.hive.ql.exec.CommonJoinOperator"
+    ],
+    "HIVE-19248.json" : [
+        "org.apache.hadoop.hive.ql.parse.repl.CopyUtils",
+        "org.apache.hadoop.hive.metastore.utils.StringUtils",
+        "org.apache.hadoop.hive.metastore.utils.FileUtils",
+        "org.apache.hadoop.hive.ql.parse.repl.load.DumpMetaData",
+        "org.apache.hadoop.hive.metastore.ReplChangeManager",
+        "org.apache.hadoop.hive.ql.parse.repl.load.message.CreateFunctionHandler",
+        "org.apache.hadoop.hive.ql.exec.ReplCopyTask",
+        "org.apache.hadoop.hive.shims.Hadoop23Shims",
+        "org.apache.hadoop.hive.metastore.utils.HdfsUtils",
+        "org.apache.hive.hcatalog.listener.DbNotificationListener"
+    ],
+    "HIVE-7167.json" : [
+        "org.apache.hadoop.hive.metastore.HiveMetaStore"
+    ],
+    "HIVE-12360.json" : [
+        "org.apache.hadoop.hive.ql.io.orc.MetadataReader"
+    ],
+    "HIVE-13160.json" : [
+        "org.apache.hadoop.hive.ql.metadata.Hive"
+    ],
+    "HIVE-12008.json" : [
+        "org.apache.hadoop.hive.ql.optimizer.ColumnPrunerProcCtx",
+        "org.apache.hadoop.hive.ql.exec.UnionOperator"
+    ],
+    "HIVE-6205.json" : [
+        "org.apache.hcatalog.cli.SemanticAnalysis.HCatSemanticAnalyzer",
+        "org.apache.hadoop.hive.ql.Driver",
+        "org.apache.hadoop.hive.ql.parse.DDLSemanticAnalyzer",
+        "org.apache.hadoop.hive.ql.security.authorization.plugin.HiveOperationType",
+        "org.apache.hadoop.hive.ql.parse.SemanticAnalyzerFactory",
+        "org.apache.hadoop.hive.ql.plan.HiveOperation"
+    ],
+    "HIVE-15309.json" : [
+        "org.apache.orc.impl.OrcAcidUtils",
+        "org.apache.hadoop.hive.metastore.txn.TxnHandler"
+    ],
+    "HIVE-10808.json" : [
+        "org.apache.hadoop.hive.serde2.NullStructSerDe"
+    ],
+    "HIVE-18429.json" : [
+        "org.apache.hadoop.hive.ql.txn.compactor.CompactorMR"
+    ],
+    "HIVE-10776.json" : [
+        "org.apache.hadoop.hive.ql.parse.SemanticAnalyzer"
+    ],
+    "HIVE-6301.json" : [
+        "org.apache.hadoop.hive.ql.udf.UDFJson"
+    ],
+    "HIVE-8295.json" : [
+        "org.apache.hadoop.hive.metastore.StatObjectConverter",
+        "org.apache.hadoop.hive.metastore.MetaStoreDirectSql",
+        "org.apache.hadoop.hive.metastore.ObjectStore",
+        "org.apache.hadoop.hive.conf.HiveConf"
+    ],
+    "HIVE-8915.json" : [
+        "org.apache.hadoop.hive.ql.txn.compactor.Cleaner",
+        "org.apache.hadoop.hive.ql.txn.compactor.Worker"
+    ],
+    "HIVE-7249.json" : [
+        "org.apache.hadoop.hive.ql.lockmgr.DbTxnManager",
+        "org.apache.hadoop.hive.ql.lockmgr.DbLockManager"
+    ],
+    "HIVE-11540.json" : [
+        "org.apache.hadoop.hive.ql.txn.compactor.CompactorMR",
+        "org.apache.hadoop.hive.ql.io.AcidUtils",
+        "org.apache.hadoop.hive.ql.txn.compactor.Worker",
+        "org.apache.hadoop.hive.conf.HiveConf"
+    ],
+    "HIVE-15755.json" : [
+        "org.apache.hadoop.hive.ql.ErrorMsg",
+        "org.apache.hadoop.hive.ql.parse.UpdateDeleteSemanticAnalyzer"
+    ],
+    "HIVE-9390.json" : [
+        "org.apache.hadoop.hive.metastore.txn.CompactionTxnHandler",
+        "org.apache.hadoop.hive.metastore.HiveMetaStore",
+        "org.apache.hadoop.hive.metastore.txn.TxnHandler"
+    ],
+    "HIVE-7623.json" : [
+        "org.apache.hadoop.hive.metastore.HiveAlterHandler"
+    ],
+    "HIVE-15997.json" : [
+        "org.apache.hadoop.hive.ql.lockmgr.zookeeper.ZooKeeperHiveLockManager",
+        "org.apache.hadoop.hive.ql.exec.mr.ExecDriver",
+        "org.apache.hadoop.hive.ql.Driver",
+        "org.apache.hadoop.hive.ql.exec.spark.LocalHiveSparkClient",
+        "org.apache.hadoop.hive.ql.exec.spark.RemoteHiveSparkClient"
+    ],
+    "HIVE-7009.json" : [
+        "org.apache.hadoop.hive.ql.exec.tez.DagUtils"
+    ],
+    "HIVE-2031.json" : [
+        "org.apache.hadoop.hive.ql.parse.BaseSemanticAnalyzer"
+    ],
+    "HIVE-4018.json" : [
+        "org.apache.hadoop.hive.ql.exec.persistence.MapJoinObjectValue",
+        "org.apache.hadoop.hive.ql.exec.persistence.MapJoinObjectKey",
+        "org.apache.hadoop.hive.ql.exec.MapJoinMetaData",
+        "org.apache.hadoop.hive.ql.exec.persistence.MapJoinSingleKey",
+        "org.apache.hadoop.hive.ql.exec.MapJoinOperator",
+        "org.apache.hadoop.hive.ql.exec.HashTableSinkOperator",
+        "org.apache.hadoop.hive.ql.exec.persistence.MapJoinDoubleKeys"
+    ],
+    "HIVE-11255.json" : [
+        "org.apache.hadoop.hive.metastore.HiveMetaStore"
+    ],
+    "HIVE-10151.json" : [
+        "org.apache.hadoop.hive.ql.exec.Operator",
+        "org.apache.hadoop.hive.ql.optimizer.BucketingSortingReduceSinkOptimizer",
+        "org.apache.hadoop.hive.ql.parse.SemanticAnalyzer"
+    ],
+    "HIVE-13546.json" : [
+        "org.apache.hadoop.hive.ql.optimizer.Optimizer"
+    ],
+    "HIVE-7049.json" : [
+        "org.apache.hadoop.hive.serde2.avro.AvroDeserializer",
+        "org.apache.hadoop.hive.serde2.avro.Utils"
+    ],
+    "HIVE-9755.json" : [
+        "org.apache.hadoop.hive.ql.udf.generic.GenericUDAFnGrams"
+    ],
+    "HIVE-19130.json" : [
+        "org.apache.hadoop.hive.ql.exec.DDLTask",
+        "org.apache.hadoop.hive.ql.parse.EximUtil",
+        "org.apache.hadoop.hive.ql.parse.WarehouseInstance",
+        "org.apache.hadoop.hive.ql.parse.repl.load.message.TableHandler",
+        "org.apache.hadoop.hive.ql.parse.ImportSemanticAnalyzer"
+    ],
+    "HIVE-13090.json" : [
+        "org.apache.hadoop.hive.thrift.TokenStoreDelegationTokenSecretManager",
+        "org.apache.hadoop.hive.thrift.ZooKeeperTokenStore"
+    ],
+    "HIVE-5664.json" : [
+        "org.apache.hadoop.hive.metastore.HiveMetaStoreClient"
+    ],
+    "HIVE-15778.json" : [
+        "org.apache.hadoop.hive.metastore.HiveMetaStore"
+    ],
+    "HIVE-8386.json" : [
+        "org.apache.hadoop.hive.serde2.typeinfo.StructTypeInfo"
+    ],
+    "HIVE-14714.json" : [
+        "org.apache.hive.spark.client.SparkClientImpl"
+    ],
+    "HIVE-5428.json" : [
+        "org.apache.hadoop.hive.metastore.MetaStoreDirectSql",
+        "org.apache.hadoop.hive.metastore.ObjectStore"
+    ],
+    "HIVE-12567.json" : [
+        "org.apache.hadoop.hive.metastore.txn.TxnHandler"
+    ],
+    "HIVE-6984.json" : [
+        "org.apache.hadoop.hive.ql.exec.TableScanOperator"
+    ],
+    "HIVE-10736.json" : [
+        "org.apache.hadoop.hive.ql.exec.tez.TezJobMonitor",
+        "org.apache.hadoop.hive.ql.exec.tez.TezSessionPoolManager",
+        "org.apache.hadoop.hive.ql.exec.tez.TezSessionState"
+    ],
+    "HIVE-7710.json" : [
+        "org.apache.hadoop.hive.metastore.HiveAlterHandler",
+        "org.apache.hadoop.hive.metastore.ObjectStore"
+    ],
+    "HIVE-8735.json" : [
+        "org.apache.hadoop.hive.ql.stats.jdbc.JDBCStatsSetupConstants",
+        "org.apache.hadoop.hive.ql.stats.jdbc.JDBCStatsPublisher",
+        "org.apache.hadoop.hive.ql.stats.jdbc.JDBCStatsAggregator",
+        "org.apache.hadoop.hive.ql.stats.jdbc.JDBCStatsUtils"
+    ],
+    "HIVE-13209.json" : [
+        "org.apache.hadoop.hive.metastore.IpAddressListener",
+        "org.apache.hadoop.hive.metastore.HiveMetaStore",
+        "org.apache.hadoop.hive.metastore.TSetIpAddressProcessor"
+    ],
+    "HIVE-13065.json" : [
+        "org.apache.hadoop.hive.hbase.HBaseRowSerializer"
+    ],
+    "HIVE-11470.json" : [
+        "org.apache.hive.hcatalog.mapreduce.DynamicPartitionFileRecordWriterContainer"
+    ],
+    "HIVE-12476.json" : [
+        "org.apache.hadoop.hive.metastore.MetaStoreDirectSql"
+    ],
+    "HIVE-10559.json" : [
+        "org.apache.hadoop.hive.ql.parse.TezCompiler",
+        "org.apache.hadoop.hive.ql.parse.GenTezUtils",
+        "org.apache.hadoop.hive.ql.parse.OptimizeTezProcContext",
+        "org.apache.hadoop.hive.ql.optimizer.ConvertJoinMapJoin",
+        "org.apache.hadoop.hive.ql.optimizer.RemoveDynamicPruningBySize"
+    ],
+    "HIVE-9721.json" : [
+        "org.apache.hadoop.hive.shims.Hadoop23Shims"
+    ],
+    "HIVE-4216.json" : [
+        "org.apache.hadoop.hive.shims.Hadoop23Shims"
+    ],
+    "HIVE-13836.json" : [
+        "org.apache.hive.hcatalog.listener.DbNotificationListener"
+    ],
+    "HIVE-9873.json" : [
+        "org.apache.hadoop.hive.ql.io.parquet.read.ParquetRecordReaderWrapper"
+    ],
+    "HIVE-13174.json" : [
+        "org.apache.hadoop.hive.ql.optimizer.physical.Vectorizer"
+    ],
+    "HIVE-5431.json" : [
+        "org.apache.hadoop.hive.ql.plan.PlanUtils"
+    ],
+    "HIVE-13115.json" : [
+        "org.apache.hadoop.hive.metastore.MetaStoreDirectSql"
+    ],
+    "HIVE-4723.json" : [
+        "org.apache.hadoop.hive.ql.metadata.Hive",
+        "org.apache.hadoop.hive.ql.parse.DDLSemanticAnalyzer"
+    ],
+    "HIVE-15686.json" : [
+        "org.apache.hadoop.hive.metastore.HiveMetaStore"
+    ],
+    "HIVE-4975.json" : [
+        "org.apache.hadoop.hive.ql.io.orc.OrcStruct"
+    ],
+    "HIVE-10538.json" : [
+        "org.apache.hadoop.hive.ql.exec.ReduceSinkOperator"
+    ],
+    "HIVE-11902.json" : [
+        "org.apache.hadoop.hive.metastore.txn.TxnHandler"
+    ],
+    "HIVE-18918.json" : [
+        "org.apache.hadoop.hive.ql.txn.compactor.CompactorMR"
+    ],
+    "HIVE-8107.json" : [
+        "org.apache.hadoop.hive.ql.parse.UpdateDeleteSemanticAnalyzer"
+    ],
+    "HIVE-1326.json" : [
+        "org.apache.hadoop.hive.ql.exec.persistence.RowContainer"
+    ],
+    "HIVE-11369.json" : [
+        "org.apache.hadoop.hive.ql.exec.mr.MapRedTask",
+        "org.apache.hadoop.hive.ql.exec.mr.MapredLocalTask"
+    ],
+    "HIVE-9055.json" : [
+        "org.apache.hadoop.hive.ql.parse.GenTezWork"
+    ],
+    "HIVE-13856.json" : [
+        "org.apache.hadoop.hive.metastore.txn.TxnHandler"
+    ],
+    "HIVE-7374.json" : [
+        "org.apache.hadoop.hive.metastore.txn.TxnHandler"
+    ],
+    "HIVE-12206.json" : [
+        "org.apache.hadoop.hive.ql.exec.Utilities",
+        "org.apache.hadoop.hive.udf.example.GenericUDFExampleAdd"
+    ],
+    "HIVE-10098.json" : [
+        "org.apache.hadoop.hive.shims.HadoopShims",
+        "org.apache.hadoop.hive.shims.Hadoop20SShims",
+        "org.apache.hadoop.hive.ql.exec.SecureCmdDoAs",
+        "org.apache.hadoop.hive.shims.HadoopShimsSecure",
+        "org.apache.hadoop.hive.shims.Hadoop23Shims"
+    ],
+    "HIVE-7745.json" : [
+        "org.apache.hadoop.hive.ql.parse.spark.GenSparkUtils"
+    ],
+    "HIVE-11762.json" : [
+        "org.apache.hadoop.hive.shims.Hadoop23Shims"
+    ],
+    "HIVE-6990.json" : [
+        "org.apache.hadoop.hive.metastore.MetaStoreDirectSql",
+        "org.apache.hadoop.hive.metastore.ObjectStore"
+    ],
+    "HIVE-7114.json" : [
+        "org.apache.hive.service.cli.session.SessionManager"
+    ],
+    "HIVE-11991.json" : [
+        "org.apache.hadoop.hive.ql.exec.FetchOperator"
+    ],
+    "HIVE-17900.json" : [
+        "org.apache.hadoop.hive.ql.txn.compactor.Worker"
+    ],
+    "HIVE-10816.json" : [
+        "org.apache.hadoop.hive.ql.exec.mr.ExecDriver",
+        "org.apache.hadoop.hive.ql.exec.PartitionKeySampler"
+    ],
+    "HIVE-13017.json" : [
+        "org.apache.hadoop.hive.ql.exec.SecureCmdDoAs"
+    ],
+    "HIVE-11303.json" : [
+        "org.apache.hadoop.hive.ql.plan.BaseWork",
+        "org.apache.hadoop.hive.ql.exec.tez.KeyValuesFromKeyValues",
+        "org.apache.hadoop.hive.ql.plan.CommonMergeJoinDesc",
+        "org.apache.hadoop.hive.ql.exec.Operator",
+        "org.apache.hadoop.hive.ql.exec.tez.KeyValuesAdapter",
+        "org.apache.hadoop.hive.ql.optimizer.MapJoinProcessor",
+        "org.apache.hadoop.hive.ql.plan.ReduceWork",
+        "org.apache.hadoop.hive.ql.exec.tez.ReduceRecordSource",
+        "org.apache.hadoop.hive.ql.exec.tez.KeyValuesFromKeyValue",
+        "org.apache.hadoop.hive.ql.exec.JoinUtil",
+        "org.apache.hadoop.hive.ql.exec.tez.ReduceRecordProcessor",
+        "org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinCommonOperator",
+        "org.apache.hadoop.hive.ql.exec.vector.VectorMapJoinOperator",
+        "org.apache.hadoop.hive.ql.plan.ExprNodeDescUtils",
+        "org.apache.hadoop.hive.ql.parse.GenTezWork",
+        "org.apache.hadoop.hive.ql.exec.MapJoinOperator",
+        "org.apache.hadoop.hive.ql.optimizer.ReduceSinkMapJoinProc",
+        "org.apache.hadoop.hive.ql.parse.GenTezUtils",
+        "org.apache.hadoop.hive.conf.HiveConf",
+        "org.apache.hadoop.hive.ql.parse.GenTezProcContext",
+        "org.apache.hadoop.hive.ql.plan.MapJoinDesc",
+        "org.apache.hadoop.hive.ql.optimizer.ConvertJoinMapJoin"
+    ],
+    "HIVE-5899.json" : [
+        "org.apache.hadoop.hive.metastore.ObjectStore",
+        "org.apache.hadoop.hive.ql.io.orc.WriterImpl"
+    ],
+    "HIVE-11102.json" : [
+        "org.apache.hadoop.hive.ql.io.orc.ReaderImpl"
+    ],
+    "HIVE-9195.json" : [
+        "org.apache.hadoop.hive.serde2.objectinspector.primitive.WritableVoidObjectInspector",
+        "org.apache.hadoop.hive.ql.parse.TypeCheckProcFactory",
+        "org.apache.hadoop.hive.serde2.objectinspector.ObjectInspectorUtils",
+        "org.apache.hadoop.hive.ql.optimizer.calcite.translator.RexNodeConverter",
+        "org.apache.hadoop.hive.ql.plan.ExprNodeColumnListDesc",
+        "org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyVoidObjectInspector"
+    ],
+    "HIVE-11285.json" : [
+        "org.apache.hadoop.hive.ql.exec.FetchOperator"
+    ],
+    "HIVE-10288.json" : [
+        "org.apache.hadoop.hive.ql.metadata.Hive"
+    ],
+    "HIVE-8771.json" : [
+        "org.apache.hadoop.hive.ql.exec.AbstractFileMergeOperator"
+    ],
+    "HIVE-8008.json" : [
+        "org.apache.hadoop.hive.common.type.HiveDecimal"
+    ],
+    "HIVE-6915.json" : [
+        "org.apache.hadoop.hive.ql.exec.tez.TezTask",
+        "org.apache.hadoop.hive.hbase.HiveHBaseTableOutputFormat",
+        "org.apache.hadoop.hive.hbase.HiveHBaseTableInputFormat",
+        "org.apache.hadoop.hive.hbase.HBaseStorageHandler"
+    ],
+    "HIVE-12364.json" : [
+        "org.apache.hadoop.hive.shims.Hadoop23Shims",
+        "org.apache.hadoop.hive.ql.parse.SemanticAnalyzer"
+    ],
+    "HIVE-8766.json" : [
+        "org.apache.hadoop.hive.metastore.RetryingHMSHandler"
+    ],
+    "HIVE-5857.json" : [
+        "org.apache.hadoop.hive.ql.exec.Utilities"
+    ],
+    "HIVE-1547.json" : [
+        "org.apache.hadoop.hive.ql.exec.DDLTask"
+    ],
+    "HIVE-6113.json" : [
+        "org.apache.hadoop.hive.ql.exec.Utilities",
+        "org.apache.hadoop.hive.metastore.ObjectStore",
+        "org.apache.hadoop.hive.conf.HiveConf"
+    ],
+    "HIVE-9570.json" : [
+        "org.apache.hadoop.hive.ql.parse.spark.GenSparkUtils"
+    ],
+    "HIVE-1678.json" : [
+        "org.apache.hadoop.hive.ql.optimizer.GenMapRedUtils"
+    ],
+    "HIVE-11820.json" : [
+        "org.apache.hadoop.hive.shims.Hadoop20SShims",
+        "org.apache.hadoop.hive.shims.Hadoop23Shims"
+    ],
+    "HIVE-17274.json" : [
+        "org.apache.hadoop.hive.ql.exec.persistence.RowContainer"
+    ],
+    "HIVE-12522.json" : [
+        "org.apache.hadoop.hive.ql.exec.tez.DagUtils"
+    ],
+    "HIVE-16845.json" : [
+        "org.apache.hadoop.hive.ql.plan.ConditionalResolverMergeFiles"
+    ],
+    "HIVE-9655.json" : [
+        "org.apache.hadoop.hive.ql.optimizer.ColumnPrunerProcFactory"
+    ],
+    "HIVE-11441.json" : [
+        "org.apache.hadoop.hive.ql.parse.DDLSemanticAnalyzer"
+    ],
+    "HIVE-10801.json" : [
+        "org.apache.hadoop.hive.metastore.HiveMetaStore"
+    ],
+    "HIVE-9141.json" : [
+        "org.apache.hadoop.hive.ql.parse.GenTezWork"
+    ],
+    "HIVE-10010.json" : [
+        "org.apache.hadoop.hive.metastore.hbase.SharedStorageDescriptor"
+    ],
+    "HIVE-7763.json" : [
+        "org.apache.hadoop.hive.ql.exec.spark.SparkPlanGenerator"
+    ],
+    "HIVE-12083.json" : [
+        "org.apache.hadoop.hive.metastore.MetaStoreDirectSql",
+        "org.apache.hadoop.hive.ql.metadata.Hive",
+        "org.apache.hadoop.hive.metastore.HiveMetaStoreClient"
+    ],
+    "HIVE-14784.json" : [
+        "org.apache.hive.service.cli.operation.Operation"
+    ]
+}

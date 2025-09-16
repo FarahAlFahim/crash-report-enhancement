@@ -1,0 +1,70 @@
+{
+    "ZOOKEEPER-1864.json": [
+        "src.java.main.org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties",
+        "src.java.main.org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse"
+    ],
+    "ZOOKEEPER-2213.json": [
+        "src.java.main.org.apache.zookeeper.server.PrepRequestProcessor.pRequest2Txn"
+    ],
+    "ZOOKEEPER-2297.json": [
+        "src.java.main.org.apache.zookeeper.server.auth.ProviderRegistry.initialize",
+        "src.java.main.org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties"
+    ],
+    "ZOOKEEPER-1264.json": [
+        "src.java.main.org.apache.zookeeper.server.quorum.Leader.startForwarding",
+        "src.java.main.org.apache.zookeeper.server.quorum.Leader.getEpochToPropose",
+        "src.java.main.org.apache.zookeeper.server.quorum.Learner.registerWithLeader",
+        "src.java.main.org.apache.zookeeper.server.quorum.Leader.lead"
+    ],
+    "ZOOKEEPER-2808.json": [
+        "src.java.main.org.apache.zookeeper.server.ZKDatabase.addCommittedProposal",
+        "src.java.main.org.apache.zookeeper.server.ZKDatabase.containsWatcher",
+        "src.java.main.org.apache.zookeeper.server.DataTree.removeWatch",
+        "src.java.main.org.apache.zookeeper.server.DataTree.addConfigNode",
+        "src.java.main.org.apache.zookeeper.server.DataTree.DataTree",
+        "src.java.main.org.apache.zookeeper.server.DataTree.updateBytes",
+        "src.java.main.org.apache.zookeeper.server.ZKDatabase.initConfigInZKDatabase",
+        "src.java.main.org.apache.zookeeper.server.DataTree.createNode",
+        "src.java.main.org.apache.zookeeper.server.DataTree.setWatches",
+        "src.java.main.org.apache.zookeeper.server.DataTree.approximateDataSize"
+    ],
+    "ZOOKEEPER-2982.json": [
+        "src.java.main.org.apache.zookeeper.server.quorum.Learner.findLeader"
+    ],
+    "ZOOKEEPER-1179.json": [
+        "src.java.main.org.apache.zookeeper.server.NettyServerCnxn.enableRecv"
+    ],
+    "ZOOKEEPER-2581.json": [
+        "src.java.main.org.apache.zookeeper.server.auth.X509AuthenticationProvider.X509AuthenticationProvider",
+        "src.java.main.org.apache.zookeeper.server.auth.X509AuthenticationProvider.init"
+    ],
+    "ZOOKEEPER-1870.json": [
+        "src.java.main.org.apache.zookeeper.server.quorum.FastLeaderElection.getCnxManager",
+        "src.java.main.org.apache.zookeeper.server.quorum.QuorumPeer.restartLeaderElection",
+        "src.java.main.org.apache.zookeeper.server.quorum.QuorumCnxManager.run",
+        "src.java.main.org.apache.zookeeper.server.quorum.FastLeaderElection.run",
+        "src.java.main.org.apache.zookeeper.server.quorum.FastLeaderElection.updateProposal",
+        "src.java.main.org.apache.zookeeper.server.quorum.QuorumCnxManager.halt"
+    ],
+    "ZOOKEEPER-2247.json": [
+        "src.java.main.org.apache.zookeeper.server.ZooKeeperServer.removeCnxn",
+        "src.java.main.org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer.getServerId",
+        "src.java.main.org.apache.zookeeper.server.quorum.Follower.followLeader",
+        "src.java.main.org.apache.zookeeper.server.quorum.Leader.lead",
+        "src.java.main.org.apache.zookeeper.server.ServerCnxnFactory.getNumAliveConnections",
+        "src.java.main.org.apache.zookeeper.server.quorum.Observer.observeLeader",
+        "src.java.main.org.apache.zookeeper.server.ZooKeeperServer.ZooKeeperServer",
+        "src.java.main.org.apache.zookeeper.server.quorum.Learner.shutdown",
+        "src.java.main.org.apache.zookeeper.server.quorum.QuorumZooKeeperServer.dumpConf",
+        "src.java.main.org.apache.zookeeper.server.SyncRequestProcessor.run",
+        "src.java.main.org.apache.zookeeper.server.quorum.Leader.getPacketType",
+        "src.java.main.org.apache.zookeeper.server.ZooKeeperServer.getZooKeeperServerListener",
+        "src.java.main.org.apache.zookeeper.server.ZooKeeperServer.startSessionTracker",
+        "src.java.main.org.apache.zookeeper.server.ZooKeeperServer.startup",
+        "src.java.main.org.apache.zookeeper.server.ZooKeeperServer.processTxn",
+        "src.java.main.org.apache.zookeeper.server.ZooKeeperServer.build",
+        "src.java.main.org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig",
+        "src.java.main.org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer.registerJMX",
+        "src.java.main.org.apache.zookeeper.server.quorum.ObserverZooKeeperServer.getState"
+    ]
+}

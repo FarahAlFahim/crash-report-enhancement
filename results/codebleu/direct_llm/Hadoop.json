@@ -1,0 +1,242 @@
+[
+    {
+        "filename": "HADOOP-9125.json",
+        "creation_time": "2012-12-10T02:07:52.000+0000",
+        "commit": "c427540ced4b9ac751f9ba89cba64b3e243fe4f2",
+        "candidate_key": "LdapGroupsMapping.getGroups",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.LdapGroupsMapping.getGroups",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java",
+        "codebleu": {
+            "bleu": 0.17986583859196248,
+            "ngram": 0.2509578544061303,
+            "syntax": 0.0,
+            "dataflow": 0.410958904109589,
+            "codebleu": 0.2805941990358939
+        }
+    },
+    {
+        "filename": "HADOOP-11878.json",
+        "creation_time": "2015-04-27T08:06:22.000+0000",
+        "commit": "2e3d83f97b85c015f16f1c162b8ef0e7fee1ddf2",
+        "candidate_key": "fixRelativePart",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.FileContext.fixRelativePart",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileContext.java",
+        "codebleu": {
+            "bleu": 0.5671276403520978,
+            "ngram": 0.5789473684210527,
+            "syntax": 0.0,
+            "dataflow": 0.8571428571428571,
+            "codebleu": 0.6677392886386692
+        }
+    },
+    {
+        "filename": "HADOOP-15060.json",
+        "creation_time": "2017-11-22T00:18:55.000+0000",
+        "commit": "12d0645990a878f78216235c800ae4e157796160",
+        "candidate_key": "getUnixGroups",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedUnixGroupsMapping.java",
+        "codebleu": {
+            "bleu": 0.5859257593794045,
+            "ngram": 0.5864553314121037,
+            "syntax": 0.0,
+            "dataflow": 0.6063829787234043,
+            "codebleu": 0.5929213565049708
+        }
+    },
+    {
+        "filename": "HADOOP-10937.json",
+        "creation_time": "2014-08-04T21:22:55.000+0000",
+        "commit": "331421c2a4e2cf48cbfd8195a66f35ec51b1f740",
+        "candidate_key": "KMSClientProvider.decryptEncryptedKey",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.kms.KMSClientProvider.decryptEncryptedKey",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java",
+        "codebleu": {
+            "bleu": 0.710702983742335,
+            "ngram": 0.7114427860696517,
+            "syntax": 0.0,
+            "dataflow": 0.8289473684210527,
+            "codebleu": 0.7503643794110131
+        }
+    },
+    {
+        "filename": "HADOOP-8031.json",
+        "creation_time": "2012-02-07T20:22:24.000+0000",
+        "commit": "11312adedb09886e94241aabd973064764b6d857",
+        "candidate_key": "Configuration.loadResource",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.conf.Configuration.loadResource",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java",
+        "codebleu": {
+            "bleu": 0.6827301919390513,
+            "ngram": 0.714431934493347,
+            "syntax": 0.0,
+            "dataflow": 0.9683544303797469,
+            "codebleu": 0.7885055189373817
+        }
+    },
+    {
+        "filename": "HADOOP-15411.json",
+        "creation_time": "2018-04-24T23:18:39.000+0000",
+        "commit": "13d389bf5125c9f3bbc6863d93a6371fc2930417",
+        "candidate_key": "AuthenticationFilterInitializer.getFilterConfigMap",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.AuthenticationFilterInitializer.getFilterConfigMap",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/AuthenticationFilterInitializer.java",
+        "codebleu": {
+            "bleu": 0.7702947015915407,
+            "ngram": 0.7713004484304933,
+            "syntax": 0.0,
+            "dataflow": 0.9,
+            "codebleu": 0.8138650500073445
+        }
+    },
+    {
+        "filename": "HADOOP-11693.json",
+        "creation_time": "2015-03-05T23:19:13.000+0000",
+        "commit": "7a346bcb4fa5b56191ed00a39e72e51c9bdf1b56",
+        "candidate_key": "AzureNativeFileSystemStore.rename",
+        "ground_truth_method": "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.AzureNativeFileSystemStore.rename",
+        "file_path": "hadoop-tools/hadoop-azure/src/main/java/org/apache/hadoop/fs/azure/AzureNativeFileSystemStore.java",
+        "codebleu": {
+            "bleu": 0.015719799697821633,
+            "ngram": 0.02304147465437788,
+            "syntax": 0.0,
+            "dataflow": 0.07936507936507936,
+            "codebleu": 0.03937545123909296
+        }
+    },
+    {
+        "filename": "HADOOP-11685.json",
+        "creation_time": "2015-03-06T22:00:14.000+0000",
+        "commit": "0377795e0697ca629d000e0a2bb05400a65f4aaa",
+        "candidate_key": "AzureNativeFileSystemStore.storeEmptyFolder",
+        "ground_truth_method": "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.AzureNativeFileSystemStore.storeEmptyFolder",
+        "file_path": "hadoop-tools/hadoop-azure/src/main/java/org/apache/hadoop/fs/azure/AzureNativeFileSystemStore.java",
+        "codebleu": {
+            "bleu": 0.02153025827977009,
+            "ngram": 0.11632653061224489,
+            "syntax": 0.0,
+            "dataflow": 0.3269230769230769,
+            "codebleu": 0.15492662193836396
+        }
+    },
+    {
+        "filename": "HADOOP-11754.json",
+        "creation_time": "2015-03-26T05:22:54.000+0000",
+        "commit": "24d879026d3316fe4015aab627bc13ca7dc08fa5",
+        "candidate_key": "AuthenticationFilter.initializeSecretProvider",
+        "ground_truth_method": "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.initializeSecretProvider",
+        "file_path": "hadoop-common-project/hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/AuthenticationFilter.java",
+        "codebleu": {
+            "bleu": 0.2642538744203263,
+            "ngram": 0.2679324894514768,
+            "syntax": 0.0,
+            "dataflow": 0.42857142857142855,
+            "codebleu": 0.3202525974810772
+        }
+    },
+    {
+        "filename": "HADOOP-8225.json",
+        "creation_time": "2012-03-13T20:33:53.000+0000",
+        "commit": "6ec54ecabacca70c67a11a02302ab0e47923f946",
+        "candidate_key": "DistCp.main",
+        "ground_truth_method": "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapred.YarnChild.main",
+        "file_path": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapred/YarnChild.java",
+        "codebleu": {
+            "bleu": 0.00012203982434001141,
+            "ngram": 0.20270270270270271,
+            "syntax": 0.0,
+            "dataflow": 0.48,
+            "codebleu": 0.2276082475090142
+        }
+    },
+    {
+        "filename": "HADOOP-12089.json",
+        "creation_time": "2015-06-15T17:34:46.000+0000",
+        "commit": "399df10c583933c475a11d80fe416ec85fe17a6c",
+        "candidate_key": "NativeAzureFileSystem.delete",
+        "ground_truth_method": "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.NativeAzureFileSystem.delete",
+        "file_path": "hadoop-tools/hadoop-azure/src/main/java/org/apache/hadoop/fs/azure/NativeAzureFileSystem.java",
+        "codebleu": {
+            "bleu": 0.004527080339808347,
+            "ngram": 0.006350550381033023,
+            "syntax": 0.0,
+            "dataflow": 0.047872340425531915,
+            "codebleu": 0.019583323715457762
+        }
+    },
+    {
+        "filename": "HADOOP-11722.json",
+        "creation_time": "2015-03-16T21:39:07.000+0000",
+        "commit": "85473cd61a37a9b7614805bd83507cabe85eaeb0",
+        "candidate_key": "ZKDelegationTokenSecretManager.removeStoredToken",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.token.delegation.ZKDelegationTokenSecretManager.removeStoredToken",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java",
+        "codebleu": {
+            "bleu": 0.4768251212801533,
+            "ngram": 0.48194945848375453,
+            "syntax": 0.0,
+            "dataflow": 0.6363636363636364,
+            "codebleu": 0.5317127387091813
+        }
+    },
+    {
+        "filename": "HADOOP-15059.json",
+        "creation_time": "2017-11-21T20:54:52.000+0000",
+        "commit": "b1712f9c1f8026d979df1c66e14bed87410e1546",
+        "candidate_key": "Credentials.readTokenStorageStream",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Credentials.readTokenStorageStream",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/Credentials.java",
+        "codebleu": {
+            "bleu": 0.2563945474206238,
+            "ngram": 0.2643171806167401,
+            "syntax": 0.0,
+            "dataflow": 0.4642857142857143,
+            "codebleu": 0.3283324807743594
+        }
+    },
+    {
+        "filename": "HADOOP-15307.json",
+        "creation_time": "2018-03-12T14:56:59.000+0000",
+        "commit": "a16623df2148e59e1b7dcf98939b03cb7440d143",
+        "candidate_key": "Verifier.readFlavorAndVerifier",
+        "ground_truth_method": "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.oncrpc.security.Verifier.readFlavorAndVerifier",
+        "file_path": "hadoop-common-project/hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/security/Verifier.java",
+        "codebleu": {
+            "bleu": 0.438105162343431,
+            "ngram": 0.7154471544715447,
+            "syntax": 0.0,
+            "dataflow": 0.9,
+            "codebleu": 0.6845174389383253
+        }
+    },
+    {
+        "filename": "HADOOP-11446.json",
+        "creation_time": "2014-12-23T22:15:23.000+0000",
+        "commit": "27d8395867f665fea1360087325cda5ed70efd0c",
+        "candidate_key": "S3AOutputStream.close",
+        "ground_truth_method": "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3a.S3AOutputStream.close",
+        "file_path": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AOutputStream.java",
+        "codebleu": {
+            "bleu": 0.8480591923165253,
+            "ngram": 0.8482384823848238,
+            "syntax": 0.0,
+            "dataflow": 0.875,
+            "codebleu": 0.8570992249004495
+        }
+    },
+    {
+        "filename": "HADOOP-9977.json",
+        "creation_time": "2013-09-17T22:11:54.000+0000",
+        "commit": "0bdeb7d143e1567cbf2a409d4cab00ab9d71a4c8",
+        "candidate_key": "FileBasedKeyStoresFactory.init",
+        "ground_truth_method": "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory.init",
+        "file_path": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/ssl/FileBasedKeyStoresFactory.java",
+        "codebleu": {
+            "bleu": 0.8258899488303587,
+            "ngram": 0.9610136452241715,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.9289678646848434
+        }
+    }
+]

@@ -1,0 +1,3884 @@
+{
+    "Zookeeper": [
+        {
+            "filename": "ZOOKEEPER-1864.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "ZOOKEEPER-2213.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "ZOOKEEPER-2297.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "ZOOKEEPER-2808.json",
+            "total_predicted": 3,
+            "total_ground_truth": 10,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "ZOOKEEPER-2982.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "ZOOKEEPER-1179.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "ZOOKEEPER-2581.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "ZOOKEEPER-2247.json",
+            "total_predicted": 5,
+            "total_ground_truth": 19,
+            "matched_methods": [
+                "SyncRequestProcessor.run"
+            ],
+            "match_percentage": 0.2
+        }
+    ],
+    "ActiveMQ": [
+        {
+            "filename": "AMQ-6548.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-3434.json",
+            "total_predicted": 3,
+            "total_ground_truth": 32,
+            "matched_methods": [
+                "ListIndex.loadNode"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "AMQ-3443.json",
+            "total_predicted": 4,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "PageFile.writeBatch"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "AMQ-4369.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-5016.json",
+            "total_predicted": 3,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "BitArrayBin.getBitArray"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "AMQ-4407.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-4221.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-3622.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "LastImageSubscriptionRecoveryPolicy.browse"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "AMQ-6016.json",
+            "total_predicted": 4,
+            "total_ground_truth": 7,
+            "matched_methods": [
+                "Queue.removeSubscription"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "AMQ-3490.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-6831.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-5525.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-4118.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-4092.json",
+            "total_predicted": 3,
+            "total_ground_truth": 10,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-3887.json",
+            "total_predicted": 2,
+            "total_ground_truth": 6,
+            "matched_methods": [
+                "DemandForwardingBridgeSupport.serviceLocalCommand"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "AMQ-6451.json",
+            "total_predicted": 3,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-3393.json",
+            "total_predicted": 3,
+            "total_ground_truth": 8,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-5815.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-5141.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-5854.json",
+            "total_predicted": 3,
+            "total_ground_truth": 6,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-3056.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-3325.json",
+            "total_predicted": 5,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-2963.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-3903.json",
+            "total_predicted": 2,
+            "total_ground_truth": 25,
+            "matched_methods": [
+                "AdvisoryBroker.fastProducer"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "AMQ-2693.json",
+            "total_predicted": 3,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-4643.json",
+            "total_predicted": 4,
+            "total_ground_truth": 18,
+            "matched_methods": [
+                "TransportConnection.service"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "AMQ-2902.json",
+            "total_predicted": 5,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "VMTransport.stop"
+            ],
+            "match_percentage": 0.2
+        },
+        {
+            "filename": "AMQ-5665.json",
+            "total_predicted": 3,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-3725.json",
+            "total_predicted": 4,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-3085.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-3504.json",
+            "total_predicted": 1,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-6707.json",
+            "total_predicted": 2,
+            "total_ground_truth": 30,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-5384.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "JDBCMessageStore.removeMessage"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "AMQ-5783.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "AMQ-2965.json",
+            "total_predicted": 3,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        }
+    ],
+    "Hadoop": [
+        {
+            "filename": "HADOOP-10823.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-9125.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "LdapGroupsMapping.getGroups"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HADOOP-10252.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-12239.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-11878.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "FileContext.fixRelativePart"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HADOOP-14949.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-10540.json",
+            "total_predicted": 3,
+            "total_ground_truth": 5,
+            "matched_methods": [
+                "HardLink.createHardLinkMult"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HADOOP-7629.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-15060.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "ShellBasedUnixGroupsMapping.getUnixGroups"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HADOOP-10937.json",
+            "total_predicted": 4,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "KMSClientProvider.decryptEncryptedKey",
+                "KeyProviderCryptoExtension.decryptEncryptedKey"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HADOOP-9103.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-11151.json",
+            "total_predicted": 3,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-8031.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "Configuration.loadResource"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "HADOOP-15411.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "AuthenticationFilterInitializer.getFilterConfigMap"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HADOOP-15850.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "CopyCommitter.commitJob"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HADOOP-11693.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "AzureNativeFileSystemStore.rename"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "HADOOP-12441.json",
+            "total_predicted": 4,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-11685.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "AzureNativeFileSystemStore.storeEmptyFolder"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HADOOP-8589.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-11754.json",
+            "total_predicted": 4,
+            "total_ground_truth": 10,
+            "matched_methods": [
+                "AuthenticationFilter.initializeSecretProvider"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "HADOOP-8225.json",
+            "total_predicted": 3,
+            "total_ground_truth": 10,
+            "matched_methods": [
+                "YarnChild.main"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HADOOP-10866.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-12089.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "NativeAzureFileSystem.delete"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HADOOP-11934.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-11722.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "ZKDelegationTokenSecretManager.removeStoredToken"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HADOOP-15331.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-14062.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-15059.json",
+            "total_predicted": 6,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-15307.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "Verifier.readFlavorAndVerifier"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HADOOP-11446.json",
+            "total_predicted": 5,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "S3AOutputStream.close"
+            ],
+            "match_percentage": 0.2
+        },
+        {
+            "filename": "HADOOP-12689.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-13132.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-15121.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-11400.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-9865.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-9977.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "FileBasedKeyStoresFactory.init"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HADOOP-10142.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HADOOP-14727.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        }
+    ],
+    "HDFS": [
+        {
+            "filename": "HDFS-4558.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "Balancer.checkReplicationPolicyCompatibility"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HDFS-13023.json",
+            "total_predicted": 3,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "JournalNodeSyncer.syncWithJournalAtIndex"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HDFS-3157.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-4850.json",
+            "total_predicted": 7,
+            "total_ground_truth": 7,
+            "matched_methods": [
+                "ImageLoaderCurrent.processINode",
+                "ImageLoaderCurrent.loadImage"
+            ],
+            "match_percentage": 0.2857142857142857
+        },
+        {
+            "filename": "HDFS-3415.json",
+            "total_predicted": 5,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-2245.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "BlockManager.chooseTarget"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HDFS-10320.json",
+            "total_predicted": 4,
+            "total_ground_truth": 11,
+            "matched_methods": [
+                "NetworkTopology.chooseRandom",
+                "BlockPlacementPolicyDefault.chooseRandom"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HDFS-4201.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-13721.json",
+            "total_predicted": 2,
+            "total_ground_truth": 6,
+            "matched_methods": [
+                "DataNode.getDiskBalancerStatus"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HDFS-7180.json",
+            "total_predicted": 2,
+            "total_ground_truth": 32,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-11377.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-6753.json",
+            "total_predicted": 3,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-3443.json",
+            "total_predicted": 2,
+            "total_ground_truth": 59,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-11479.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "SimpleUdpServer.run"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HDFS-8055.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "DatanodeManager.sortLocatedBlocks"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HDFS-10609.json",
+            "total_predicted": 3,
+            "total_ground_truth": 6,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-2310.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-3385.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "recoverLeaseInternal"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HDFS-4006.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-2392.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-11472.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "FsDatasetImpl.initReplicaRecovery"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HDFS-10760.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "DataXceiver.run"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HDFS-11608.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-12638.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-12383.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "ReencryptionUpdater.takeAndProcessTasks",
+                "ReencryptionUpdater.run"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "HDFS-5322.json",
+            "total_predicted": 2,
+            "total_ground_truth": 12,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-11741.json",
+            "total_predicted": 4,
+            "total_ground_truth": 7,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-3936.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-6348.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "SecondaryNameNode.main"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HDFS-7996.json",
+            "total_predicted": 3,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-4302.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "FSEditLogLoader.loadEditRecords"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HDFS-11849.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-4841.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-3384.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-5657.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "OpenFileCtx.executeWriteBack"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HDFS-11827.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "chooseRandom"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "HDFS-6804.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-5843.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "DataXceiver.blockChecksum"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HDFS-8070.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-12339.json",
+            "total_predicted": 1,
+            "total_ground_truth": 7,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-6520.json",
+            "total_predicted": 4,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "NamenodeFsck.copyBlock"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "HDFS-10715.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "AvailableSpaceBlockPlacementPolicy.chooseDataNode"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HDFS-3332.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "BPServiceActor.reportBadBlocks"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "HDFS-6130.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-2827.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-11056.json",
+            "total_predicted": 4,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-6825.json",
+            "total_predicted": 4,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "FSNamesystem.commitBlockSynchronization"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "HDFS-5710.json",
+            "total_predicted": 5,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "FSDirectory.getFullPathName"
+            ],
+            "match_percentage": 0.2
+        },
+        {
+            "filename": "HDFS-3555.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-12363.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "scanAndCompactStorages"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HDFS-7916.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "ReportBadBlockAction.reportTo"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HDFS-11164.json",
+            "total_predicted": 2,
+            "total_ground_truth": 15,
+            "matched_methods": [
+                "DataTransferProtoUtil.checkBlockOpStatus"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HDFS-5291.json",
+            "total_predicted": 3,
+            "total_ground_truth": 43,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-12836.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-8113.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-10512.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-10729.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-13040.json",
+            "total_predicted": 4,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "NameNodeRpcServer.readOp"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "HDFS-3374.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-2359.json",
+            "total_predicted": 4,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-10986.json",
+            "total_predicted": 1,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-6455.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-5185.json",
+            "total_predicted": 3,
+            "total_ground_truth": 8,
+            "matched_methods": [
+                "DataNode.initBlockPool"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HDFS-13164.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "DFSOutputStream.closeImpl"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HDFS-11508.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-2991.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "FSEditLogLoader.loadEditRecords"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HDFS-4404.json",
+            "total_predicted": 3,
+            "total_ground_truth": 5,
+            "matched_methods": [
+                "NetUtils.connect"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HDFS-12369.json",
+            "total_predicted": 5,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-6462.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "RpcProgramNfs3.fsstat"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HDFS-5425.json",
+            "total_predicted": 5,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-13145.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HDFS-8807.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "StorageLocation.parse"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HDFS-3436.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "DataNode.transferReplicaForPipelineRecovery"
+            ],
+            "match_percentage": 0.2
+        }
+    ],
+    "Hive": [
+        {
+            "filename": "HIVE-10992.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-16450.json",
+            "total_predicted": 3,
+            "total_ground_truth": 16,
+            "matched_methods": [
+                "ObjectStore.getMTableColumnStatistics",
+                "RetryingHMSHandler.invokeInternal"
+            ],
+            "match_percentage": 0.6666666666666666
+        },
+        {
+            "filename": "HIVE-6389.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-2372.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-11301.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-11028.json",
+            "total_predicted": 3,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-14380.json",
+            "total_predicted": 3,
+            "total_ground_truth": 6,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-6537.json",
+            "total_predicted": 5,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-13691.json",
+            "total_predicted": 2,
+            "total_ground_truth": 7,
+            "matched_methods": [
+                "CompactionTxnHandler.markFailed",
+                "Initiator.run"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "HIVE-17758.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-14898.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "doPost",
+                "getAuthHeader"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "HIVE-7557.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-1712.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "MetaStoreUtils.getSchema"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HIVE-12608.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "HiveStructConverter.getStructFieldTypeInfo"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-17774.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-14564.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-3651.json",
+            "total_predicted": 1,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-5199.json",
+            "total_predicted": 3,
+            "total_ground_truth": 5,
+            "matched_methods": [
+                "FetchOperator.getRecordReader",
+                "ObjectInspectorConverters.getConverter"
+            ],
+            "match_percentage": 0.6666666666666666
+        },
+        {
+            "filename": "HIVE-17368.json",
+            "total_predicted": 2,
+            "total_ground_truth": 9,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-4233.json",
+            "total_predicted": 4,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-14303.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "CommonJoinOperator.checkAndGenObject"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HIVE-7167.json",
+            "total_predicted": 5,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-12360.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "MetadataReader.readRowIndex"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HIVE-13160.json",
+            "total_predicted": 5,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-12008.json",
+            "total_predicted": 1,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-6205.json",
+            "total_predicted": 3,
+            "total_ground_truth": 5,
+            "matched_methods": [
+                "Driver.doAuthorization"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HIVE-15309.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-10808.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-18429.json",
+            "total_predicted": 1,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-10776.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-6301.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "UDFJson.extract"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-8295.json",
+            "total_predicted": 2,
+            "total_ground_truth": 17,
+            "matched_methods": [
+                "MetaStoreDirectSql.getPartitionsViaSqlFilterInternal"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-8915.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "Cleaner.run"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-7249.json",
+            "total_predicted": 4,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-11540.json",
+            "total_predicted": 2,
+            "total_ground_truth": 7,
+            "matched_methods": [
+                "CompactorMR.run",
+                "Worker.run"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "HIVE-15755.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-9390.json",
+            "total_predicted": 2,
+            "total_ground_truth": 39,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-7623.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "alterPartition"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "HIVE-15997.json",
+            "total_predicted": 4,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-7009.json",
+            "total_predicted": 1,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "getDefaultDestDir"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "HIVE-2031.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-4018.json",
+            "total_predicted": 5,
+            "total_ground_truth": 15,
+            "matched_methods": [
+                "MapJoinOperator.loadHashTable"
+            ],
+            "match_percentage": 0.2
+        },
+        {
+            "filename": "HIVE-11255.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "get_table_objects_by_name"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-10151.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-13546.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-7049.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-9755.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-19130.json",
+            "total_predicted": 2,
+            "total_ground_truth": 5,
+            "matched_methods": [
+                "DDLTask.dropPartitions"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-13090.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "ZooKeeperTokenStore.getToken"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HIVE-5664.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "HiveMetaStoreClient.dropDatabase"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-15778.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-8386.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-14714.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-5428.json",
+            "total_predicted": 3,
+            "total_ground_truth": 6,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-12567.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-6984.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "TableScanOperator.gatherStats"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "HIVE-10736.json",
+            "total_predicted": 2,
+            "total_ground_truth": 9,
+            "matched_methods": [
+                "TezSessionPoolManager.stop"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-7710.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "HiveAlterHandler.alterTable",
+                "ObjectStore.alterTable"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "HIVE-8735.json",
+            "total_predicted": 3,
+            "total_ground_truth": 5,
+            "matched_methods": [
+                "JDBCStatsPublisher.publishStat"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HIVE-13209.json",
+            "total_predicted": 2,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-13065.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "HBaseRowSerializer.serialize"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HIVE-11470.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "DynamicPartitionFileRecordWriterContainer.getLocalFileWriter"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-12476.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-10559.json",
+            "total_predicted": 2,
+            "total_ground_truth": 7,
+            "matched_methods": [
+                "RemoveDynamicPruningBySize.process"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-9721.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "Hadoop23Shims.setFullFileStatus"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-4216.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-13836.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-9873.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-13174.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-5431.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-13115.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-4723.json",
+            "total_predicted": 1,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "addTablePartsOutputs"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "HIVE-15686.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-4975.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-10538.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-11902.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "performTimeOuts"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-18918.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "CompactorMR.launchCompactionJob"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HIVE-8107.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "UpdateDeleteSemanticAnalyzer.reparseAndSuperAnalyze"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HIVE-1326.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "RowContainer.spillBlock"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-11369.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-9055.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "GenTezWork.process"
+            ],
+            "match_percentage": 0.2
+        },
+        {
+            "filename": "HIVE-13856.json",
+            "total_predicted": 2,
+            "total_ground_truth": 14,
+            "matched_methods": [
+                "TxnHandler.openTxns"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-7374.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-12206.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-10098.json",
+            "total_predicted": 4,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-7745.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-6990.json",
+            "total_predicted": 3,
+            "total_ground_truth": 24,
+            "matched_methods": [
+                "MetaStoreDirectSql.getPartitionsViaSqlFilterInternal"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HIVE-7114.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-11991.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-17900.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-10816.json",
+            "total_predicted": 2,
+            "total_ground_truth": 5,
+            "matched_methods": [
+                "ExecDriver.handleSampling",
+                "ExecDriver.execute"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "HIVE-13017.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-11303.json",
+            "total_predicted": 2,
+            "total_ground_truth": 28,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-5899.json",
+            "total_predicted": 7,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-11102.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "ReaderImpl.getColumnIndicesFromNames"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-9195.json",
+            "total_predicted": 2,
+            "total_ground_truth": 8,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-11285.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-10288.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-8771.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "AbstractFileMergeOperator.closeOp"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-8008.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-6915.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-12364.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-8766.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "RetryingHMSHandler.invoke"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-5857.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-1547.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "DDLTask.unarchive"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HIVE-6113.json",
+            "total_predicted": 3,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-9570.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-1678.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-11820.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-17274.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "RowContainer.setupWriter"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "HIVE-12522.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-16845.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "ConditionalResolverMergeFiles.generateActualTasks"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "HIVE-9655.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-11441.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "DDLSemanticAnalyzer.analyzeAlterTableLocation"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "HIVE-10801.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-9141.json",
+            "total_predicted": 6,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "GenTezWork.process"
+            ],
+            "match_percentage": 0.16666666666666666
+        },
+        {
+            "filename": "HIVE-10010.json",
+            "total_predicted": 5,
+            "total_ground_truth": 21,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-7763.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-12083.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "HIVE-14784.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "Operation.createOperationLog"
+            ],
+            "match_percentage": 0.5
+        }
+    ],
+    "MAPREDUCE": [
+        {
+            "filename": "MAPREDUCE-6633.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "Fetcher.copyMapOutput"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "MAPREDUCE-6577.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-5137.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-4008.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-6259.json",
+            "total_predicted": 2,
+            "total_ground_truth": 7,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-3333.json",
+            "total_predicted": 3,
+            "total_ground_truth": 7,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-7059.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-4843.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-5028.json",
+            "total_predicted": 4,
+            "total_ground_truth": 6,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-4300.json",
+            "total_predicted": 3,
+            "total_ground_truth": 6,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-3241.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "JobBuilder.process"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "MAPREDUCE-6002.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-6452.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-6649.json",
+            "total_predicted": 1,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-4048.json",
+            "total_predicted": 3,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "AppController.attempts",
+                "AppController.badRequest"
+            ],
+            "match_percentage": 0.6666666666666666
+        },
+        {
+            "filename": "MAPREDUCE-5198.json",
+            "total_predicted": 5,
+            "total_ground_truth": 9,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-7028.json",
+            "total_predicted": 1,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-3790.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "PipeMapRed.mapRedFinished"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "MAPREDUCE-6357.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "MultipleOutputs.write"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "MAPREDUCE-6091.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-4825.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "JobImpl.finished"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "MAPREDUCE-3319.json",
+            "total_predicted": 5,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-6361.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "ShuffleSchedulerImpl.copyFailed"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "MAPREDUCE-4848.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-3226.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "EventFetcher.run"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "MAPREDUCE-3932.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-4062.json",
+            "total_predicted": 3,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-3066.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-3123.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-6439.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-4490.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-3744.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "LogDumper.dumpAllContainersLogs",
+                "LogDumper.run"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "MAPREDUCE-3053.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-5884.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-3706.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "WebAppProxyServlet.proxyLink"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "MAPREDUCE-3931.json",
+            "total_predicted": 2,
+            "total_ground_truth": 6,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-4467.json",
+            "total_predicted": 1,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "IndexCache.getIndexInformation"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "MAPREDUCE-3463.json",
+            "total_predicted": 3,
+            "total_ground_truth": 7,
+            "matched_methods": [
+                "RecoveryService.sendAssignedEvent"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "MAPREDUCE-4164.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-4774.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-3005.json",
+            "total_predicted": 11,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-6895.json",
+            "total_predicted": 1,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-4451.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-4144.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-5924.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-3649.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "JobEndNotifier.notifyURLOnce"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "MAPREDUCE-4102.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "CountersBlock.getCounters"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "MAPREDUCE-6353.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-6492.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "sendJHStartEventForAssignedFailTask"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "MAPREDUCE-5744.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-3583.json",
+            "total_predicted": 6,
+            "total_ground_truth": 12,
+            "matched_methods": [
+                "ProcfsBasedProcessTree.constructProcessInfo",
+                "ProcfsBasedProcessTree.getProcessTree"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "MAPREDUCE-6410.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-6693.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "FileNameIndexUtils.trimURLEncodedString"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "MAPREDUCE-5912.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "Task.calculateOutputSize"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "MAPREDUCE-5952.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-3306.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-6554.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-4457.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-2716.json",
+            "total_predicted": 3,
+            "total_ground_truth": 14,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-4748.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-3062.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "AdminService.init"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "MAPREDUCE-5724.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "HistoryFileManager.serviceInit"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "MAPREDUCE-5358.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "MAPREDUCE-5837.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "JobImpl.isChainJob"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "MAPREDUCE-5088.json",
+            "total_predicted": 3,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        }
+    ],
+    "Storm": [
+        {
+            "filename": "STORM-2443.json",
+            "total_predicted": 1,
+            "total_ground_truth": 5,
+            "matched_methods": [
+                "setLogConfig"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "STORM-3213.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-2496.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-2879.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-3012.json",
+            "total_predicted": 6,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "PacemakerClient.send"
+            ],
+            "match_percentage": 0.16666666666666666
+        },
+        {
+            "filename": "STORM-3073.json",
+            "total_predicted": 6,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-1672.json",
+            "total_predicted": 5,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "StatsUtil.aggPreMergeCompPageBolt"
+            ],
+            "match_percentage": 0.2
+        },
+        {
+            "filename": "STORM-1977.json",
+            "total_predicted": 3,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-2321.json",
+            "total_predicted": 3,
+            "total_ground_truth": 9,
+            "matched_methods": [
+                "KeySequenceNumber.getKeySequenceNumber"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "STORM-3013.json",
+            "total_predicted": 1,
+            "total_ground_truth": 9,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-3117.json",
+            "total_predicted": 2,
+            "total_ground_truth": 20,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-2993.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-1540.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-2275.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "Nimbus.transition"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "STORM-2279.json",
+            "total_predicted": 1,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "Nimbus.getComponentPageInfo"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "STORM-3079.json",
+            "total_predicted": 4,
+            "total_ground_truth": 60,
+            "matched_methods": [
+                "LocalFsBlobStore.getStoredBlobMeta"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "STORM-3096.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-1642.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-2700.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "Localizer.downloadBlob"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "STORM-1663.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-2518.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "BlobStoreAclHandler.fixACLsForUser",
+                "BlobStoreAclHandler.normalizeSettableACLs"
+            ],
+            "match_percentage": 0.6666666666666666
+        },
+        {
+            "filename": "STORM-3124.json",
+            "total_predicted": 3,
+            "total_ground_truth": 6,
+            "matched_methods": [
+                "PacemakerClientPool.sendAll"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "STORM-2095.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-2847.json",
+            "total_predicted": 1,
+            "total_ground_truth": 12,
+            "matched_methods": [
+                "commitOffsetsForAckedTuples"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "STORM-1114.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-2811.json",
+            "total_predicted": 3,
+            "total_ground_truth": 10,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-2903.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-3168.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-2986.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-2197.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "ThriftClient.reconnect"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "STORM-1596.json",
+            "total_predicted": 2,
+            "total_ground_truth": 6,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-2142.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-3084.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-3118.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "ThriftEncoder.encodeNettySerializable"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "STORM-2682.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "STORM-3103.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        }
+    ],
+    "YARN": [
+        {
+            "filename": "YARN-5918.json",
+            "total_predicted": 4,
+            "total_ground_truth": 5,
+            "matched_methods": [
+                "convertToRemoteNode",
+                "convertToRemoteNodes",
+                "getLeastLoadedNodes"
+            ],
+            "match_percentage": 0.75
+        },
+        {
+            "filename": "YARN-8629.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-4431.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "NodeStatusUpdaterImpl.serviceStop"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-2273.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-2834.json",
+            "total_predicted": 3,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-3675.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-4763.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "RMAppsBlock.renderData"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-8202.json",
+            "total_predicted": 2,
+            "total_ground_truth": 7,
+            "matched_methods": [
+                "SchedulerUtils.validateResourceRequest"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-7118.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-4743.json",
+            "total_predicted": 5,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-2414.json",
+            "total_predicted": 1,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "AppBlock.render"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "YARN-3878.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-6683.json",
+            "total_predicted": 2,
+            "total_ground_truth": 6,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-2910.json",
+            "total_predicted": 4,
+            "total_ground_truth": 9,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-192.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-4581.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-7786.json",
+            "total_predicted": 3,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "AMLauncher.createAMContainerLaunchContext",
+                "AMLauncher.launch"
+            ],
+            "match_percentage": 0.6666666666666666
+        },
+        {
+            "filename": "YARN-8035.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-4152.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "LogAggregationService.stopContainer"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-3697.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "FairScheduler.continuousSchedulingAttempt"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-2340.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-8022.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "AppBlock.render"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-3793.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-6102.json",
+            "total_predicted": 3,
+            "total_ground_truth": 35,
+            "matched_methods": [
+                "ResourceManager.reinitialize"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-8409.json",
+            "total_predicted": 4,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "ActiveStandbyElector.ensureParentZNode"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "YARN-8223.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "AuxServices.serviceInit"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "YARN-8331.json",
+            "total_predicted": 4,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-2931.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-6837.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-4762.json",
+            "total_predicted": 2,
+            "total_ground_truth": 8,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-2823.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-5098.json",
+            "total_predicted": 3,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-3971.json",
+            "total_predicted": 4,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "RMNodeLabelsManager.removeFromClusterNodeLabels"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "YARN-6948.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "RMAppAttemptImpl.handle"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-1409.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "NonAggregatingLogHandler.handle"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-5545.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-301.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "AppSchedulable.assignContainer"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-7942.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-7692.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-3917.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "ResourceCalculatorPlugin.getResourceCalculatorPlugin"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-3537.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "NodeManager.stopRecoveryStore"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-7962.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "DelegationTokenRenewer.serviceStop"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-8357.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-6534.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-4227.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-4288.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-1032.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "RackResolver.coreResolve"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-5837.json",
+            "total_predicted": 1,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-6827.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-3832.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-2409.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-8116.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-8403.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "ResourceLocalizationService.run"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-1458.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-8209.json",
+            "total_predicted": 6,
+            "total_ground_truth": 10,
+            "matched_methods": [
+                "DockerClient.writeCommandToTempFile",
+                "DockerCommandExecutor.executeDockerCommand"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-3804.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "AdminService.refreshAdminAcls"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-1839.json",
+            "total_predicted": 2,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-6714.json",
+            "total_predicted": 4,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-3351.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-2813.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "MemoryTimelineStore.getDomains"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-5006.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-2805.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "ResourceManager.serviceInit"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-4744.json",
+            "total_predicted": 6,
+            "total_ground_truth": 12,
+            "matched_methods": [
+                "PrivilegedOperationExecutor.executePrivilegedOperation",
+                "DefaultLinuxContainerRuntime.signalContainer"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-1752.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-6629.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "FiCaSchedulerApp.apply",
+                "CapacityScheduler.tryCommit"
+            ],
+            "match_percentage": 0.6666666666666666
+        },
+        {
+            "filename": "YARN-3493.json",
+            "total_predicted": 3,
+            "total_ground_truth": 10,
+            "matched_methods": [
+                "RMAppManager.validateAndCreateResourceRequest",
+                "RMAppManager.recoverApplication"
+            ],
+            "match_percentage": 0.6666666666666666
+        },
+        {
+            "filename": "YARN-6054.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "LeveldbTimelineStore.serviceInit"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-196.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "NodeStatusUpdaterImpl.start"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-8508.json",
+            "total_predicted": 3,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "LinuxContainerExecutor.handleLaunchForLaunchType"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-2308.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-933.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-1374.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-174.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "NodeManager.initAndStartNodeManager"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-6448.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-4530.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-7737.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "ContainerLaunch.call"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-5136.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "FairScheduler.removeApplicationAttempt"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-8211.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "RegistryDNS.nioTCPClient"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-2124.json",
+            "total_predicted": 5,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-8591.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "checkAccess"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-6649.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "RollingLevelDBTimelineStore.getEntity"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-3742.json",
+            "total_predicted": 3,
+            "total_ground_truth": 5,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-4984.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "LogAggregationService.initAppAggregator"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-4584.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "RMAppImpl.recover"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "YARN-2846.json",
+            "total_predicted": 2,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "ContainerExecutor.reacquireContainer",
+                "RecoveredContainerLaunch.call"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "YARN-7890.json",
+            "total_predicted": 5,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "ContainerRelaunch.call"
+            ],
+            "match_percentage": 0.2
+        },
+        {
+            "filename": "YARN-139.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-42.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "NonAggregatingLogHandler.stop"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-7453.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-3369.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "checkForDeactivation",
+                "getResourceRequest"
+            ],
+            "match_percentage": 1.0
+        },
+        {
+            "filename": "YARN-945.json",
+            "total_predicted": 2,
+            "total_ground_truth": 11,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-6072.json",
+            "total_predicted": 4,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "AdminService.refreshAll"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "YARN-7663.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "RMAppImpl.handle"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-5873.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-3227.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-4235.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "QueuePlacementRule.getQueueForApp"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-4833.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-1689.json",
+            "total_predicted": 3,
+            "total_ground_truth": 79,
+            "matched_methods": [
+                "ApplicationMasterService.registerApplicationMaster",
+                "RMAppImpl.handle"
+            ],
+            "match_percentage": 0.6666666666666666
+        },
+        {
+            "filename": "YARN-5594.json",
+            "total_predicted": 4,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-7511.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "ResourceSet.resourceLocalizationFailed"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-6068.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-903.json",
+            "total_predicted": 2,
+            "total_ground_truth": 9,
+            "matched_methods": [
+                "ContainerManagerImpl.authorizeGetAndStopContainerRequest"
+            ],
+            "match_percentage": 0.5
+        },
+        {
+            "filename": "YARN-8236.json",
+            "total_predicted": 3,
+            "total_ground_truth": 2,
+            "matched_methods": [
+                "ServiceClient.addKeytabResourceIfSecure"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-2857.json",
+            "total_predicted": 7,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-2416.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-345.json",
+            "total_predicted": 2,
+            "total_ground_truth": 3,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-3894.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "ParentQueue.setChildQueues"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-4347.json",
+            "total_predicted": 2,
+            "total_ground_truth": 2,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-1692.json",
+            "total_predicted": 4,
+            "total_ground_truth": 4,
+            "matched_methods": [
+                "AppSchedulable.updateDemand"
+            ],
+            "match_percentage": 0.25
+        },
+        {
+            "filename": "YARN-7697.json",
+            "total_predicted": 3,
+            "total_ground_truth": 11,
+            "matched_methods": [
+                "LogAggregationIndexedFileController.loadIndexedLogsMeta",
+                "LogAggregationIndexedFileController.initializeWriterInRolling"
+            ],
+            "match_percentage": 0.6666666666666666
+        },
+        {
+            "filename": "YARN-7382.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-1094.json",
+            "total_predicted": 6,
+            "total_ground_truth": 5,
+            "matched_methods": [
+                "ResourceManager.serviceStart"
+            ],
+            "match_percentage": 0.16666666666666666
+        },
+        {
+            "filename": "YARN-7269.json",
+            "total_predicted": 3,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "AmIpFilter.findRedirectUrl"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-7249.json",
+            "total_predicted": 3,
+            "total_ground_truth": 1,
+            "matched_methods": [
+                "CapacityScheduler.completedContainerInternal"
+            ],
+            "match_percentage": 0.3333333333333333
+        },
+        {
+            "filename": "YARN-4598.json",
+            "total_predicted": 2,
+            "total_ground_truth": 1,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-1149.json",
+            "total_predicted": 2,
+            "total_ground_truth": 13,
+            "matched_methods": [],
+            "match_percentage": 0.0
+        },
+        {
+            "filename": "YARN-7818.json",
+            "total_predicted": 4,
+            "total_ground_truth": 3,
+            "matched_methods": [
+                "DefaultLinuxContainerRuntime.launchContainer"
+            ],
+            "match_percentage": 0.25
+        }
+    ]
+}

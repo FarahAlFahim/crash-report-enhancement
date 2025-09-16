@@ -1,0 +1,288 @@
+{
+    "MAPREDUCE-6633.json" : [
+        "org.apache.hadoop.mapreduce.task.reduce.Fetcher"
+    ],
+    "MAPREDUCE-6577.json" : [
+        "org.apache.hadoop.mapreduce.MRJobConfig",
+        "org.apache.hadoop.mapred.YARNRunner"
+    ],
+    "MAPREDUCE-5137.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.webapp.TaskPage"
+    ],
+    "MAPREDUCE-4008.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler"
+    ],
+    "MAPREDUCE-6259.json" : [
+        "org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler",
+        "org.apache.hadoop.mapreduce.jobhistory.AMStartedEvent",
+        "org.apache.hadoop.mapreduce.v2.app.MRAppMaster"
+    ],
+    "MAPREDUCE-3333.json" : [
+        "org.apache.hadoop.yarn.ipc.ProtoOverHadoopRpcEngine",
+        "org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl",
+        "org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncher",
+        "org.apache.hadoop.yarn.factories.impl.pb.RpcClientFactoryPBImpl",
+        "org.apache.hadoop.yarn.ipc.HadoopYarnRPC",
+        "org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC",
+        "org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagerPBClientImpl",
+        "org.apache.hadoop.yarn.ipc.YarnRPC",
+        "org.apache.hadoop.yarn.factories.RpcClientFactory"
+    ],
+    "MAPREDUCE-7059.json" : [
+        "org.apache.hadoop.mapreduce.JobResourceUploader"
+    ],
+    "MAPREDUCE-4843.json" : [
+        "org.apache.hadoop.mapred.JobLocalizer"
+    ],
+    "MAPREDUCE-5028.json" : [
+        "org.apache.hadoop.io.DataInputBuffer",
+        "org.apache.hadoop.mapreduce.task.reduce.InMemoryReader",
+        "org.apache.hadoop.mapreduce.task.ReduceContextImpl",
+        "org.apache.hadoop.mapreduce.LargeSorter",
+        "org.apache.hadoop.mapred.MapTask"
+    ],
+    "MAPREDUCE-4300.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ContainerLocalizer",
+        "org.apache.hadoop.yarn.server.nodemanager.NodeManager",
+        "org.apache.hadoop.mapred.YarnChild",
+        "org.apache.hadoop.yarn.server.resourcemanager.ResourceManager",
+        "org.apache.hadoop.yarn.YarnUncaughtExceptionHandler",
+        "org.apache.hadoop.mapreduce.v2.app.MRAppMaster",
+        "org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer",
+        "org.apache.hadoop.yarn.server.webproxy.WebAppProxyServer"
+    ],
+    "MAPREDUCE-3241.json" : [
+        "org.apache.hadoop.tools.rumen.JobBuilder"
+    ],
+    "MAPREDUCE-6002.json" : [
+        "org.apache.hadoop.mapred.LocalContainerLauncher",
+        "org.apache.hadoop.mapred.YarnChild",
+        "org.apache.hadoop.mapred.Task"
+    ],
+    "MAPREDUCE-6452.json" : [
+        "org.apache.hadoop.mapred.LocalJobRunner"
+    ],
+    "MAPREDUCE-6649.json" : [
+        "org.apache.hadoop.mapreduce.v2.hs.CompletedJob"
+    ],
+    "MAPREDUCE-4048.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.webapp.AppController"
+    ],
+    "MAPREDUCE-5198.json" : [
+        "org.apache.hadoop.mapred.TaskTracker",
+        "org.apache.hadoop.mapred.LinuxTaskController"
+    ],
+    "MAPREDUCE-7028.json" : [
+        "org.apache.hadoop.mapred.TaskAttemptListenerImpl"
+    ],
+    "MAPREDUCE-3790.json" : [
+        "org.apache.hadoop.streaming.OutputOnlyApp",
+        "org.apache.hadoop.streaming.PipeMapRed"
+    ],
+    "MAPREDUCE-6357.json" : [
+        "org.apache.hadoop.mapreduce.lib.output.MultipleOutputs"
+    ],
+    "MAPREDUCE-6091.json" : [
+        "org.apache.hadoop.mapred.ClientServiceDelegate"
+    ],
+    "MAPREDUCE-4825.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl"
+    ],
+    "MAPREDUCE-3319.json" : [
+        "org.apache.hadoop.examples.MultiFileWordCount"
+    ],
+    "MAPREDUCE-6361.json" : [
+        "org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl"
+    ],
+    "MAPREDUCE-4848.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.recover.RecoveryService",
+        "org.apache.hadoop.mapreduce.v2.app.MRAppMaster"
+    ],
+    "MAPREDUCE-3226.json" : [
+        "org.apache.hadoop.mapreduce.task.reduce.EventFetcher",
+        "org.apache.hadoop.mapreduce.task.reduce.Fetcher"
+    ],
+    "MAPREDUCE-3070.json" : [
+        "org.apache.hadoop.yarn.conf.YarnConfiguration"
+    ],
+    "MAPREDUCE-3932.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl",
+        "org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl"
+    ],
+    "MAPREDUCE-4062.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl",
+        "org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncher",
+        "org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagerPBClientImpl"
+    ],
+    "MAPREDUCE-3066.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl"
+    ],
+    "MAPREDUCE-3123.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch"
+    ],
+    "MAPREDUCE-6439.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocationException",
+        "org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator",
+        "org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator"
+    ],
+    "MAPREDUCE-4490.json" : [
+        "org.apache.hadoop.mapred.LinuxTaskController"
+    ],
+    "MAPREDUCE-3744.json" : [
+        "org.apache.hadoop.yarn.logaggregation.LogDumper",
+        "org.apache.hadoop.mapreduce.tools.CLI"
+    ],
+    "MAPREDUCE-6815.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl"
+    ],
+    "MAPREDUCE-3053.json" : [
+        "org.apache.hadoop.yarn.ipc.ProtoOverHadoopRpcEngine",
+        "org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl"
+    ],
+    "MAPREDUCE-5884.json" : [
+        "org.apache.hadoop.mapreduce.v2.hs.HistoryClientService"
+    ],
+    "MAPREDUCE-3706.json" : [
+        "org.apache.hadoop.yarn.server.webproxy.WebAppProxyServlet"
+    ],
+    "MAPREDUCE-5451.json" : [
+        "org.apache.hadoop.mapreduce.MRJobConfig"
+    ],
+    "MAPREDUCE-2463.json" : [
+        "org.apache.hadoop.mapreduce.jobhistory.JobHistory"
+    ],
+    "MAPREDUCE-3531.json" : [
+        "org.apache.hadoop.yarn.server.security.ContainerTokenSecretManager"
+    ],
+    "MAPREDUCE-3931.json" : [
+        "org.apache.hadoop.yarn.api.records.impl.pb.LocalResourcePBImpl"
+    ],
+    "MAPREDUCE-4467.json" : [
+        "org.apache.hadoop.mapred.IndexCache"
+    ],
+    "MAPREDUCE-3463.json" : [
+        "org.apache.hadoop.yarn.event.DrainDispatcher",
+        "org.apache.hadoop.mapreduce.v2.app.recover.RecoveryService",
+        "org.apache.hadoop.mapreduce.v2.app.MRAppMaster",
+        "org.apache.hadoop.yarn.event.AsyncDispatcher"
+    ],
+    "MAPREDUCE-4164.json" : [
+        "org.apache.hadoop.mapred.Task"
+    ],
+    "MAPREDUCE-5260.json" : [
+        "org.apache.hadoop.mapred.JvmManager"
+    ],
+    "MAPREDUCE-4774.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl"
+    ],
+    "MAPREDUCE-3005.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue"
+    ],
+    "MAPREDUCE-6895.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.JobEndNotifier",
+        "org.apache.hadoop.mapreduce.v2.app.MRAppMaster"
+    ],
+    "MAPREDUCE-4451.json" : [
+        "org.apache.hadoop.mapred.FairScheduler"
+    ],
+    "MAPREDUCE-4144.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue"
+    ],
+    "MAPREDUCE-5924.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl"
+    ],
+    "MAPREDUCE-3649.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.JobEndNotifier"
+    ],
+    "MAPREDUCE-7077.json" : [
+        "org.apache.hadoop.mapred.pipes.Application"
+    ],
+    "MAPREDUCE-4102.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.MockJobs",
+        "org.apache.hadoop.mapreduce.v2.app.webapp.CountersBlock",
+        "org.apache.hadoop.mapreduce.v2.hs.MockHistoryJobs",
+        "org.apache.hadoop.mapreduce.v2.app.webapp.dao.JobCounterInfo"
+    ],
+    "MAPREDUCE-6353.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.rm.ResourceCalculatorUtils"
+    ],
+    "MAPREDUCE-4913.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.MRAppMaster"
+    ],
+    "MAPREDUCE-6492.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl"
+    ],
+    "MAPREDUCE-5744.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator"
+    ],
+    "MAPREDUCE-3583.json" : [
+        "org.apache.hadoop.util.ProcfsBasedProcessTree"
+    ],
+    "MAPREDUCE-2238.json" : [
+        "org.apache.hadoop.mapreduce.server.tasktracker.Localizer",
+        "org.apache.hadoop.mapred.TaskLog"
+    ],
+    "MAPREDUCE-6410.json" : [
+        "org.apache.hadoop.mapreduce.v2.hs.server.HSAdminServer"
+    ],
+    "MAPREDUCE-6693.json" : [
+        "org.apache.hadoop.mapreduce.v2.jobhistory.FileNameIndexUtils"
+    ],
+    "MAPREDUCE-5912.json" : [
+        "org.apache.hadoop.mapred.Task"
+    ],
+    "MAPREDUCE-5952.json" : [
+        "org.apache.hadoop.mapred.LocalContainerLauncher"
+    ],
+    "MAPREDUCE-3306.json" : [
+        "org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl"
+    ],
+    "MAPREDUCE-6554.json" : [
+        "org.apache.hadoop.mapreduce.jobhistory.EventReader"
+    ],
+    "MAPREDUCE-4457.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl",
+        "org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl"
+    ],
+    "MAPREDUCE-2716.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl",
+        "org.apache.hadoop.mapred.ClientServiceDelegate",
+        "org.apache.hadoop.mapred.NotRunningJob",
+        "org.apache.hadoop.mapreduce.TypeConverter",
+        "org.apache.hadoop.mapreduce.v2.util.MRApps",
+        "org.apache.hadoop.mapreduce.v2.api.records.JobReport",
+        "org.apache.hadoop.mapreduce.v2.api.records.impl.pb.JobReportPBImpl",
+        "org.apache.hadoop.mapred.ResourceMgrDelegate",
+        "org.apache.hadoop.mapreduce.v2.hs.CompletedJob"
+    ],
+    "MAPREDUCE-6702.json" : [
+        "org.apache.hadoop.mapred.JobConf"
+    ],
+    "MAPREDUCE-4748.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl"
+    ],
+    "MAPREDUCE-3062.json" : [
+        "org.apache.hadoop.yarn.server.resourcemanager.AdminService"
+    ],
+    "MAPREDUCE-5724.json" : [
+        "org.apache.hadoop.mapreduce.v2.hs.HistoryFileManager",
+        "org.apache.hadoop.mapreduce.v2.jobhistory.JHAdminConfig"
+    ],
+    "MAPREDUCE-5358.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl"
+    ],
+    "MAPREDUCE-5837.json" : [
+        "org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl"
+    ],
+    "MAPREDUCE-3058.json" : [
+        "org.apache.hadoop.mapred.YarnChild",
+        "org.apache.hadoop.mapred.gridmix.LoadJob",
+        "org.apache.hadoop.FailingMapper"
+    ],
+    "MAPREDUCE-5088.json" : [
+        "org.apache.hadoop.mapred.JobClient",
+        "org.apache.hadoop.mapred.ResourceMgrDelegate",
+        "org.apache.hadoop.mapred.YARNRunner"
+    ]
+}

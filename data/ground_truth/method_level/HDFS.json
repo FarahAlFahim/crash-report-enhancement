@@ -1,0 +1,532 @@
+{
+    "HDFS-4558.json": [
+        "src.hdfs.org.apache.hadoop.hdfs.server.balancer.Balancer.checkReplicationPolicyCompatibility"
+    ],
+    "HDFS-13039.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.erasurecode.StripedBlockReader.createBlockReader"
+    ],
+    "HDFS-13023.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.qjournal.server.JournalNodeRpcServer.getJournalCTime",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.qjournal.server.JournalNodeSyncer.getThrottler",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.qjournal.server.JournalNodeSyncer.syncWithJournalAtIndex",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.qjournal.server.JournalNodeSyncer.getJournalAddrList"
+    ],
+    "HDFS-3157.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.checkReplicaCorrupt"
+    ],
+    "HDFS-4850.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.tools.offlineImageViewer.ImageLoaderCurrent.processDirectoryDiffList",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.INodesInPath.resolve",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.tools.offlineImageViewer.ImageLoaderCurrent.processFileDiffList",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.tools.offlineImageViewer.ImageLoaderCurrent.loadImage",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.tools.offlineImageViewer.ImageLoaderCurrent.processBlocks",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.tools.offlineImageViewer.ImageLoaderCurrent.processSnapshots",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.tools.offlineImageViewer.ImageLoaderCurrent.processINode"
+    ],
+    "HDFS-3415.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NNStorage.readAndInspectDirs",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NNStorage.inspectStorageDirs"
+    ],
+    "HDFS-2245.json": [
+        "hdfs.src.java.org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.chooseTarget"
+    ],
+    "HDFS-10320.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.net.NetworkTopology.remove",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.net.NetworkTopology.countNumOfAvailableNodes",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.net.NetworkTopology.getLeaves",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.web.resources.NamenodeWebHdfsMethods.redirectURI",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.AvailableSpaceBlockPlacementPolicy.initialize",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseRandom",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.net.NetworkTopology.add",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.net.NetworkTopology.chooseRandom",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.net.NetworkTopology.setRandomSeed",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.web.resources.NamenodeWebHdfsMethods.chooseDatanode",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseFromNextRack"
+    ],
+    "HDFS-4201.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BPOfferService.getDataNode",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BPOfferService.verifyAndSetNamespaceInfo"
+    ],
+    "HDFS-6904.json": [],
+    "HDFS-13721.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.submitDiskBalancerPlan",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.getDiskBalancerSetting",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.cancelDiskBalancePlan",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.getClusterId",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.getVolumeReport",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.getDiskBalancerStatus"
+    ],
+    "HDFS-7180.json": [
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.readdirplus",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.checkCommitInternal",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.hasPendingWork",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.create",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.fsstat",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.link",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.symlink",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.receivedNewWriteInternal",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.getattr",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.toString",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.access",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.waitForDump",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.pathconf",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.setattr",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.commit",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.addWritesToCache",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.DFSClientCache.onRemoval",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.readdir",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.WriteCtx.loadData",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.remove",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.getFlushedOffset",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.readlink",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.read",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.fsinfo",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.write",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.updateNonSequentialWriteInMemory",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.mkdir",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.cleanup",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtxCache.cleanAll",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.lookup",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.run",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.rmdir"
+    ],
+    "HDFS-6102.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSDirectory.getWriteHoldCount",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSDirectory.verifyMaxComponentLength"
+    ],
+    "HDFS-6250.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.balancer.NameNodeConnector.getDataEncryptionKey"
+    ],
+    "HDFS-11377.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.balancer.Dispatcher.executePendingMove"
+    ],
+    "HDFS-6753.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DirectoryScanner.getGenStamp",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DirectoryScanner.isBlockMetaFile",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DirectoryScanner.compileReport",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DirectoryScanner.getDiskReport",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.initDirectoryScanner"
+    ],
+    "HDFS-3443.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.complete",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.setXAttr",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.errorReport",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getLinkTarget",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.cacheReport",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getClientMachine",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getMostRecentCheckpointTxId",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rename2",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getStats",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.registerSubordinateNamenode",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.renameSnapshot",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.updateBlockForPipeline",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.concat",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getTransactionID",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getDatanodeReport",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.setSafeMode",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.allowSnapshot",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNode.getProtocolVersion",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getEditLogManifest",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.listCorruptFileBlocks",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getEditsFromTxid",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.removeCachePool",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rename",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.createSymlink",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rollingUpgrade",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.mkdirs",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.abandonBlock",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.readOp",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.saveNamespace",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.sendHeartbeat",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.verifyRequest",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.checkPathLength",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addCachePool",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.blockReport",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getDatanodeStorageReport",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addCacheDirective",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.endCheckpoint",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.commitBlockSynchronization",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getAdditionalDatanode",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.blockReceivedAndDeleted",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.startCheckpoint",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.deleteSnapshot",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.modifyCacheDirective",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.createEncryptionZone",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNode.isStandbyState",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.removeXAttr",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockKeys",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlocks",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.setQuota",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.modifyCachePool",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.createSnapshot",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.removeCacheDirective",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNode.NameNode",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getGroupsForUser"
+    ],
+    "HDFS-11479.json": [
+        "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.oncrpc.SimpleUdpServer.run"
+    ],
+    "HDFS-8055.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.sortLocatedBlocks"
+    ],
+    "HDFS-6533.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BPServiceActor.getBpRegistration"
+    ],
+    "HDFS-10609.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.security.token.block.BlockTokenSecretManager.clearAllKeysForTesting",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.DFSOutputStream.addDatanode2ExistingPipeline",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.getBlockScanner",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.DFSClient.newDataEncryptionKey",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.security.token.block.BlockPoolTokenSecretManager.addBlockPool",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.DFSOutputStream.createHeartbeatPacket"
+    ],
+    "HDFS-2310.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNode.getProtocolSignature"
+    ],
+    "HDFS-3385.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.recoverLeaseInternal"
+    ],
+    "HDFS-4006.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.initialize",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.main"
+    ],
+    "HDFS-6715.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.web.resources.NamenodeWebHdfsMethods.getRPCServer"
+    ],
+    "HDFS-2392.json": [
+        "src.hdfs.org.apache.hadoop.hdfs.HftpFileSystem.initialize",
+        "src.hdfs.org.apache.hadoop.hdfs.HftpFileSystem.createUri"
+    ],
+    "HDFS-11472.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.recoverRbw",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.initReplicaRecovery"
+    ],
+    "HDFS-10760.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataXceiver.run"
+    ],
+    "HDFS-13635.json": [],
+    "HDFS-11608.json": [
+        "hadoop-hdfs-project.hadoop-hdfs-client.src.main.java.org.apache.hadoop.hdfs.DFSOutputStream.adjustChunkBoundary",
+        "hadoop-hdfs-project.hadoop-hdfs-client.src.main.java.org.apache.hadoop.hdfs.DFSOutputStream.DFSOutputStream"
+    ],
+    "HDFS-12638.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.INode.addDeleteBlock"
+    ],
+    "HDFS-12383.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.ReencryptionUpdater.run",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.ReencryptionUpdater.markZoneSubmissionDone",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.ReencryptionUpdater.takeAndProcessTasks",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.ReencryptionUpdater.pauseForTestingAfterNthCheckpoint"
+    ],
+    "HDFS-5322.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.SaslRpcServer.handle",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startActiveServices",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getEditLogTailer",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.ipc.Server.saslProcess",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager.createPassword",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.security.token.delegation.DelegationTokenSecretManager.retrievePassword",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.stopCommonServices",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.logAuditEvent",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.token.SecretManager.InvalidToken",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.ipc.Server.saslReadAndProcess",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getSoftwareVersion",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.SaslRpcServer.SaslDigestCallbackHandler"
+    ],
+    "HDFS-11741.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.security.token.block.BlockTokenSecretManager.updateKeys",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.balancer.KeyManager.getAccessToken",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.security.token.block.BlockTokenSecretManager.exportKeys",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.security.token.block.BlockTokenSecretManager.generateDataEncryptionKey",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.security.token.block.BlockTokenSecretManager.generateKeys",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.security.token.block.BlockTokenSecretManager.createPassword",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.security.token.block.BlockTokenSecretManager.BlockTokenSecretManager"
+    ],
+    "HDFS-3936.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.BlocksMap.computeCapacity"
+    ],
+    "HDFS-6348.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.main"
+    ],
+    "HDFS-7884.json": [],
+    "HDFS-7996.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BlockReceiver.getStorageUuid",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BlockReceiver.receiveBlock",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BlockReceiver.computePartialChunkCrc",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BlockReceiver.run"
+    ],
+    "HDFS-4302.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSEditLogLoader.loadEditRecords"
+    ],
+    "HDFS-11849.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.qjournal.server.JournalNode.reportErrorOnFile"
+    ],
+    "HDFS-4841.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.FileSystem.getInternal"
+    ],
+    "HDFS-3384.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.DataStreamer.run"
+    ],
+    "HDFS-5657.json": [
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.offerNextToWrite",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.executeWriteBack",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.updateNonSequentialWriteInMemory",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtx.checkAndStartWrite"
+    ],
+    "HDFS-11827.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseRandom"
+    ],
+    "HDFS-6804.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNodeFaultInjector.failPipeline"
+    ],
+    "HDFS-5843.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataXceiver.blockChecksum"
+    ],
+    "HDFS-8070.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.protocol.datatransfer.Receiver.opRequestShortCircuitFds",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.BlockReaderFactory.requestFileDescriptors"
+    ],
+    "HDFS-1085.json": [
+        "src.hdfs.org.apache.hadoop.hdfs.DFSClient.checksumOk",
+        "src.hdfs.org.apache.hadoop.hdfs.server.namenode.StreamFile.doGet",
+        "src.hdfs.org.apache.hadoop.hdfs.HftpFileSystem.open"
+    ],
+    "HDFS-12339.json": [
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.Nfs3.startServiceInternal",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.PrivilegedNfsGatewayStarter.init",
+        "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.mount.MountdBase.start",
+        "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.nfs.nfs3.Nfs3Base.stop",
+        "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.mount.MountdBase.stop",
+        "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.nfs.nfs3.Nfs3Base.startTCPServer",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.Nfs3.startService"
+    ],
+    "HDFS-6520.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NamenodeFsck.copyBlock",
+        "hadoop-hdfs-project.hadoop-hdfs-client.src.main.java.org.apache.hadoop.hdfs.BlockReaderFactory.setFailureInjectorForTesting",
+        "hadoop-hdfs-project.hadoop-hdfs-client.src.main.java.org.apache.hadoop.hdfs.BlockReaderFactory.getSupportsReceiptVerification"
+    ],
+    "HDFS-10715.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.AvailableSpaceBlockPlacementPolicy.chooseDataNode"
+    ],
+    "HDFS-3332.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BPServiceActor.scheduleBlockReport",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BPServiceActor.reportBadBlocks"
+    ],
+    "HDFS-6130.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSImageFormat.loadFullNameINodes"
+    ],
+    "HDFS-2827.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.unprotectedChangeLease"
+    ],
+    "HDFS-11056.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetUtil.parseGenerationStamp",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.updateReplicaUnderRecovery",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.convertTemporaryToRbw",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.moveBlockAcrossStorage",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.append"
+    ],
+    "HDFS-6825.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.nextBlockId",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.commitBlockSynchronization",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.INodeDirectory.addDirectoryWithQuotaFeature",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.BlockInfoUnderConstruction.appendUCParts"
+    ],
+    "HDFS-5710.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSDirectory.getFullPathINodes",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSDirectory.getFullPathName"
+    ],
+    "HDFS-3555.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BlockSender.sendPacket"
+    ],
+    "HDFS-10962.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.ha.RequestHedgingProxyProvider.call",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.ha.RequestHedgingProxyProvider.performFailover",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.ha.RequestHedgingProxyProvider.RequestHedgingInvocationHandler"
+    ],
+    "HDFS-12363.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.scanAndCompactStorages",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$StorageInfoDefragmenter.scanAndCompactStorages"
+    ],
+    "HDFS-7916.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.ReportBadBlockAction.reportTo",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.ErrorReportAction.reportTo"
+    ],
+    "HDFS-9549.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.CacheReplicationMonitor.findReasonForNotCaching",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.getDatanodeByXferAddr",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.CacheReplicationMonitor.rescanCachedBlockMap",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.CacheReplicationMonitor.addNewPendingCached"
+    ],
+    "HDFS-11164.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.balancer.Dispatcher.waitForMoveCompletion",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.mover.Mover.emptySet",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.balancer.Dispatcher.receiveResponse",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.mover.Mover.processNamespace",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataXceiver.replaceBlock",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.balancer.Dispatcher.dispatch",
+        "hadoop-hdfs-project.hadoop-hdfs-client.src.main.java.org.apache.hadoop.hdfs.protocol.datatransfer.DataTransferProtoUtil.fromProto",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.balancer.Dispatcher.setHasFailure",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.balancer.Dispatcher.equals",
+        "hadoop-hdfs-project.hadoop-hdfs-client.src.main.java.org.apache.hadoop.hdfs.protocol.datatransfer.DataTransferProtoUtil.checkBlockOpStatus",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.balancer.Dispatcher.PendingMove",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.mover.Mover.run",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.mover.Mover.getTargetStorages",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataXceiver.copyBlock",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.mover.Mover.scheduleMoveReplica"
+    ],
+    "HDFS-5291.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.cancelDelegationToken",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.fsync",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFileInt",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.endCheckpoint",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getLastAllocatedBlockId",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setTimesInt",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setReplicationInt",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.analyzeFileState",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.io.retry.RetryPolicies.isWrappedStandbyException",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startCheckpoint",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameToInt",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setQuota",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.mkdirsInt",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.createSymlinkInt",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.updatePipeline",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.concatInt",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renewDelegationToken",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.allowSnapshot",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkOperation",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.isLegacyBlock",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.recoverLease",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getDelegationToken",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteSnapshot",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameSnapshot",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.io.retry.RetryPolicies.FailoverOnNetworkExceptionRetry",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.commitBlockSynchronization",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.disallowSnapshot",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.completeFile",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.rollEditLog",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameTo",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setBalancerBandwidth",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermissionInt",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.abandonBlock",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renewLease",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.nextBlockId",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setOwnerInt",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.io.retry.RetryPolicies.shouldRetry",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.saveNamespace",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalDatanode",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.createSnapshot",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal"
+    ],
+    "HDFS-12836.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager.selectInputStreams"
+    ],
+    "HDFS-8113.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.blockmanagement.BlockInfoContiguous.BlockInfoContiguous"
+    ],
+    "HDFS-10512.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.VolumeScanner.handle",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.checkAndUpdate",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.getXmitsInProgress",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.notifyNamenodeDeletedBlock"
+    ],
+    "HDFS-10729.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.addFileForEditLog"
+    ],
+    "HDFS-13040.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getEditsFromTxid",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getEventBatchList",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.readOp"
+    ],
+    "HDFS-3374.json": [
+        "src.core.org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager.run"
+    ],
+    "HDFS-2359.json": [
+        "src.hdfs.org.apache.hadoop.hdfs.server.datanode.DataBlockScanner.setMaxNumLines",
+        "src.hdfs.org.apache.hadoop.hdfs.server.datanode.DataBlockScanner.appendLine",
+        "src.hdfs.org.apache.hadoop.hdfs.server.datanode.DataBlockScanner$LogFileHandler.appendLine"
+    ],
+    "HDFS-10986.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.tools.DFSAdmin.getDatanodeInfo",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.tools.DFSAdmin.getBalancerBandwidth",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.tools.DFSAdmin.evictWriters"
+    ],
+    "HDFS-6455.json": [
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.checkAccessPrivilege",
+        "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.nfs.NfsExports.getInstance",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.mount.RpcProgramMountd.nullOp",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.mount.RpcProgramMountd.handleInternal"
+    ],
+    "HDFS-2882.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BPOfferService.processCommandFromStandby",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.getNamenodeAddresses",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BPOfferService.getBlockPoolId",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.getBlockLocalPathInfo",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BlockPoolManager.get",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.initBlockPool",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.registerBlockPoolWithSecretManager",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataStorage.recoverTransitionRead"
+    ],
+    "HDFS-5185.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BlockReceiver.close",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.shutdown",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl.validateBlockFile",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BlockReceiver.run",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.run",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.initBlockPool",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.getStorage",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.BlockReceiver.receivePacket"
+    ],
+    "HDFS-13164.json": [
+        "hadoop-hdfs-project.hadoop-hdfs-client.src.main.java.org.apache.hadoop.hdfs.DFSOutputStream.closeImpl",
+        "hadoop-hdfs-project.hadoop-hdfs-client.src.main.java.org.apache.hadoop.hdfs.DFSOutputStream.close"
+    ],
+    "HDFS-11508.json": [
+        "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.portmap.Portmap.getPipeline",
+        "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.oncrpc.SimpleTcpServer.getPipeline"
+    ],
+    "HDFS-2991.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSDirectory.addFile",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSEditLogLoader.loadEditRecords",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInternal"
+    ],
+    "HDFS-4404.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.ipc.Client.closeConnection",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.net.NetUtils.wrapException",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.io.retry.RetryPolicies.shouldRetry",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.net.NetUtils.connect",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.ipc.Client.setupConnection"
+    ],
+    "HDFS-8276.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startActiveServices",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.loadFromDisk"
+    ],
+    "HDFS-12369.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.LeaseManager.checkLeases",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.nextBlockId"
+    ],
+    "HDFS-6462.json": [
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.RpcProgramNfs3",
+        "hadoop-hdfs-project.hadoop-hdfs-nfs.src.main.java.org.apache.hadoop.hdfs.nfs.nfs3.RpcProgramNfs3.fsstat"
+    ],
+    "HDFS-5425.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSImageFormat.loadFilesUnderConstruction",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.snapshot.INodeDirectoryWithSnapshot.removeChild",
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock"
+    ],
+    "HDFS-13145.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager.selectInputStreams"
+    ],
+    "HDFS-8807.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.StorageLocation.parse"
+    ],
+    "HDFS-3436.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.server.datanode.DataNode.transferReplicaForPipelineRecovery"
+    ]
+}

@@ -1,0 +1,276 @@
+{
+    "AMQ-6548.json": [
+        "activemq-client.src.main.java.org.apache.activemq.ActiveMQSession.run"
+    ],
+    "AMQ-3434.json": [
+        "activemq-core.src.main.java.org.apache.activemq.store.kahadb.plist.PList.isEmpty",
+        "kahadb.src.main.java.org.apache.kahadb.page.PageFile.setCurrentLocation",
+        "activemq-core.src.main.java.org.apache.activemq.store.kahadb.plist.PListStore.doStop",
+        "activemq-core.src.main.java.org.apache.activemq.store.kahadb.plist.PList.getName",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListIndex.load",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListIndex.unload",
+        "kahadb.src.main.java.org.apache.kahadb.page.PageFile.addToCache",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListNode.setEntries",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.cursors.FilePendingMessageCursor.reset",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.cursors.FilePendingMessageCursor.getMessage",
+        "activemq-core.src.main.java.org.apache.activemq.store.kahadb.plist.PList.execute",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListNode.remove",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListNode.toString",
+        "kahadb.src.main.java.org.apache.kahadb.util.LinkedNode.linkToTail",
+        "activemq-core.src.main.java.org.apache.activemq.store.kahadb.plist.PListStore.setIndexWriteBatchSize",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListNode.store",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListNode.get",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListNode.getNext",
+        "kahadb.src.main.java.org.apache.kahadb.page.PageFile.readPage",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListIndex.loadNode",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListIndex.setTailPageId",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.cursors.FilePendingMessageCursor.remove",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListIndex.ListIndex",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListNode.clear",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListNode.writePayload",
+        "activemq-core.src.main.java.org.apache.activemq.store.kahadb.plist.PListStore.execute",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListNode.hasNext",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.cursors.FilePendingMessageCursor.expireOldMessages",
+        "activemq-core.src.main.java.org.apache.activemq.store.kahadb.plist.PListStore.intialize",
+        "kahadb.src.main.java.org.apache.kahadb.page.Transaction.allocate",
+        "kahadb.src.main.java.org.apache.kahadb.index.ListNode.addFirst",
+        "kahadb.src.main.java.org.apache.kahadb.util.SequenceSet.removeFirstSequence"
+    ],
+    "AMQ-3443.json": [
+        "kahadb.src.main.java.org.apache.kahadb.page.Transaction.commit",
+        "kahadb.src.main.java.org.apache.kahadb.page.PageFile.writeBatch",
+        "kahadb.src.main.java.org.apache.kahadb.page.Transaction.rollback",
+        "kahadb.src.main.java.org.apache.kahadb.page.Transaction.remove"
+    ],
+    "AMQ-4369.json": [
+        "activemq-broker.src.main.java.org.apache.activemq.broker.BrokerService.doStartBroker"
+    ],
+    "AMQ-5016.json": [
+        "activemq-client.src.main.java.org.apache.activemq.util.BitArrayBin.getBitArray",
+        "activemq-client.src.main.java.org.apache.activemq.util.BitArrayBin.getBin",
+        "activemq-client.src.main.java.org.apache.activemq.util.BitArrayBin.getOffset",
+        "activemq-client.src.main.java.org.apache.activemq.util.BitArrayBin.isInOrder"
+    ],
+    "AMQ-4407.json": [
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.MultiKahaDBPersistenceAdapter.getMatchingPersistenceAdapter"
+    ],
+    "AMQ-4221.json": [
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.index.ListNode.remove"
+    ],
+    "AMQ-3622.json": [
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.policy.LastImageSubscriptionRecoveryPolicy.stop",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.policy.LastImageSubscriptionRecoveryPolicy.browse"
+    ],
+    "AMQ-6016.json": [
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.group.CachedMessageGroupMap.removeEldestEntry",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.Queue.assignGroup",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.Queue.removeSubscription",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.Queue.assignMessageGroup",
+        "activemq-client.src.main.java.org.apache.activemq.command.ConsumerInfo.getLastDeliveredSequenceId",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.group.CachedMessageGroupMap.removeAll",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.Queue.compare"
+    ],
+    "AMQ-3490.json": [
+        "activemq-core.src.main.java.org.apache.activemq.store.kahadb.plist.PListStore.execute",
+        "activemq-core.src.main.java.org.apache.activemq.store.kahadb.plist.PListStore.intialize"
+    ],
+    "AMQ-6831.json": [
+        "activemq-client.src.main.java.org.apache.activemq.util.ByteSequence.compact",
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.journal.Journal.checkBatchRecord"
+    ],
+    "AMQ-5525.json": [
+        "activemq-karaf.src.main.java.org.apache.activemq.karaf.commands.ActiveMQCommand.prepare"
+    ],
+    "AMQ-4118.json": [
+        "kahadb.src.main.java.org.apache.kahadb.page.Transaction.close"
+    ],
+    "AMQ-4092.json": [
+        "activemq-client.src.main.java.org.apache.activemq.filter.PropertyExpression.evaluate",
+        "activemq-client.src.main.java.org.apache.activemq.command.Message.isDropped",
+        "activemq-client.src.main.java.org.apache.activemq.openwire.v10.MessageMarshaller.tightMarshal2",
+        "activemq-client.src.main.java.org.apache.activemq.command.Message.copy",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.Queue.assignMessageGroup",
+        "activemq-client.src.main.java.org.apache.activemq.openwire.v10.MessageMarshaller.tightMarshal1",
+        "activemq-client.src.main.java.org.apache.activemq.openwire.v10.MessageMarshaller.looseUnmarshal",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.QueueSubscription.canDispatch",
+        "activemq-client.src.main.java.org.apache.activemq.openwire.v10.MessageMarshaller.tightUnmarshal",
+        "activemq-client.src.main.java.org.apache.activemq.openwire.v10.MessageMarshaller.looseMarshal"
+    ],
+    "AMQ-3887.json": [
+        "activemq-core.src.main.java.org.apache.activemq.network.DemandForwardingBridgeSupport.safeWaitUntilStarted",
+        "activemq-core.src.main.java.org.apache.activemq.network.DemandForwardingBridgeSupport.serviceRemoteCommand",
+        "activemq-core.src.main.java.org.apache.activemq.network.DemandForwardingBridgeSupport.serviceLocalCommand",
+        "activemq-core.src.main.java.org.apache.activemq.network.DemandForwardingBridgeSupport.serviceLocalBrokerInfo",
+        "activemq-core.src.main.java.org.apache.activemq.network.DemandForwardingBridgeSupport.removeDemandSubscriptionByLocalId",
+        "activemq-core.src.main.java.org.apache.activemq.network.DemandForwardingBridgeSupport.clearDownSubscriptions"
+    ],
+    "AMQ-6451.json": [
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.journal.Journal.doPreallocationSparseFile",
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.journal.Journal.accept",
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.journal.Journal.createJournalTemplateFile",
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.journal.Journal.createEofBatchAndLocationRecord",
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.journal.Journal.run"
+    ],
+    "AMQ-3393.json": [
+        "activemq-core.src.main.java.org.apache.activemq.broker.jmx.ManagedTransportConnection.createByAddressObjectName",
+        "activemq-core.src.main.java.org.apache.activemq.broker.TransportConnection.isManageable",
+        "activemq-core.src.main.java.org.apache.activemq.broker.TransportConnection.stop",
+        "activemq-core.src.main.java.org.apache.activemq.broker.TransportConnector.setUpdateClusterFilter",
+        "activemq-core.src.main.java.org.apache.activemq.broker.TransportConnection.run",
+        "activemq-core.src.main.java.org.apache.activemq.broker.TransportConnection.start",
+        "activemq-core.src.main.java.org.apache.activemq.broker.jmx.ConnectorView.isStatisticsEnabled",
+        "activemq-core.src.main.java.org.apache.activemq.broker.jmx.ManagedTransportConnection.unregisterMBean"
+    ],
+    "AMQ-5815.json": [
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.page.PageFile.writeBatch"
+    ],
+    "AMQ-5141.json": [
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.RegionBroker.sendToDeadLetterQueue"
+    ],
+    "AMQ-5854.json": [
+        "activemq-client.src.main.java.org.apache.activemq.TransactionContext.isInXATransaction",
+        "activemq-client.src.main.java.org.apache.activemq.TransactionContext.begin",
+        "activemq-client.src.main.java.org.apache.activemq.ActiveMQMessageConsumer.inProgressClearRequired",
+        "activemq-client.src.main.java.org.apache.activemq.TransactionContext.start",
+        "activemq-client.src.main.java.org.apache.activemq.TransactionContext.commit",
+        "activemq-client.src.main.java.org.apache.activemq.TransactionContext.prepare"
+    ],
+    "AMQ-3056.json": [
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.TopicSubscription.afterCommit"
+    ],
+    "AMQ-3325.json": [
+        "activemq-core.src.main.java.org.apache.activemq.store.kahadb.plist.PListStore.run",
+        "activemq-core.src.main.java.org.apache.activemq.store.kahadb.plist.PListStore.size",
+        "activemq-core.src.main.java.org.apache.activemq.store.kahadb.plist.PList.execute"
+    ],
+    "AMQ-2963.json": [
+        "activemq-core.src.main.java.org.apache.activemq.ActiveMQSession.send"
+    ],
+    "AMQ-3903.json": [
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.policy.PolicyEntry.baseConfiguration",
+        "activemq-core.src.main.java.org.apache.activemq.broker.BrokerFilter.getBrokerSequenceId",
+        "activemq-core.src.main.java.org.apache.activemq.broker.MutableBrokerFilter.getBrokerSequenceId",
+        "activemq-core.src.main.java.org.apache.activemq.broker.util.LoggingBrokerPlugin.sendToDeadLetterQueue",
+        "activemq-core.src.main.java.org.apache.activemq.broker.EmptyBroker.getBrokerSequenceId",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.policy.PolicyEntry.setAdvisoryForConsumed",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.BaseDestination.slowConsumer",
+        "activemq-core.src.main.java.org.apache.activemq.broker.ErrorBroker.getBrokerSequenceId",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.BaseDestination.setAdvisoryForConsumed",
+        "activemq-core.src.main.java.org.apache.activemq.advisory.AdvisoryBroker.slowConsumer",
+        "activemq-core.src.main.java.org.apache.activemq.advisory.AdvisoryBroker.fastProducer",
+        "activemq-core.src.main.java.org.apache.activemq.broker.BrokerFilter.fastProducer",
+        "activemq-core.src.main.java.org.apache.activemq.broker.EmptyBroker.fastProducer",
+        "activemq-core.src.main.java.org.apache.activemq.broker.ErrorBroker.fastProducer",
+        "activemq-core.src.main.java.org.apache.activemq.broker.MutableBrokerFilter.fastProducer",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.BaseDestination.isAdvisdoryForFastProducers",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.BaseDestination.isAdvisoryForFastProducers",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.BaseDestination.setAdvisdoryForFastProducers",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.BaseDestination.setAdvisoryForFastProducers",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.BaseDestination.fastProducer",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.policy.PolicyEntry.isAdvisdoryForFastProducers",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.policy.PolicyEntry.isAdvisoryForFastProducers",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.policy.PolicyEntry.setAdvisdoryForFastProducers",
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.policy.PolicyEntry.setAdvisoryForFastProducers",
+        "activemq-core.src.main.java.org.apache.activemq.broker.util.LoggingBrokerPlugin.fastProducer"
+
+    ],
+    "AMQ-2693.json": [
+        "activemq-core.src.main.java.org.apache.activemq.ActiveMQSession.clearMessagesInProgress",
+        "activemq-core.src.main.java.org.apache.activemq.ActiveMQMessageConsumer.clearPreviouslyDelivered",
+        "activemq-core.src.main.java.org.apache.activemq.ActiveMQMessageConsumer.PreviouslyDeliveredMap",
+        "activemq-core.src.main.java.org.apache.activemq.ActiveMQMessageConsumer.doClose"
+    ],
+    "AMQ-4643.json": [
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.LeaseDatabaseLocker.keepAlive",
+        "activemq-broker.src.main.java.org.apache.activemq.transaction.LocalTransaction.rollback",
+        "activemq-broker.src.main.java.org.apache.activemq.transaction.XATransaction.illegalStateTransition",
+        "activemq-broker.src.main.java.org.apache.activemq.transaction.XATransaction.doPrePrepare",
+        "activemq-broker.src.main.java.org.apache.activemq.transaction.LocalTransaction.commit",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.DefaultDatabaseLocker.doStart",
+        "activemq-client.src.main.java.org.apache.activemq.ActiveMQMessageConsumer.commit",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.LeaseDatabaseLocker.getMaxAllowableDiffFromDBTime",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.LeaseDatabaseLocker.determineTimeDifference",
+        "activemq-broker.src.main.java.org.apache.activemq.util.DefaultIOExceptionHandler.handle",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.LockableServiceSupport.keepLockAlive",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.TransactionContext.close",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCPersistenceAdapter.getScheduledThreadPoolExecutor",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCIOExceptionHandler.JDBCIOExceptionHandler",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.LeaseDatabaseLocker.doStart",
+        "activemq-broker.src.main.java.org.apache.activemq.transaction.XATransaction.storeCommit",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.TransportConnection.service",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCIOExceptionHandler.hasLockOwnership"
+    ],
+    "AMQ-2902.json": [
+        "activemq-core.src.main.java.org.apache.activemq.transport.vm.VMTransport.stop",
+        "activemq-core.src.main.java.org.apache.activemq.broker.TransportConnection.serviceTransportException"
+    ],
+    "AMQ-5665.json": [
+        "activemq-broker.src.main.java.org.apache.activemq.store.memory.MemoryTransactionStore.onRecovered",
+        "activemq-broker.src.main.java.org.apache.activemq.store.memory.MemoryTransactionStore.proxy",
+        "activemq-broker.src.main.java.org.apache.activemq.store.memory.MemoryTransactionStore.setMessageStore",
+        "activemq-broker.src.main.java.org.apache.activemq.store.memory.MemoryTransactionStore.addMessage",
+        "activemq-broker.src.main.java.org.apache.activemq.store.memory.MemoryTransactionStore.asyncAddQueueMessage"
+    ],
+    "AMQ-3725.json": [
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.page.PageFile.load",
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.journal.DataFile.toString",
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.journal.CallerBufferingDataFileAppender.CallerBufferingDataFileAppender",
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.journal.DataFileAppender.processQueue",
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.journal.DataFileAppender.close"
+    ],
+    "AMQ-3085.json": [
+        "activemq-core.src.main.java.org.apache.activemq.transport.failover.FailoverTransport.getStateTracker",
+        "activemq-core.src.main.java.org.apache.activemq.transport.failover.FailoverTransport.request"
+    ],
+    "AMQ-3504.json": [
+        "activemq-optional.src.main.java.org.apache.activemq.transport.ws.WSTransportServer.WSTransportServer",
+        "activemq-optional.src.main.java.org.apache.activemq.transport.ws.WSTransportServer.doStart"
+    ],
+    "AMQ-6707.json": [
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.KahaDBStore.setForceRecoverIndex",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JdbcMemoryTransactionStore.setMessageStore",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.TransactionBroker.registerMBean",
+        "activemq-broker.src.main.java.org.apache.activemq.store.ProxyTopicMessageStore.getDestination",
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.KahaDBStore.execute",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.TransactionBroker.registerSync",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.TransactionContext.doRollback",
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.MessageDatabase.key",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.cursors.AbstractStoreCursor.setBatch",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCPersistenceAdapter.messageId",
+        "activemq-broker.src.main.java.org.apache.activemq.transaction.XATransaction.commit",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.PrefetchSubscription.afterCommit",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.TransactionBroker.equals",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCPersistenceAdapter.removeQueueMessageStore",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCTopicMessageStore.updateStored",
+        "activemq-broker.src.main.java.org.apache.activemq.store.memory.MemoryTransactionStore.commit",
+        "activemq-broker.src.main.java.org.apache.activemq.util.DefaultIOExceptionHandler.run",
+        "activemq-broker.src.main.java.org.apache.activemq.store.ProxyTopicMessageStore.getMessageStoreStatistics",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.Queue.addAll",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.cursors.AbstractStoreCursor.resetSize",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCPersistenceAdapter.removeConsumerDestination",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.Queue.purge",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCTopicMessageStore.resetBatching",
+        "activemq-broker.src.main.java.org.apache.activemq.transaction.XATransaction.storeCommit",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.Topic.isOptimizeStorage",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.TransactionBroker.TransactionBroker",
+        "activemq-broker.src.main.java.org.apache.activemq.store.ProxyTopicMessageStore.setMemoryUsage",
+        "activemq-broker.src.main.java.org.apache.activemq.broker.region.DestinationFilter.setDoOptimzeMessageStorage",
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.KahaDBStore.getDestination",
+        "activemq-broker.src.main.java.org.apache.activemq.store.ProxyTopicMessageStore.stop"
+    ],
+    "AMQ-5384.json": [
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCPersistenceAdapter.rollbackLastAck",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCMessageStore.removeMessage",
+        "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCMessageStore.resetBatching"
+    ],
+    "AMQ-5783.json": [
+        "activemq-broker.src.main.java.org.apache.activemq.broker.jmx.ManagedRegionBroker.unregisterSubscription",
+        "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.MessageDatabase.updateIndex"
+    ],
+    "AMQ-2965.json": [
+        "activemq-core.src.main.java.org.apache.activemq.broker.region.RegionBroker.setBrokerId",
+        "activemq-core.src.main.java.org.apache.activemq.transport.udp.UdpTransport.createAddress",
+        "activemq-core.src.main.java.org.apache.activemq.transport.tcp.TcpTransportServer.resolveHostName",
+        "activemq-core.src.main.java.org.apache.activemq.transport.tcp.TcpTransport.setCloseAsync"
+    ]
+}

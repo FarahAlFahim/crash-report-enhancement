@@ -1,0 +1,339 @@
+{
+    "MAPREDUCE-6633.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.task.reduce.Fetcher.copyMapOutput"
+    ],
+    "MAPREDUCE-6577.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-jobclient.src.main.java.org.apache.hadoop.mapred.YARNRunner.createApplicationSubmissionContext"
+    ],
+    "MAPREDUCE-5137.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.webapp.TaskPage.render"
+    ],
+    "MAPREDUCE-4008.json": [
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.getQueueUserAclInfo",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.reinitialize"
+    ],
+    "MAPREDUCE-6259.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler.processEventForTimelineServer",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.jobhistory.AMStartedEvent.getForcedJobStateOnShutDown",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler.setupEventWriter",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler.handleEvent",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler.createEventWriter",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.jobhistory.AMStartedEvent.AMStartedEvent"
+    ],
+    "MAPREDUCE-3333.json": [
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.ipc.ProtoOverHadoopRpcEngine.invoke",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC.getProxy",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.ipc.HadoopYarnRPC.getProxy",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl.getCMProxy",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagerPBClientImpl.ContainerManagerPBClientImpl",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.factories.impl.pb.RpcClientFactoryPBImpl.getClient",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl.run"
+    ],
+    "MAPREDUCE-7059.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.JobResourceUploader.validateFilePath",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.JobResourceUploader.uploadResourcesInternal"
+    ],
+    "MAPREDUCE-4843.json": [
+        "src.mapred.org.apache.hadoop.mapred.JobLocalizer.JobLocalizer"
+    ],
+    "MAPREDUCE-5028.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.MapTask.resetSpill",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.task.reduce.InMemoryReader.InMemoryReader",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.MapTask.setEquator",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.task.ReduceContextImpl.next",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.task.ReduceContextImpl.nextKeyValue",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.io.DataInputBuffer.getData"
+    ],
+    "MAPREDUCE-4300.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.MRAppMaster.validateInputParam",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer.getClientService",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ContainerLocalizer.createStatus",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-web-proxy.src.main.java.org.apache.hadoop.yarn.server.webproxy.WebAppProxyServer.doSecureLogin",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.recover",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.createNewNodeManager"
+    ],
+    "MAPREDUCE-3241.json": [
+        "hadoop-mapreduce-project.src.tools.org.apache.hadoop.tools.rumen.JobBuilder.process"
+    ],
+    "MAPREDUCE-6002.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.Task.setWriteSkipRecs",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapred.YarnChild.run",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapred.LocalContainerLauncher.runSubtask"
+    ],
+    "MAPREDUCE-6452.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-common.src.main.java.org.apache.hadoop.mapred.LocalJobRunner.Job"
+    ],
+    "MAPREDUCE-6649.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.CompletedJob.loadAllTasks",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.CompletedJob.loadFullHistoryData",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.CompletedJob.constructJobReport"
+    ],
+    "MAPREDUCE-4048.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.webapp.AppController.attempts",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.webapp.AppController.tasks",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.webapp.AppController.conf",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.webapp.AppController.badRequest"
+    ],
+    "MAPREDUCE-5198.json": [
+        "src.mapred.org.apache.hadoop.mapred.LinuxTaskController.createLogDir",
+        "src.mapred.org.apache.hadoop.mapred.TaskTracker.purgeJob",
+        "src.mapred.org.apache.hadoop.mapred.TaskTracker.mapOutputLost",
+        "src.mapred.org.apache.hadoop.mapred.TaskTracker.cleanup",
+        "src.mapred.org.apache.hadoop.mapred.TaskTracker.close",
+        "src.mapred.org.apache.hadoop.mapred.TaskTracker.run",
+        "src.mapred.org.apache.hadoop.mapred.TaskTracker.jobHasFinished",
+        "src.mapred.org.apache.hadoop.mapred.TaskTracker.purgeTask",
+        "src.mapred.org.apache.hadoop.mapred.TaskTracker.taskFinished"
+    ],
+    "MAPREDUCE-7028.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapred.TaskAttemptListenerImpl.setCheckpointID",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapred.TaskAttemptListenerImpl.coalesceStatusUpdate"
+    ],
+    "MAPREDUCE-3790.json": [
+        "hadoop-tools.hadoop-streaming.src.main.java.org.apache.hadoop.streaming.PipeMapRed.mapRedFinished"
+    ],
+    "MAPREDUCE-6357.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.write"
+    ],
+    "MAPREDUCE-6091.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-jobclient.src.main.java.org.apache.hadoop.mapred.ClientServiceDelegate.getProxy"
+    ],
+    "MAPREDUCE-4825.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.finished"
+    ],
+    "MAPREDUCE-3319.json": [
+        "src.examples.org.apache.hadoop.examples.MultiFileWordCount.run",
+        "src.examples.org.apache.hadoop.examples.MultiFileWordCount.createValue"
+    ],
+    "MAPREDUCE-6361.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl.updateStatus",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl.copyFailed"
+    ],
+    "MAPREDUCE-4848.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.MRAppMaster.createJobFinishEventHandler"
+    ],
+    "MAPREDUCE-3226.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.task.reduce.Fetcher.Fetcher",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.task.reduce.Fetcher.run",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.task.reduce.EventFetcher.run"
+    ],
+    "MAPREDUCE-3070.json": [],
+    "MAPREDUCE-3932.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.KillTasksTransition",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.TaskCleanupTransition"
+    ],
+    "MAPREDUCE-4062.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl.init",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl.kill",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl.launch",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl.run"
+    ],
+    "MAPREDUCE-3066.json": [
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.NodeStatusUpdaterImpl"
+    ],
+    "MAPREDUCE-3123.json": [
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.symlink",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.sanitizeEnv"
+    ],
+    "MAPREDUCE-6439.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.getResources",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator.serviceStop"
+    ],
+    "MAPREDUCE-4490.json": [
+        "src.mapred.org.apache.hadoop.mapred.LinuxTaskController.launchTask",
+        "src.mapred.org.apache.hadoop.mapred.LinuxTaskController.initializeJob"
+    ],
+    "MAPREDUCE-3744.json": [
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.LogDumper.dumpAContainerLogs",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.LogDumper.run",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.tools.CLI.run",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.LogDumper.dumpAllContainersLogs"
+    ],
+    "MAPREDUCE-6815.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl.RetroactiveKilledTransition"
+    ],
+    "MAPREDUCE-3053.json": [
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.ipc.ProtoOverHadoopRpcEngine.call",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl.transition",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl.getNodeHealthStatus",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl.RMNodeImpl"
+    ],
+    "MAPREDUCE-5884.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.HistoryClientService.cancelDelegationToken"
+    ],
+    "MAPREDUCE-3706.json": [
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-web-proxy.src.main.java.org.apache.hadoop.yarn.server.webproxy.WebAppProxyServlet.proxyLink"
+    ],
+    "MAPREDUCE-5451.json": [],
+    "MAPREDUCE-2463.json": [
+        "mapreduce.src.java.org.apache.hadoop.mapreduce.jobhistory.JobHistory.moveToDoneNow"
+    ],
+    "MAPREDUCE-3531.json": [],
+    "MAPREDUCE-3931.json": [
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-api.src.main.java.org.apache.hadoop.yarn.api.records.impl.pb.LocalResourcePBImpl.convertToProtoFormat",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-api.src.main.java.org.apache.hadoop.yarn.api.records.impl.pb.LocalResourcePBImpl.getResource",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-api.src.main.java.org.apache.hadoop.yarn.api.records.impl.pb.LocalResourcePBImpl.getVisibility",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-api.src.main.java.org.apache.hadoop.yarn.api.records.impl.pb.LocalResourcePBImpl.LocalResourcePBImpl",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-api.src.main.java.org.apache.hadoop.yarn.api.records.impl.pb.LocalResourcePBImpl.setType",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-api.src.main.java.org.apache.hadoop.yarn.api.records.impl.pb.LocalResourcePBImpl.getType"
+    ],
+    "MAPREDUCE-4467.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.IndexCache.getIndexInformation",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.IndexCache.readIndexFileToCache"
+    ],
+    "MAPREDUCE-3463.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.recover.RecoveryService.RecoveryService",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.event.AsyncDispatcher.dispatch",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.recover.RecoveryService.parse",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.recover.RecoveryService.getTaskAttemptInfo",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.MRAppMaster.createJobFinishEventHandler",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.recover.RecoveryService.sendAssignedEvent",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.MRAppMaster.init"
+    ],
+    "MAPREDUCE-4164.json": [
+        "mapreduce.src.java.org.apache.hadoop.mapred.Task.startCommunicationThread",
+        "mapreduce.src.java.org.apache.hadoop.mapred.Task.run"
+    ],
+    "MAPREDUCE-5260.json": [
+        "src.mapred.org.apache.hadoop.mapred.JvmManager.reapJvm",
+        "src.mapred.org.apache.hadoop.mapred.JvmManager.kill",
+        "src.mapred.org.apache.hadoop.mapred.JvmManager$JvmManagerForType.reapJvm"
+    ],
+    "MAPREDUCE-4774.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.KillTasksTransition"
+    ],
+    "MAPREDUCE-3005.json": [
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.getNode",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.assignNodeLocalContainers",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.assignRackLocalContainers",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue.canAssign"
+    ],
+    "MAPREDUCE-6895.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.JobEndNotifier.notifyURLOnce",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.MRAppMaster.shutDownJob"
+    ],
+    "MAPREDUCE-4451.json": [
+        "src.contrib.fairscheduler.src.java.org.apache.hadoop.mapred.FairScheduler.terminate"
+    ],
+    "MAPREDUCE-4144.json": [
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue.assignOffSwitchContainers",
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue.canAssign"
+    ],
+    "MAPREDUCE-5924.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.KilledTransition"
+    ],
+    "MAPREDUCE-3649.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.JobEndNotifier.notifyURLOnce"
+    ],
+    "MAPREDUCE-7077.json": [],
+    "MAPREDUCE-4102.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.webapp.CountersBlock.getCounters",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.webapp.dao.JobCounterInfo.getCounters"
+    ],
+    "MAPREDUCE-6353.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.rm.ResourceCalculatorUtils.divideAndCeil",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.rm.ResourceCalculatorUtils.divideAndCeilContainers"
+    ],
+    "MAPREDUCE-4913.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.MRAppMaster.init"
+    ],
+    "MAPREDUCE-6492.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.createJobCounterUpdateEventTAKilled",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.sendJHStartEventForAssignedFailTask"
+    ],
+    "MAPREDUCE-5744.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.preemptReduce"
+    ],
+    "MAPREDUCE-3583.json": [
+        "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.getProcessTree",
+        "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.getPgrpId",
+        "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.isAnyProcessInTreeAlive",
+        "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.toString",
+        "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.isAvailable",
+        "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.isAlive",
+        "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.constructProcessInfo",
+        "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.getCmdLine",
+        "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.getAge",
+        "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.updateProcessInfo",
+        "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.getUtime",
+        "src.core.org.apache.hadoop.util.ProcfsBasedProcessTree.getCumulativeCpuTime"
+    ],
+    "MAPREDUCE-2238.json": [
+        "src.mapred.org.apache.hadoop.mapreduce.server.tasktracker.Localizer.initializeJobDirs",
+        "src.mapred.org.apache.hadoop.mapreduce.server.tasktracker.Localizer.initializeAttemptDirs",
+        "src.mapred.org.apache.hadoop.mapreduce.server.tasktracker.Localizer.initializeUserDirs",
+        "src.mapred.org.apache.hadoop.mapreduce.server.tasktracker.Localizer.Localizer",
+        "src.mapred.org.apache.hadoop.mapred.TaskLog.createTaskAttemptLogDir"
+    ],
+    "MAPREDUCE-6410.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.server.HSAdminServer.serviceInit",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.server.HSAdminServer.refreshLoadedJobCache",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.server.HSAdminServer.run"
+    ],
+    "MAPREDUCE-6693.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-common.src.main.java.org.apache.hadoop.mapreduce.v2.jobhistory.FileNameIndexUtils.trimURLEncodedString"
+    ],
+    "MAPREDUCE-5912.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.Task.calculateOutputSize"
+    ],
+    "MAPREDUCE-5952.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapred.LocalContainerLauncher.runSubtask",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapred.LocalContainerLauncher.relocalize"
+    ],
+    "MAPREDUCE-3306.json": [
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl.transition"
+    ],
+    "MAPREDUCE-6554.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.jobhistory.EventReader.EventReader",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.jobhistory.EventReader.init"
+    ],
+    "MAPREDUCE-4457.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.transition",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl.TaskCleanupTransition"
+    ],
+    "MAPREDUCE-2716.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-jobclient.src.main.java.org.apache.hadoop.mapred.ResourceMgrDelegate.getAllJobs",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-jobclient.src.main.java.org.apache.hadoop.mapred.ResourceMgrDelegate.getQueue",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-common.src.main.java.org.apache.hadoop.mapreduce.TypeConverter.toYarn",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-common.src.main.java.org.apache.hadoop.mapreduce.TypeConverter.fromYarnNodes",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-jobclient.src.main.java.org.apache.hadoop.mapred.ResourceMgrDelegate.getChildQueues",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-jobclient.src.main.java.org.apache.hadoop.mapred.ResourceMgrDelegate.getQueues",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-jobclient.src.main.java.org.apache.hadoop.mapred.ResourceMgrDelegate.getRootQueues",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-common.src.main.java.org.apache.hadoop.mapreduce.v2.api.records.impl.pb.JobReportPBImpl.setFinishTime",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.getReport",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-jobclient.src.main.java.org.apache.hadoop.mapred.ClientServiceDelegate.getProxy",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-jobclient.src.main.java.org.apache.hadoop.mapred.NotRunningJob.getJobReport",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-common.src.main.java.org.apache.hadoop.mapreduce.v2.util.MRApps.addToClassPath",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-jobclient.src.main.java.org.apache.hadoop.mapred.ClientServiceDelegate.getTaskDiagnostics",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.CompletedJob.CompletedJob"
+    ],
+    "MAPREDUCE-6702.json": [],
+    "MAPREDUCE-4748.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl.RetroactiveKilledTransition"
+    ],
+    "MAPREDUCE-3062.json": [
+        "hadoop-mapreduce-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.init"
+    ],
+    "MAPREDUCE-5724.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.HistoryFileManager.serviceInit",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-hs.src.main.java.org.apache.hadoop.mapreduce.v2.hs.HistoryFileManager.loadConfFile"
+    ],
+    "MAPREDUCE-5358.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.KillTasksTransition"
+    ],
+    "MAPREDUCE-5837.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.isChainJob"
+    ],
+    "MAPREDUCE-3058.json": [
+        "hadoop-mapreduce-project.src.contrib.gridmix.src.java.org.apache.hadoop.mapred.gridmix.LoadJob.setup",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapred.YarnChild.run"
+    ],
+    "MAPREDUCE-5088.json": [
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.JobClient.run",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-jobclient.src.main.java.org.apache.hadoop.mapred.YARNRunner.getClusterMetrics",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapred.JobClient.submitJob",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-jobclient.src.main.java.org.apache.hadoop.mapred.YARNRunner.getTaskTrackerExpiryInterval",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-jobclient.src.main.java.org.apache.hadoop.mapred.ResourceMgrDelegate.getClusterMetrics"
+    ]
+}

@@ -1,0 +1,180 @@
+{
+    "HADOOP-6989.json": [
+        "src.java.org.apache.hadoop.io.SetFile.Writer"
+    ],
+    "HADOOP-10823.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.ssl.ReloadingX509TrustManager.run"
+    ],
+    "HADOOP-9125.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.LdapGroupsMapping.getDirContext",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.LdapGroupsMapping.getGroups"
+    ],
+    "HADOOP-10252.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.http.HttpServer.HttpServer"
+    ],
+    "HADOOP-12239.json": [
+        "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.NativeAzureFileSystem.create"
+    ],
+    "HADOOP-11878.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.FileContext.FileContext",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.FileContext.fixRelativePart"
+    ],
+    "HADOOP-14949.json": [
+        "hadoop-common-project.hadoop-kms.src.main.java.org.apache.hadoop.crypto.key.kms.server.KMSACLs.isACLPresent",
+        "hadoop-common-project.hadoop-kms.src.main.java.org.apache.hadoop.crypto.key.kms.server.KMSConfiguration.isACLsFileNewer"
+    ],
+    "HADOOP-10540.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.HardLink.createHardLinkMult",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.HardLink.getLinkMultArgLength",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.HardLink.getLinkCount",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.HardLink.createHardLink",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.HardLink.linkMult"
+    ],
+    "HADOOP-7629.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.permission.FsPermission.createImmutable",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.permission.FsPermission.applyUMask",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.permission.FsPermission.readFields"
+    ],
+    "HADOOP-15060.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroupsIDForUserCommand"
+    ],
+    "HADOOP-10937.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.KeyProviderCryptoExtension.decryptEncryptedKey",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.KeyProviderCryptoExtension.EncryptedKeyVersion",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.kms.KMSClientProvider.decryptEncryptedKey"
+    ],
+    "HADOOP-9103.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.io.UTF8.readChars",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.io.UTF8.getBytes"
+    ],
+    "HADOOP-11151.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.kms.KMSClientProvider.checkNotEmpty",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.kms.KMSClientProvider.KMSClientProvider",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.kms.KMSClientProvider.run",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.kms.KMSClientProvider.call",
+        "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.client.AuthenticatedURL.injectToken"
+    ],
+    "HADOOP-8031.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.conf.Configuration.parse",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.conf.Configuration.loadResource"
+    ],
+    "HADOOP-15411.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.AuthenticationFilterInitializer.getFilterConfigMap"
+    ],
+    "HADOOP-15850.json": [
+        "hadoop-tools.hadoop-distcp.src.main.java.org.apache.hadoop.tools.mapred.CopyCommitter.commitJob"
+    ],
+    "HADOOP-11693.json": [
+        "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.AzureNativeFileSystemStore.rename",
+        "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.StorageInterfaceImpl.getCopyState"
+    ],
+    "HADOOP-12441.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.util.Shell.getReadlinkCommand",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.util.Shell.getWinUtilsPath",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.getNodeHealthChecker"
+    ],
+    "HADOOP-11685.json": [
+        "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.NativeAzureFileSystem.applyUMask",
+        "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.AzureNativeFileSystemStore.storeEmptyFolder"
+    ],
+    "HADOOP-8589.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.viewfs.ViewFs.getHomeDirectory",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.viewfs.ChRootedFileSystem.getResolvedQualifiedPath",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.DelegateToFileSystem.getFsStatus",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.viewfs.ViewFileSystem.getHomeDirectory"
+    ],
+    "HADOOP-11754.json": [
+        "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.isRandomSecret",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.http.HttpServer2.setKeytabConfKey",
+        "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.initializeAuthHandler",
+        "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.destroy",
+        "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.getAuthenticationHandler",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.AuthenticationFilterInitializer.getFilterConfigMap",
+        "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.init",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.http.HttpServer2.createWebAppContext",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.http.HttpServer2.HttpServer2",
+        "hadoop-common-project.hadoop-auth.src.main.java.org.apache.hadoop.security.authentication.server.AuthenticationFilter.initializeSecretProvider"
+    ],
+    "HADOOP-8225.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.UserGroupInformation.toString",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.UserGroupInformation.addTokenIdentifier",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.UserGroupInformation.getLoginUser",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.MRAppMaster.downloadTokensAndSetupUGI",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.UserGroupInformation.addToken",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapred.YarnChild.run",
+        "hadoop-tools.hadoop-distcp.src.main.java.org.apache.hadoop.tools.DistCp.createMetaFolderPath",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-core.src.main.java.org.apache.hadoop.mapreduce.Job.Job",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapred.YarnChild.main",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Credentials.addAll"
+    ],
+    "HADOOP-10866.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.Stat.parseExecResult"
+    ],
+    "HADOOP-12089.json": [
+        "hadoop-tools.hadoop-azure.src.main.java.org.apache.hadoop.fs.azure.NativeAzureFileSystem.delete"
+    ],
+    "HADOOP-11934.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.alias.JavaKeyStoreProvider.initFileSystem"
+    ],
+    "HADOOP-11722.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.token.delegation.ZKDelegationTokenSecretManager.removeStoredToken",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.token.delegation.ZKDelegationTokenSecretManager.removeStoredMasterKey"
+    ],
+    "HADOOP-15331.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.conf.Configuration.Configuration"
+    ],
+    "HADOOP-14062.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.ipc.Client.setSaslClient"
+    ],
+    "HADOOP-11149.json": [],
+    "HADOOP-15059.json": [
+        "hadoop-hdfs-project.hadoop-hdfs.src.main.java.org.apache.hadoop.hdfs.tools.DelegationTokenFetcher.saveDelegationToken",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Credentials.writeProto",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Credentials.readTokenStorageStream",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Credentials.write",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.token.DtFileOperations.fileToPath"
+    ],
+    "HADOOP-15307.json": [
+        "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.oncrpc.security.Verifier.Verifier",
+        "hadoop-common-project.hadoop-nfs.src.main.java.org.apache.hadoop.oncrpc.security.Verifier.readFlavorAndVerifier"
+    ],
+    "HADOOP-11446.json": [
+        "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3a.S3AFileSystem.initialize",
+        "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3a.S3AOutputStream.close",
+        "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3a.S3AFileSystem.create",
+        "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3a.S3AFileSystem.newThread"
+    ],
+    "HADOOP-12689.json": [
+        "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3.Jets3tFileSystemStore.get",
+        "hadoop-tools.hadoop-aws.src.main.java.org.apache.hadoop.fs.s3.Jets3tFileSystemStore.retrieveBlock"
+    ],
+    "HADOOP-13132.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.crypto.key.kms.LoadBalancingKMSClientProvider.call"
+    ],
+    "HADOOP-15121.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.ipc.DecayRpcScheduler.DecayRpcScheduler"
+    ],
+    "HADOOP-8110.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.TrashPolicyDefault.moveToTrash"
+    ],
+    "HADOOP-11400.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.metrics2.sink.GraphiteSink.putMetrics"
+    ],
+    "HADOOP-9865.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.fs.Globber.getPathComponents"
+    ],
+    "HADOOP-9977.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory.init"
+    ],
+    "HADOOP-12611.json": [],
+    "HADOOP-10142.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.util.StringUtils.getStrings",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Groups.parseStaticMapping",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.security.Groups.Groups"
+    ],
+    "HADOOP-14727.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.conf.Configuration.parse",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.conf.Configuration.toString"
+    ]
+}

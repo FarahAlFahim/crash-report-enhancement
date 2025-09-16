@@ -1,0 +1,92 @@
+[
+    {
+        "filename": "AMQ-5016.json",
+        "creation_time": "2014-02-03T16:40:26.000+0000",
+        "commit": "58ae402b1d61e74511cfd29e1aea7e9597b3a76b",
+        "candidate_key": "BitArrayBin.getBitArray",
+        "ground_truth_method": "activemq-client.src.main.java.org.apache.activemq.util.BitArrayBin.getBitArray",
+        "file_path": "activemq-client/src/main/java/org/apache/activemq/util/BitArrayBin.java",
+        "codebleu": {
+            "bleu": 0.9625248317849852,
+            "ngram": 0.9629629629629629,
+            "syntax": 0.0,
+            "dataflow": 0.9565217391304348,
+            "codebleu": 0.9606698446261276
+        }
+    },
+    {
+        "filename": "AMQ-4221.json",
+        "creation_time": "2012-12-13T16:15:04.000+0000",
+        "commit": "c73027da1af8a36b8a01a82a87c64a874729a3b4",
+        "candidate_key": "FilePendingMessageCursor.remove",
+        "ground_truth_method": "activemq-kahadb-store.src.main.java.org.apache.activemq.store.kahadb.disk.index.ListNode.remove",
+        "file_path": "activemq-kahadb-store/src/main/java/org/apache/activemq/store/kahadb/disk/index/ListNode.java",
+        "codebleu": {
+            "bleu": 0.04729181034073558,
+            "ngram": 0.05555555555555555,
+            "syntax": 0.0,
+            "dataflow": 0.09375,
+            "codebleu": 0.06553245529876371
+        }
+    },
+    {
+        "filename": "AMQ-3622.json",
+        "creation_time": "2011-12-06T15:16:49.000+0000",
+        "commit": "760c62934d2ff5fe92e399cf7f980d8de4e191d4",
+        "candidate_key": "LastImageSubscriptionRecoveryPolicy.browse",
+        "ground_truth_method": "activemq-core.src.main.java.org.apache.activemq.broker.region.policy.LastImageSubscriptionRecoveryPolicy.browse",
+        "file_path": "activemq-core/src/main/java/org/apache/activemq/broker/region/policy/LastImageSubscriptionRecoveryPolicy.java",
+        "codebleu": {
+            "bleu": 0.6569837555712137,
+            "ngram": 0.7272727272727273,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.7947521609479803
+        }
+    },
+    {
+        "filename": "AMQ-3903.json",
+        "creation_time": "2012-06-28T14:09:35.000+0000",
+        "commit": "db1f6fe2b42d6d1d505ae59618b0cbc36532cef5",
+        "candidate_key": "AdvisoryBroker.fastProducer",
+        "ground_truth_method": "activemq-core.src.main.java.org.apache.activemq.advisory.AdvisoryBroker.fastProducer",
+        "file_path": "activemq-core/src/main/java/org/apache/activemq/advisory/AdvisoryBroker.java",
+        "codebleu": {
+            "bleu": 0.5094226315604897,
+            "ngram": 0.5186915887850467,
+            "syntax": 0.0,
+            "dataflow": 0.7948717948717948,
+            "codebleu": 0.6076620050724437
+        }
+    },
+    {
+        "filename": "AMQ-2902.json",
+        "creation_time": "2010-09-07T11:34:15.000+0000",
+        "commit": "c4911bda043fa76d4051a58f600be9652130fedf",
+        "candidate_key": "VMTransport.stop",
+        "ground_truth_method": "activemq-core.src.main.java.org.apache.activemq.transport.vm.VMTransport.stop",
+        "file_path": "activemq-core/src/main/java/org/apache/activemq/transport/vm/VMTransport.java",
+        "codebleu": {
+            "bleu": 0.7551162473067916,
+            "ngram": 0.7554112554112554,
+            "syntax": 0.0,
+            "dataflow": 0.765625,
+            "codebleu": 0.7587175009060156
+        }
+    },
+    {
+        "filename": "AMQ-5384.json",
+        "creation_time": "2014-10-06T09:26:58.000+0000",
+        "commit": "ad770ea79d9eaf9e40216ed2e116b2544fcd8e3e",
+        "candidate_key": "JDBCMessageStore.removeMessage",
+        "ground_truth_method": "activemq-jdbc-store.src.main.java.org.apache.activemq.store.jdbc.JDBCMessageStore.removeMessage",
+        "file_path": "activemq-jdbc-store/src/main/java/org/apache/activemq/store/jdbc/JDBCMessageStore.java",
+        "codebleu": {
+            "bleu": 0.14781604398722928,
+            "ngram": 0.2727272727272727,
+            "syntax": 0.0,
+            "dataflow": 0.5714285714285714,
+            "codebleu": 0.3306572960476911
+        }
+    }
+]

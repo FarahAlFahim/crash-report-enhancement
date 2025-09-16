@@ -1,0 +1,186 @@
+{
+    "STORM-2443.json" : [
+        "org.apache.storm.daemon.worker.LogConfigManager",
+        "org.apache.storm.daemon.nimbus.Nimbus"
+    ],
+    "STORM-3213.json" : [
+        "org.apache.storm.daemon.nimbus.Nimbus"
+    ],
+    "STORM-2496.json" : [
+        "org.apache.storm.dependency.DependencyUploader"
+    ],
+    "STORM-2879.json" : [
+        "org.apache.storm.daemon.supervisor.Slot"
+    ],
+    "STORM-3012.json" : [
+        "org.apache.storm.pacemaker.PacemakerClient"
+    ],
+    "STORM-3073.json" : [
+        "org.apache.storm.executor.spout.SpoutExecutor",
+        "org.apache.storm.loadgen.LoadSpout",
+        "org.apache.storm.executor.Executor"
+    ],
+    "STORM-1672.json" : [
+        "org.apache.storm.stats.StatsUtil"
+    ],
+    "STORM-1520.json" : [
+        "org.apache.storm.utils.StormConnectionStateConverter"
+    ],
+    "STORM-1977.json" : [
+        "org.apache.storm.zookeeper.LeaderElectorImp",
+        "org.apache.storm.zookeeper.Zookeeper"
+    ],
+    "STORM-2988.json" : [
+        "org.apache.storm.metrics2.reporters.JmxStormReporter"
+    ],
+    "STORM-2321.json" : [
+        "org.apache.storm.blobstore.KeySequenceNumber",
+        "org.apache.storm.blobstore.BlobSynchronizer",
+        "org.apache.storm.blobstore.LocalFsBlobStore",
+        "org.apache.storm.daemon.nimbus.Nimbus",
+        "org.apache.storm.blobstore.BlobStoreUtils"
+    ],
+    "STORM-3013.json" : [
+        "org.apache.storm.kafka.spout.metrics.KafkaOffsetMetric",
+        "org.apache.storm.kafka.spout.KafkaSpout"
+    ],
+    "STORM-3117.json" : [
+        "org.apache.storm.generated.IllegalStateException",
+        "org.apache.storm.utils.WrappedIllegalStateException",
+        "org.apache.storm.generated.Nimbus"
+    ],
+    "STORM-2993.json" : [
+        "org.apache.storm.hdfs.bolt.AbstractHdfsBolt"
+    ],
+    "STORM-1540.json" : [
+        "org.apache.storm.serialization.SerializationFactory",
+        "org.apache.storm.trident.tuple.ConsList"
+    ],
+    "STORM-2275.json" : [
+        "org.apache.storm.daemon.nimbus.Nimbus"
+    ],
+    "STORM-2873.json" : [
+        "org.apache.storm.Config"
+    ],
+    "STORM-2279.json" : [
+        "org.apache.storm.utils.TupleUtils",
+        "org.apache.storm.daemon.GrouperFactory",
+        "org.apache.storm.daemon.nimbus.Nimbus"
+    ],
+    "STORM-3079.json" : [
+        "org.apache.storm.blobstore.BlobStoreAclHandler",
+        "org.apache.storm.utils.WrappedKeyNotFoundException",
+        "org.apache.storm.blobstore.KeySequenceNumber",
+        "org.apache.storm.daemon.drpc.DRPC",
+        "org.apache.storm.nimbus.StrictTopologyValidator",
+        "org.apache.storm.utils.Utils",
+        "org.apache.storm.LocalCluster",
+        "org.apache.storm.hdfs.blobstore.HdfsBlobStore",
+        "org.apache.storm.localizer.AsyncLocalizer",
+        "org.apache.storm.daemon.StormCommon",
+        "org.apache.storm.utils.WrappedAlreadyAliveException",
+        "org.apache.storm.utils.WrappedAuthorizationException",
+        "org.apache.storm.utils.WrappedNotAliveException",
+        "org.apache.storm.blobstore.LocalFsBlobStore",
+        "org.apache.storm.utils.WrappedHBExecutionException",
+        "org.apache.storm.daemon.nimbus.Nimbus",
+        "org.apache.storm.daemon.supervisor.Supervisor",
+        "org.apache.storm.utils.WrappedInvalidTopologyException",
+        "org.apache.storm.localizer.LocalizedResource",
+        "org.apache.storm.daemon.drpc.BlockingOutstandingRequest",
+        "org.apache.storm.utils.WrappedKeyAlreadyExistsException",
+        "org.apache.storm.blobstore.BlobStoreUtils",
+        "org.apache.storm.utils.WrappedDRPCExecutionException"
+    ],
+    "STORM-3096.json" : [
+        "org.apache.storm.daemon.nimbus.Nimbus"
+    ],
+    "STORM-1642.json" : [
+        "org.apache.storm.utils.Utils",
+        "org.apache.storm.messaging.netty.StormServerHandler",
+        "org.apache.storm.messaging.netty.NettyUncaughtExceptionHandler"
+    ],
+    "STORM-2700.json" : [
+        "org.apache.storm.localizer.Localizer",
+        "org.apache.storm.utils.ServerUtils"
+    ],
+    "STORM-1663.json" : [
+        "org.apache.storm.stats.StatsUtil"
+    ],
+    "STORM-2518.json" : [
+        "org.apache.storm.blobstore.BlobStoreAclHandler"
+    ],
+    "STORM-3124.json" : [
+        "org.apache.storm.pacemaker.PacemakerClient",
+        "org.apache.storm.messaging.netty.KerberosSaslClientHandler",
+        "org.apache.storm.pacemaker.PacemakerClientPool"
+    ],
+    "STORM-2095.json" : [
+        "org.apache.storm.blobstore.FileBlobStoreImpl"
+    ],
+    "STORM-2847.json" : [
+        "org.apache.storm.kafka.spout.ManualPartitionSubscription",
+        "org.apache.storm.kafka.spout.SingleTopicKafkaUnitSetupHelper",
+        "org.apache.storm.kafka.spout.KafkaSpout",
+        "org.apache.storm.kafka.spout.SpoutWithMockedConsumerSetupHelper"
+    ],
+    "STORM-1114.json" : [
+        "org.apache.storm.transactional.state.TransactionalState"
+    ],
+    "STORM-2811.json" : [
+        "org.apache.storm.topology.WindowedBoltExecutor",
+        "org.apache.storm.windowing.EvictionContext",
+        "org.apache.storm.windowing.WatermarkCountEvictionPolicy",
+        "org.apache.storm.st.wrapper.StormCluster",
+        "org.apache.storm.st.topology.window.SlidingTimeCorrectness",
+        "org.apache.storm.st.topology.window.SlidingWindowCorrectness",
+        "org.apache.storm.windowing.TimeEvictionPolicy",
+        "org.apache.storm.st.wrapper.TopoWrap",
+        "org.apache.storm.windowing.WindowManager",
+        "org.apache.storm.windowing.WatermarkTimeEvictionPolicy",
+        "org.apache.storm.windowing.EvictionPolicy",
+        "org.apache.storm.st.topology.window.TumblingTimeCorrectness",
+        "org.apache.storm.st.topology.window.TumblingWindowCorrectness"
+    ],
+    "STORM-2903.json" : [
+        "org.apache.storm.kafka.NullRecordTranslator",
+        "org.apache.storm.kafka.spout.KafkaSpout"
+    ],
+    "STORM-3168.json" : [
+        "org.apache.storm.localizer.AsyncLocalizer"
+    ],
+    "STORM-2986.json" : [
+        "org.apache.storm.daemon.logviewer.LogviewerServer"
+    ],
+    "STORM-2197.json" : [
+        "org.apache.storm.security.auth.ThriftClient"
+    ],
+    "STORM-1596.json" : [
+        "org.apache.storm.security.auth.kerberos.AutoTGT",
+        "org.apache.storm.security.auth.kerberos.AutoTGTKrb5LoginModule",
+        "org.apache.storm.security.auth.AuthUtils"
+    ],
+    "STORM-2142.json" : [
+        "org.apache.storm.executor.error.ReportErrorAndDie"
+    ],
+    "STORM-2400.json" : [
+        "org.apache.storm.utils.StormBoundedExponentialBackoffRetry",
+        "org.apache.storm.security.auth.TBackoffConnect"
+    ],
+    "STORM-3084.json" : [
+        "org.apache.storm.cluster.IStormClusterState"
+    ],
+    "STORM-3118.json" : [
+        "org.apache.storm.pacemaker.codec.ThriftEncoder"
+    ],
+    "STORM-2158.json" : [
+        "backtype.storm.security.auth.SimpleTransportPlugin"
+    ],
+    "STORM-2682.json" : [
+        "org.apache.storm.daemon.supervisor.Slot",
+        "org.apache.storm.daemon.supervisor.timer.UpdateBlobs"
+    ],
+    "STORM-3103.json" : [
+        "org.apache.storm.StormTimer"
+    ]
+}

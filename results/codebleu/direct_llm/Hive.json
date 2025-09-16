@@ -1,0 +1,692 @@
+[
+    {
+        "filename": "HIVE-16450.json",
+        "creation_time": "2017-04-14T13:59:12.000+0000",
+        "commit": "301e7c5eaba790687818a57d92b046f746bb3d76",
+        "candidate_key": "ObjectStore.getMTableColumnStatistics",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.ObjectStore.getMTableColumnStatistics",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/ObjectStore.java",
+        "codebleu": {
+            "bleu": 0.980549970922414,
+            "ngram": 0.9806094182825484,
+            "syntax": 0.0,
+            "dataflow": 0.9857142857142858,
+            "codebleu": 0.9822912249730826
+        }
+    },
+    {
+        "filename": "HIVE-13691.json",
+        "creation_time": "2016-05-04T23:40:03.000+0000",
+        "commit": "4959ff5bb7dc590e21f680b9d9be0f2270414309",
+        "candidate_key": "CompactionTxnHandler.markFailed",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.txn.CompactionTxnHandler.markFailed",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/txn/CompactionTxnHandler.java",
+        "codebleu": {
+            "bleu": 0.7161014289777557,
+            "ngram": 0.8079646017699115,
+            "syntax": 0.0,
+            "dataflow": 0.9767441860465116,
+            "codebleu": 0.8336034055980595
+        }
+    },
+    {
+        "filename": "HIVE-14898.json",
+        "creation_time": "2016-10-06T00:02:36.000+0000",
+        "commit": "489b37a545b383e883aa37f80ed10cfd8d213dee",
+        "candidate_key": "doPost",
+        "ground_truth_method": "service.src.java.org.apache.hive.service.cli.thrift.ThriftHttpServlet.doPost",
+        "file_path": "service/src/java/org/apache/hive/service/cli/thrift/ThriftHttpServlet.java",
+        "codebleu": {
+            "bleu": 0.9189107973868831,
+            "ngram": 0.9737991266375546,
+            "syntax": 0.0,
+            "dataflow": 0.9942528735632183,
+            "codebleu": 0.9623209325292186
+        }
+    },
+    {
+        "filename": "HIVE-1712.json",
+        "creation_time": "2010-10-14T17:17:44.000+0000",
+        "commit": "010b5fd54be5e7a9ff53007dd79ad4479a786d3b",
+        "candidate_key": "MetaStoreUtils.getSchema",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.MetaStoreUtils.getSchema",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/MetaStoreUtils.java",
+        "codebleu": {
+            "bleu": 0.01028588230211804,
+            "ngram": 0.013131313131313131,
+            "syntax": 0.0,
+            "dataflow": 0.12631578947368421,
+            "codebleu": 0.04991099496903846
+        }
+    },
+    {
+        "filename": "HIVE-12608.json",
+        "creation_time": "2015-12-07T21:26:01.000+0000",
+        "commit": "c3f4ab44d07b7de4ae67cc92afa4dedf9de17133",
+        "candidate_key": "getStructFieldTypeInfo",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.io.parquet.convert.HiveStructConverter.getStructFieldTypeInfo",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/io/parquet/convert/HiveStructConverter.java",
+        "codebleu": {
+            "bleu": 0.5245332777938174,
+            "ngram": 0.7570093457943925,
+            "syntax": 0.0,
+            "dataflow": 0.7941176470588235,
+            "codebleu": 0.6918867568823444
+        }
+    },
+    {
+        "filename": "HIVE-5199.json",
+        "creation_time": "2013-09-03T20:40:29.000+0000",
+        "commit": "e2747654fdd3bc2e713d8cf20d2278340beeb0c1",
+        "candidate_key": "ObjectInspectorConverters.getConverter",
+        "ground_truth_method": "serde.src.java.org.apache.hadoop.hive.serde2.objectinspector.ObjectInspectorConverters.getConverter",
+        "file_path": "serde/src/java/org/apache/hadoop/hive/serde2/objectinspector/ObjectInspectorConverters.java",
+        "codebleu": {
+            "bleu": 0.21740049461006597,
+            "ngram": 0.3325581395348837,
+            "syntax": 0.0,
+            "dataflow": 0.43859649122807015,
+            "codebleu": 0.3295183751243399
+        }
+    },
+    {
+        "filename": "HIVE-14303.json",
+        "creation_time": "2016-07-21T03:16:20.000+0000",
+        "commit": "529814e3d0bfaefdf3f1625d014d9e05149f5ccf",
+        "candidate_key": "CommonJoinOperator.checkAndGenObject",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.CommonJoinOperator.checkAndGenObject",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/CommonJoinOperator.java",
+        "codebleu": {
+            "bleu": 0.9284214866523876,
+            "ngram": 0.9472361809045227,
+            "syntax": 0.0,
+            "dataflow": 0.9230769230769231,
+            "codebleu": 0.9329115302112778
+        }
+    },
+    {
+        "filename": "HIVE-12360.json",
+        "creation_time": "2015-11-06T18:04:00.000+0000",
+        "commit": "903a08623e2ddf159ad87228039fb5ebb7d91802",
+        "candidate_key": "RecordReaderImpl.readRowIndex",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.io.orc.MetadataReader.readRowIndex",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/io/orc/MetadataReader.java",
+        "codebleu": {
+            "bleu": 0.01876606936273753,
+            "ngram": 0.13800904977375567,
+            "syntax": 0.0,
+            "dataflow": 0.5319148936170213,
+            "codebleu": 0.2295633375845048
+        }
+    },
+    {
+        "filename": "HIVE-6205.json",
+        "creation_time": "2014-01-15T07:34:15.000+0000",
+        "commit": "4d62b4621871c79de3210157dc33021d746b5b2b",
+        "candidate_key": "doAuthorization",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.Driver.doAuthorization",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/Driver.java",
+        "codebleu": {
+            "bleu": 0.9180834353283167,
+            "ngram": 0.973080317740512,
+            "syntax": 0.0,
+            "dataflow": 0.9838709677419355,
+            "codebleu": 0.9583449069369212
+        }
+    },
+    {
+        "filename": "HIVE-15309.json",
+        "creation_time": "2016-11-29T21:56:28.000+0000",
+        "commit": "54b3abf5246765e9b173033bc9b16aec9965b00d",
+        "candidate_key": "OrcRawRecordMerger.getLastFlushLength",
+        "ground_truth_method": "orc.src.java.org.apache.orc.impl.OrcAcidUtils.getLastFlushLength",
+        "file_path": "orc/src/java/org/apache/orc/impl/OrcAcidUtils.java",
+        "codebleu": {
+            "bleu": 0.05647911848198254,
+            "ngram": 0.08762886597938144,
+            "syntax": 0.0,
+            "dataflow": 0.25,
+            "codebleu": 0.131369328153788
+        }
+    },
+    {
+        "filename": "HIVE-18429.json",
+        "creation_time": "2018-01-10T20:45:15.000+0000",
+        "commit": "fe3190d19fa1324a6835692e71f747e6cb37c7d1",
+        "candidate_key": "CompactorOutputCommitter.commitJob",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.txn.compactor.CompactorMR.commitJob",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/txn/compactor/CompactorMR.java",
+        "codebleu": {
+            "bleu": 0.011586708719539015,
+            "ngram": 0.1581196581196581,
+            "syntax": 0.0,
+            "dataflow": 0.45,
+            "codebleu": 0.20656878894639902
+        }
+    },
+    {
+        "filename": "HIVE-6301.json",
+        "creation_time": "2014-01-24T01:42:18.000+0000",
+        "commit": "0b78760e29b8518ade57e97760c18fff8da91ec6",
+        "candidate_key": "extract",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.udf.UDFJson.extract",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/udf/UDFJson.java",
+        "codebleu": {
+            "bleu": 0.8851052224537538,
+            "ngram": 0.9300411522633745,
+            "syntax": 0.0,
+            "dataflow": 0.975609756097561,
+            "codebleu": 0.9302520436048964
+        }
+    },
+    {
+        "filename": "HIVE-8295.json",
+        "creation_time": "2014-09-29T21:16:32.000+0000",
+        "commit": "db69d9bfdfd1d6a11363abf7a66b97619af0dba7",
+        "candidate_key": "getPartitionsViaSqlFilterInternal",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.MetaStoreDirectSql.getPartitionsViaSqlFilterInternal",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/MetaStoreDirectSql.java",
+        "codebleu": {
+            "bleu": 0.49130242078927294,
+            "ngram": 0.49291784702549574,
+            "syntax": 0.0,
+            "dataflow": 0.6103286384976526,
+            "codebleu": 0.5315163021041405
+        }
+    },
+    {
+        "filename": "HIVE-11540.json",
+        "creation_time": "2015-08-12T23:12:18.000+0000",
+        "commit": "26910c8aaaf8fa4e183e05d76d45bde0a353f04f",
+        "candidate_key": "CompactorMR.run",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.txn.compactor.CompactorMR.run",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/txn/compactor/CompactorMR.java",
+        "codebleu": {
+            "bleu": 0.1592544296934015,
+            "ngram": 0.4016393442622951,
+            "syntax": 0.0,
+            "dataflow": 0.4645161290322581,
+            "codebleu": 0.3418033009959849
+        }
+    },
+    {
+        "filename": "HIVE-7623.json",
+        "creation_time": "2014-08-05T23:58:27.000+0000",
+        "commit": "977938d3b47a47f80e1bd59c768a99926a0b8246",
+        "candidate_key": "alterPartition",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.HiveAlterHandler.alterPartition",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/HiveAlterHandler.java",
+        "codebleu": {
+            "bleu": 0.9905036671640193,
+            "ngram": 0.9920823436262867,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.994195336930102
+        }
+    },
+    {
+        "filename": "HIVE-7009.json",
+        "creation_time": "2014-05-02T20:50:24.000+0000",
+        "commit": "6ded60a474d2fbd3287a79de8a84c8becc2a1c81",
+        "candidate_key": "getDefaultDestDir",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.tez.DagUtils.getDefaultDestDir",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/tez/DagUtils.java",
+        "codebleu": {
+            "bleu": 0.8512124107051735,
+            "ngram": 0.8516129032258064,
+            "syntax": 0.0,
+            "dataflow": 0.8113207547169812,
+            "codebleu": 0.8380486895493202
+        }
+    },
+    {
+        "filename": "HIVE-4018.json",
+        "creation_time": "2013-02-13T09:02:20.000+0000",
+        "commit": "62e1181fb4291ba18a83a33253f89951c0a326df",
+        "candidate_key": "MapJoinOperator.loadHashTable",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.MapJoinOperator.loadHashTable",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/MapJoinOperator.java",
+        "codebleu": {
+            "bleu": 0.759320538999244,
+            "ngram": 0.7604456824512534,
+            "syntax": 0.0,
+            "dataflow": 0.8333333333333334,
+            "codebleu": 0.7843665182612769
+        }
+    },
+    {
+        "filename": "HIVE-9755.json",
+        "creation_time": "2015-02-23T20:50:43.000+0000",
+        "commit": "b6fc6df73f61a2a336471015a73c9eb888fbfac5",
+        "candidate_key": "GenericUDAFnGrams$GenericUDAFnGramEvaluator.merge",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.udf.generic.GenericUDAFnGrams.merge",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/udf/generic/GenericUDAFnGrams.java",
+        "codebleu": {
+            "bleu": 0.08658193069945654,
+            "ngram": 0.14705882352941177,
+            "syntax": 0.0,
+            "dataflow": 0.44680851063829785,
+            "codebleu": 0.22681642162238871
+        }
+    },
+    {
+        "filename": "HIVE-19130.json",
+        "creation_time": "2018-04-09T10:18:33.000+0000",
+        "commit": "150e35167ab49135fd808a987bfa7fb582a531ba",
+        "candidate_key": "DDLTask.dropPartitions",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.DDLTask.dropPartitions",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/DDLTask.java",
+        "codebleu": {
+            "bleu": 0.2043854954416125,
+            "ngram": 0.6561338289962825,
+            "syntax": 0.0,
+            "dataflow": 0.8636363636363636,
+            "codebleu": 0.5747185626914195
+        }
+    },
+    {
+        "filename": "HIVE-13090.json",
+        "creation_time": "2016-02-18T21:58:48.000+0000",
+        "commit": "0596951d2295cf42c63e88a0f805a3db0188b01b",
+        "candidate_key": "ZooKeeperTokenStore.getToken",
+        "ground_truth_method": "shims.common.src.main.java.org.apache.hadoop.hive.thrift.ZooKeeperTokenStore.getToken",
+        "file_path": "shims/common/src/main/java/org/apache/hadoop/hive/thrift/ZooKeeperTokenStore.java",
+        "codebleu": {
+            "bleu": 0.609287040394867,
+            "ngram": 0.6149425287356322,
+            "syntax": 0.0,
+            "dataflow": 0.8333333333333334,
+            "codebleu": 0.6858543008212775
+        }
+    },
+    {
+        "filename": "HIVE-5664.json",
+        "creation_time": "2013-10-28T03:50:29.000+0000",
+        "commit": "9d79058f488b48b6644a93fe59a2c890bfd1dcbe",
+        "candidate_key": "HiveMetaStoreClient.dropDatabase",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.HiveMetaStoreClient.dropDatabase",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/HiveMetaStoreClient.java",
+        "codebleu": {
+            "bleu": 0.06312041945772764,
+            "ngram": 0.07068062827225131,
+            "syntax": 0.0,
+            "dataflow": 0.21568627450980393,
+            "codebleu": 0.11649577407992762
+        }
+    },
+    {
+        "filename": "HIVE-14714.json",
+        "creation_time": "2016-09-07T15:46:07.000+0000",
+        "commit": "96508d341fbae4d9ff4268bdcff4849893d9c277",
+        "candidate_key": "SparkClientImpl$Redirector.run",
+        "ground_truth_method": "spark-client.src.main.java.org.apache.hive.spark.client.SparkClientImpl.run",
+        "file_path": "spark-client/src/main/java/org/apache/hive/spark/client/SparkClientImpl.java",
+        "codebleu": {
+            "bleu": 0.004598757214908474,
+            "ngram": 0.007936507936507936,
+            "syntax": 0.0,
+            "dataflow": 0.046511627906976744,
+            "codebleu": 0.01968229768613105
+        }
+    },
+    {
+        "filename": "HIVE-6984.json",
+        "creation_time": "2014-04-28T23:08:43.000+0000",
+        "commit": "b1f556296405814e6b492660c8f03bcb9d892d4c",
+        "candidate_key": "TableScanOperator.gatherStats",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.TableScanOperator.gatherStats",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/TableScanOperator.java",
+        "codebleu": {
+            "bleu": 0.9010659540327361,
+            "ngram": 0.9071310116086235,
+            "syntax": 0.0,
+            "dataflow": 0.937984496124031,
+            "codebleu": 0.9153938205884635
+        }
+    },
+    {
+        "filename": "HIVE-10736.json",
+        "creation_time": "2015-05-18T03:25:45.000+0000",
+        "commit": "52635cbe1363e6f975b616b946871430e6fca781",
+        "candidate_key": "TezSessionPoolManager.stop",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.tez.TezSessionPoolManager.stop",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/tez/TezSessionPoolManager.java",
+        "codebleu": {
+            "bleu": 0.47575297246899684,
+            "ngram": 0.4887640449438202,
+            "syntax": 0.0,
+            "dataflow": 0.5806451612903226,
+            "codebleu": 0.5150540595677131
+        }
+    },
+    {
+        "filename": "HIVE-7710.json",
+        "creation_time": "2014-08-13T10:46:32.000+0000",
+        "commit": "add4b616b6ba409e0bd4fbe25994a13a31d350e1",
+        "candidate_key": "HiveAlterHandler.alterTable",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.HiveAlterHandler.alterTable",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/HiveAlterHandler.java",
+        "codebleu": {
+            "bleu": 0.9653813747126223,
+            "ngram": 0.9846198491004062,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.9833337412710095
+        }
+    },
+    {
+        "filename": "HIVE-8735.json",
+        "creation_time": "2014-11-04T22:20:02.000+0000",
+        "commit": "24e6b64c546f95fdb93734a639e521f91f0433f1",
+        "candidate_key": "JDBCStatsPublisher.publishStat",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.stats.jdbc.JDBCStatsPublisher.publishStat",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/stats/jdbc/JDBCStatsPublisher.java",
+        "codebleu": {
+            "bleu": 0.8806211657835381,
+            "ngram": 0.8921259842519685,
+            "syntax": 0.0,
+            "dataflow": 0.9296875,
+            "codebleu": 0.9008115500118354
+        }
+    },
+    {
+        "filename": "HIVE-13209.json",
+        "creation_time": "2016-03-04T21:39:50.000+0000",
+        "commit": "109a3a3c1760c9bbb0085804a1e0ebaea9f1b567",
+        "candidate_key": "HiveMetaStore$HMSHandler.get_delegation_token",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.HiveMetaStore.get_delegation_token",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/HiveMetaStore.java",
+        "codebleu": {
+            "bleu": 0.021335938408920885,
+            "ngram": 0.0536480686695279,
+            "syntax": 0.0,
+            "dataflow": 0.19298245614035087,
+            "codebleu": 0.08932215440626655
+        }
+    },
+    {
+        "filename": "HIVE-11470.json",
+        "creation_time": "2015-08-05T18:45:26.000+0000",
+        "commit": "0b96c9b7662d4326b02af5b2d84321978e65ea46",
+        "candidate_key": "DynamicPartitionFileRecordWriterContainer.getLocalFileWriter",
+        "ground_truth_method": "hcatalog.core.src.main.java.org.apache.hive.hcatalog.mapreduce.DynamicPartitionFileRecordWriterContainer.getLocalFileWriter",
+        "file_path": "hcatalog/core/src/main/java/org/apache/hive/hcatalog/mapreduce/DynamicPartitionFileRecordWriterContainer.java",
+        "codebleu": {
+            "bleu": 0.9553840667004989,
+            "ngram": 0.9554848966613673,
+            "syntax": 0.0,
+            "dataflow": 0.9902912621359223,
+            "codebleu": 0.9670534084992628
+        }
+    },
+    {
+        "filename": "HIVE-10559.json",
+        "creation_time": "2015-04-30T21:12:40.000+0000",
+        "commit": "6a2993912730702edb68dd37acee7ec0af4e6d19",
+        "candidate_key": "RemoveDynamicPruningBySize.process",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.optimizer.RemoveDynamicPruningBySize.process",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/optimizer/RemoveDynamicPruningBySize.java",
+        "codebleu": {
+            "bleu": 0.7055463834178815,
+            "ngram": 0.7072538860103627,
+            "syntax": 0.0,
+            "dataflow": 0.8955223880597015,
+            "codebleu": 0.7694408858293151
+        }
+    },
+    {
+        "filename": "HIVE-4723.json",
+        "creation_time": "2013-06-12T20:37:55.000+0000",
+        "commit": "b3881bdbe23e40af4d31ce0d74a7932da3fdba82",
+        "candidate_key": "addTablePartsOutputs",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.parse.DDLSemanticAnalyzer.addTablePartsOutputs",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/parse/DDLSemanticAnalyzer.java",
+        "codebleu": {
+            "bleu": 0.04682671125478729,
+            "ngram": 0.05220883534136546,
+            "syntax": 0.0,
+            "dataflow": 0.19047619047619047,
+            "codebleu": 0.09650391235744774
+        }
+    },
+    {
+        "filename": "HIVE-4975.json",
+        "creation_time": "2013-08-01T16:21:38.000+0000",
+        "commit": "797c923a584d8f7abf20ae3ab199a78b4132edaf",
+        "candidate_key": "UnionStructObjectInspector.getStructFieldData",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.io.orc.OrcStruct.getStructFieldData",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/io/orc/OrcStruct.java",
+        "codebleu": {
+            "bleu": 0.05884681220815285,
+            "ngram": 0.07551020408163266,
+            "syntax": 0.0,
+            "dataflow": 0.18604651162790697,
+            "codebleu": 0.10680117597256415
+        }
+    },
+    {
+        "filename": "HIVE-18918.json",
+        "creation_time": "2018-03-09T00:47:55.000+0000",
+        "commit": "34eb9ed104af2b712301a6d6fa8a14fe3f9afd34",
+        "candidate_key": "CompactorMR.launchCompactionJob",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.txn.compactor.CompactorMR.launchCompactionJob",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/txn/compactor/CompactorMR.java",
+        "codebleu": {
+            "bleu": 0.859176346889683,
+            "ngram": 0.8594704684317719,
+            "syntax": 0.0,
+            "dataflow": 0.9805825242718447,
+            "codebleu": 0.8997431131977665
+        }
+    },
+    {
+        "filename": "HIVE-8107.json",
+        "creation_time": "2014-09-15T19:49:09.000+0000",
+        "commit": "2c0885d122366f5ce73cdd3d558340c460400b86",
+        "candidate_key": "UpdateDeleteSemanticAnalyzer.reparseAndSuperAnalyze",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.parse.UpdateDeleteSemanticAnalyzer.reparseAndSuperAnalyze",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/parse/UpdateDeleteSemanticAnalyzer.java",
+        "codebleu": {
+            "bleu": 0.8794129762205072,
+            "ngram": 0.9619498148909914,
+            "syntax": 0.0,
+            "dataflow": 0.9972222222222222,
+            "codebleu": 0.9461950044445736
+        }
+    },
+    {
+        "filename": "HIVE-1326.json",
+        "creation_time": "2010-04-25T20:50:54.000+0000",
+        "commit": "71be0ef3430c80594cd6bda9959f8575ebe0c868",
+        "candidate_key": "RowContainer.spillBlock",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.persistence.RowContainer.spillBlock",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/persistence/RowContainer.java",
+        "codebleu": {
+            "bleu": 0.7922362422467882,
+            "ngram": 0.8840399002493765,
+            "syntax": 0.0,
+            "dataflow": 0.9042553191489362,
+            "codebleu": 0.8601771538817002
+        }
+    },
+    {
+        "filename": "HIVE-9055.json",
+        "creation_time": "2014-12-09T19:51:18.000+0000",
+        "commit": "4fea407ed131fbe05eed42099aaeb1c6696424e9",
+        "candidate_key": "GenTezWork.process",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.parse.GenTezWork.process",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/parse/GenTezWork.java",
+        "codebleu": {
+            "bleu": 0.947860172605906,
+            "ngram": 0.9480189637656621,
+            "syntax": 0.0,
+            "dataflow": 0.9743589743589743,
+            "codebleu": 0.9567460369101808
+        }
+    },
+    {
+        "filename": "HIVE-13856.json",
+        "creation_time": "2016-05-25T21:50:49.000+0000",
+        "commit": "383650820d98ebb2806d966fabb97cbc36b1da27",
+        "candidate_key": "TxnHandler.openTxns",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.txn.TxnHandler.openTxns",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/txn/TxnHandler.java",
+        "codebleu": {
+            "bleu": 0.44712581452675176,
+            "ngram": 0.8205317577548006,
+            "syntax": 0.0,
+            "dataflow": 0.9361702127659575,
+            "codebleu": 0.7346092616825033
+        }
+    },
+    {
+        "filename": "HIVE-6990.json",
+        "creation_time": "2014-04-30T04:24:25.000+0000",
+        "commit": "453f44cdbdc88d94b1eb98610048c0857f9d0cd3",
+        "candidate_key": "MetaStoreDirectSql.getPartitionsViaSqlFilterInternal",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.MetaStoreDirectSql.getPartitionsViaSqlFilterInternal",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/MetaStoreDirectSql.java",
+        "codebleu": {
+            "bleu": 0.16183759532175868,
+            "ngram": 0.16321591825759613,
+            "syntax": 0.0,
+            "dataflow": 0.407673860911271,
+            "codebleu": 0.24424245816354193
+        }
+    },
+    {
+        "filename": "HIVE-10816.json",
+        "creation_time": "2015-05-25T08:08:37.000+0000",
+        "commit": "0e47786f54b2b61ce5c8dec4f962e8cd4ca5ba4d",
+        "candidate_key": "ExecDriver.handleSampling",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.mr.ExecDriver.handleSampling",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/mr/ExecDriver.java",
+        "codebleu": {
+            "bleu": 0.8305903672862114,
+            "ngram": 0.8314350797266514,
+            "syntax": 0.0,
+            "dataflow": 0.9035087719298246,
+            "codebleu": 0.8551780729808958
+        }
+    },
+    {
+        "filename": "HIVE-11102.json",
+        "creation_time": "2015-06-24T22:54:55.000+0000",
+        "commit": "023c06c17d7e03ba0458ed2bac6b475102150d77",
+        "candidate_key": "getColumnIndicesFromNames",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.io.orc.ReaderImpl.getColumnIndicesFromNames",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/io/orc/ReaderImpl.java",
+        "codebleu": {
+            "bleu": 0.8268474970128965,
+            "ngram": 0.9150141643059491,
+            "syntax": 0.0,
+            "dataflow": 0.9178082191780822,
+            "codebleu": 0.8865566268323093
+        }
+    },
+    {
+        "filename": "HIVE-8771.json",
+        "creation_time": "2014-11-07T00:30:25.000+0000",
+        "commit": "5156b110447c9166e3408dfde21df2a7b7d8fdd7",
+        "candidate_key": "AbstractFileMergeOperator.closeOp",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.AbstractFileMergeOperator.closeOp",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/AbstractFileMergeOperator.java",
+        "codebleu": {
+            "bleu": 0.706027887209963,
+            "ngram": 0.7068493150684931,
+            "syntax": 0.0,
+            "dataflow": 0.7534246575342466,
+            "codebleu": 0.7221006199375675
+        }
+    },
+    {
+        "filename": "HIVE-8766.json",
+        "creation_time": "2014-11-06T22:08:43.000+0000",
+        "commit": "aed61b869f9129b6096a768636757b9f19e672e7",
+        "candidate_key": "RetryingHMSHandler.invoke",
+        "ground_truth_method": "metastore.src.java.org.apache.hadoop.hive.metastore.RetryingHMSHandler.invoke",
+        "file_path": "metastore/src/java/org/apache/hadoop/hive/metastore/RetryingHMSHandler.java",
+        "codebleu": {
+            "bleu": 0.6328949216586864,
+            "ngram": 0.8855185909980431,
+            "syntax": 0.0,
+            "dataflow": 0.9883720930232558,
+            "codebleu": 0.8355952018933284
+        }
+    },
+    {
+        "filename": "HIVE-1547.json",
+        "creation_time": "2010-08-17T02:09:54.000+0000",
+        "commit": "4725e62a911b5af88e13b33a17117383f3744dd2",
+        "candidate_key": "DDLTask.unarchive",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.DDLTask.unarchive",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/DDLTask.java",
+        "codebleu": {
+            "bleu": 0.9912623024431275,
+            "ngram": 0.9966239027683997,
+            "syntax": 0.0,
+            "dataflow": 1.0,
+            "codebleu": 0.9959620684038424
+        }
+    },
+    {
+        "filename": "HIVE-17274.json",
+        "creation_time": "2017-08-08T22:20:33.000+0000",
+        "commit": "0f7951b12c0bfe16f6a11f317005d99887e3ef94",
+        "candidate_key": "RowContainer.setupWriter",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.exec.persistence.RowContainer.setupWriter",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/exec/persistence/RowContainer.java",
+        "codebleu": {
+            "bleu": 0.8357055207978028,
+            "ngram": 0.8602150537634409,
+            "syntax": 0.0,
+            "dataflow": 0.898876404494382,
+            "codebleu": 0.8649323263518752
+        }
+    },
+    {
+        "filename": "HIVE-11441.json",
+        "creation_time": "2015-08-03T17:42:24.000+0000",
+        "commit": "2ccd061691cd52ed9fa341b61590edb2c022b031",
+        "candidate_key": "DDLSemanticAnalyzer.analyzeAlterTableLocation",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.parse.DDLSemanticAnalyzer.analyzeAlterTableLocation",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/parse/DDLSemanticAnalyzer.java",
+        "codebleu": {
+            "bleu": 0.3193541899455924,
+            "ngram": 0.5,
+            "syntax": 0.0,
+            "dataflow": 0.6808510638297872,
+            "codebleu": 0.5000684179251265
+        }
+    },
+    {
+        "filename": "HIVE-9141.json",
+        "creation_time": "2014-12-17T07:23:05.000+0000",
+        "commit": "19bc7f113a98a592a6721fd54fbcfb73ad5979a3",
+        "candidate_key": "GenTezWork.process",
+        "ground_truth_method": "ql.src.java.org.apache.hadoop.hive.ql.parse.GenTezWork.process",
+        "file_path": "ql/src/java/org/apache/hadoop/hive/ql/parse/GenTezWork.java",
+        "codebleu": {
+            "bleu": 0.9219657196547606,
+            "ngram": 0.9221516872702974,
+            "syntax": 0.0,
+            "dataflow": 0.9764705882352941,
+            "codebleu": 0.940195998386784
+        }
+    },
+    {
+        "filename": "HIVE-14784.json",
+        "creation_time": "2016-09-17T02:00:28.000+0000",
+        "commit": "0562efce642e70f1ac69eae6cca8c0a63230bafd",
+        "candidate_key": "Operation.createOperationLog",
+        "ground_truth_method": "service.src.java.org.apache.hive.service.cli.operation.Operation.createOperationLog",
+        "file_path": "service/src/java/org/apache/hive/service/cli/operation/Operation.java",
+        "codebleu": {
+            "bleu": 0.7128416109285829,
+            "ngram": 0.8403990024937655,
+            "syntax": 0.0,
+            "dataflow": 0.9487179487179487,
+            "codebleu": 0.833986187380099
+        }
+    }
+]

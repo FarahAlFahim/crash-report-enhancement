@@ -1,0 +1,182 @@
+[
+    {
+        "filename": "STORM-2443.json",
+        "creation_time": "2017-03-31T08:09:04.000+0000",
+        "commit": "9d62c13aad92daffa6af483306af35fc5609d89d",
+        "candidate_key": "setLogConfig",
+        "ground_truth_method": "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.setLogConfig",
+        "file_path": "storm-server/src/main/java/org/apache/storm/daemon/nimbus/Nimbus.java",
+        "codebleu": {
+            "bleu": 0.0029758362526591964,
+            "ngram": 0.13924050632911392,
+            "syntax": 0.0,
+            "dataflow": 0.3,
+            "codebleu": 0.1474054475272577
+        }
+    },
+    {
+        "filename": "STORM-3012.json",
+        "creation_time": "2018-03-27T15:30:32.000+0000",
+        "commit": "4bca4ad8d02ab05aab729d56b6393261a59c0601",
+        "candidate_key": "PacemakerClient.send",
+        "ground_truth_method": "storm-client.src.jvm.org.apache.storm.pacemaker.PacemakerClient.send",
+        "file_path": "storm-client/src/jvm/org/apache/storm/pacemaker/PacemakerClient.java",
+        "codebleu": {
+            "bleu": 0.797142934505947,
+            "ngram": 0.8242677824267782,
+            "syntax": 0.0,
+            "dataflow": 0.855072463768116,
+            "codebleu": 0.825494393566947
+        }
+    },
+    {
+        "filename": "STORM-1672.json",
+        "creation_time": "2016-03-31T19:24:18.000+0000",
+        "commit": "6763f71b3e4f1d8e5b8f1f05b61f622db0969642",
+        "candidate_key": "aggPreMergeCompPageBolt",
+        "ground_truth_method": "storm-core.src.jvm.org.apache.storm.stats.StatsUtil.aggPreMergeCompPageBolt",
+        "file_path": "storm-core/src/jvm/org/apache/storm/stats/StatsUtil.java",
+        "codebleu": {
+            "bleu": 0.7651025543788349,
+            "ngram": 0.7653276955602537,
+            "syntax": 0.0,
+            "dataflow": 0.7,
+            "codebleu": 0.743476749979696
+        }
+    },
+    {
+        "filename": "STORM-2321.json",
+        "creation_time": "2017-01-24T04:18:07.000+0000",
+        "commit": "5b31d5f8a61851fab26a28e249089ada6ff26231",
+        "candidate_key": "NimbusBlobStore.createStateInZookeeper",
+        "ground_truth_method": "storm-core.src.jvm.org.apache.storm.daemon.nimbus.Nimbus.createStateInZookeeper",
+        "file_path": "storm-core/src/jvm/org/apache/storm/daemon/nimbus/Nimbus.java",
+        "codebleu": {
+            "bleu": 0.12384153478625003,
+            "ngram": 0.183206106870229,
+            "syntax": 0.0,
+            "dataflow": 0.3902439024390244,
+            "codebleu": 0.23243051469850112
+        }
+    },
+    {
+        "filename": "STORM-2275.json",
+        "creation_time": "2017-01-04T23:21:06.000+0000",
+        "commit": "2b82fc8b5328fd4fbd680998c6051d9496c102d7",
+        "candidate_key": "Nimbus.transition",
+        "ground_truth_method": "storm-core.src.jvm.org.apache.storm.daemon.nimbus.Nimbus.transition",
+        "file_path": "storm-core/src/jvm/org/apache/storm/daemon/nimbus/Nimbus.java",
+        "codebleu": {
+            "bleu": 0.012962768490885016,
+            "ngram": 0.02830188679245283,
+            "syntax": 0.0,
+            "dataflow": 0.10526315789473684,
+            "codebleu": 0.04884260439269156
+        }
+    },
+    {
+        "filename": "STORM-2279.json",
+        "creation_time": "2017-01-05T20:59:11.000+0000",
+        "commit": "bf5373d879616e44dbde38d2720e80e52c76318a",
+        "candidate_key": "Nimbus.getComponentPageInfo",
+        "ground_truth_method": "storm-core.src.jvm.org.apache.storm.daemon.nimbus.Nimbus.getComponentPageInfo",
+        "file_path": "storm-core/src/jvm/org/apache/storm/daemon/nimbus/Nimbus.java",
+        "codebleu": {
+            "bleu": 0.0016912714811705121,
+            "ngram": 0.1592920353982301,
+            "syntax": 0.0,
+            "dataflow": 0.525,
+            "codebleu": 0.22866110229313352
+        }
+    },
+    {
+        "filename": "STORM-3079.json",
+        "creation_time": "2018-05-17T19:29:10.000+0000",
+        "commit": "109c2153c70a8f6f7e68a8710566c0bfd38142ee",
+        "candidate_key": "LocalFsBlobStore.getStoredBlobMeta",
+        "ground_truth_method": "storm-server.src.main.java.org.apache.storm.blobstore.LocalFsBlobStore.getStoredBlobMeta",
+        "file_path": "storm-server/src/main/java/org/apache/storm/blobstore/LocalFsBlobStore.java",
+        "codebleu": {
+            "bleu": 0.8931700323390601,
+            "ngram": 0.8934010152284264,
+            "syntax": 0.0,
+            "dataflow": 0.8936170212765957,
+            "codebleu": 0.8933960229480273
+        }
+    },
+    {
+        "filename": "STORM-2700.json",
+        "creation_time": "2017-08-21T14:09:50.000+0000",
+        "commit": "2be883c1eb899568fb7e285da4b46dcbf1a1581b",
+        "candidate_key": "Localizer.downloadBlob",
+        "ground_truth_method": "storm-server.src.main.java.org.apache.storm.localizer.Localizer.downloadBlob",
+        "file_path": "storm-server/src/main/java/org/apache/storm/localizer/Localizer.java",
+        "codebleu": {
+            "bleu": 0.9725772441334571,
+            "ngram": 0.9726027397260274,
+            "syntax": 0.0,
+            "dataflow": 0.9596412556053812,
+            "codebleu": 0.9682737464882886
+        }
+    },
+    {
+        "filename": "STORM-2518.json",
+        "creation_time": "2017-05-17T06:26:37.000+0000",
+        "commit": "18170db7ee6ff08c74ab91e72e3eb5812ae78595",
+        "candidate_key": "BlobStoreAclHandler.fixACLsForUser",
+        "ground_truth_method": "storm-client.src.jvm.org.apache.storm.blobstore.BlobStoreAclHandler.fixACLsForUser",
+        "file_path": "storm-client/src/jvm/org/apache/storm/blobstore/BlobStoreAclHandler.java",
+        "codebleu": {
+            "bleu": 0.373289123058268,
+            "ngram": 0.7637795275590551,
+            "syntax": 0.0,
+            "dataflow": 0.9375,
+            "codebleu": 0.6915228835391076
+        }
+    },
+    {
+        "filename": "STORM-3124.json",
+        "creation_time": "2018-06-27T13:28:01.000+0000",
+        "commit": "7893f432a812fc7562de735852dfc80d0be9025f",
+        "candidate_key": "PacemakerClientPool.sendAll",
+        "ground_truth_method": "storm-client.src.jvm.org.apache.storm.pacemaker.PacemakerClientPool.sendAll",
+        "file_path": "storm-client/src/jvm/org/apache/storm/pacemaker/PacemakerClientPool.java",
+        "codebleu": {
+            "bleu": 0.5213724787491019,
+            "ngram": 0.5232558139534884,
+            "syntax": 0.0,
+            "dataflow": 0.6785714285714286,
+            "codebleu": 0.5743999070913396
+        }
+    },
+    {
+        "filename": "STORM-2847.json",
+        "creation_time": "2017-12-07T16:51:01.000+0000",
+        "commit": "45ec11bbb5f4b1e38db9beb03219e7a67c700bd8",
+        "candidate_key": "commitOffsetsForAckedTuples",
+        "ground_truth_method": "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.commitOffsetsForAckedTuples",
+        "file_path": "external/storm-kafka-client/src/main/java/org/apache/storm/kafka/spout/KafkaSpout.java",
+        "codebleu": {
+            "bleu": 0.8930070537150113,
+            "ngram": 0.911965811965812,
+            "syntax": 0.0,
+            "dataflow": 0.972972972972973,
+            "codebleu": 0.9259819462179321
+        }
+    },
+    {
+        "filename": "STORM-2197.json",
+        "creation_time": "2016-11-10T03:57:30.000+0000",
+        "commit": "07ba34f0c53ea6ff0389cc1b57b933943ddae9d1",
+        "candidate_key": "ThriftClient.reconnect",
+        "ground_truth_method": "storm-core.src.jvm.org.apache.storm.security.auth.ThriftClient.reconnect",
+        "file_path": "storm-core/src/jvm/org/apache/storm/security/auth/ThriftClient.java",
+        "codebleu": {
+            "bleu": 0.05845830421938488,
+            "ngram": 0.34065934065934067,
+            "syntax": 0.0,
+            "dataflow": 0.4482758620689655,
+            "codebleu": 0.28246450231589704
+        }
+    }
+]

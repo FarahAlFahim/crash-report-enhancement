@@ -1,0 +1,275 @@
+{
+    "STORM-2443.json": [
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.setLogConfig",
+        "storm-client.src.jvm.org.apache.storm.daemon.worker.LogConfigManager.processLogConfigChange",
+        "storm-client.src.jvm.org.apache.storm.daemon.worker.LogConfigManager.resetLogLevels",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.validateTopologySize",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.setLoggerTimeouts"
+    ],
+    "STORM-3213.json": [
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.getCommonTopoInfo"
+    ],
+    "STORM-2496.json": [
+        "storm-core.src.jvm.org.apache.storm.dependency.DependencyUploader.uploadDependencyToBlobStore"
+    ],
+    "STORM-2879.json": [
+        "storm-core.src.jvm.org.apache.storm.daemon.supervisor.Slot.Slot"
+    ],
+    "STORM-3012.json": [
+        "storm-client.src.jvm.org.apache.storm.pacemaker.PacemakerClient.send"
+    ],
+    "STORM-3073.json": [
+        "storm-client.src.jvm.org.apache.storm.executor.spout.SpoutExecutor.getSpoutRecvqCheckSkipCount",
+        "examples.storm-loadgen.src.main.java.org.apache.storm.loadgen.LoadSpout.done",
+        "examples.storm-loadgen.src.main.java.org.apache.storm.loadgen.LoadSpout.ack",
+        "examples.storm-loadgen.src.main.java.org.apache.storm.loadgen.LoadSpout.open"
+    ],
+    "STORM-1672.json": [
+        "storm-core.src.jvm.org.apache.storm.stats.StatsUtil.filterSysStreams2Stat",
+        "storm-core.src.jvm.org.apache.storm.stats.StatsUtil.aggPreMergeCompPageBolt",
+        "storm-core.src.jvm.org.apache.storm.stats.StatsUtil.aggPreMergeCompPageSpout",
+        "storm-core.src.jvm.org.apache.storm.stats.StatsUtil.mergeMaps"
+    ],
+    "STORM-1520.json": [],
+    "STORM-1977.json": [
+        "storm-core.src.jvm.org.apache.storm.zookeeper.Zookeeper.zkLeaderElectorImpl",
+        "storm-core.src.jvm.org.apache.storm.zookeeper.LeaderElectorImp.addToLeaderLockQueue",
+        "storm-core.src.jvm.org.apache.storm.zookeeper.Zookeeper.toNimbusInfo",
+        "storm-core.src.jvm.org.apache.storm.zookeeper.LeaderElectorImp.LeaderElectorImp"
+    ],
+    "STORM-2988.json": [
+        "storm-client.src.jvm.org.apache.storm.metrics2.reporters.JmxStormReporter.getMetricsJmxDomain"
+    ],
+    "STORM-2321.json": [
+        "storm-core.src.jvm.org.apache.storm.blobstore.KeySequenceNumber.KeySequenceNumber",
+        "storm-core.src.jvm.org.apache.storm.daemon.nimbus.Nimbus.createStateInZookeeper",
+        "storm-core.src.jvm.org.apache.storm.blobstore.LocalFsBlobStore.checkForBlobOrDownload",
+        "storm-core.src.jvm.org.apache.storm.daemon.nimbus.Nimbus.setupBlobstore",
+        "storm-core.src.jvm.org.apache.storm.daemon.nimbus.Nimbus.getKeyListFromId",
+        "storm-core.src.jvm.org.apache.storm.blobstore.LocalFsBlobStore.updateBlobReplication",
+        "storm-core.src.jvm.org.apache.storm.blobstore.BlobSynchronizer.syncBlobs",
+        "storm-core.src.jvm.org.apache.storm.blobstore.KeySequenceNumber.getKeySequenceNumber",
+        "storm-core.src.jvm.org.apache.storm.blobstore.BlobStoreUtils.updateKeyForBlobStore"
+    ],
+    "STORM-3013.json": [
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.fail",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.metrics.KafkaOffsetMetric.KafkaOffsetMetric",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.close",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.shouldPoll",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.createFetchedOffsetsMetadata",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.onPartitionsRevoked",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.commitOffsetsForAckedTuples",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.open",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.nextTuple"
+    ],
+    "STORM-3117.json": [
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.deleteBlob_result",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.hashCode",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.recv_deleteBlob",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.getFieldValue",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.getResult",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.equals",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.send_deleteBlob",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.set_knf_isSet",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.setFieldValue",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.findByThriftId",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.recv_downloadBlobChunk",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.write_args",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.read",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.isSet",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.toString",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.getFieldName",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.onError",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.compareTo",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.write",
+        "storm-client.src.jvm.org.apache.storm.generated.Nimbus.deepCopy"
+    ],
+    "STORM-2993.json": [
+        "external.storm-hdfs.src.main.java.org.apache.storm.hdfs.bolt.AbstractHdfsBolt.cleanup"
+    ],
+    "STORM-1540.json": [
+        "storm-core.src.jvm.org.apache.storm.trident.tuple.ConsList.get",
+        "storm-core.src.jvm.org.apache.storm.serialization.SerializationFactory.getKryo"
+    ],
+    "STORM-2275.json": [
+        "storm-core.src.jvm.org.apache.storm.daemon.nimbus.Nimbus.transition"
+    ],
+    "STORM-2873.json": [],
+    "STORM-2279.json": [
+        "storm-core.src.jvm.org.apache.storm.utils.TupleUtils.putTickFrequencyIntoComponentConfig",
+        "storm-core.src.jvm.org.apache.storm.daemon.nimbus.Nimbus.getComponentPageInfo",
+        "storm-core.src.jvm.org.apache.storm.utils.TupleUtils.isTick",
+        "storm-core.src.jvm.org.apache.storm.daemon.GrouperFactory.prepare"
+    ],
+    "STORM-3079.json": [
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.rebalance",
+        "storm-client.src.jvm.org.apache.storm.blobstore.BlobStoreAclHandler.hasPermissions",
+        "storm-client.src.jvm.org.apache.storm.utils.Utils.memoizedLocalHostname",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.getTopologyPageInfo",
+        "storm-server.src.main.java.org.apache.storm.localizer.LocalizedResource.downloadToTempLocation",
+        "external.storm-hdfs-blobstore.src.main.java.org.apache.storm.hdfs.blobstore.HdfsBlobStore.getStoredBlobMeta",
+        "storm-client.src.jvm.org.apache.storm.blobstore.BlobStoreAclHandler.validateSettableACLs",
+        "storm-client.src.jvm.org.apache.storm.utils.Utils.run",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.tryReadTopoConfFromName",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.submitTopologyWithOpts",
+        "storm-client.src.jvm.org.apache.storm.utils.Utils.validateTopologyBlobStoreMap",
+        "external.storm-hdfs-blobstore.src.main.java.org.apache.storm.hdfs.blobstore.HdfsBlobStore.createBlob",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.getTopologyInfoWithOpts",
+        "storm-client.src.jvm.org.apache.storm.utils.Utils.asyncLoop",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.tryReadTopoConf",
+        "storm-server.src.main.java.org.apache.storm.LocalCluster.finishFileUpload",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.startTopology",
+        "storm-server.src.main.java.org.apache.storm.daemon.drpc.DRPC.DRPC",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.getComponentPageInfo",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.validateTopologySize",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.doRebalance",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.checkAuthorization",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.toExecInfo",
+        "storm-client.src.jvm.org.apache.storm.blobstore.BlobStoreAclHandler.hasAnyPermissions",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.getClusterInfoImpl",
+        "storm-server.src.main.java.org.apache.storm.daemon.supervisor.Supervisor.sendSupervisorWorkerHeartbeat",
+        "storm-server.src.main.java.org.apache.storm.LocalCluster.waitForIdle",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.getTopologyHistory",
+        "storm-server.src.main.java.org.apache.storm.daemon.supervisor.Supervisor.checkAuthorization",
+        "storm-server.src.main.java.org.apache.storm.LocalCluster.cancelBlobUpload",
+        "storm-client.src.jvm.org.apache.storm.blobstore.BlobStoreAclHandler.checkForValidUsers",
+        "storm-client.src.jvm.org.apache.storm.daemon.StormCommon.validateIds",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.userGroups",
+        "storm-client.src.jvm.org.apache.storm.blobstore.BlobStoreAclHandler.removeBadACLs",
+        "storm-server.src.main.java.org.apache.storm.LocalCluster.listBlobs",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.mkAssignments",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.getKeyListFromId",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.tryReadTopology",
+        "storm-server.src.main.java.org.apache.storm.daemon.supervisor.Supervisor.getLocalAssignmentForStorm",
+        "storm-server.src.main.java.org.apache.storm.LocalCluster.beginCreateBlob",
+        "storm-server.src.main.java.org.apache.storm.daemon.drpc.BlockingOutstandingRequest.getResult",
+        "storm-client.src.jvm.org.apache.storm.utils.Utils.nullToZero",
+        "storm-server.src.main.java.org.apache.storm.daemon.drpc.DRPC.checkAuthorization",
+        "storm-server.src.main.java.org.apache.storm.blobstore.LocalFsBlobStore.getBlobReplication",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.debug",
+        "storm-server.src.main.java.org.apache.storm.nimbus.StrictTopologyValidator.validate",
+        "storm-server.src.main.java.org.apache.storm.blobstore.LocalFsBlobStore.getStoredBlobMeta",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.waitForDesiredCodeReplication",
+        "storm-server.src.main.java.org.apache.storm.nimbus.StrictTopologyValidator.prepare",
+        "storm-server.src.main.java.org.apache.storm.LocalCluster.downloadBlobChunk",
+        "storm-client.src.jvm.org.apache.storm.daemon.StormCommon.validateBasic",
+        "storm-server.src.main.java.org.apache.storm.blobstore.LocalFsBlobStore.createBlob",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.getOwnerResourceSummaries",
+        "storm-server.src.main.java.org.apache.storm.blobstore.BlobStoreUtils.getNimbodesWithLatestSequenceNumberOfBlob",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.uploadNewCredentials",
+        "storm-server.src.main.java.org.apache.storm.localizer.AsyncLocalizer.getClientBlobStore",
+        "storm-server.src.main.java.org.apache.storm.blobstore.KeySequenceNumber.getKeySequenceNumber",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.assignmentsForNode",
+        "storm-server.src.main.java.org.apache.storm.blobstore.LocalFsBlobStore.blobSync",
+        "storm-client.src.jvm.org.apache.storm.daemon.StormCommon.validateStructure"
+    ],
+    "STORM-3096.json": [
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.topoIdsToClean",
+        "storm-server.src.main.java.org.apache.storm.daemon.nimbus.Nimbus.getTopologyCleanupDetectedTime"
+    ],
+    "STORM-1642.json": [
+        "storm-client.src.jvm.org.apache.storm.utils.Utils.isZkAuthenticationConfiguredTopology",
+        "storm-client.src.jvm.org.apache.storm.messaging.netty.StormServerHandler.messageReceived",
+        "storm-client.src.jvm.org.apache.storm.utils.Utils.handleUncaughtException",
+        "storm-client.src.jvm.org.apache.storm.messaging.netty.StormServerHandler.exceptionCaught"
+    ],
+    "STORM-2700.json": [
+        "storm-server.src.main.java.org.apache.storm.utils.ServerUtils.nimbusVersionOfBlob",
+        "storm-server.src.main.java.org.apache.storm.localizer.Localizer.downloadBlob"
+    ],
+    "STORM-1663.json": [
+        "storm-core.src.jvm.org.apache.storm.stats.StatsUtil.extractDataFromHb"
+    ],
+    "STORM-2518.json": [
+        "storm-client.src.jvm.org.apache.storm.blobstore.BlobStoreAclHandler.normalizeSettableACLs",
+        "storm-client.src.jvm.org.apache.storm.blobstore.BlobStoreAclHandler.fixACLsForUser",
+        "storm-client.src.jvm.org.apache.storm.blobstore.BlobStoreAclHandler.worldEverything"
+    ],
+    "STORM-3124.json": [
+        "storm-client.src.jvm.org.apache.storm.pacemaker.PacemakerClient.secretKey",
+        "storm-client.src.jvm.org.apache.storm.pacemaker.PacemakerClientPool.sendAll",
+        "storm-client.src.jvm.org.apache.storm.messaging.netty.KerberosSaslClientHandler.handleControlMessage",
+        "storm-client.src.jvm.org.apache.storm.pacemaker.PacemakerClient.send",
+        "storm-client.src.jvm.org.apache.storm.pacemaker.PacemakerClient.run",
+        "storm-client.src.jvm.org.apache.storm.pacemaker.PacemakerClient.PacemakerClient"
+    ],
+    "STORM-2095.json": [
+        "storm-core.src.jvm.org.apache.storm.blobstore.FileBlobStoreImpl.listKeys"
+    ],
+    "STORM-2847.json": [
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.getTopicsString",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.initialize",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.close",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.ackRetriableOffsetsIfCompactedAway",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.throwKafkaConsumerInterruptedException",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.nextTuple",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.commitOffsetsForAckedTuples",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.ManualPartitionSubscription.refreshAssignment",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.isEmitTuple",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.KafkaSpout",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.doSeek",
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.emitOrRetryTuple"
+    ],
+    "STORM-1114.json": [
+        "storm-client.src.jvm.org.apache.storm.transactional.state.TransactionalState.TransactionalState",
+        "storm-client.src.jvm.org.apache.storm.transactional.state.TransactionalState.setData"
+    ],
+    "STORM-2811.json": [
+        "integration-test.src.main.java.org.apache.storm.st.topology.window.SlidingTimeCorrectness.open",
+        "storm-core.src.jvm.org.apache.storm.windowing.TimeEvictionPolicy.TimeEvictionPolicy",
+        "integration-test.src.main.java.org.apache.storm.st.topology.window.TumblingTimeCorrectness.open",
+        "storm-core.src.jvm.org.apache.storm.windowing.WatermarkCountEvictionPolicy.WatermarkCountEvictionPolicy",
+        "integration-test.src.main.java.org.apache.storm.st.topology.window.SlidingWindowCorrectness.newTopology",
+        "storm-core.src.jvm.org.apache.storm.windowing.WatermarkTimeEvictionPolicy.WatermarkTimeEvictionPolicy",
+        "storm-core.src.jvm.org.apache.storm.windowing.WatermarkCountEvictionPolicy.track",
+        "integration-test.src.main.java.org.apache.storm.st.topology.window.TumblingWindowCorrectness.newTopology",
+        "storm-core.src.jvm.org.apache.storm.topology.WindowedBoltExecutor.initWindowManager",
+        "storm-core.src.jvm.org.apache.storm.topology.WindowedBoltExecutor.getTriggerPolicy"
+    ],
+    "STORM-2903.json": [
+        "external.storm-kafka-client.src.main.java.org.apache.storm.kafka.spout.KafkaSpout.emitOrRetryTuple"
+    ],
+    "STORM-3168.json": [
+        "storm-server.src.main.java.org.apache.storm.localizer.AsyncLocalizer.forEachTopologyDistDir"
+    ],
+    "STORM-2986.json": [
+        "storm-webapp.src.main.java.org.apache.storm.daemon.logviewer.LogviewerServer.main"
+    ],
+    "STORM-2197.json": [
+        "storm-core.src.jvm.org.apache.storm.security.auth.ThriftClient.reconnect",
+        "storm-core.src.jvm.org.apache.storm.security.auth.ThriftClient.transport"
+    ],
+    "STORM-1596.json": [
+        "storm-core.src.jvm.org.apache.storm.security.auth.kerberos.AutoTGT.populateCredentials",
+        "storm-core.src.jvm.org.apache.storm.security.auth.kerberos.AutoTGTKrb5LoginModule.abort",
+        "storm-core.src.jvm.org.apache.storm.security.auth.AuthUtils.makeDigestPayload",
+        "storm-core.src.jvm.org.apache.storm.security.auth.kerberos.AutoTGT.populateSubject",
+        "storm-core.src.jvm.org.apache.storm.security.auth.kerberos.AutoTGT.saveTGT",
+        "storm-core.src.jvm.org.apache.storm.security.auth.kerberos.AutoTGTKrb5LoginModule.commit"
+    ],
+    "STORM-2142.json": [
+        "storm-core.src.jvm.org.apache.storm.executor.error.ReportErrorAndDie.uncaughtException"
+    ],
+    "STORM-2400.json": [
+        "storm-core.src.jvm.org.apache.storm.security.auth.TBackoffConnect.retryNext",
+        "storm-core.src.jvm.org.apache.storm.utils.StormBoundedExponentialBackoffRetry.StormBoundedExponentialBackoffRetry"
+    ],
+    "STORM-3084.json": [
+        "storm-client.src.jvm.org.apache.storm.cluster.IStormClusterState.allSupervisorInfo",
+        "storm-client.src.jvm.org.apache.storm.cluster.IStormClusterState.topologyBases"
+    ],
+    "STORM-3118.json": [
+        "storm-client.src.jvm.org.apache.storm.pacemaker.codec.ThriftEncoder.encodeNettySerializable"
+    ],
+    "STORM-2158.json": [
+        "storm-core.src.jvm.backtype.storm.security.auth.SimpleTransportPlugin.getServer"
+    ],
+    "STORM-2682.json": [
+        "storm-server.src.main.java.org.apache.storm.daemon.supervisor.timer.UpdateBlobs.run",
+        "storm-server.src.main.java.org.apache.storm.daemon.supervisor.Slot.run"
+    ],
+    "STORM-3103.json": [
+        "storm-client.src.jvm.org.apache.storm.StormTimer.run",
+        "storm-client.src.jvm.org.apache.storm.StormTimer.schedule"
+    ]
+}

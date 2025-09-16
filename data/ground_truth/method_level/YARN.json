@@ -1,0 +1,696 @@
+{
+    "YARN-5918.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.OpportunisticContainerAllocatorAMService.getLeastLoadedNodes",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.NodeQueueLoadMonitor.initThresholdCalculator",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.OpportunisticContainerAllocatorAMService.convertToRemoteNode",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.OpportunisticContainerAllocatorAMService.convertToRemoteNodes",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.NodeQueueLoadMonitor.addNode"
+    ],
+    "YARN-8629.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.CGroupsHandlerImpl.logLineFromTasksFile"
+    ],
+    "YARN-4431.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.run",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStop"
+    ],
+    "YARN-2273.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.nodeUpdate",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.initScheduler",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.compare",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler$NodeAvailableResourceComparator.compare"
+    ],
+    "YARN-2834.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.handle",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.transition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.getApplicationResourceUsageReport",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.transferStateFromPreviousAttempt"
+    ],
+    "YARN-370.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeRequest"
+    ],
+    "YARN-3675.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.compare",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.attemptScheduling"
+    ],
+    "YARN-4763.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.webapp.RMAppsBlock.renderData"
+    ],
+    "YARN-8202.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndvalidateRequest",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.validateResourceRequest",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-api.src.main.java.org.apache.hadoop.yarn.util.UnitsConversionUtil.convert",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-api.src.main.java.org.apache.hadoop.yarn.util.UnitsConversionUtil.compare",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-common.src.main.java.org.apache.hadoop.yarn.server.utils.BuilderUtils.newContainerId",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-common.src.main.java.org.apache.hadoop.yarn.server.utils.BuilderUtils.newApplicationReport",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-common.src.main.java.org.apache.hadoop.yarn.server.utils.BuilderUtils.newResource"
+    ],
+    "YARN-7118.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-common.src.main.java.org.apache.hadoop.yarn.server.webapp.WebServices.run"
+    ],
+    "YARN-4743.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.policies.FairSharePolicy.compare",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.policies.FairSharePolicy.getName"
+    ],
+    "YARN-2414.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.webapp.AppBlock.render",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.security.ApplicationACLsManager.ApplicationACLsManager",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.security.QueueACLsManager.QueueACLsManager"
+    ],
+    "YARN-3878.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.event.AsyncDispatcher.handle",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.event.AsyncDispatcher.run"
+    ],
+    "YARN-6683.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.AddApplicationToSchedulerTransition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.RMAppRecoveredTransition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.transition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.StartAppAttemptTransition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService.updateAppCollectorsMap",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.KillAttemptTransition"
+    ],
+    "YARN-2910.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSLeafQueue.updateDemandForApp",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSLeafQueue.updateDemand",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSAppAttempt.unreserveInternal",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSLeafQueue.preemptContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSLeafQueue.FSLeafQueue",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSLeafQueue.assignContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSLeafQueue.getDemand",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSLeafQueue.addAppSchedulable",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSLeafQueue.getNonRunnableAppSchedulables"
+    ],
+    "YARN-192.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.AppSchedulable.assignContainer"
+    ],
+    "YARN-4581.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.applicationhistoryservice.FileSystemApplicationHistoryStore.HistoryFileWriter"
+    ],
+    "YARN-7786.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncher.run",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncher.createAMContainerLaunchContext",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncher.launch",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncher.parseAndThrowException"
+    ],
+    "YARN-8035.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainerMetrics.recordCpuUsage"
+    ],
+    "YARN-4152.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.LogAggregationService.stopContainer"
+    ],
+    "YARN-3697.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.continuousSchedulingAttempt"
+    ],
+    "YARN-2340.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.addApplication"
+    ],
+    "YARN-8022.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-common.src.main.java.org.apache.hadoop.yarn.server.webapp.AppBlock.render",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-common.src.main.java.org.apache.hadoop.yarn.server.webapp.AppBlock.run",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-common.src.main.java.org.apache.hadoop.yarn.server.webapp.AppBlock.generateOverviewTable"
+    ],
+    "YARN-3793.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.AppLogAggregatorImpl.uploadLogsForContainers"
+    ],
+    "YARN-6102.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMContextImpl.isWorkPreservingRecoveryEnabled",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.reinitialize",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.setupDispatcher",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.addToClusterNodeLabels",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ActiveStandbyElectorBasedElectorService.becomeActive",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.refreshNodesResources",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMContextImpl.getSystemCredentialsForApps",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.updateNodeResource",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.createEmbeddedElector",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMContextImpl.setResourceTrackerService",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.transitionToActive",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMContextImpl.getRMAppLifetimeMonitor",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.createRMApplicationHistoryWriter",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.startServer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.checkHaStateChange",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ActiveStandbyElectorBasedElectorService.becomeStandby",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.transitionToStandby",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.checkForDecommissioningNodes",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.CuratorBasedElectorService.getZookeeperConnectionState",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMActiveServiceContext.setRMAppLifetimeMonitor",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.createSystemMetricsPublisher",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.CuratorBasedElectorService.closeLeaderLatch",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMContextImpl.RMContextImpl",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.replaceLabelsOnNode",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.refreshClusterMaxPriority",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.createApplicationMasterService",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMContextImpl.setQueuePlacementManager",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.refreshNodes",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMActiveServiceContext.isWorkPreservingRecoveryEnabled",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMContextImpl.getClientToAMTokenSecretManager",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.refreshActiveServicesAcls",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.removeFromClusterNodeLabels",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMContextImpl.getResourceTrackerService",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ActiveStandbyElectorBasedElectorService.run",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.refreshQueues"
+    ],
+    "YARN-8409.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.ha.ZKFailoverController.printUsage",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.ha.ZKFailoverController.formatZK",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.ha.ActiveStandbyElector.parentZNodeExists",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.ha.ActiveStandbyElector.ensureParentZNode"
+    ],
+    "YARN-8223.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices.serviceInit"
+    ],
+    "YARN-8331.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher.handle",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl.KillOnPauseTransition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.handleContainerExitCode",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl.LaunchTransition"
+    ],
+    "YARN-2931.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService.addResource"
+    ],
+    "YARN-6837.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.api.records.impl.pb.ContainerLaunchContextPBImpl.checkLocalResources",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.startContainerInternal"
+    ],
+    "YARN-4762.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DelegatingLinuxContainerRuntime.initialize",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime.isDockerContainerRequested",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.ResourceHandlerModule.getCgroupsBlkioResourceHandler",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.ResourceHandlerModule.getInitializedCGroupsHandler",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime.prepareContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.ResourceHandlerModule.getCGroupsCpuResourceHandler",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.ResourceHandlerModule.getMemoryResourceHandler",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.ResourceHandlerModule.initializeConfiguredResourceHandlerChain"
+    ],
+    "YARN-2823.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.transition"
+    ],
+    "YARN-5098.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.requestNewHdfsDelegationTokenIfNeeded",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.run",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.handleAppSubmitEvent",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.handleDTRenewerAppRecoverEvent"
+    ],
+    "YARN-3971.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.nodelabels.CommonNodeLabelsManager.normalizeNodeIdToLabels",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.nodelabels.CommonNodeLabelsManager.startDispatcher",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.nodelabels.RMNodeLabelsManager.removeFromClusterNodeLabels",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.nodelabels.CommonNodeLabelsManager.serviceInit"
+    ],
+    "YARN-6948.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.StatusUpdateTransition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.handle",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.getBlacklistedNodes"
+    ],
+    "YARN-1409.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler.handle"
+    ],
+    "YARN-5545.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.addApplication",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration.getLazyPreemptionEnabled",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.getAppsInQueue",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue.setupQueueConfigs"
+    ],
+    "YARN-301.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.AppSchedulable.assignContainer"
+    ],
+    "YARN-7942.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-registry.src.main.java.org.apache.hadoop.registry.client.impl.zk.RegistrySecurity.applySecurityEnvironment",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-registry.src.main.java.org.apache.hadoop.registry.client.impl.zk.RegistrySecurity.validateContext"
+    ],
+    "YARN-7692.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMAppManager.createAndPopulateNewRMApp"
+    ],
+    "YARN-3917.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.util.ResourceCalculatorPlugin.getResourceCalculatorPlugin"
+    ],
+    "YARN-3537.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.initAndStartRecoveryStore",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.stopRecoveryStore"
+    ],
+    "YARN-7962.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.security.DelegationTokenRenewer.serviceStop"
+    ],
+    "YARN-8357.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-applications.hadoop-yarn-services.hadoop-yarn-services-core.src.main.java.org.apache.hadoop.yarn.service.client.ServiceClient.getStatus"
+    ],
+    "YARN-6534.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.client.api.impl.TimelineConnector.serviceInit"
+    ],
+    "YARN-4227.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.completedContainerInternal"
+    ],
+    "YARN-2649.json": [],
+    "YARN-4288.json": [
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.io.retry.RetryPolicies.retryByRemoteException",
+        "hadoop-common-project.hadoop-common.src.main.java.org.apache.hadoop.io.retry.RetryPolicies.shouldRetry",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.client.RMProxy.createRetryPolicy"
+    ],
+    "YARN-1032.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.util.RackResolver.coreResolve"
+    ],
+    "YARN-5837.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.setDecomissionedNMs"
+    ],
+    "YARN-6827.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceStart",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.transitionToStandby"
+    ],
+    "YARN-3832.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService.initializeLogDir"
+    ],
+    "YARN-2409.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.resetDispatcher"
+    ],
+    "YARN-8116.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl.removeDockerContainer"
+    ],
+    "YARN-8403.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService.run"
+    ],
+    "YARN-1458.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.policies.ComputeFairShares.computeSteadyShares",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.policies.ComputeFairShares.computeSharesInternal",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.policies.ComputeFairShares.computeShare"
+    ],
+    "YARN-8209.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime.reapContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.docker.DockerCommand.setClientConfigDir",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime.getGroupIdInfo",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.docker.DockerClient.writeCommandToTempFile",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.docker.DockerRmCommand.DockerRmCommand",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.docker.DockerInspectCommand.DockerInspectCommand",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.docker.DockerInspectCommand.getIpAndHost",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime.launchContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.docker.DockerCommandExecutor.executeDockerCommand",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime.runDockerVolumeCommand"
+    ],
+    "YARN-3804.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.serviceInit",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.refreshAdminAcls"
+    ],
+    "YARN-1839.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.transition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM.createAndGetNMToken",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-client.src.main.java.org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.populateNMTokens",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.completedContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM.activateNextMasterKey"
+    ],
+    "YARN-6714.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.tryCommit"
+    ],
+    "YARN-3351.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.webapp.util.WebAppUtils.getResolvedRMWebAppURLWithoutScheme",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.webapp.util.WebAppUtils.getProxyHostAndPort",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.webapp.util.WebAppUtils.getResolvedRemoteRMWebAppURLWithoutScheme",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.webapp.NavBlock.NavBlock"
+    ],
+    "YARN-2813.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.timeline.MemoryTimelineStore.getDomain",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.timeline.MemoryTimelineStore.getDomains"
+    ],
+    "YARN-1550.json": [],
+    "YARN-5006.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEvent.getApplicationId",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.FinalSavingTransition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-api.src.main.java.org.apache.hadoop.yarn.conf.YarnConfiguration.isAclEnabled",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEvent.RMAppEvent"
+    ],
+    "YARN-5728.json": [],
+    "YARN-2805.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceInit"
+    ],
+    "YARN-4744.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.TrafficController.BatchBuilder",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.privileged.PrivilegedOperation.appendArgs",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DefaultLinuxContainerRuntime.signalContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.privileged.PrivilegedOperationExecutor.executePrivilegedOperation",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.CGroupsHandlerImpl.mountCGroupController",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DefaultLinuxContainerRuntime.launchContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime.signalContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime.launchContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.startLocalizer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.init",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.privileged.PrivilegedOperation.PrivilegedOperation",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.privileged.PrivilegedOperation.getOption"
+    ],
+    "YARN-1752.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.finishApplicationMaster"
+    ],
+    "YARN-6629.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.common.fica.FiCaSchedulerApp.accept",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.tryCommit",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.common.fica.FiCaSchedulerApp.apply"
+    ],
+    "YARN-3493.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.transition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndvalidateRequest",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMAppManager.createAndPopulateNewRMApp",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMAppManager.recoverApplication",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMAppManager.validateAndCreateResourceRequest",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeRequest",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMServerUtils.queryRMNodes",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMAppManager.submitApplication",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.validateResourceRequest"
+    ],
+    "YARN-7645.json": [],
+    "YARN-6054.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.LeveldbTimelineStore",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore.serviceInit"
+    ],
+    "YARN-196.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.getRMClient",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.start"
+    ],
+    "YARN-8508.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.reacquireContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.reapContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.removeDockerContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.handleLaunchForLaunchType"
+    ],
+    "YARN-2308.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.addApplication"
+    ],
+    "YARN-933.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.StatusUpdateTransition"
+    ],
+    "YARN-1374.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.createApplicationMasterService",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceStop"
+    ],
+    "YARN-174.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.stateChanged",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.main",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.initAndStartNodeManager"
+    ],
+    "YARN-6448.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerNode.addUnallocatedResource",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.nodeUpdate"
+    ],
+    "YARN-4530.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService.run"
+    ],
+    "YARN-7737.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.call"
+    ],
+    "YARN-5136.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.moveApplication",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.removeApplicationAttempt",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.verifyMoveDoesNotViolateConstraints"
+    ],
+    "YARN-8211.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-registry.src.main.java.org.apache.hadoop.registry.server.dns.RegistryDNS.nioTCPClient"
+    ],
+    "YARN-2124.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.validateConfigs",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.createPolicyMonitors",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy.init"
+    ],
+    "YARN-7849.json": [],
+    "YARN-8591.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-timelineservice.src.main.java.org.apache.hadoop.yarn.server.timelineservice.reader.TimelineReaderWebServices.validateAuthUserWithEntityUser",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-timelineservice.src.main.java.org.apache.hadoop.yarn.server.timelineservice.reader.TimelineReaderWebServices.checkAccess"
+    ],
+    "YARN-6649.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.timeline.RollingLevelDBTimelineStore.getEntity",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.timeline.RollingLevelDBTimelineStore.addPrimaryFilter",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-applicationhistoryservice.src.main.java.org.apache.hadoop.yarn.server.timeline.RollingLevelDBTimelineStore.getEntityEvent"
+    ],
+    "YARN-3742.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.transitionToActive",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.handle",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ActiveStandbyElectorBasedElectorService.serviceInit",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMCriticalThreadUncaughtExceptionHandler.RMCriticalThreadUncaughtExceptionHandler",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.createPolicyMonitors"
+    ],
+    "YARN-4984.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.LogAggregationService.initAppAggregator",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.LogAggregationService.run"
+    ],
+    "YARN-4584.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.recover",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.transition"
+    ],
+    "YARN-2846.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.ContainerExecutor.reacquireContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.ContainerExecutor.isContainerProcessAlive",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.RecoveredContainerLaunch.call",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor.launchContainer"
+    ],
+    "YARN-7890.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerRelaunch.call"
+    ],
+    "YARN-139.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.event.AsyncDispatcher.handle",
+        "hadoop-mapreduce-project.hadoop-mapreduce-client.hadoop-mapreduce-client-app.src.main.java.org.apache.hadoop.mapreduce.v2.app.MRAppMaster.cleanupStagingDir",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.event.AsyncDispatcher.run"
+    ],
+    "YARN-42.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler.stop"
+    ],
+    "YARN-7453.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.createAndStartZKManager",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ZKConfigurationStore.initialize",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.createEmbeddedElector"
+    ],
+    "YARN-3369.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo.getResourceRequest",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo.checkForDeactivation",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo.getResource"
+    ],
+    "YARN-945.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.transition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-client.src.main.java.org.apache.hadoop.yarn.client.ClientRMProxy.getRMAddress",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-common.src.main.java.org.apache.hadoop.yarn.server.api.ServerRMProxy.getRMAddress",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-applications.hadoop-yarn-applications-unmanaged-am-launcher.src.main.java.org.apache.hadoop.yarn.applications.unmanagedamlauncher.UnmanagedAMLauncher.launchAM",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncher.setupTokens",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.client.RMProxy.createRMProxy",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-client.src.main.java.org.apache.hadoop.yarn.client.ClientRMProxy.createRMProxy",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.recoverAppAttemptTokens",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.client.RMProxy.run",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-client.src.main.java.org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.getApplicationReport",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-client.src.main.java.org.apache.hadoop.yarn.client.api.YarnClient.getApplicationReport"
+    ],
+    "YARN-6072.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceInit",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.AdminService.refreshAll"
+    ],
+    "YARN-7663.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.sendATSCreateEvent",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.handle",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.KillAttemptTransition"
+    ],
+    "YARN-5873.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.RMContainerImpl.RMContainerImpl",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.RMContainerImpl.setContainerId"
+    ],
+    "YARN-3227.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl.getHttpURLConnection",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl.run"
+    ],
+    "YARN-4235.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.QueuePlacementRule.getQueueForApp"
+    ],
+    "YARN-4833.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMAppManager.createAndPopulateNewRMApp",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMAppManager.recoverApplication",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMAppManager.checkAppNumCompletedLimit"
+    ],
+    "YARN-1689.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.assignToQueue",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.containerCompleted",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.ActiveUsersManager.deactivateApplication",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.reinitialize",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.nodeUpdate",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-applications.hadoop-yarn-applications-distributedshell.src.main.java.org.apache.hadoop.yarn.applications.distributedshell.Client.run",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.AppRejectedTransition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-applications.hadoop-yarn-applications-distributedshell.src.main.java.org.apache.hadoop.yarn.applications.distributedshell.ApplicationMaster.run",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.RMAppNodeUpdateTransition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.registerApplicationMaster",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue.activateApplications",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.allocate",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.checkAccess",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.getMaximumResourceCapability",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.allocate",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.AttemptStartedTransition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-applications.hadoop-yarn-applications-distributedshell.src.main.java.org.apache.hadoop.yarn.applications.distributedshell.ApplicationMaster.finish",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.handle",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.getNodeReport",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.api.protocolrecords.impl.pb.RegisterApplicationMasterResponsePBImpl.convertToProtoFormat",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo.allocate",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.StatusUpdateTransition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.QueueMetrics.getMetrics",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.completedContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue.addApplication",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-api.src.main.java.org.apache.hadoop.yarn.api.records.ApplicationSubmissionContext.newInstance",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.getNodesOnWhichAttemptRan",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.common.fica.FiCaSchedulerNode.reserveResource",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.getAppsInQueue",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.api.records.impl.pb.ApplicationSubmissionContextPBImpl.setResource",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo.stop",
+        "hadoop-tools.hadoop-sls.src.main.java.org.apache.hadoop.yarn.sls.scheduler.ResourceSchedulerWrapper.getAppResourceUsageReport",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.parseQueue",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue.hasAccess",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.transition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.recover",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-api.src.main.java.org.apache.hadoop.yarn.api.records.ContainerId.newInstance",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.ActiveUsersManager.activateApplication",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.AppAttemptRemovedSchedulerEvent.getApplicationAttemptID",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.getEventLog",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.getClusterResources",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.ActiveUsersManager.ActiveUsersManager",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue.submitApplication",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-api.src.main.java.org.apache.hadoop.yarn.api.protocolrecords.RegisterApplicationMasterResponse.newInstance",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.handle",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-applications.hadoop-yarn-applications-distributedshell.src.main.java.org.apache.hadoop.yarn.applications.distributedshell.Client.init",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.getConf",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.rememberTargetTransitionsAndStoreState",
+        "hadoop-tools.hadoop-sls.src.main.java.org.apache.hadoop.yarn.sls.scheduler.ResourceSchedulerWrapper.updateQueueWithNodeUpdate",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.getQueueManager",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.transition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.api.protocolrecords.impl.pb.RegisterApplicationMasterResponsePBImpl.setQueue",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate",
+        "hadoop-tools.hadoop-sls.src.main.java.org.apache.hadoop.yarn.sls.scheduler.ResourceSchedulerWrapper.updateQueueWithAllocateRequest",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.handle",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.AttemptFailedTransition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue.submitApplication",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.recover",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue.hasAccess",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.assignContainers",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.api.protocolrecords.impl.pb.RegisterApplicationMasterResponsePBImpl.mergeLocalToBuilder",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.getNodeReport",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.getAppAttemptId",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.removeApplicationAttempt",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.api.protocolrecords.impl.pb.RegisterApplicationMasterResponsePBImpl.getClientToAMTokenMasterKey",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.completedContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-applications.hadoop-yarn-applications-distributedshell.src.main.java.org.apache.hadoop.yarn.applications.distributedshell.ApplicationMaster.main",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.YarnScheduler.checkAccess",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.preemptContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.getAppKilledDiagnostics",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-applications.hadoop-yarn-applications-distributedshell.src.main.java.org.apache.hadoop.yarn.applications.distributedshell.ApplicationMaster.printUsage",
+        "hadoop-tools.hadoop-sls.src.main.java.org.apache.hadoop.yarn.sls.scheduler.ResourceSchedulerWrapper.handle",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue.removeApplication",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.getNode",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.common.fica.FiCaSchedulerNode.getRunningContainers",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.allocate",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler.handle",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-applications.hadoop-yarn-applications-distributedshell.src.main.java.org.apache.hadoop.yarn.applications.distributedshell.Client.Client",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.RMAppAttemptImpl"
+    ],
+    "YARN-5594.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.security.client.YARNDelegationTokenIdentifier.readFields",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.recovery.records.RMDelegationTokenIdentifierData.getTokenIdentifier",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.security.client.YARNDelegationTokenIdentifier.write"
+    ],
+    "YARN-7511.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceSet.resourceLocalized",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceSet.resourceLocalizationFailed"
+    ],
+    "YARN-3790.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.completedContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.handle",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler.addNode"
+    ],
+    "YARN-6068.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.AppLogAggregatorImpl.run"
+    ],
+    "YARN-903.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.authorizeGetAndStopContainerRequest",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.sendOutofBandHeartBeat",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.getNodeStatusAndUpdateContainersInContext",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.updateMasterKeys",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.stopContainerInternal",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.NodeStatusUpdaterImpl",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceInit",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.getContainerStatusInternal",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.main"
+    ],
+    "YARN-8236.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-applications.hadoop-yarn-services.hadoop-yarn-services-core.src.main.java.org.apache.hadoop.yarn.service.client.ServiceClient.addKeytabResourceIfSecure",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-applications.hadoop-yarn-services.hadoop-yarn-services-core.src.main.java.org.apache.hadoop.yarn.service.utils.ServiceApiUtil.validateAndResolveService"
+    ],
+    "YARN-2857.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.ContainerLogAppender.activateOptions",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.ContainerLogAppender.flush"
+    ],
+    "YARN-2416.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.transition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.StatusUpdateTransition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.AttemptStoredTransition"
+    ],
+    "YARN-345.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl.transition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.LogAggregationService.initApp",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl.AppInitTransition"
+    ],
+    "YARN-3894.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue.setChildQueues"
+    ],
+    "YARN-1903.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl.transition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl.RequestResourcesTransition"
+    ],
+    "YARN-4347.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl.transition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.isAppInFinalState"
+    ],
+    "YARN-1692.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.AppSchedulable.updateDemand",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.common.fica.FiCaSchedulerApp.getLocalityWaitFactor",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerApplicationAttempt.getPriorities",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerApplicationAttempt.getTotalRequiredResources"
+    ],
+    "YARN-7697.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.filecontroller.ifile.LogAggregationIndexedFileController.renderAggregatedLogsBlock",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.filecontroller.ifile.LogAggregationIndexedFileController.getRemoteAppLogDir",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.filecontroller.ifile.LogAggregationIndexedFileController.initializeWriterInRolling",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.filecontroller.ifile.LogAggregationIndexedFileController.loadIndexedLogsMeta",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.filecontroller.ifile.LogAggregationIndexedFileController.readAggregatedLogs",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.filecontroller.ifile.LogAggregationIndexedFileController.apply",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.filecontroller.ifile.IndexedFileAggregatedLogsBlock.render",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.filecontroller.tfile.LogAggregationTFileController.renderAggregatedLogsBlock",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.filecontroller.ifile.LogAggregationIndexedFileController.readAggregatedLogsMeta",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileController.getApplicationOwner",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-common.src.main.java.org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileController.renderAggregatedLogsBlock"
+    ],
+    "YARN-7382.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FSAppAttempt.recoverContainer"
+    ],
+    "YARN-1094.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMContextImpl.RMContextImpl",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.RMContextImpl.getAMFinishingMonitor",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceStart",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl.transition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceInit"
+    ],
+    "YARN-7269.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-web-proxy.src.main.java.org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter.findRedirectUrl",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-web-proxy.src.main.java.org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter.init",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-web-proxy.src.main.java.org.apache.hadoop.yarn.server.webproxy.amfilter.AmFilterInitializer.initFilter"
+    ],
+    "YARN-7249.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-resourcemanager.src.main.java.org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.completedContainerInternal"
+    ],
+    "YARN-4598.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl.KillTransition"
+    ],
+    "YARN-1149.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.serviceStop",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl.AppInitTransition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.run",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.ContainerManagerImpl",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl.handleAppFinishWithContainersCleanedup",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.handle",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.startContainerInternal",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.serviceStop",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.serviceInit",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl.transition",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.refreshServiceAcls",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl.serviceInit",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.NodeManager.resyncWithRM"
+    ],
+    "YARN-7818.json": [
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime.relaunchContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DockerLinuxContainerRuntime.launchContainer",
+        "hadoop-yarn-project.hadoop-yarn.hadoop-yarn-server.hadoop-yarn-server-nodemanager.src.main.java.org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.DefaultLinuxContainerRuntime.launchContainer"
+    ]
+}
